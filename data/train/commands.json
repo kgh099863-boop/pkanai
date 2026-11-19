@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "original_curated_pairs",
-    "review_status": "needs_human_review"
+    "generation_method": "original_curated_pairs_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "commands",
       "zh": "不要这样做",
       "th1": "อย่าทำแบบนี้",
-      "th2": null,
-      "th3": null,
+      "th2": "อย่าทำแบบนี้นะ",
+      "th3": "อย่าทำแบบนี้จริง ๆ",
       "frame": "commands"
     },
     {
@@ -28,8 +28,8 @@
       "category": "commands",
       "zh": "快一点",
       "th1": "เร็วหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "เร็วหน่อยนะ",
+      "th3": "เร็วหน่อยจริง ๆ",
       "frame": "commands"
     },
     {
@@ -38,8 +38,8 @@
       "category": "commands",
       "zh": "慢一点",
       "th1": "ช้าหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "ช้าหน่อยนะ",
+      "th3": "ช้าหน่อยจริง ๆ",
       "frame": "commands"
     },
     {
@@ -48,8 +48,8 @@
       "category": "commands",
       "zh": "小心",
       "th1": "ระวัง",
-      "th2": null,
-      "th3": null,
+      "th2": "ระวังนะ",
+      "th3": "ระวังจริง ๆ",
       "frame": "commands"
     },
     {
@@ -58,8 +58,8 @@
       "category": "commands",
       "zh": "开始吧",
       "th1": "เริ่มกันเลย",
-      "th2": null,
-      "th3": null,
+      "th2": "เริ่มกันเลยนะ",
+      "th3": "เริ่มกันเลยจริง ๆ",
       "frame": "commands"
     },
     {
@@ -68,8 +68,8 @@
       "category": "commands",
       "zh": "停止",
       "th1": "หยุด",
-      "th2": null,
-      "th3": null,
+      "th2": "หยุดนะ",
+      "th3": "หยุดจริง ๆ",
       "frame": "commands"
     },
     {
@@ -78,8 +78,8 @@
       "category": "commands",
       "zh": "继续",
       "th1": "ทำต่อ",
-      "th2": null,
-      "th3": null,
+      "th2": "ทำต่อนะ",
+      "th3": "ทำต่อจริง ๆ",
       "frame": "commands"
     },
     {
@@ -88,8 +88,8 @@
       "category": "commands",
       "zh": "完成了",
       "th1": "เสร็จแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "เสร็จแล้วนะ",
+      "th3": "เสร็จแล้วจริง ๆ",
       "frame": "commands"
     },
     {
@@ -98,8 +98,8 @@
       "category": "commands",
       "zh": "等一下",
       "th1": "รอสักครู่",
-      "th2": null,
-      "th3": null,
+      "th2": "รอสักครู่นะ",
+      "th3": "รอสักครู่จริง ๆ",
       "frame": "commands"
     }
   ]

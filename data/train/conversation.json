@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "original_curated_pairs",
-    "review_status": "needs_human_review"
+    "generation_method": "original_curated_pairs_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "conversation",
       "zh": "我不知道",
       "th1": "ฉันไม่รู้",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่รู้",
+      "th3": "ฉันไม่รู้นะ",
       "frame": "conversation"
     },
     {
@@ -28,8 +28,8 @@
       "category": "conversation",
       "zh": "我明白了",
       "th1": "ฉันเข้าใจแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "เข้าใจแล้ว",
+      "th3": "ฉันเข้าใจแล้วนะ",
       "frame": "conversation"
     },
     {
@@ -38,8 +38,8 @@
       "category": "conversation",
       "zh": "我不明白",
       "th1": "ฉันไม่เข้าใจ",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่เข้าใจ",
+      "th3": "ฉันไม่เข้าใจนะ",
       "frame": "conversation"
     },
     {
@@ -48,8 +48,8 @@
       "category": "conversation",
       "zh": "你叫什么名字？",
       "th1": "คุณชื่ออะไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ชื่ออะไร",
+      "th3": "คุณชื่ออะไรนะ",
       "frame": "conversation"
     },
     {
@@ -58,8 +58,8 @@
       "category": "conversation",
       "zh": "我叫小明",
       "th1": "ฉันชื่อเสี่ยวหมิง",
-      "th2": null,
-      "th3": null,
+      "th2": "ชื่อเสี่ยวหมิง",
+      "th3": "ฉันชื่อเสี่ยวหมิงนะ",
       "frame": "conversation"
     },
     {
@@ -68,8 +68,8 @@
       "category": "conversation",
       "zh": "我很好",
       "th1": "ฉันสบายดี",
-      "th2": null,
-      "th3": null,
+      "th2": "สบายดี",
+      "th3": "ฉันสบายดีนะ",
       "frame": "conversation"
     },
     {
@@ -78,8 +78,8 @@
       "category": "conversation",
       "zh": "你在做什么？",
       "th1": "คุณกำลังทำอะไร",
-      "th2": null,
-      "th3": null,
+      "th2": "กำลังทำอะไร",
+      "th3": "คุณกำลังทำอะไรนะ",
       "frame": "conversation"
     },
     {
@@ -88,8 +88,8 @@
       "category": "conversation",
       "zh": "我在看电影",
       "th1": "ฉันกำลังดูหนัง",
-      "th2": null,
-      "th3": null,
+      "th2": "กำลังดูหนัง",
+      "th3": "ฉันกำลังดูหนังนะ",
       "frame": "conversation"
     },
     {
@@ -98,8 +98,8 @@
       "category": "conversation",
       "zh": "请帮帮我",
       "th1": "ช่วยฉันหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "ช่วยฉันหน่อยนะ",
+      "th3": "ช่วยฉันหน่อยจริง ๆ",
       "frame": "conversation"
     },
     {
@@ -108,8 +108,8 @@
       "category": "conversation",
       "zh": "我需要帮助",
       "th1": "ฉันต้องการความช่วยเหลือ",
-      "th2": null,
-      "th3": null,
+      "th2": "ต้องการความช่วยเหลือ",
+      "th3": "ฉันต้องการความช่วยเหลือนะ",
       "frame": "conversation"
     },
     {
@@ -118,8 +118,8 @@
       "category": "conversation",
       "zh": "真的吗？",
       "th1": "จริงเหรอ",
-      "th2": null,
-      "th3": null,
+      "th2": "จริงเหรอนะ",
+      "th3": "จริงเหรอจริง ๆ",
       "frame": "conversation"
     },
     {
@@ -128,8 +128,8 @@
       "category": "conversation",
       "zh": "当然",
       "th1": "แน่นอน",
-      "th2": null,
-      "th3": null,
+      "th2": "แน่นอนนะ",
+      "th3": "แน่นอนจริง ๆ",
       "frame": "conversation"
     },
     {
@@ -138,8 +138,8 @@
       "category": "conversation",
       "zh": "可能吧",
       "th1": "อาจจะ",
-      "th2": null,
-      "th3": null,
+      "th2": "อาจจะนะ",
+      "th3": "อาจจะจริง ๆ",
       "frame": "conversation"
     },
     {
@@ -148,8 +148,8 @@
       "category": "conversation",
       "zh": "没问题",
       "th1": "ไม่มีปัญหา",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่มีปัญหานะ",
+      "th3": "ไม่มีปัญหาจริง ๆ",
       "frame": "conversation"
     },
     {
@@ -158,8 +158,8 @@
       "category": "conversation",
       "zh": "我马上回来",
       "th1": "ฉันจะกลับมาทันที",
-      "th2": null,
-      "th3": null,
+      "th2": "จะกลับมาทันที",
+      "th3": "ฉันจะกลับมาทันทีนะ",
       "frame": "conversation"
     },
     {
@@ -168,8 +168,8 @@
       "category": "conversation",
       "zh": "你可以帮我吗？",
       "th1": "คุณช่วยฉันได้ไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "คุณช่วยฉันได้หรือเปล่า",
+      "th3": "ช่วยฉันได้ไหม",
       "frame": "conversation"
     },
     {
@@ -178,8 +178,8 @@
       "category": "conversation",
       "zh": "这是什么意思？",
       "th1": "นี่หมายความว่าอะไร",
-      "th2": null,
-      "th3": null,
+      "th2": "นี่หมายความว่าอะไรนะ",
+      "th3": "นี่หมายความว่าอะไรจริง ๆ",
       "frame": "conversation"
     },
     {
@@ -188,8 +188,8 @@
       "category": "conversation",
       "zh": "我们走吧",
       "th1": "พวกเราไปกันเถอะ",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปกันเถอะ",
+      "th3": "พวกเราไปกันเถอะนะ",
       "frame": "conversation"
     }
   ]

@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "template_augmented_from_handwritten_lexicon",
-    "review_status": "needs_human_review"
+    "generation_method": "template_augmented_from_handwritten_lexicon_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "daily_conversation_and_device",
       "zh": "祝你好运。",
       "th1": "ขอให้คุณโชคดี",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอให้คุณโชคดีนะ",
+      "th3": "ขอให้คุณโชคดีจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -28,8 +28,8 @@
       "category": "daily_conversation_and_device",
       "zh": "火车什么时候出发？",
       "th1": "รถไฟออกเดินทางเมื่อไหร่",
-      "th2": null,
-      "th3": null,
+      "th2": "รถไฟออกเดินทางเมื่อไหร่นะ",
+      "th3": "รถไฟออกเดินทางเมื่อไหร่จริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -38,8 +38,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我想试穿这件衣服。",
       "th1": "ฉันอยากลองเสื้อผ้าชิ้นนี้",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากลองเสื้อผ้าชิ้นนี้",
+      "th3": "ฉันอยากลองเสื้อผ้าชิ้นนี้นะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -48,8 +48,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请帮我包装好。",
       "th1": "กรุณาช่วยห่อให้เรียบร้อย",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดช่วยห่อให้เรียบร้อย",
+      "th3": "กรุณาช่วยห่อให้เรียบร้อยนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -58,8 +58,8 @@
       "category": "daily_conversation_and_device",
       "zh": "这很重要。",
       "th1": "นี่สำคัญมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "นี่สำคัญมากนะ",
+      "th3": "นี่สำคัญมากจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -68,8 +68,8 @@
       "category": "daily_conversation_and_device",
       "zh": "这个字是什么意思？",
       "th1": "ตัวอักษรนี้หมายความว่าอะไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ตัวอักษรนี้หมายความว่าอะไรนะ",
+      "th3": "ตัวอักษรนี้หมายความว่าอะไรจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -78,8 +78,8 @@
       "category": "daily_conversation_and_device",
       "zh": "操作完成后请确认。",
       "th1": "หลังจากดำเนินการเสร็จแล้วกรุณายืนยัน",
-      "th2": null,
-      "th3": null,
+      "th2": "หลังจากดำเนินการเสร็จแล้วโปรดยืนยัน",
+      "th3": "หลังจากดำเนินการเสร็จแล้วกรุณายืนยันนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -88,8 +88,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我每天早上喝咖啡。",
       "th1": "ฉันดื่มกาแฟทุกเช้า",
-      "th2": null,
-      "th3": null,
+      "th2": "ดื่มกาแฟทุกเช้า",
+      "th3": "ฉันดื่มกาแฟทุกเช้านะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -98,8 +98,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我们需要一个计划。",
       "th1": "พวกเราต้องการแผนหนึ่งแผน",
-      "th2": null,
-      "th3": null,
+      "th2": "ต้องการแผนหนึ่งแผน",
+      "th3": "พวกเราต้องการแผนหนึ่งแผนนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -108,8 +108,8 @@
       "category": "daily_conversation_and_device",
       "zh": "可以便宜一点吗？",
       "th1": "ลดราคาอีกหน่อยได้ไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "ลดราคาอีกหน่อยได้หรือเปล่า",
+      "th3": "ลดราคาอีกหน่อยได้ไหมจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -118,8 +118,8 @@
       "category": "daily_conversation_and_device",
       "zh": "她已经回家了。",
       "th1": "เธอกลับบ้านแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "เธอกลับบ้านแล้วนะ",
+      "th3": "เธอกลับบ้านแล้วจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -128,8 +128,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请给我一个例子。",
       "th1": "กรุณายกตัวอย่างให้ฉันหนึ่งตัวอย่าง",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดยกตัวอย่างให้ฉันหนึ่งตัวอย่าง",
+      "th3": "กรุณายกตัวอย่างให้ฉันหนึ่งตัวอย่างนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -138,8 +138,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我马上回来。",
       "th1": "ฉันจะกลับมาทันที",
-      "th2": null,
-      "th3": null,
+      "th2": "จะกลับมาทันที",
+      "th3": "ฉันจะกลับมาทันทีนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -148,8 +148,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请写下来。",
       "th1": "กรุณาเขียนลงมา",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดเขียนลงมา",
+      "th3": "กรุณาเขียนลงมานะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -158,8 +158,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请注意安全。",
       "th1": "กรุณาระมัดระวังความปลอดภัย",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดระมัดระวังความปลอดภัย",
+      "th3": "กรุณาระมัดระวังความมั่นคงปลอดภัย",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -168,8 +168,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我想用现金付款。",
       "th1": "ฉันอยากจ่ายด้วยเงินสด",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากจ่ายด้วยเงินสด",
+      "th3": "ฉันอยากจ่ายด้วยเงินสดนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -178,8 +178,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我不同意。",
       "th1": "ฉันไม่เห็นด้วย",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่เห็นด้วย",
+      "th3": "ฉันไม่เห็นด้วยนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -188,8 +188,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我可以拍照吗？",
       "th1": "ฉันถ่ายรูปได้ไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "ฉันถ่ายรูปได้หรือเปล่า",
+      "th3": "ถ่ายรูปได้ไหม",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -198,8 +198,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请再说一遍。",
       "th1": "กรุณาพูดอีกครั้ง",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดพูดอีกครั้ง",
+      "th3": "กรุณากล่าวอีกครั้ง",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -208,8 +208,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请按照说明操作。",
       "th1": "กรุณาทำตามคำแนะนำ",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดทำตามคำแนะนำ",
+      "th3": "กรุณาทำตามคำแนะนำนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -218,8 +218,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请带我去机场。",
       "th1": "กรุณาพาฉันไปสนามบิน",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดพาฉันไปสนามบิน",
+      "th3": "กรุณาพาฉันไปสนามบินนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -228,8 +228,8 @@
       "category": "daily_conversation_and_device",
       "zh": "程序已经启动了。",
       "th1": "โปรแกรมเริ่มทำงานแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "ซอฟต์แวร์เริ่มทำงานแล้ว",
+      "th3": "โปรแกรมเริ่มทำงานแล้วนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -238,8 +238,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请告诉我真相。",
       "th1": "กรุณาบอกความจริงกับฉัน",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดบอกความจริงกับฉัน",
+      "th3": "กรุณาบอกความจริงกับฉันนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -248,8 +248,8 @@
       "category": "daily_conversation_and_device",
       "zh": "欢迎来到这里。",
       "th1": "ยินดีต้อนรับมาที่นี่",
-      "th2": null,
-      "th3": null,
+      "th2": "ยินดีต้อนรับมาที่นี่นะ",
+      "th3": "ยินดีต้อนรับมาที่นี่จริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -258,8 +258,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请打开网络。",
       "th1": "กรุณาเปิดอินเทอร์เน็ต",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดเปิดอินเทอร์เน็ต",
+      "th3": "กรุณาเปิดอินเทอร์เน็ตนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -268,8 +268,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请打开窗户。",
       "th1": "กรุณาเปิดหน้าต่าง",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดเปิดหน้าต่าง",
+      "th3": "กรุณาเปิดหน้าต่างนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -278,8 +278,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我忘记密码了。",
       "th1": "ฉันลืมรหัสผ่านแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "ลืมรหัสผ่านแล้ว",
+      "th3": "ฉันลืมรหัสผ่านแล้วนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -288,8 +288,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我们可以稍后再讨论。",
       "th1": "เราค่อยหารือกันภายหลังได้",
-      "th2": null,
-      "th3": null,
+      "th2": "ค่อยหารือกันภายหลังได้",
+      "th3": "เราค่อยหารือกันภายหลังได้นะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -298,8 +298,8 @@
       "category": "daily_conversation_and_device",
       "zh": "屏幕太亮了。",
       "th1": "หน้าจอสว่างเกินไป",
-      "th2": null,
-      "th3": null,
+      "th2": "หน้าจอสว่างเรับประทานไป",
+      "th3": "หน้าจอสว่างเกินไปนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -308,8 +308,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我们现在出发吧。",
       "th1": "พวกเราออกเดินทางตอนนี้กันเถอะ",
-      "th2": null,
-      "th3": null,
+      "th2": "พวกเราออกเดินทางขณะนี้กันเถอะ",
+      "th3": "ออกเดินทางตอนนี้กันเถอะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -318,8 +318,8 @@
       "category": "daily_conversation_and_device",
       "zh": "天气太热了。",
       "th1": "อากาศร้อนเกินไป",
-      "th2": null,
-      "th3": null,
+      "th2": "อากาศร้อนเรับประทานไป",
+      "th3": "อากาศร้อนเกินไปนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -328,8 +328,8 @@
       "category": "daily_conversation_and_device",
       "zh": "一路平安。",
       "th1": "ขอให้เดินทางปลอดภัย",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอให้เดินทางปลอดภัยนะ",
+      "th3": "ขอให้เดินทางปลอดภัยจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -338,8 +338,8 @@
       "category": "daily_conversation_and_device",
       "zh": "你可以再解释一次吗？",
       "th1": "คุณช่วยอธิบายอีกครั้งได้ไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "คุณช่วยชี้แจงอีกครั้งได้ไหม",
+      "th3": "คุณช่วยอธิบายอีกครั้งได้หรือเปล่า",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -348,8 +348,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我需要帮助。",
       "th1": "ฉันต้องการความช่วยเหลือ",
-      "th2": null,
-      "th3": null,
+      "th2": "ต้องการความช่วยเหลือ",
+      "th3": "ฉันต้องการความช่วยเหลือนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -358,8 +358,8 @@
       "category": "daily_conversation_and_device",
       "zh": "手机正在充电。",
       "th1": "โทรศัพท์กำลังชาร์จแบตเตอรี่",
-      "th2": null,
-      "th3": null,
+      "th2": "โทรศัพท์กำลังชาร์จแบตเตอรี่นะ",
+      "th3": "โทรศัพท์กำลังชาร์จแบตเตอรี่จริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -368,8 +368,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我马上就到。",
       "th1": "ฉันใกล้จะถึงแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "ใกล้จะถึงแล้ว",
+      "th3": "ฉันใกล้จะถึงแล้วนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -378,8 +378,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请不要放辣椒。",
       "th1": "กรุณาอย่าใส่พริก",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดอย่าใส่พริก",
+      "th3": "กรุณาอย่าใส่พริกนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -388,8 +388,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请给我菜单。",
       "th1": "กรุณานำเมนูมาให้ฉัน",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดนำเมนูมาให้ฉัน",
+      "th3": "กรุณานำเมนูมาให้ฉันนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -398,8 +398,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请发给我。",
       "th1": "กรุณาส่งมาให้ฉัน",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดส่งมาให้ฉัน",
+      "th3": "กรุณาส่งมาให้ฉันนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -408,8 +408,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我们明天再谈。",
       "th1": "เราค่อยคุยกันพรุ่งนี้",
-      "th2": null,
-      "th3": null,
+      "th2": "เราค่อยคุยกันวันพรุ่งนี้",
+      "th3": "ค่อยคุยกันพรุ่งนี้",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -418,8 +418,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请帮我翻译这句话。",
       "th1": "กรุณาช่วยแปลประโยคนี้ให้ฉัน",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดช่วยแปลประโยคนี้ให้ฉัน",
+      "th3": "กรุณาช่วยแปลประโยคนี้ให้ฉันนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -428,8 +428,8 @@
       "category": "daily_conversation_and_device",
       "zh": "你会说泰语吗？",
       "th1": "คุณพูดภาษาไทยได้ไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "คุณกล่าวภาษาไทยได้ไหม",
+      "th3": "คุณพูดภาษาไทยได้หรือเปล่า",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -438,8 +438,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我的行李在哪里？",
       "th1": "สัมภาระของฉันอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "สัมภาระของฉันอยู่ที่ไหนนะ",
+      "th3": "สัมภาระของฉันอยู่ที่ไหนจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -448,8 +448,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我对这个药过敏。",
       "th1": "ฉันแพ้ยาชนิดนี้",
-      "th2": null,
-      "th3": null,
+      "th2": "แพ้ยาชนิดนี้",
+      "th3": "ฉันแพ้ยาชนิดนี้นะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -458,8 +458,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请告诉我使用方法。",
       "th1": "กรุณาบอกวิธีใช้ให้ฉันทราบ",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดบอกวิธีใช้ให้ฉันทราบ",
+      "th3": "กรุณาบอกวิธีใช้ให้ฉันทราบนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -468,8 +468,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我今天有点忙。",
       "th1": "วันนี้ฉันยุ่งนิดหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้ฉันยุ่งนิดหน่อย",
+      "th3": "วันนี้ฉันยุ่งเล็กน้อย",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -478,8 +478,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我没有收到消息。",
       "th1": "ฉันไม่ได้รับข้อความ",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่ได้รับข้อความ",
+      "th3": "ฉันไม่ได้รับข้อความนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -488,8 +488,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请说慢一点。",
       "th1": "กรุณาพูดช้าลงหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดพูดช้าลงหน่อย",
+      "th3": "กรุณากล่าวช้าลงหน่อย",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -498,8 +498,8 @@
       "category": "daily_conversation_and_device",
       "zh": "今天我没有工作。",
       "th1": "วันนี้ฉันไม่มีงานทำ",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้ฉันไม่มีงานทำ",
+      "th3": "ฉันไม่มีงานทำในวันนี้",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -508,8 +508,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请保存这张照片。",
       "th1": "กรุณาบันทึกรูปถ่ายนี้",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดบันทึกรูปถ่ายนี้",
+      "th3": "กรุณาบันทึกรูปถ่ายนี้นะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -518,8 +518,8 @@
       "category": "daily_conversation_and_device",
       "zh": "这个文件打不开。",
       "th1": "ไฟล์นี้เปิดไม่ได้",
-      "th2": null,
-      "th3": null,
+      "th2": "ไฟล์นี้เปิดไม่ได้นะ",
+      "th3": "ไฟล์นี้เปิดไม่ได้จริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -528,8 +528,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我想提高我的中文水平。",
       "th1": "ฉันอยากพัฒนาทักษะภาษาจีนของฉัน",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากพัฒนาทักษะภาษาจีนของฉัน",
+      "th3": "ฉันอยากพัฒนาทักษะภาษาจีนของฉันนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -538,8 +538,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请重新启动设备。",
       "th1": "กรุณาเริ่มอุปกรณ์ใหม่",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดเริ่มอุปกรณ์ใหม่",
+      "th3": "กรุณาเริ่มอุปกรณ์ใหม่นะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -548,8 +548,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请告诉我你的电话号码。",
       "th1": "กรุณาบอกเบอร์โทรศัพท์ของคุณ",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดบอกเบอร์โทรศัพท์ของคุณ",
+      "th3": "กรุณาบอกเบอร์โทรศัพท์ของคุณนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -558,8 +558,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我需要一个新的电池。",
       "th1": "ฉันต้องการแบตเตอรี่ก้อนใหม่",
-      "th2": null,
-      "th3": null,
+      "th2": "ต้องการแบตเตอรี่ก้อนใหม่",
+      "th3": "ฉันต้องการแบตเตอรี่ก้อนใหม่นะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -568,8 +568,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请给我收据。",
       "th1": "กรุณาออกใบเสร็จให้ฉัน",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดออกใบเสร็จให้ฉัน",
+      "th3": "กรุณาออกใบเสร็จให้ฉันนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -578,8 +578,8 @@
       "category": "daily_conversation_and_device",
       "zh": "这道菜不辣。",
       "th1": "อาหารจานนี้ไม่เผ็ด",
-      "th2": null,
-      "th3": null,
+      "th2": "อาหารจานนี้ไม่เผ็ดนะ",
+      "th3": "อาหารจานนี้ไม่เผ็ดจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -588,8 +588,8 @@
       "category": "daily_conversation_and_device",
       "zh": "今天的天气怎么样？",
       "th1": "วันนี้อากาศเป็นอย่างไรบ้าง",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้อากาศเป็นอย่างไรบ้าง",
+      "th3": "วันนี้อากาศเป็นอย่างไรบ้างนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -598,8 +598,8 @@
       "category": "daily_conversation_and_device",
       "zh": "今天是星期几？",
       "th1": "วันนี้วันอะไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้วันอะไร",
+      "th3": "วันนี้วันอะไรนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -608,8 +608,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请在这里等我。",
       "th1": "กรุณารอฉันที่นี่",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดรอฉันที่นี่",
+      "th3": "กรุณารอฉันที่นี่นะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -618,8 +618,8 @@
       "category": "daily_conversation_and_device",
       "zh": "外面正在下雨。",
       "th1": "ข้างนอกกำลังฝนตก",
-      "th2": null,
-      "th3": null,
+      "th2": "ข้างนอกกำลังฝนตกนะ",
+      "th3": "ข้างนอกกำลังฝนตกจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -628,8 +628,8 @@
       "category": "daily_conversation_and_device",
       "zh": "今天商店几点关门？",
       "th1": "วันนี้ร้านปิดกี่โมง",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้ร้านปิดกี่โมง",
+      "th3": "วันนี้ร้านปิดกี่โมงนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -638,8 +638,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我需要更多的练习。",
       "th1": "ฉันต้องการฝึกฝนเพิ่มเติม",
-      "th2": null,
-      "th3": null,
+      "th2": "ต้องการฝึกฝนเพิ่มเติม",
+      "th3": "ฉันต้องการฝึกฝนเพิ่มเติมนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -648,8 +648,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请把声音调大一点。",
       "th1": "กรุณาเพิ่มเสียงให้ดังขึ้นหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดเพิ่มเสียงให้ดังขึ้นหน่อย",
+      "th3": "กรุณาเพิ่มเสียงให้ดังขึ้นหน่อยนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -658,8 +658,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我想回家休息。",
       "th1": "ฉันอยากกลับบ้านไปพักผ่อน",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากกลับบ้านไปพักผ่อน",
+      "th3": "ฉันอยากกลับบ้านไปพักผ่อนนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -668,8 +668,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我正在忙。",
       "th1": "ฉันกำลังยุ่ง",
-      "th2": null,
-      "th3": null,
+      "th2": "กำลังยุ่ง",
+      "th3": "ฉันกำลังยุ่งนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -678,8 +678,8 @@
       "category": "daily_conversation_and_device",
       "zh": "下次再见。",
       "th1": "ไว้พบกันคราวหน้า",
-      "th2": null,
-      "th3": null,
+      "th2": "ไว้พบกันคราวหน้านะ",
+      "th3": "ไว้พบกันคราวหน้าจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -688,8 +688,8 @@
       "category": "daily_conversation_and_device",
       "zh": "可以用手机付款吗？",
       "th1": "จ่ายเงินด้วยโทรศัพท์ได้ไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จ่ายเงินด้วยโทรศัพท์ได้หรือเปล่า",
+      "th3": "จ่ายเงินด้วยโทรศัพท์ได้ไหมจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -698,8 +698,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请不要重复这个错误。",
       "th1": "กรุณาอย่าทำผิดพลาดแบบนี้ซ้ำ",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดอย่าทำผิดพลาดแบบนี้ซ้ำ",
+      "th3": "กรุณาอย่าทำผิดพลาดแบบนี้ซ้ำนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -708,8 +708,8 @@
       "category": "daily_conversation_and_device",
       "zh": "房间里有空调吗？",
       "th1": "ในห้องมีเครื่องปรับอากาศไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "ในห้องมีเครื่องปรับอากาศหรือเปล่า",
+      "th3": "ในห้องมีเครื่องปรับอากาศไหมจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -718,8 +718,8 @@
       "category": "daily_conversation_and_device",
       "zh": "天气很冷。",
       "th1": "อากาศหนาวมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "อากาศหนาวมากนะ",
+      "th3": "อากาศหนาวมากจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -728,8 +728,8 @@
       "category": "daily_conversation_and_device",
       "zh": "这件事已经解决了。",
       "th1": "เรื่องนี้แก้ไขเรียบร้อยแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "เรื่องนี้แก้ไขเรียบร้อยแล้วนะ",
+      "th3": "เรื่องนี้แก้ไขเรียบร้อยแล้วจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -738,8 +738,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我很高兴认识你。",
       "th1": "ฉันดีใจที่ได้รู้จักคุณ",
-      "th2": null,
-      "th3": null,
+      "th2": "ดีใจที่ได้รู้จักคุณ",
+      "th3": "ฉันดีใจที่ได้รู้จักคุณนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -748,8 +748,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我们保持联系。",
       "th1": "พวกเราติดต่อกันอยู่เสมอนะ",
-      "th2": null,
-      "th3": null,
+      "th2": "ติดต่อกันอยู่เสมอนะ",
+      "th3": "พวกเราติดต่อกันอยู่เสมอนะจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -758,8 +758,8 @@
       "category": "daily_conversation_and_device",
       "zh": "你来自哪里？",
       "th1": "คุณมาจากที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "มาจากที่ไหน",
+      "th3": "คุณมาจากที่ไหนนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -768,8 +768,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我忘记了。",
       "th1": "ฉันลืมแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "ลืมแล้ว",
+      "th3": "ฉันลืมแล้วนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -778,8 +778,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请帮我叫一辆出租车。",
       "th1": "กรุณาช่วยเรียกแท็กซี่ให้ฉัน",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดช่วยเรียกแท็กซี่ให้ฉัน",
+      "th3": "กรุณาช่วยเรียกแท็กซี่ให้ฉันนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -788,8 +788,8 @@
       "category": "daily_conversation_and_device",
       "zh": "一切都很好。",
       "th1": "ทุกอย่างเรียบร้อยดี",
-      "th2": null,
-      "th3": null,
+      "th2": "ทุกอย่างเรียบร้อยดีนะ",
+      "th3": "ทุกอย่างเรียบร้อยดีจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -798,8 +798,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我只是看看。",
       "th1": "ฉันแค่ดูเฉยๆ",
-      "th2": null,
-      "th3": null,
+      "th2": "แค่ดูเฉยๆ",
+      "th3": "ฉันแค่ดูเฉยๆนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -808,8 +808,8 @@
       "category": "daily_conversation_and_device",
       "zh": "这句话很容易理解。",
       "th1": "ประโยคนี้เข้าใจง่ายมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ประโยคนี้เข้าใจง่ายมากนะ",
+      "th3": "ประโยคนี้เข้าใจง่ายมากจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -818,8 +818,8 @@
       "category": "daily_conversation_and_device",
       "zh": "晚上我喜欢听音乐。",
       "th1": "ตอนเย็นฉันชอบฟังเพลง",
-      "th2": null,
-      "th3": null,
+      "th2": "ในช่วงเย็นฉันชอบฟังเพลง",
+      "th3": "ตอนเย็นฉันชอบฟังเพลงนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -828,8 +828,8 @@
       "category": "daily_conversation_and_device",
       "zh": "这个价格可以接受。",
       "th1": "ราคานี้ยอมรับได้",
-      "th2": null,
-      "th3": null,
+      "th2": "ราคานี้ยอมรับได้นะ",
+      "th3": "ราคานี้ยอมรับได้จริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -838,8 +838,8 @@
       "category": "daily_conversation_and_device",
       "zh": "别担心。",
       "th1": "ไม่ต้องกังวล",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่ต้องกังวลนะ",
+      "th3": "ไม่ต้องกังวลจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -848,8 +848,8 @@
       "category": "daily_conversation_and_device",
       "zh": "现在几点了？",
       "th1": "ตอนนี้กี่โมงแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้กี่โมงแล้ว",
+      "th3": "ตอนนี้กี่โมงแล้วนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -858,8 +858,8 @@
       "category": "daily_conversation_and_device",
       "zh": "周末我通常待在家里。",
       "th1": "วันหยุดสุดสัปดาห์ฉันมักจะอยู่บ้าน",
-      "th2": null,
-      "th3": null,
+      "th2": "วันหยุดสุดสัปดาห์ฉันมักจะอยู่บ้านนะ",
+      "th3": "วันหยุดสุดสัปดาห์ฉันมักจะอยู่บ้านจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -868,8 +868,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请不要离开这里。",
       "th1": "กรุณาอย่าออกไปจากที่นี่",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดอย่าออกไปจากที่นี่",
+      "th3": "กรุณาอย่าออกไปจากที่นี่นะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -878,8 +878,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我再考虑一下。",
       "th1": "ฉันขอคิดดูก่อนอีกครั้ง",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอคิดดูก่อนอีกครั้ง",
+      "th3": "ฉันขอคิดดูก่อนอีกครั้งนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -888,8 +888,8 @@
       "category": "daily_conversation_and_device",
       "zh": "还需要一点时间。",
       "th1": "ยังต้องใช้เวลาอีกสักหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "ยังต้องใช้เวลาอีกสักหน่อยนะ",
+      "th3": "ยังต้องใช้เวลาอีกสักหน่อยจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -898,8 +898,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请稍等，我马上付款。",
       "th1": "กรุณารอสักครู่ ฉันจะจ่ายเงินเดี๋ยวนี้",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดรอสักครู่ ฉันจะจ่ายเงินเดี๋ยวนี้",
+      "th3": "กรุณารอสักครู่ ฉันจะจ่ายเงินเดี๋ยวนี้นะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -908,8 +908,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我的手机没电了。",
       "th1": "แบตเตอรี่โทรศัพท์ของฉันหมดแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "แบตเตอรี่โทรศัพท์ของฉันหมดแล้วนะ",
+      "th3": "แบตเตอรี่โทรศัพท์ของฉันหมดแล้วจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -918,8 +918,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我只会说一点中文。",
       "th1": "ฉันพูดภาษาจีนได้เพียงเล็กน้อย",
-      "th2": null,
-      "th3": null,
+      "th2": "ฉันพูดภาษาจีนได้เพียงนิดหน่อย",
+      "th3": "ฉันกล่าวภาษาจีนได้เพียงเล็กน้อย",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -928,8 +928,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我觉得不舒服。",
       "th1": "ฉันรู้สึกไม่สบาย",
-      "th2": null,
-      "th3": null,
+      "th2": "รู้สึกไม่สบาย",
+      "th3": "ฉันรู้สึกไม่สบายนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -938,8 +938,8 @@
       "category": "daily_conversation_and_device",
       "zh": "热水在哪里？",
       "th1": "น้ำร้อนอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "น้ำร้อนอยู่ที่ไหนนะ",
+      "th3": "น้ำร้อนอยู่ที่ไหนจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -948,8 +948,8 @@
       "category": "daily_conversation_and_device",
       "zh": "网络连接失败了。",
       "th1": "การเชื่อมต่ออินเทอร์เน็ตล้มเหลว",
-      "th2": null,
-      "th3": null,
+      "th2": "การเชื่อมต่ออินเทอร์เน็ตล้มเหลวนะ",
+      "th3": "การเชื่อมต่ออินเทอร์เน็ตล้มเหลวจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -958,8 +958,8 @@
       "category": "daily_conversation_and_device",
       "zh": "这里不允许吸烟。",
       "th1": "ที่นี่ไม่อนุญาตให้สูบบุหรี่",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่ไม่อนุญาตให้สูบบุหรี่นะ",
+      "th3": "ที่นี่ไม่อนุญาตให้สูบบุหรี่จริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -968,8 +968,8 @@
       "category": "daily_conversation_and_device",
       "zh": "有小一点的尺码吗？",
       "th1": "มีขนาดที่เล็กกว่านี้ไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "มีขนาดที่เล็กกว่านี้หรือเปล่า",
+      "th3": "มีขนาดที่เล็กกว่านี้ไหมจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -978,8 +978,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请照顾好自己。",
       "th1": "กรุณาดูแลตัวเองให้ดี",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดดูแลตัวเองให้ดี",
+      "th3": "กรุณาดูแลตัวเองให้ดีนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -988,8 +988,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我已经同意了。",
       "th1": "ฉันตกลงแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "ตกลงแล้ว",
+      "th3": "ฉันตกลงแล้วนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -998,8 +998,8 @@
       "category": "daily_conversation_and_device",
       "zh": "这个方法很有效。",
       "th1": "วิธีนี้ได้ผลดีมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "วิธีนี้ได้ผลดีมากนะ",
+      "th3": "วิธีนี้ได้ผลดีมากจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1008,8 +1008,8 @@
       "category": "daily_conversation_and_device",
       "zh": "这不重要。",
       "th1": "นี่ไม่สำคัญ",
-      "th2": null,
-      "th3": null,
+      "th2": "นี่ไม่สำคัญนะ",
+      "th3": "นี่ไม่สำคัญจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1018,8 +1018,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我还没准备好。",
       "th1": "ฉันยังเตรียมตัวไม่พร้อม",
-      "th2": null,
-      "th3": null,
+      "th2": "ยังเตรียมตัวไม่พร้อม",
+      "th3": "ฉันยังเตรียมตัวไม่พร้อมนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1028,8 +1028,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我已经点菜了。",
       "th1": "ฉันสั่งอาหารแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "สั่งอาหารแล้ว",
+      "th3": "ฉันสั่งอาหารแล้วนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1038,8 +1038,8 @@
       "category": "daily_conversation_and_device",
       "zh": "你住在哪里？",
       "th1": "คุณอาศัยอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "อาศัยอยู่ที่ไหน",
+      "th3": "คุณอาศัยอยู่ที่ไหนนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1048,8 +1048,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我会记住这件事。",
       "th1": "ฉันจะจำเรื่องนี้ไว้",
-      "th2": null,
-      "th3": null,
+      "th2": "จะจำเรื่องนี้ไว้",
+      "th3": "ฉันจะจำเรื่องนี้ไว้นะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1058,8 +1058,8 @@
       "category": "daily_conversation_and_device",
       "zh": "今天就到这里吧。",
       "th1": "วันนี้พอแค่นี้ก่อน",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้พอแค่นี้ก่อน",
+      "th3": "วันนี้พอแค่นี้ก่อนนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1068,8 +1068,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请关上门。",
       "th1": "กรุณาปิดประตู",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดปิดประตู",
+      "th3": "กรุณาปิดประตูนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1078,8 +1078,8 @@
       "category": "daily_conversation_and_device",
       "zh": "这个词怎么读？",
       "th1": "คำนี้อ่านอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "คำนี้อ่านอย่างไรนะ",
+      "th3": "คำนี้อ่านอย่างไรจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1088,8 +1088,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我收到了。",
       "th1": "ฉันได้รับแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "ได้รับแล้ว",
+      "th3": "ฉันได้รับแล้วนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1098,8 +1098,8 @@
       "category": "daily_conversation_and_device",
       "zh": "这里可以停车吗？",
       "th1": "ที่นี่จอดรถได้ไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่จอดรถได้หรือเปล่า",
+      "th3": "ที่นี่จอดรถได้ไหมจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1108,8 +1108,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请给我看地图。",
       "th1": "กรุณาแสดงแผนที่ให้ฉันดู",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดแสดงแผนที่ให้ฉันดู",
+      "th3": "กรุณาแสดงแผนที่ให้ฉันดูนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1118,8 +1118,8 @@
       "category": "daily_conversation_and_device",
       "zh": "祝你生日快乐。",
       "th1": "สุขสันต์วันเกิด",
-      "th2": null,
-      "th3": null,
+      "th2": "สุขสันต์วันเกิดนะ",
+      "th3": "สุขสันต์วันเกิดจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1128,8 +1128,8 @@
       "category": "daily_conversation_and_device",
       "zh": "那是谁？",
       "th1": "คนนั้นคือใคร",
-      "th2": null,
-      "th3": null,
+      "th2": "คนนั้นคือใครนะ",
+      "th3": "คนนั้นคือใครจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1138,8 +1138,8 @@
       "category": "daily_conversation_and_device",
       "zh": "声音太小了。",
       "th1": "เสียงเบาเกินไป",
-      "th2": null,
-      "th3": null,
+      "th2": "เสียงเบาเรับประทานไป",
+      "th3": "เสียงเบาเกินไปนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1148,8 +1148,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我需要换钱。",
       "th1": "ฉันต้องการแลกเงิน",
-      "th2": null,
-      "th3": null,
+      "th2": "ต้องการแลกเงิน",
+      "th3": "ฉันต้องการแลกเงินนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1158,8 +1158,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请给我一条毛巾。",
       "th1": "กรุณาให้ผ้าขนหนูฉันหนึ่งผืน",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดให้ผ้าขนหนูฉันหนึ่งผืน",
+      "th3": "กรุณาให้ผ้าขนหนูฉันหนึ่งผืนนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1168,8 +1168,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我可以刷卡吗？",
       "th1": "ฉันจ่ายด้วยบัตรได้ไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "ฉันจ่ายด้วยบัตรได้หรือเปล่า",
+      "th3": "จ่ายด้วยบัตรได้ไหม",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1178,8 +1178,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我正在学习泰语。",
       "th1": "ฉันกำลังเรียนภาษาไทย",
-      "th2": null,
-      "th3": null,
+      "th2": "กำลังเรียนภาษาไทย",
+      "th3": "ฉันกำลังเรียนภาษาไทยนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1188,8 +1188,8 @@
       "category": "daily_conversation_and_device",
       "zh": "有大一点的尺码吗？",
       "th1": "มีขนาดที่ใหญ่กว่านี้ไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "มีขนาดที่ใหญ่กว่านี้หรือเปล่า",
+      "th3": "มีขนาดที่ใหญ่กว่านี้ไหมจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1198,8 +1198,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我需要看医生。",
       "th1": "ฉันต้องไปพบแพทย์",
-      "th2": null,
-      "th3": null,
+      "th2": "ฉันต้องไปพบหมอ",
+      "th3": "ต้องไปพบแพทย์",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1208,8 +1208,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我需要更多的信息。",
       "th1": "ฉันต้องการข้อมูลเพิ่มเติม",
-      "th2": null,
-      "th3": null,
+      "th2": "ฉันต้องการรายละเอียดเพิ่มเติม",
+      "th3": "ต้องการข้อมูลเพิ่มเติม",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1218,8 +1218,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请给我看一下。",
       "th1": "กรุณาให้ฉันดูหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดให้ฉันดูหน่อย",
+      "th3": "กรุณาให้ฉันดูหน่อยนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1228,8 +1228,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我现在没时间。",
       "th1": "ตอนนี้ฉันไม่มีเวลา",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันไม่มีเวลา",
+      "th3": "ฉันไม่มีเวลาในตอนนี้",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1238,8 +1238,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我们现在开始吧。",
       "th1": "พวกเราเริ่มตอนนี้กันเลย",
-      "th2": null,
-      "th3": null,
+      "th2": "พวกเราเริ่มขณะนี้กันเลย",
+      "th3": "เริ่มตอนนี้กันเลย",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1248,8 +1248,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我们迷路了。",
       "th1": "พวกเราหลงทางแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "หลงทางแล้ว",
+      "th3": "พวกเราหลงทางแล้วนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1258,8 +1258,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请等我一下。",
       "th1": "กรุณารอฉันสักครู่",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดรอฉันสักครู่",
+      "th3": "กรุณารอฉันสักครู่นะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1268,8 +1268,8 @@
       "category": "daily_conversation_and_device",
       "zh": "希望明天会更好。",
       "th1": "หวังว่าพรุ่งนี้จะดีกว่านี้",
-      "th2": null,
-      "th3": null,
+      "th2": "หวังว่าวันพรุ่งนี้จะดีกว่านี้",
+      "th3": "หวังว่าพรุ่งนี้จะดีกว่านี้นะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1278,8 +1278,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我已经预订了酒店。",
       "th1": "ฉันจองโรงแรมไว้แล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "จองโรงแรมไว้แล้ว",
+      "th3": "ฉันจองโรงแรมไว้แล้วนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1288,8 +1288,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我同意你的看法。",
       "th1": "ฉันเห็นด้วยกับความคิดเห็นของคุณ",
-      "th2": null,
-      "th3": null,
+      "th2": "เห็นด้วยกับความคิดเห็นของคุณ",
+      "th3": "ฉันเห็นด้วยกับความคิดเห็นของคุณนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1298,8 +1298,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我正在等朋友。",
       "th1": "ฉันกำลังรอเพื่อน",
-      "th2": null,
-      "th3": null,
+      "th2": "กำลังรอเพื่อน",
+      "th3": "ฉันกำลังรอเพื่อนนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1308,8 +1308,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我明白你的意思。",
       "th1": "ฉันเข้าใจความหมายของคุณ",
-      "th2": null,
-      "th3": null,
+      "th2": "เข้าใจความหมายของคุณ",
+      "th3": "ฉันเข้าใจความหมายของคุณนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1318,8 +1318,8 @@
       "category": "daily_conversation_and_device",
       "zh": "这是什么东西？",
       "th1": "นี่คืออะไร",
-      "th2": null,
-      "th3": null,
+      "th2": "นี่คืออะไรนะ",
+      "th3": "นี่คืออะไรจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1328,8 +1328,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我看不清楚。",
       "th1": "ฉันมองไม่ชัด",
-      "th2": null,
-      "th3": null,
+      "th2": "มองไม่ชัด",
+      "th3": "ฉันมองไม่ชัดนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1338,8 +1338,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请先阅读说明书。",
       "th1": "กรุณาอ่านคู่มือก่อน",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดอ่านคู่มือก่อน",
+      "th3": "กรุณาอ่านคู่มือก่อนนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1348,8 +1348,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我想预订一个房间。",
       "th1": "ฉันอยากจองห้องพักหนึ่งห้อง",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากจองห้องพักหนึ่งห้อง",
+      "th3": "ฉันอยากจองห้องพักหนึ่งห้องนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1358,8 +1358,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我需要买一些日用品。",
       "th1": "ฉันต้องซื้อของใช้ประจำวัน",
-      "th2": null,
-      "th3": null,
+      "th2": "ต้องซื้อของใช้ประจำวัน",
+      "th3": "ฉันต้องซื้อของใช้ประจำวันนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1368,8 +1368,8 @@
       "category": "daily_conversation_and_device",
       "zh": "电脑运行得很慢。",
       "th1": "คอมพิวเตอร์ทำงานช้ามาก",
-      "th2": null,
-      "th3": null,
+      "th2": "เครื่องคอมพิวเตอร์ทำงานช้ามาก",
+      "th3": "คอมพิวเตอร์ทำงานช้ามากนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1378,8 +1378,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我听不懂。",
       "th1": "ฉันฟังไม่เข้าใจ",
-      "th2": null,
-      "th3": null,
+      "th2": "ฟังไม่เข้าใจ",
+      "th3": "ฉันฟังไม่เข้าใจนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1388,8 +1388,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我记得了。",
       "th1": "ฉันจำได้แล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "จำได้แล้ว",
+      "th3": "ฉันจำได้แล้วนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1398,8 +1398,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我想洗个澡。",
       "th1": "ฉันอยากอาบน้ำ",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากอาบน้ำ",
+      "th3": "ฉันอยากอาบน้ำนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1408,8 +1408,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请叫救护车。",
       "th1": "กรุณาเรียกรถพยาบาล",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดเรียกรถพยาบาล",
+      "th3": "กรุณาเรียกรถพยาบาลนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1418,8 +1418,8 @@
       "category": "daily_conversation_and_device",
       "zh": "最近的医院在哪里？",
       "th1": "โรงพยาบาลที่ใกล้ที่สุดอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "โรงพยาบาลที่ใกล้ที่สุดอยู่ที่ไหนนะ",
+      "th3": "โรงพยาบาลที่ใกล้ที่สุดอยู่ที่ไหนจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1428,8 +1428,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我会尽快回来。",
       "th1": "ฉันจะกลับมาให้เร็วที่สุด",
-      "th2": null,
-      "th3": null,
+      "th2": "จะกลับมาให้เร็วที่สุด",
+      "th3": "ฉันจะกลับมาให้เร็วที่สุดนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1438,8 +1438,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我已经完成了。",
       "th1": "ฉันทำเสร็จแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "ทำเสร็จแล้ว",
+      "th3": "ฉันทำเสร็จแล้วนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1448,8 +1448,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请检查一下。",
       "th1": "กรุณาตรวจสอบหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดตรวจสอบหน่อย",
+      "th3": "กรุณาเช็กหน่อย",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1458,8 +1458,8 @@
       "category": "daily_conversation_and_device",
       "zh": "让我考虑一下。",
       "th1": "ขอฉันคิดดูก่อน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอฉันคิดดูก่อนนะ",
+      "th3": "ขอฉันคิดดูก่อนจริง ๆ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1468,8 +1468,8 @@
       "category": "daily_conversation_and_device",
       "zh": "请跟我来。",
       "th1": "กรุณาตามฉันมา",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดตามฉันมา",
+      "th3": "กรุณาตามฉันมานะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1478,8 +1478,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我找不到我的护照。",
       "th1": "ฉันหาหนังสือเดินทางไม่เจอ",
-      "th2": null,
-      "th3": null,
+      "th2": "หาหนังสือเดินทางไม่เจอ",
+      "th3": "ฉันหาหนังสือเดินทางไม่เจอนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1488,8 +1488,8 @@
       "category": "daily_conversation_and_device",
       "zh": "我不知道该怎么办。",
       "th1": "ฉันไม่รู้ว่าควรทำอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ฉันไม่รู้ว่าควรจะทำอย่างไร",
+      "th3": "ไม่รู้ว่าควรทำอย่างไร",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1497,9 +1497,9 @@
       "section": "บทสนทนาและอุปกรณ์",
       "category": "daily_conversation_and_device",
       "zh": "有空给我打电话。",
-      "th1": "ว่างแล้วโทรหาฉันนะ",
-      "th2": null,
-      "th3": null,
+      "th1": "ถ้าว่างแล้ว โทรหาฉันนะ",
+      "th2": "ถ้าว่างแล้ว โทรหาฉันนะจริง ๆ",
+      "th3": "ถ้ามีเวลาว่างก็โทรหาฉันนะ",
       "frame": "daily_conversation_and_device"
     },
     {
@@ -1508,8 +1508,8 @@
       "category": "daily_conversation_and_device",
       "zh": "他还没有到。",
       "th1": "เขายังมาไม่ถึง",
-      "th2": null,
-      "th3": null,
+      "th2": "เขายังมาไม่ถึงนะ",
+      "th3": "เขายังมาไม่ถึงจริง ๆ",
       "frame": "daily_conversation_and_device"
     }
   ]

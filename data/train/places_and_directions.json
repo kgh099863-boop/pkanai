@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "template_augmented_from_handwritten_lexicon",
-    "review_status": "needs_human_review"
+    "generation_method": "template_augmented_from_handwritten_lexicon_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "places_and_directions",
       "zh": "我想去大学。",
       "th1": "ฉันอยากไปมหาวิทยาลัย",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปมหาวิทยาลัย",
+      "th3": "ฉันอยากไปมหาวิทยาลัยนะ",
       "frame": "places_and_directions"
     },
     {
@@ -28,8 +28,8 @@
       "category": "places_and_directions",
       "zh": "我现在在邮局。",
       "th1": "ตอนนี้ฉันอยู่ที่ที่ทำการไปรษณีย์",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ที่ทำการไปรษณีย์",
+      "th3": "ฉันอยู่ที่ที่ทำการไปรษณีย์ในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -38,8 +38,8 @@
       "category": "places_and_directions",
       "zh": "去家怎么走？",
       "th1": "ไปบ้านอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปบ้านอย่างไรนะ",
+      "th3": "ไปบ้านอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -48,8 +48,8 @@
       "category": "places_and_directions",
       "zh": "我现在在房间。",
       "th1": "ตอนนี้ฉันอยู่ที่ห้อง",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ห้อง",
+      "th3": "ฉันอยู่ที่ห้องในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -58,8 +58,8 @@
       "category": "places_and_directions",
       "zh": "我想去旅游景点。",
       "th1": "ฉันอยากไปสถานที่ท่องเที่ยว",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปสถานที่ท่องเที่ยว",
+      "th3": "ฉันอยากไปสถานที่ท่องเที่ยวนะ",
       "frame": "places_and_directions"
     },
     {
@@ -68,8 +68,8 @@
       "category": "places_and_directions",
       "zh": "我现在在学校。",
       "th1": "ตอนนี้ฉันอยู่ที่โรงเรียน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่โรงเรียน",
+      "th3": "ฉันอยู่ที่โรงเรียนในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -78,8 +78,8 @@
       "category": "places_and_directions",
       "zh": "请问，商店在哪里？",
       "th1": "ขอถามหน่อย ร้านค้าอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ร้านค้าอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ร้านค้าอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -88,8 +88,8 @@
       "category": "places_and_directions",
       "zh": "去出口怎么走？",
       "th1": "ไปทางออกอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปทางออกอย่างไรนะ",
+      "th3": "ไปทางออกอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -98,8 +98,8 @@
       "category": "places_and_directions",
       "zh": "从这里到停车场远吗？",
       "th1": "จากที่นี่ไปที่จอดรถไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปที่จอดรถไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปที่จอดรถไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -108,8 +108,8 @@
       "category": "places_and_directions",
       "zh": "请问，那里在哪里？",
       "th1": "ขอถามหน่อย ที่นั่นอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ที่นั่นอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ที่นั่นอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -118,8 +118,8 @@
       "category": "places_and_directions",
       "zh": "请问，市中心在哪里？",
       "th1": "ขอถามหน่อย ใจกลางเมืองอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ใจกลางเมืองอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ใจกลางเมืองอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -128,8 +128,8 @@
       "category": "places_and_directions",
       "zh": "我现在在入口。",
       "th1": "ตอนนี้ฉันอยู่ที่ทางเข้า",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ทางเข้า",
+      "th3": "ฉันอยู่ที่ทางเข้าในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -138,8 +138,8 @@
       "category": "places_and_directions",
       "zh": "我想去那里。",
       "th1": "ฉันอยากไปที่นั่น",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปที่นั่น",
+      "th3": "ฉันอยากไปที่นั่นนะ",
       "frame": "places_and_directions"
     },
     {
@@ -148,8 +148,8 @@
       "category": "places_and_directions",
       "zh": "我想去家。",
       "th1": "ฉันอยากไปบ้าน",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปบ้าน",
+      "th3": "ฉันอยากไปบ้านนะ",
       "frame": "places_and_directions"
     },
     {
@@ -158,8 +158,8 @@
       "category": "places_and_directions",
       "zh": "我想去出口。",
       "th1": "ฉันอยากไปทางออก",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปทางออก",
+      "th3": "ฉันอยากไปทางออกนะ",
       "frame": "places_and_directions"
     },
     {
@@ -168,8 +168,8 @@
       "category": "places_and_directions",
       "zh": "请问，海边在哪里？",
       "th1": "ขอถามหน่อย ชายทะเลอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ชายทะเลอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ชายทะเลอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -178,8 +178,8 @@
       "category": "places_and_directions",
       "zh": "我现在在厕所。",
       "th1": "ตอนนี้ฉันอยู่ที่ห้องน้ำ",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ห้องน้ำ",
+      "th3": "ฉันอยู่ที่ห้องน้ำในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -188,8 +188,8 @@
       "category": "places_and_directions",
       "zh": "我想去机场。",
       "th1": "ฉันอยากไปสนามบิน",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปสนามบิน",
+      "th3": "ฉันอยากไปสนามบินนะ",
       "frame": "places_and_directions"
     },
     {
@@ -198,8 +198,8 @@
       "category": "places_and_directions",
       "zh": "我想去银行。",
       "th1": "ฉันอยากไปธนาคาร",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปธนาคาร",
+      "th3": "ฉันอยากไปธนาคารนะ",
       "frame": "places_and_directions"
     },
     {
@@ -208,8 +208,8 @@
       "category": "places_and_directions",
       "zh": "去学校怎么走？",
       "th1": "ไปโรงเรียนอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปโรงเรียนอย่างไรนะ",
+      "th3": "ไปโรงเรียนอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -218,8 +218,8 @@
       "category": "places_and_directions",
       "zh": "去公园怎么走？",
       "th1": "ไปสวนสาธารณะอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปสวนสาธารณะอย่างไรนะ",
+      "th3": "ไปสวนสาธารณะอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -228,8 +228,8 @@
       "category": "places_and_directions",
       "zh": "我想去学校。",
       "th1": "ฉันอยากไปโรงเรียน",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปโรงเรียน",
+      "th3": "ฉันอยากไปโรงเรียนนะ",
       "frame": "places_and_directions"
     },
     {
@@ -238,8 +238,8 @@
       "category": "places_and_directions",
       "zh": "我想去寺庙。",
       "th1": "ฉันอยากไปวัด",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปวัด",
+      "th3": "ฉันอยากไปวัดนะ",
       "frame": "places_and_directions"
     },
     {
@@ -248,8 +248,8 @@
       "category": "places_and_directions",
       "zh": "请问，机场在哪里？",
       "th1": "ขอถามหน่อย สนามบินอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย สนามบินอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย สนามบินอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -258,8 +258,8 @@
       "category": "places_and_directions",
       "zh": "我现在在地铁站。",
       "th1": "ตอนนี้ฉันอยู่ที่สถานีรถไฟใต้ดิน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่สถานีรถไฟใต้ดิน",
+      "th3": "ฉันอยู่ที่สถานีรถไฟใต้ดินในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -268,8 +268,8 @@
       "category": "places_and_directions",
       "zh": "我想去邮局。",
       "th1": "ฉันอยากไปที่ทำการไปรษณีย์",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปที่ทำการไปรษณีย์",
+      "th3": "ฉันอยากไปที่ทำการไปรษณีย์นะ",
       "frame": "places_and_directions"
     },
     {
@@ -278,8 +278,8 @@
       "category": "places_and_directions",
       "zh": "去市场怎么走？",
       "th1": "ไปตลาดอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปตลาดอย่างไรนะ",
+      "th3": "ไปตลาดอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -288,8 +288,8 @@
       "category": "places_and_directions",
       "zh": "我现在在车站。",
       "th1": "ตอนนี้ฉันอยู่ที่สถานี",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่สถานี",
+      "th3": "ฉันอยู่ที่สถานีในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -298,8 +298,8 @@
       "category": "places_and_directions",
       "zh": "从这里到厕所远吗？",
       "th1": "จากที่นี่ไปห้องน้ำไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปห้องน้ำไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปห้องน้ำไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -308,8 +308,8 @@
       "category": "places_and_directions",
       "zh": "从这里到药店远吗？",
       "th1": "จากที่นี่ไปร้านขายยาไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปร้านขายยาไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปร้านขายยาไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -318,8 +318,8 @@
       "category": "places_and_directions",
       "zh": "我现在在咖啡馆。",
       "th1": "ตอนนี้ฉันอยู่ที่ร้านกาแฟ",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ร้านกาแฟ",
+      "th3": "ฉันอยู่ที่ร้านกาแฟในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -328,8 +328,8 @@
       "category": "places_and_directions",
       "zh": "我现在在电影院。",
       "th1": "ตอนนี้ฉันอยู่ที่โรงภาพยนตร์",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่โรงภาพยนตร์",
+      "th3": "ฉันอยู่ที่โรงภาพยนตร์ในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -338,8 +338,8 @@
       "category": "places_and_directions",
       "zh": "我现在在洗手间。",
       "th1": "ตอนนี้ฉันอยู่ที่ห้องน้ำ",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ห้องน้ำ",
+      "th3": "ฉันอยู่ที่ห้องน้ำในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -348,8 +348,8 @@
       "category": "places_and_directions",
       "zh": "从这里到医院远吗？",
       "th1": "จากที่นี่ไปโรงพยาบาลไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปโรงพยาบาลไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปโรงพยาบาลไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -358,8 +358,8 @@
       "category": "places_and_directions",
       "zh": "请问，药店在哪里？",
       "th1": "ขอถามหน่อย ร้านขายยาอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ร้านขายยาอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ร้านขายยาอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -368,8 +368,8 @@
       "category": "places_and_directions",
       "zh": "请问，银行在哪里？",
       "th1": "ขอถามหน่อย ธนาคารอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ธนาคารอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ธนาคารอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -378,8 +378,8 @@
       "category": "places_and_directions",
       "zh": "请问，这里在哪里？",
       "th1": "ขอถามหน่อย ที่นี่อยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ที่นี่อยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ที่นี่อยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -388,8 +388,8 @@
       "category": "places_and_directions",
       "zh": "从这里到公园远吗？",
       "th1": "จากที่นี่ไปสวนสาธารณะไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปสวนสาธารณะไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปสวนสาธารณะไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -398,8 +398,8 @@
       "category": "places_and_directions",
       "zh": "从这里到出口远吗？",
       "th1": "จากที่นี่ไปทางออกไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปทางออกไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปทางออกไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -408,8 +408,8 @@
       "category": "places_and_directions",
       "zh": "请问，寺庙在哪里？",
       "th1": "ขอถามหน่อย วัดอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย วัดอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย วัดอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -418,8 +418,8 @@
       "category": "places_and_directions",
       "zh": "我现在在酒店。",
       "th1": "ตอนนี้ฉันอยู่ที่โรงแรม",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่โรงแรม",
+      "th3": "ฉันอยู่ที่โรงแรมในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -428,8 +428,8 @@
       "category": "places_and_directions",
       "zh": "从这里到警察局远吗？",
       "th1": "จากที่นี่ไปสถานีตำรวจไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปสถานีตำรวจไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปสถานีตำรวจไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -438,8 +438,8 @@
       "category": "places_and_directions",
       "zh": "我现在在火车站。",
       "th1": "ตอนนี้ฉันอยู่ที่สถานีรถไฟ",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่สถานีรถไฟ",
+      "th3": "ฉันอยู่ที่สถานีรถไฟในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -448,8 +448,8 @@
       "category": "places_and_directions",
       "zh": "从这里到咖啡馆远吗？",
       "th1": "จากที่นี่ไปร้านกาแฟไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปร้านกาแฟไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปร้านกาแฟไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -458,8 +458,8 @@
       "category": "places_and_directions",
       "zh": "去咖啡馆怎么走？",
       "th1": "ไปร้านกาแฟอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปร้านกาแฟอย่างไรนะ",
+      "th3": "ไปร้านกาแฟอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -468,8 +468,8 @@
       "category": "places_and_directions",
       "zh": "去寺庙怎么走？",
       "th1": "ไปวัดอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปวัดอย่างไรนะ",
+      "th3": "ไปวัดอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -478,8 +478,8 @@
       "category": "places_and_directions",
       "zh": "去市中心怎么走？",
       "th1": "ไปใจกลางเมืองอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปใจกลางเมืองอย่างไรนะ",
+      "th3": "ไปใจกลางเมืองอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -488,8 +488,8 @@
       "category": "places_and_directions",
       "zh": "去银行怎么走？",
       "th1": "ไปธนาคารอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปธนาคารอย่างไรนะ",
+      "th3": "ไปธนาคารอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -498,8 +498,8 @@
       "category": "places_and_directions",
       "zh": "我现在在市场。",
       "th1": "ตอนนี้ฉันอยู่ที่ตลาด",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ตลาด",
+      "th3": "ฉันอยู่ที่ตลาดในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -508,8 +508,8 @@
       "category": "places_and_directions",
       "zh": "从这里到海边远吗？",
       "th1": "จากที่นี่ไปชายทะเลไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปชายทะเลไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปชายทะเลไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -518,8 +518,8 @@
       "category": "places_and_directions",
       "zh": "去这里怎么走？",
       "th1": "ไปที่นี่อย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปที่นี่อย่างไรนะ",
+      "th3": "ไปที่นี่อย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -528,8 +528,8 @@
       "category": "places_and_directions",
       "zh": "我想去公园。",
       "th1": "ฉันอยากไปสวนสาธารณะ",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปสวนสาธารณะ",
+      "th3": "ฉันอยากไปสวนสาธารณะนะ",
       "frame": "places_and_directions"
     },
     {
@@ -538,8 +538,8 @@
       "category": "places_and_directions",
       "zh": "去厕所怎么走？",
       "th1": "ไปห้องน้ำอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปห้องน้ำอย่างไรนะ",
+      "th3": "ไปห้องน้ำอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -548,8 +548,8 @@
       "category": "places_and_directions",
       "zh": "我现在在海边。",
       "th1": "ตอนนี้ฉันอยู่ที่ชายทะเล",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ชายทะเล",
+      "th3": "ฉันอยู่ที่ชายทะเลในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -558,8 +558,8 @@
       "category": "places_and_directions",
       "zh": "从这里到汽车站远吗？",
       "th1": "จากที่นี่ไปสถานีรถโดยสารไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปสถานีรถโดยสารไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปสถานีรถโดยสารไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -568,8 +568,8 @@
       "category": "places_and_directions",
       "zh": "从这里到市场远吗？",
       "th1": "จากที่นี่ไปตลาดไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปตลาดไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปตลาดไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -578,8 +578,8 @@
       "category": "places_and_directions",
       "zh": "去地铁站怎么走？",
       "th1": "ไปสถานีรถไฟใต้ดินอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปสถานีรถไฟใต้ดินอย่างไรนะ",
+      "th3": "ไปสถานีรถไฟใต้ดินอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -588,8 +588,8 @@
       "category": "places_and_directions",
       "zh": "请问，车站在哪里？",
       "th1": "ขอถามหน่อย สถานีอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย สถานีอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย สถานีอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -598,8 +598,8 @@
       "category": "places_and_directions",
       "zh": "去那里怎么走？",
       "th1": "ไปที่นั่นอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปที่นั่นอย่างไรนะ",
+      "th3": "ไปที่นั่นอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -608,8 +608,8 @@
       "category": "places_and_directions",
       "zh": "我想去海边。",
       "th1": "ฉันอยากไปชายทะเล",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปชายทะเล",
+      "th3": "ฉันอยากไปชายทะเลนะ",
       "frame": "places_and_directions"
     },
     {
@@ -618,8 +618,8 @@
       "category": "places_and_directions",
       "zh": "我现在在警察局。",
       "th1": "ตอนนี้ฉันอยู่ที่สถานีตำรวจ",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่สถานีตำรวจ",
+      "th3": "ฉันอยู่ที่สถานีตำรวจในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -628,8 +628,8 @@
       "category": "places_and_directions",
       "zh": "我现在在旅游景点。",
       "th1": "ตอนนี้ฉันอยู่ที่สถานที่ท่องเที่ยว",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่สถานที่ท่องเที่ยว",
+      "th3": "ฉันอยู่ที่สถานที่ท่องเที่ยวในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -638,8 +638,8 @@
       "category": "places_and_directions",
       "zh": "请问，厕所在哪里？",
       "th1": "ขอถามหน่อย ห้องน้ำอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ห้องน้ำอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ห้องน้ำอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -648,8 +648,8 @@
       "category": "places_and_directions",
       "zh": "我想去市场。",
       "th1": "ฉันอยากไปตลาด",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปตลาด",
+      "th3": "ฉันอยากไปตลาดนะ",
       "frame": "places_and_directions"
     },
     {
@@ -658,8 +658,8 @@
       "category": "places_and_directions",
       "zh": "请问，图书馆在哪里？",
       "th1": "ขอถามหน่อย ห้องสมุดอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ห้องสมุดอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ห้องสมุดอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -668,8 +668,8 @@
       "category": "places_and_directions",
       "zh": "去大学怎么走？",
       "th1": "ไปมหาวิทยาลัยอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปมหาวิทยาลัยอย่างไรนะ",
+      "th3": "ไปมหาวิทยาลัยอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -678,8 +678,8 @@
       "category": "places_and_directions",
       "zh": "请问，洗手间在哪里？",
       "th1": "ขอถามหน่อย ห้องน้ำอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ห้องน้ำอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ห้องน้ำอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -688,8 +688,8 @@
       "category": "places_and_directions",
       "zh": "去入口怎么走？",
       "th1": "ไปทางเข้าอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปทางเข้าอย่างไรนะ",
+      "th3": "ไปทางเข้าอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -698,8 +698,8 @@
       "category": "places_and_directions",
       "zh": "请问，公园在哪里？",
       "th1": "ขอถามหน่อย สวนสาธารณะอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย สวนสาธารณะอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย สวนสาธารณะอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -708,8 +708,8 @@
       "category": "places_and_directions",
       "zh": "去停车场怎么走？",
       "th1": "ไปที่จอดรถอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปที่จอดรถอย่างไรนะ",
+      "th3": "ไปที่จอดรถอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -718,8 +718,8 @@
       "category": "places_and_directions",
       "zh": "我想去图书馆。",
       "th1": "ฉันอยากไปห้องสมุด",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปห้องสมุด",
+      "th3": "ฉันอยากไปห้องสมุดนะ",
       "frame": "places_and_directions"
     },
     {
@@ -728,8 +728,8 @@
       "category": "places_and_directions",
       "zh": "我现在在图书馆。",
       "th1": "ตอนนี้ฉันอยู่ที่ห้องสมุด",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ห้องสมุด",
+      "th3": "ฉันอยู่ที่ห้องสมุดในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -738,8 +738,8 @@
       "category": "places_and_directions",
       "zh": "去机场怎么走？",
       "th1": "ไปสนามบินอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปสนามบินอย่างไรนะ",
+      "th3": "ไปสนามบินอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -748,8 +748,8 @@
       "category": "places_and_directions",
       "zh": "我现在在这里。",
       "th1": "ตอนนี้ฉันอยู่ที่ที่นี่",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ที่นี่",
+      "th3": "ฉันอยู่ที่ที่นี่ในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -758,8 +758,8 @@
       "category": "places_and_directions",
       "zh": "我想去停车场。",
       "th1": "ฉันอยากไปที่จอดรถ",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปที่จอดรถ",
+      "th3": "ฉันอยากไปที่จอดรถนะ",
       "frame": "places_and_directions"
     },
     {
@@ -768,8 +768,8 @@
       "category": "places_and_directions",
       "zh": "去电影院怎么走？",
       "th1": "ไปโรงภาพยนตร์อย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปโรงภาพยนตร์อย่างไรนะ",
+      "th3": "ไปโรงภาพยนตร์อย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -778,8 +778,8 @@
       "category": "places_and_directions",
       "zh": "我现在在医院。",
       "th1": "ตอนนี้ฉันอยู่ที่โรงพยาบาล",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่โรงพยาบาล",
+      "th3": "ฉันอยู่ที่โรงพยาบาลในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -788,8 +788,8 @@
       "category": "places_and_directions",
       "zh": "请问，房间在哪里？",
       "th1": "ขอถามหน่อย ห้องอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ห้องอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ห้องอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -798,8 +798,8 @@
       "category": "places_and_directions",
       "zh": "我想去咖啡馆。",
       "th1": "ฉันอยากไปร้านกาแฟ",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปร้านกาแฟ",
+      "th3": "ฉันอยากไปร้านกาแฟนะ",
       "frame": "places_and_directions"
     },
     {
@@ -808,8 +808,8 @@
       "category": "places_and_directions",
       "zh": "去车站怎么走？",
       "th1": "ไปสถานีอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปสถานีอย่างไรนะ",
+      "th3": "ไปสถานีอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -818,8 +818,8 @@
       "category": "places_and_directions",
       "zh": "我想去药店。",
       "th1": "ฉันอยากไปร้านขายยา",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปร้านขายยา",
+      "th3": "ฉันอยากไปร้านขายยานะ",
       "frame": "places_and_directions"
     },
     {
@@ -828,8 +828,8 @@
       "category": "places_and_directions",
       "zh": "去汽车站怎么走？",
       "th1": "ไปสถานีรถโดยสารอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปสถานีรถโดยสารอย่างไรนะ",
+      "th3": "ไปสถานีรถโดยสารอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -838,8 +838,8 @@
       "category": "places_and_directions",
       "zh": "从这里到那里远吗？",
       "th1": "จากที่นี่ไปที่นั่นไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปที่นั่นไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปที่นั่นไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -848,8 +848,8 @@
       "category": "places_and_directions",
       "zh": "去房间怎么走？",
       "th1": "ไปห้องอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปห้องอย่างไรนะ",
+      "th3": "ไปห้องอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -858,8 +858,8 @@
       "category": "places_and_directions",
       "zh": "从这里到寺庙远吗？",
       "th1": "จากที่นี่ไปวัดไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปวัดไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปวัดไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -868,8 +868,8 @@
       "category": "places_and_directions",
       "zh": "我想去厕所。",
       "th1": "ฉันอยากไปห้องน้ำ",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปห้องน้ำ",
+      "th3": "ฉันอยากไปห้องน้ำนะ",
       "frame": "places_and_directions"
     },
     {
@@ -878,8 +878,8 @@
       "category": "places_and_directions",
       "zh": "去医院怎么走？",
       "th1": "ไปโรงพยาบาลอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปโรงพยาบาลอย่างไรนะ",
+      "th3": "ไปโรงพยาบาลอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -888,8 +888,8 @@
       "category": "places_and_directions",
       "zh": "我想去市中心。",
       "th1": "ฉันอยากไปใจกลางเมือง",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปใจกลางเมือง",
+      "th3": "ฉันอยากไปใจกลางเมืองนะ",
       "frame": "places_and_directions"
     },
     {
@@ -898,8 +898,8 @@
       "category": "places_and_directions",
       "zh": "从这里到学校远吗？",
       "th1": "จากที่นี่ไปโรงเรียนไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปโรงเรียนไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปโรงเรียนไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -908,8 +908,8 @@
       "category": "places_and_directions",
       "zh": "我想去医院。",
       "th1": "ฉันอยากไปโรงพยาบาล",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปโรงพยาบาล",
+      "th3": "ฉันอยากไปโรงพยาบาลนะ",
       "frame": "places_and_directions"
     },
     {
@@ -918,8 +918,8 @@
       "category": "places_and_directions",
       "zh": "从这里到入口远吗？",
       "th1": "จากที่นี่ไปทางเข้าไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปทางเข้าไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปทางเข้าไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -928,8 +928,8 @@
       "category": "places_and_directions",
       "zh": "去商店怎么走？",
       "th1": "ไปร้านค้าอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปร้านค้าอย่างไรนะ",
+      "th3": "ไปร้านค้าอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -938,8 +938,8 @@
       "category": "places_and_directions",
       "zh": "我想去入口。",
       "th1": "ฉันอยากไปทางเข้า",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปทางเข้า",
+      "th3": "ฉันอยากไปทางเข้านะ",
       "frame": "places_and_directions"
     },
     {
@@ -948,8 +948,8 @@
       "category": "places_and_directions",
       "zh": "从这里到图书馆远吗？",
       "th1": "จากที่นี่ไปห้องสมุดไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปห้องสมุดไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปห้องสมุดไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -958,8 +958,8 @@
       "category": "places_and_directions",
       "zh": "请问，大学在哪里？",
       "th1": "ขอถามหน่อย มหาวิทยาลัยอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย มหาวิทยาลัยอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย มหาวิทยาลัยอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -968,8 +968,8 @@
       "category": "places_and_directions",
       "zh": "我现在在公园。",
       "th1": "ตอนนี้ฉันอยู่ที่สวนสาธารณะ",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่สวนสาธารณะ",
+      "th3": "ฉันอยู่ที่สวนสาธารณะในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -978,8 +978,8 @@
       "category": "places_and_directions",
       "zh": "我现在在家。",
       "th1": "ตอนนี้ฉันอยู่ที่บ้าน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่บ้าน",
+      "th3": "ฉันอยู่ที่บ้านในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -988,8 +988,8 @@
       "category": "places_and_directions",
       "zh": "从这里到酒店远吗？",
       "th1": "จากที่นี่ไปโรงแรมไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปโรงแรมไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปโรงแรมไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -998,8 +998,8 @@
       "category": "places_and_directions",
       "zh": "去办公室怎么走？",
       "th1": "ไปสำนักงานอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปสำนักงานอย่างไรนะ",
+      "th3": "ไปสำนักงานอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1008,8 +1008,8 @@
       "category": "places_and_directions",
       "zh": "从这里到家远吗？",
       "th1": "จากที่นี่ไปบ้านไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปบ้านไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปบ้านไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1018,8 +1018,8 @@
       "category": "places_and_directions",
       "zh": "请问，地铁站在哪里？",
       "th1": "ขอถามหน่อย สถานีรถไฟใต้ดินอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย สถานีรถไฟใต้ดินอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย สถานีรถไฟใต้ดินอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1028,8 +1028,8 @@
       "category": "places_and_directions",
       "zh": "去警察局怎么走？",
       "th1": "ไปสถานีตำรวจอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปสถานีตำรวจอย่างไรนะ",
+      "th3": "ไปสถานีตำรวจอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1038,8 +1038,8 @@
       "category": "places_and_directions",
       "zh": "我想去商店。",
       "th1": "ฉันอยากไปร้านค้า",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปร้านค้า",
+      "th3": "ฉันอยากไปร้านค้านะ",
       "frame": "places_and_directions"
     },
     {
@@ -1048,8 +1048,8 @@
       "category": "places_and_directions",
       "zh": "请问，旅游景点在哪里？",
       "th1": "ขอถามหน่อย สถานที่ท่องเที่ยวอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย สถานที่ท่องเที่ยวอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย สถานที่ท่องเที่ยวอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1058,8 +1058,8 @@
       "category": "places_and_directions",
       "zh": "请问，酒店在哪里？",
       "th1": "ขอถามหน่อย โรงแรมอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย โรงแรมอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย โรงแรมอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1068,8 +1068,8 @@
       "category": "places_and_directions",
       "zh": "从这里到大学远吗？",
       "th1": "จากที่นี่ไปมหาวิทยาลัยไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปมหาวิทยาลัยไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปมหาวิทยาลัยไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1078,8 +1078,8 @@
       "category": "places_and_directions",
       "zh": "我现在在机场。",
       "th1": "ตอนนี้ฉันอยู่ที่สนามบิน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่สนามบิน",
+      "th3": "ฉันอยู่ที่สนามบินในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1088,8 +1088,8 @@
       "category": "places_and_directions",
       "zh": "从这里到机场远吗？",
       "th1": "จากที่นี่ไปสนามบินไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปสนามบินไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปสนามบินไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1098,8 +1098,8 @@
       "category": "places_and_directions",
       "zh": "我现在在那里。",
       "th1": "ตอนนี้ฉันอยู่ที่ที่นั่น",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ที่นั่น",
+      "th3": "ฉันอยู่ที่ที่นั่นในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1108,8 +1108,8 @@
       "category": "places_and_directions",
       "zh": "去邮局怎么走？",
       "th1": "ไปที่ทำการไปรษณีย์อย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปที่ทำการไปรษณีย์อย่างไรนะ",
+      "th3": "ไปที่ทำการไปรษณีย์อย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1118,8 +1118,8 @@
       "category": "places_and_directions",
       "zh": "去海边怎么走？",
       "th1": "ไปชายทะเลอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปชายทะเลอย่างไรนะ",
+      "th3": "ไปชายทะเลอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1128,8 +1128,8 @@
       "category": "places_and_directions",
       "zh": "我现在在超市。",
       "th1": "ตอนนี้ฉันอยู่ที่ซูเปอร์มาร์เก็ต",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ซูเปอร์มาร์เก็ต",
+      "th3": "ฉันอยู่ที่ซูเปอร์มาร์เก็ตในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1138,8 +1138,8 @@
       "category": "places_and_directions",
       "zh": "从这里到车站远吗？",
       "th1": "จากที่นี่ไปสถานีไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปสถานีไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปสถานีไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1148,8 +1148,8 @@
       "category": "places_and_directions",
       "zh": "请问，汽车站在哪里？",
       "th1": "ขอถามหน่อย สถานีรถโดยสารอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย สถานีรถโดยสารอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย สถานีรถโดยสารอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1158,8 +1158,8 @@
       "category": "places_and_directions",
       "zh": "从这里到电影院远吗？",
       "th1": "จากที่นี่ไปโรงภาพยนตร์ไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปโรงภาพยนตร์ไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปโรงภาพยนตร์ไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1168,8 +1168,8 @@
       "category": "places_and_directions",
       "zh": "从这里到餐厅远吗？",
       "th1": "จากที่นี่ไปร้านอาหารไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปร้านอาหารไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปร้านอาหารไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1178,8 +1178,8 @@
       "category": "places_and_directions",
       "zh": "我现在在大学。",
       "th1": "ตอนนี้ฉันอยู่ที่มหาวิทยาลัย",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่มหาวิทยาลัย",
+      "th3": "ฉันอยู่ที่มหาวิทยาลัยในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1188,8 +1188,8 @@
       "category": "places_and_directions",
       "zh": "我现在在药店。",
       "th1": "ตอนนี้ฉันอยู่ที่ร้านขายยา",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ร้านขายยา",
+      "th3": "ฉันอยู่ที่ร้านขายยาในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1198,8 +1198,8 @@
       "category": "places_and_directions",
       "zh": "从这里到邮局远吗？",
       "th1": "จากที่นี่ไปที่ทำการไปรษณีย์ไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปที่ทำการไปรษณีย์ไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปที่ทำการไปรษณีย์ไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1208,8 +1208,8 @@
       "category": "places_and_directions",
       "zh": "从这里到超市远吗？",
       "th1": "จากที่นี่ไปซูเปอร์มาร์เก็ตไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปซูเปอร์มาร์เก็ตไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปซูเปอร์มาร์เก็ตไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1218,8 +1218,8 @@
       "category": "places_and_directions",
       "zh": "请问，市场在哪里？",
       "th1": "ขอถามหน่อย ตลาดอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ตลาดอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ตลาดอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1228,8 +1228,8 @@
       "category": "places_and_directions",
       "zh": "我想去警察局。",
       "th1": "ฉันอยากไปสถานีตำรวจ",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปสถานีตำรวจ",
+      "th3": "ฉันอยากไปสถานีตำรวจนะ",
       "frame": "places_and_directions"
     },
     {
@@ -1238,8 +1238,8 @@
       "category": "places_and_directions",
       "zh": "请问，入口在哪里？",
       "th1": "ขอถามหน่อย ทางเข้าอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ทางเข้าอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ทางเข้าอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1248,8 +1248,8 @@
       "category": "places_and_directions",
       "zh": "请问，学校在哪里？",
       "th1": "ขอถามหน่อย โรงเรียนอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย โรงเรียนอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย โรงเรียนอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1258,8 +1258,8 @@
       "category": "places_and_directions",
       "zh": "我想去酒店。",
       "th1": "ฉันอยากไปโรงแรม",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปโรงแรม",
+      "th3": "ฉันอยากไปโรงแรมนะ",
       "frame": "places_and_directions"
     },
     {
@@ -1268,8 +1268,8 @@
       "category": "places_and_directions",
       "zh": "请问，餐厅在哪里？",
       "th1": "ขอถามหน่อย ร้านอาหารอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ร้านอาหารอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ร้านอาหารอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1278,8 +1278,8 @@
       "category": "places_and_directions",
       "zh": "我现在在出口。",
       "th1": "ตอนนี้ฉันอยู่ที่ทางออก",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ทางออก",
+      "th3": "ฉันอยู่ที่ทางออกในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1288,8 +1288,8 @@
       "category": "places_and_directions",
       "zh": "去药店怎么走？",
       "th1": "ไปร้านขายยาอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปร้านขายยาอย่างไรนะ",
+      "th3": "ไปร้านขายยาอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1298,8 +1298,8 @@
       "category": "places_and_directions",
       "zh": "我现在在停车场。",
       "th1": "ตอนนี้ฉันอยู่ที่ที่จอดรถ",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ที่จอดรถ",
+      "th3": "ฉันอยู่ที่ที่จอดรถในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1308,8 +1308,8 @@
       "category": "places_and_directions",
       "zh": "去旅游景点怎么走？",
       "th1": "ไปสถานที่ท่องเที่ยวอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปสถานที่ท่องเที่ยวอย่างไรนะ",
+      "th3": "ไปสถานที่ท่องเที่ยวอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1318,8 +1318,8 @@
       "category": "places_and_directions",
       "zh": "请问，电影院在哪里？",
       "th1": "ขอถามหน่อย โรงภาพยนตร์อยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย โรงภาพยนตร์อยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย โรงภาพยนตร์อยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1328,8 +1328,8 @@
       "category": "places_and_directions",
       "zh": "我想去车站。",
       "th1": "ฉันอยากไปสถานี",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปสถานี",
+      "th3": "ฉันอยากไปสถานีนะ",
       "frame": "places_and_directions"
     },
     {
@@ -1338,8 +1338,8 @@
       "category": "places_and_directions",
       "zh": "我现在在商店。",
       "th1": "ตอนนี้ฉันอยู่ที่ร้านค้า",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ร้านค้า",
+      "th3": "ฉันอยู่ที่ร้านค้าในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1348,8 +1348,8 @@
       "category": "places_and_directions",
       "zh": "请问，邮局在哪里？",
       "th1": "ขอถามหน่อย ที่ทำการไปรษณีย์อยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ที่ทำการไปรษณีย์อยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ที่ทำการไปรษณีย์อยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1358,8 +1358,8 @@
       "category": "places_and_directions",
       "zh": "去餐厅怎么走？",
       "th1": "ไปร้านอาหารอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปร้านอาหารอย่างไรนะ",
+      "th3": "ไปร้านอาหารอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1368,8 +1368,8 @@
       "category": "places_and_directions",
       "zh": "我现在在汽车站。",
       "th1": "ตอนนี้ฉันอยู่ที่สถานีรถโดยสาร",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่สถานีรถโดยสาร",
+      "th3": "ฉันอยู่ที่สถานีรถโดยสารในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1378,8 +1378,8 @@
       "category": "places_and_directions",
       "zh": "我现在在寺庙。",
       "th1": "ตอนนี้ฉันอยู่ที่วัด",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่วัด",
+      "th3": "ฉันอยู่ที่วัดในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1388,8 +1388,8 @@
       "category": "places_and_directions",
       "zh": "从这里到洗手间远吗？",
       "th1": "จากที่นี่ไปห้องน้ำไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปห้องน้ำไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปห้องน้ำไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1398,8 +1398,8 @@
       "category": "places_and_directions",
       "zh": "请问，出口在哪里？",
       "th1": "ขอถามหน่อย ทางออกอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ทางออกอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ทางออกอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1408,8 +1408,8 @@
       "category": "places_and_directions",
       "zh": "请问，医院在哪里？",
       "th1": "ขอถามหน่อย โรงพยาบาลอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย โรงพยาบาลอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย โรงพยาบาลอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1418,8 +1418,8 @@
       "category": "places_and_directions",
       "zh": "从这里到地铁站远吗？",
       "th1": "จากที่นี่ไปสถานีรถไฟใต้ดินไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปสถานีรถไฟใต้ดินไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปสถานีรถไฟใต้ดินไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1428,8 +1428,8 @@
       "category": "places_and_directions",
       "zh": "请问，家在哪里？",
       "th1": "ขอถามหน่อย บ้านอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย บ้านอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย บ้านอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1438,8 +1438,8 @@
       "category": "places_and_directions",
       "zh": "从这里到商店远吗？",
       "th1": "จากที่นี่ไปร้านค้าไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปร้านค้าไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปร้านค้าไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1448,8 +1448,8 @@
       "category": "places_and_directions",
       "zh": "从这里到办公室远吗？",
       "th1": "จากที่นี่ไปสำนักงานไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปสำนักงานไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปสำนักงานไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1458,8 +1458,8 @@
       "category": "places_and_directions",
       "zh": "从这里到市中心远吗？",
       "th1": "จากที่นี่ไปใจกลางเมืองไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปใจกลางเมืองไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปใจกลางเมืองไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1468,8 +1468,8 @@
       "category": "places_and_directions",
       "zh": "去酒店怎么走？",
       "th1": "ไปโรงแรมอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปโรงแรมอย่างไรนะ",
+      "th3": "ไปโรงแรมอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1478,8 +1478,8 @@
       "category": "places_and_directions",
       "zh": "我想去房间。",
       "th1": "ฉันอยากไปห้อง",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปห้อง",
+      "th3": "ฉันอยากไปห้องนะ",
       "frame": "places_and_directions"
     },
     {
@@ -1488,8 +1488,8 @@
       "category": "places_and_directions",
       "zh": "从这里到房间远吗？",
       "th1": "จากที่นี่ไปห้องไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปห้องไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปห้องไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1498,8 +1498,8 @@
       "category": "places_and_directions",
       "zh": "我想去办公室。",
       "th1": "ฉันอยากไปสำนักงาน",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปสำนักงาน",
+      "th3": "ฉันอยากไปสำนักงานนะ",
       "frame": "places_and_directions"
     },
     {
@@ -1508,8 +1508,8 @@
       "category": "places_and_directions",
       "zh": "请问，停车场在哪里？",
       "th1": "ขอถามหน่อย ที่จอดรถอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ที่จอดรถอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ที่จอดรถอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1518,8 +1518,8 @@
       "category": "places_and_directions",
       "zh": "去超市怎么走？",
       "th1": "ไปซูเปอร์มาร์เก็ตอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปซูเปอร์มาร์เก็ตอย่างไรนะ",
+      "th3": "ไปซูเปอร์มาร์เก็ตอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1528,8 +1528,8 @@
       "category": "places_and_directions",
       "zh": "请问，咖啡馆在哪里？",
       "th1": "ขอถามหน่อย ร้านกาแฟอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ร้านกาแฟอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ร้านกาแฟอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1538,8 +1538,8 @@
       "category": "places_and_directions",
       "zh": "从这里到旅游景点远吗？",
       "th1": "จากที่นี่ไปสถานที่ท่องเที่ยวไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปสถานที่ท่องเที่ยวไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปสถานที่ท่องเที่ยวไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1548,8 +1548,8 @@
       "category": "places_and_directions",
       "zh": "请问，超市在哪里？",
       "th1": "ขอถามหน่อย ซูเปอร์มาร์เก็ตอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย ซูเปอร์มาร์เก็ตอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย ซูเปอร์มาร์เก็ตอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1558,8 +1558,8 @@
       "category": "places_and_directions",
       "zh": "我现在在办公室。",
       "th1": "ตอนนี้ฉันอยู่ที่สำนักงาน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่สำนักงาน",
+      "th3": "ฉันอยู่ที่สำนักงานในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1568,8 +1568,8 @@
       "category": "places_and_directions",
       "zh": "从这里到银行远吗？",
       "th1": "จากที่นี่ไปธนาคารไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปธนาคารไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปธนาคารไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1578,8 +1578,8 @@
       "category": "places_and_directions",
       "zh": "我现在在市中心。",
       "th1": "ตอนนี้ฉันอยู่ที่ใจกลางเมือง",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ใจกลางเมือง",
+      "th3": "ฉันอยู่ที่ใจกลางเมืองในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1588,8 +1588,8 @@
       "category": "places_and_directions",
       "zh": "请问，火车站在哪里？",
       "th1": "ขอถามหน่อย สถานีรถไฟอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย สถานีรถไฟอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย สถานีรถไฟอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1598,8 +1598,8 @@
       "category": "places_and_directions",
       "zh": "我想去这里。",
       "th1": "ฉันอยากไปที่นี่",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปที่นี่",
+      "th3": "ฉันอยากไปที่นี่นะ",
       "frame": "places_and_directions"
     },
     {
@@ -1608,8 +1608,8 @@
       "category": "places_and_directions",
       "zh": "去图书馆怎么走？",
       "th1": "ไปห้องสมุดอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปห้องสมุดอย่างไรนะ",
+      "th3": "ไปห้องสมุดอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1618,8 +1618,8 @@
       "category": "places_and_directions",
       "zh": "去洗手间怎么走？",
       "th1": "ไปห้องน้ำอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปห้องน้ำอย่างไรนะ",
+      "th3": "ไปห้องน้ำอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1628,8 +1628,8 @@
       "category": "places_and_directions",
       "zh": "去火车站怎么走？",
       "th1": "ไปสถานีรถไฟอย่างไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไปสถานีรถไฟอย่างไรนะ",
+      "th3": "ไปสถานีรถไฟอย่างไรจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1638,8 +1638,8 @@
       "category": "places_and_directions",
       "zh": "我想去超市。",
       "th1": "ฉันอยากไปซูเปอร์มาร์เก็ต",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปซูเปอร์มาร์เก็ต",
+      "th3": "ฉันอยากไปซูเปอร์มาร์เก็ตนะ",
       "frame": "places_and_directions"
     },
     {
@@ -1648,8 +1648,8 @@
       "category": "places_and_directions",
       "zh": "我想去汽车站。",
       "th1": "ฉันอยากไปสถานีรถโดยสาร",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปสถานีรถโดยสาร",
+      "th3": "ฉันอยากไปสถานีรถโดยสารนะ",
       "frame": "places_and_directions"
     },
     {
@@ -1658,8 +1658,8 @@
       "category": "places_and_directions",
       "zh": "请问，警察局在哪里？",
       "th1": "ขอถามหน่อย สถานีตำรวจอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย สถานีตำรวจอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย สถานีตำรวจอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1668,8 +1668,8 @@
       "category": "places_and_directions",
       "zh": "我想去火车站。",
       "th1": "ฉันอยากไปสถานีรถไฟ",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปสถานีรถไฟ",
+      "th3": "ฉันอยากไปสถานีรถไฟนะ",
       "frame": "places_and_directions"
     },
     {
@@ -1678,8 +1678,8 @@
       "category": "places_and_directions",
       "zh": "我想去电影院。",
       "th1": "ฉันอยากไปโรงภาพยนตร์",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปโรงภาพยนตร์",
+      "th3": "ฉันอยากไปโรงภาพยนตร์นะ",
       "frame": "places_and_directions"
     },
     {
@@ -1688,8 +1688,8 @@
       "category": "places_and_directions",
       "zh": "我想去地铁站。",
       "th1": "ฉันอยากไปสถานีรถไฟใต้ดิน",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปสถานีรถไฟใต้ดิน",
+      "th3": "ฉันอยากไปสถานีรถไฟใต้ดินนะ",
       "frame": "places_and_directions"
     },
     {
@@ -1698,8 +1698,8 @@
       "category": "places_and_directions",
       "zh": "我想去餐厅。",
       "th1": "ฉันอยากไปร้านอาหาร",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปร้านอาหาร",
+      "th3": "ฉันอยากไปร้านอาหารนะ",
       "frame": "places_and_directions"
     },
     {
@@ -1708,8 +1708,8 @@
       "category": "places_and_directions",
       "zh": "从这里到火车站远吗？",
       "th1": "จากที่นี่ไปสถานีรถไฟไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปสถานีรถไฟไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปสถานีรถไฟไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1718,8 +1718,8 @@
       "category": "places_and_directions",
       "zh": "从这里到这里远吗？",
       "th1": "จากที่นี่ไปที่นี่ไกลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "จากที่นี่ไปที่นี่ไกลหรือเปล่า",
+      "th3": "จากที่นี่ไปที่นี่ไกลไหมจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1728,8 +1728,8 @@
       "category": "places_and_directions",
       "zh": "我现在在餐厅。",
       "th1": "ตอนนี้ฉันอยู่ที่ร้านอาหาร",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ร้านอาหาร",
+      "th3": "ฉันอยู่ที่ร้านอาหารในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1738,8 +1738,8 @@
       "category": "places_and_directions",
       "zh": "我现在在银行。",
       "th1": "ตอนนี้ฉันอยู่ที่ธนาคาร",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันอยู่ที่ธนาคาร",
+      "th3": "ฉันอยู่ที่ธนาคารในตอนนี้",
       "frame": "places_and_directions"
     },
     {
@@ -1748,8 +1748,8 @@
       "category": "places_and_directions",
       "zh": "请问，办公室在哪里？",
       "th1": "ขอถามหน่อย สำนักงานอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อย สำนักงานอยู่ที่ไหนนะ",
+      "th3": "ขอถามหน่อย สำนักงานอยู่ที่ไหนจริง ๆ",
       "frame": "places_and_directions"
     },
     {
@@ -1758,8 +1758,8 @@
       "category": "places_and_directions",
       "zh": "我想去洗手间。",
       "th1": "ฉันอยากไปห้องน้ำ",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากไปห้องน้ำ",
+      "th3": "ฉันอยากไปห้องน้ำนะ",
       "frame": "places_and_directions"
     }
   ]

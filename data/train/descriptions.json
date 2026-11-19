@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "template_augmented_from_handwritten_lexicon",
-    "review_status": "needs_human_review"
+    "generation_method": "template_augmented_from_handwritten_lexicon_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "descriptions",
       "zh": "这里非常安静。",
       "th1": "ที่นี่เงียบสงบมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่เงียบสงบมากนะ",
+      "th3": "ที่นี่เงียบสงบมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -28,8 +28,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很有趣。",
       "th1": "ฉันคิดว่าที่นี่น่าสนใจมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่น่าสนใจมาก",
+      "th3": "ฉันคิดว่าที่นี่น่าสนใจมากนะ",
       "frame": "descriptions"
     },
     {
@@ -38,8 +38,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很贵。",
       "th1": "ฉันคิดว่าที่นี่แพงมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่แพงมาก",
+      "th3": "ฉันคิดว่าที่นี่แพงมากนะ",
       "frame": "descriptions"
     },
     {
@@ -48,8 +48,8 @@
       "category": "descriptions",
       "zh": "这个地方很远。",
       "th1": "สถานที่นี้ไกลมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้ไกลมากนะ",
+      "th3": "สถานที่นี้ไกลมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -58,8 +58,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很好。",
       "th1": "ฉันคิดว่าที่นี่ดีมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่ดีมาก",
+      "th3": "ฉันคิดว่าที่นี่ดีมากนะ",
       "frame": "descriptions"
     },
     {
@@ -68,8 +68,8 @@
       "category": "descriptions",
       "zh": "这个地方很安静。",
       "th1": "สถานที่นี้เงียบสงบมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้เงียบสงบมากนะ",
+      "th3": "สถานที่นี้เงียบสงบมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -78,8 +78,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很方便。",
       "th1": "ฉันคิดว่าที่นี่สะดวกมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่สะดวกมาก",
+      "th3": "ฉันคิดว่าที่นี่สะดวกมากนะ",
       "frame": "descriptions"
     },
     {
@@ -88,8 +88,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很旧。",
       "th1": "ฉันคิดว่าที่นี่เก่ามาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่เก่ามาก",
+      "th3": "ฉันคิดว่าที่นี่เก่ามากนะ",
       "frame": "descriptions"
     },
     {
@@ -98,8 +98,8 @@
       "category": "descriptions",
       "zh": "这个地方很好。",
       "th1": "สถานที่นี้ดีมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้ดีมากนะ",
+      "th3": "สถานที่นี้ดีมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -108,8 +108,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很新。",
       "th1": "ฉันคิดว่าที่นี่ใหม่มาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่ใหม่มาก",
+      "th3": "ฉันคิดว่าที่นี่ใหม่มากนะ",
       "frame": "descriptions"
     },
     {
@@ -118,8 +118,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很困难。",
       "th1": "ฉันคิดว่าที่นี่ยากมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่ยากมาก",
+      "th3": "ฉันคิดว่าที่นี่ยากมากนะ",
       "frame": "descriptions"
     },
     {
@@ -128,8 +128,8 @@
       "category": "descriptions",
       "zh": "这个地方很旧。",
       "th1": "สถานที่นี้เก่ามาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้เก่ามากนะ",
+      "th3": "สถานที่นี้เก่ามากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -138,8 +138,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很凉快。",
       "th1": "ฉันคิดว่าที่นี่เย็นสบายมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่เย็นสบายมาก",
+      "th3": "ฉันคิดว่าที่นี่เย็นสบายมากนะ",
       "frame": "descriptions"
     },
     {
@@ -148,8 +148,8 @@
       "category": "descriptions",
       "zh": "这里非常热。",
       "th1": "ที่นี่ร้อนมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่ร้อนมากนะ",
+      "th3": "ที่นี่ร้อนมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -158,8 +158,8 @@
       "category": "descriptions",
       "zh": "这里非常贵。",
       "th1": "ที่นี่แพงมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่แพงมากนะ",
+      "th3": "ที่นี่แพงมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -168,8 +168,8 @@
       "category": "descriptions",
       "zh": "这里非常旧。",
       "th1": "ที่นี่เก่ามาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่เก่ามากนะ",
+      "th3": "ที่นี่เก่ามากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -178,8 +178,8 @@
       "category": "descriptions",
       "zh": "这里非常便宜。",
       "th1": "ที่นี่ราคาถูกมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่ราคาถูกมากนะ",
+      "th3": "ที่นี่ราคาถูกมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -188,8 +188,8 @@
       "category": "descriptions",
       "zh": "这个地方很安全。",
       "th1": "สถานที่นี้ปลอดภัยมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้ปลอดภัยมากนะ",
+      "th3": "สถานที่นี้ปลอดภัยมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -198,8 +198,8 @@
       "category": "descriptions",
       "zh": "这个地方很漂亮。",
       "th1": "สถานที่นี้สวยมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้งดงามมาก",
+      "th3": "สถานที่นี้สวยมากนะ",
       "frame": "descriptions"
     },
     {
@@ -208,8 +208,8 @@
       "category": "descriptions",
       "zh": "这个地方很舒服。",
       "th1": "สถานที่นี้สบายมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้สบายมากนะ",
+      "th3": "สถานที่นี้สบายมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -218,8 +218,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很干净。",
       "th1": "ฉันคิดว่าที่นี่สะอาดมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่สะอาดมาก",
+      "th3": "ฉันคิดว่าที่นี่สะอาดมากนะ",
       "frame": "descriptions"
     },
     {
@@ -228,8 +228,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很远。",
       "th1": "ฉันคิดว่าที่นี่ไกลมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่ไกลมาก",
+      "th3": "ฉันคิดว่าที่นี่ไกลมากนะ",
       "frame": "descriptions"
     },
     {
@@ -238,8 +238,8 @@
       "category": "descriptions",
       "zh": "这个地方很有趣。",
       "th1": "สถานที่นี้น่าสนใจมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้น่าสนใจมากนะ",
+      "th3": "สถานที่นี้น่าสนใจมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -248,8 +248,8 @@
       "category": "descriptions",
       "zh": "这个地方很拥挤。",
       "th1": "สถานที่นี้แออัดมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้แออัดมากนะ",
+      "th3": "สถานที่นี้แออัดมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -258,8 +258,8 @@
       "category": "descriptions",
       "zh": "这里非常冷。",
       "th1": "ที่นี่หนาวมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่หนาวมากนะ",
+      "th3": "ที่นี่หนาวมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -268,8 +268,8 @@
       "category": "descriptions",
       "zh": "这里非常拥挤。",
       "th1": "ที่นี่แออัดมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่แออัดมากนะ",
+      "th3": "ที่นี่แออัดมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -278,8 +278,8 @@
       "category": "descriptions",
       "zh": "这个地方很热。",
       "th1": "สถานที่นี้ร้อนมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้ร้อนมากนะ",
+      "th3": "สถานที่นี้ร้อนมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -288,8 +288,8 @@
       "category": "descriptions",
       "zh": "这里非常远。",
       "th1": "ที่นี่ไกลมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่ไกลมากนะ",
+      "th3": "ที่นี่ไกลมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -298,8 +298,8 @@
       "category": "descriptions",
       "zh": "这里非常方便。",
       "th1": "ที่นี่สะดวกมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่สะดวกมากนะ",
+      "th3": "ที่นี่สะดวกมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -308,8 +308,8 @@
       "category": "descriptions",
       "zh": "这个地方很方便。",
       "th1": "สถานที่นี้สะดวกมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้สะดวกมากนะ",
+      "th3": "สถานที่นี้สะดวกมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -318,8 +318,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很安静。",
       "th1": "ฉันคิดว่าที่นี่เงียบสงบมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่เงียบสงบมาก",
+      "th3": "ฉันคิดว่าที่นี่เงียบสงบมากนะ",
       "frame": "descriptions"
     },
     {
@@ -328,8 +328,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很热闹。",
       "th1": "ฉันคิดว่าที่นี่คึกคักมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่คึกคักมาก",
+      "th3": "ฉันคิดว่าที่นี่คึกคักมากนะ",
       "frame": "descriptions"
     },
     {
@@ -338,8 +338,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很热。",
       "th1": "ฉันคิดว่าที่นี่ร้อนมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่ร้อนมาก",
+      "th3": "ฉันคิดว่าที่นี่ร้อนมากนะ",
       "frame": "descriptions"
     },
     {
@@ -348,8 +348,8 @@
       "category": "descriptions",
       "zh": "这里非常困难。",
       "th1": "ที่นี่ยากมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่ยากมากนะ",
+      "th3": "ที่นี่ยากมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -358,8 +358,8 @@
       "category": "descriptions",
       "zh": "这个地方很贵。",
       "th1": "สถานที่นี้แพงมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้แพงมากนะ",
+      "th3": "สถานที่นี้แพงมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -368,8 +368,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很简单。",
       "th1": "ฉันคิดว่าที่นี่ง่ายมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่ง่ายมาก",
+      "th3": "ฉันคิดว่าที่นี่ง่ายมากนะ",
       "frame": "descriptions"
     },
     {
@@ -378,8 +378,8 @@
       "category": "descriptions",
       "zh": "这里非常安全。",
       "th1": "ที่นี่ปลอดภัยมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่ปลอดภัยมากนะ",
+      "th3": "ที่นี่ปลอดภัยมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -388,8 +388,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很拥挤。",
       "th1": "ฉันคิดว่าที่นี่แออัดมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่แออัดมาก",
+      "th3": "ฉันคิดว่าที่นี่แออัดมากนะ",
       "frame": "descriptions"
     },
     {
@@ -398,8 +398,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很漂亮。",
       "th1": "ฉันคิดว่าที่นี่สวยมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ฉันคิดว่าที่นี่งดงามมาก",
+      "th3": "คิดว่าที่นี่สวยมาก",
       "frame": "descriptions"
     },
     {
@@ -408,8 +408,8 @@
       "category": "descriptions",
       "zh": "这里非常热闹。",
       "th1": "ที่นี่คึกคักมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่คึกคักมากนะ",
+      "th3": "ที่นี่คึกคักมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -418,8 +418,8 @@
       "category": "descriptions",
       "zh": "这个地方很简单。",
       "th1": "สถานที่นี้ง่ายมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้ง่ายมากนะ",
+      "th3": "สถานที่นี้ง่ายมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -428,8 +428,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很安全。",
       "th1": "ฉันคิดว่าที่นี่ปลอดภัยมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่ปลอดภัยมาก",
+      "th3": "ฉันคิดว่าที่นี่ปลอดภัยมากนะ",
       "frame": "descriptions"
     },
     {
@@ -438,8 +438,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很冷。",
       "th1": "ฉันคิดว่าที่นี่หนาวมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่หนาวมาก",
+      "th3": "ฉันคิดว่าที่นี่หนาวมากนะ",
       "frame": "descriptions"
     },
     {
@@ -448,8 +448,8 @@
       "category": "descriptions",
       "zh": "这个地方很热闹。",
       "th1": "สถานที่นี้คึกคักมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้คึกคักมากนะ",
+      "th3": "สถานที่นี้คึกคักมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -458,8 +458,8 @@
       "category": "descriptions",
       "zh": "这个地方很困难。",
       "th1": "สถานที่นี้ยากมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้ยากมากนะ",
+      "th3": "สถานที่นี้ยากมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -468,8 +468,8 @@
       "category": "descriptions",
       "zh": "这里非常舒服。",
       "th1": "ที่นี่สบายมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่สบายมากนะ",
+      "th3": "ที่นี่สบายมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -478,8 +478,8 @@
       "category": "descriptions",
       "zh": "这里非常有趣。",
       "th1": "ที่นี่น่าสนใจมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่น่าสนใจมากนะ",
+      "th3": "ที่นี่น่าสนใจมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -488,8 +488,8 @@
       "category": "descriptions",
       "zh": "这里非常简单。",
       "th1": "ที่นี่ง่ายมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่ง่ายมากนะ",
+      "th3": "ที่นี่ง่ายมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -498,8 +498,8 @@
       "category": "descriptions",
       "zh": "这个地方很便宜。",
       "th1": "สถานที่นี้ราคาถูกมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้ราคาถูกมากนะ",
+      "th3": "สถานที่นี้ราคาถูกมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -508,8 +508,8 @@
       "category": "descriptions",
       "zh": "这个地方很冷。",
       "th1": "สถานที่นี้หนาวมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้หนาวมากนะ",
+      "th3": "สถานที่นี้หนาวมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -518,8 +518,8 @@
       "category": "descriptions",
       "zh": "这里非常干净。",
       "th1": "ที่นี่สะอาดมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่สะอาดมากนะ",
+      "th3": "ที่นี่สะอาดมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -528,8 +528,8 @@
       "category": "descriptions",
       "zh": "这里非常新。",
       "th1": "ที่นี่ใหม่มาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่ใหม่มากนะ",
+      "th3": "ที่นี่ใหม่มากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -538,8 +538,8 @@
       "category": "descriptions",
       "zh": "这里非常好。",
       "th1": "ที่นี่ดีมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่ดีมากนะ",
+      "th3": "ที่นี่ดีมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -548,8 +548,8 @@
       "category": "descriptions",
       "zh": "这个地方很新。",
       "th1": "สถานที่นี้ใหม่มาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้ใหม่มากนะ",
+      "th3": "สถานที่นี้ใหม่มากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -558,8 +558,8 @@
       "category": "descriptions",
       "zh": "这个地方很干净。",
       "th1": "สถานที่นี้สะอาดมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้สะอาดมากนะ",
+      "th3": "สถานที่นี้สะอาดมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -568,8 +568,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很舒服。",
       "th1": "ฉันคิดว่าที่นี่สบายมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่สบายมาก",
+      "th3": "ฉันคิดว่าที่นี่สบายมากนะ",
       "frame": "descriptions"
     },
     {
@@ -578,8 +578,8 @@
       "category": "descriptions",
       "zh": "我觉得这里很便宜。",
       "th1": "ฉันคิดว่าที่นี่ราคาถูกมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "คิดว่าที่นี่ราคาถูกมาก",
+      "th3": "ฉันคิดว่าที่นี่ราคาถูกมากนะ",
       "frame": "descriptions"
     },
     {
@@ -588,8 +588,8 @@
       "category": "descriptions",
       "zh": "这里非常漂亮。",
       "th1": "ที่นี่สวยมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่งดงามมาก",
+      "th3": "ที่นี่สวยมากนะ",
       "frame": "descriptions"
     },
     {
@@ -598,8 +598,8 @@
       "category": "descriptions",
       "zh": "这个地方很凉快。",
       "th1": "สถานที่นี้เย็นสบายมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้เย็นสบายมากนะ",
+      "th3": "สถานที่นี้เย็นสบายมากจริง ๆ",
       "frame": "descriptions"
     },
     {
@@ -608,8 +608,8 @@
       "category": "descriptions",
       "zh": "这里非常凉快。",
       "th1": "ที่นี่เย็นสบายมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่เย็นสบายมากนะ",
+      "th3": "ที่นี่เย็นสบายมากจริง ๆ",
       "frame": "descriptions"
     }
   ]

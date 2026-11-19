@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "original_curated_pairs",
-    "review_status": "needs_human_review"
+    "generation_method": "original_curated_pairs_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "politeness",
       "zh": "谢谢",
       "th1": "ขอบคุณ",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอบคุณนะ",
+      "th3": "ขอบคุณจริง ๆ",
       "frame": "politeness"
     },
     {
@@ -28,8 +28,8 @@
       "category": "politeness",
       "zh": "非常感谢",
       "th1": "ขอบคุณมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอบคุณมากนะ",
+      "th3": "ขอบคุณมากจริง ๆ",
       "frame": "politeness"
     },
     {
@@ -38,8 +38,8 @@
       "category": "politeness",
       "zh": "不客气",
       "th1": "ไม่เป็นไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่เป็นไรนะ",
+      "th3": "ไม่เป็นไรจริง ๆ",
       "frame": "politeness"
     },
     {
@@ -48,8 +48,8 @@
       "category": "politeness",
       "zh": "对不起",
       "th1": "ขอโทษ",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอโทษนะ",
+      "th3": "ขอโทษจริง ๆ",
       "frame": "politeness"
     },
     {
@@ -58,8 +58,8 @@
       "category": "politeness",
       "zh": "没关系",
       "th1": "ไม่เป็นไร",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่เป็นไรนะ",
+      "th3": "ไม่เป็นไรจริง ๆ",
       "frame": "politeness"
     },
     {
@@ -68,8 +68,8 @@
       "category": "politeness",
       "zh": "请问",
       "th1": "ขอถามหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "ขอถามหน่อยนะ",
+      "th3": "ขอถามหน่อยจริง ๆ",
       "frame": "politeness"
     },
     {
@@ -78,8 +78,8 @@
       "category": "politeness",
       "zh": "请稍等",
       "th1": "กรุณารอสักครู่",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดรอสักครู่",
+      "th3": "กรุณารอสักครู่นะ",
       "frame": "politeness"
     }
   ]

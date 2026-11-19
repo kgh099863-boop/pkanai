@@ -28,8 +28,7 @@ for kind,folder,names in [("train",DATA/"train",m["training_files"]),("eval",DAT
    refs=[]
    for k in ("th1","th2","th3"):
     v=x[k]
-    if v is None and k!="th1": continue
-    if not isinstance(v,str) or not v.strip(): bad.append((*at,k,"type/empty")); continue
+    if not isinstance(v,str) or not v.strip(): bad.append((*at,k,"required/type/empty")); continue
     if v!=unicodedata.normalize("NFC",v) or v!=v.strip(): bad.append((*at,k,"normalization"))
     if re.search(r"[\u3400-\u9fff]",v): bad.append((*at,k,"Han in Thai"))
     if v in refs: bad.append((*at,k,"duplicate ref"))

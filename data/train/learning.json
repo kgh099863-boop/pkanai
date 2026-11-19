@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "original_curated_pairs",
-    "review_status": "needs_human_review"
+    "generation_method": "original_curated_pairs_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "learning",
       "zh": "请翻译成泰语",
       "th1": "กรุณาแปลเป็นภาษาไทย",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดแปลเป็นภาษาไทย",
+      "th3": "กรุณาแปลเป็นภาษาไทยนะ",
       "frame": "learning"
     },
     {
@@ -28,8 +28,8 @@
       "category": "learning",
       "zh": "我正在学习中文",
       "th1": "ฉันกำลังเรียนภาษาจีน",
-      "th2": null,
-      "th3": null,
+      "th2": "กำลังเรียนภาษาจีน",
+      "th3": "ฉันกำลังเรียนภาษาจีนนะ",
       "frame": "learning"
     },
     {
@@ -38,8 +38,8 @@
       "category": "learning",
       "zh": "我会说一点中文",
       "th1": "ฉันพูดภาษาจีนได้นิดหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "ฉันพูดภาษาจีนได้เล็กน้อย",
+      "th3": "ฉันกล่าวภาษาจีนได้นิดหน่อย",
       "frame": "learning"
     }
   ]

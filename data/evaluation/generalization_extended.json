@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "hand_authored_heldout_reference",
-    "review_status": "held_out_evaluation"
+    "generation_method": "hand_authored_heldout_reference_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "heldout_generalization_extended",
       "zh": "如果你明天有空，我们一起去医院。",
       "th1": "ถ้าพรุ่งนี้คุณว่าง พวกเราไปโรงพยาบาลด้วยกัน",
-      "th2": null,
-      "th3": null,
+      "th2": "ถ้าวันพรุ่งนี้คุณว่าง พวกเราไปโรงพยาบาลด้วยกัน",
+      "th3": "ถ้าพรุ่งนี้คุณว่าง พวกเราไปโรงพยาบาลด้วยกันนะ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -28,8 +28,8 @@
       "category": "heldout_generalization_extended",
       "zh": "如果手机坏了，请告诉我。",
       "th1": "ถ้าโทรศัพท์เสีย กรุณาบอกฉัน",
-      "th2": null,
-      "th3": null,
+      "th2": "ถ้าโทรศัพท์เสีย โปรดบอกฉัน",
+      "th3": "ถ้าโทรศัพท์เสีย กรุณาบอกฉันนะ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -38,8 +38,8 @@
       "category": "heldout_generalization_extended",
       "zh": "如果你不舒服，应该休息。",
       "th1": "ถ้าคุณไม่สบาย คุณควรพักผ่อน",
-      "th2": null,
-      "th3": null,
+      "th2": "ถ้าคุณไม่สบาย คุณควรจะพักผ่อน",
+      "th3": "ถ้าคุณไม่สบาย คุณควรพักผ่อนนะ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -48,8 +48,8 @@
       "category": "heldout_generalization_extended",
       "zh": "如果现在出发，我们可以赶上火车。",
       "th1": "ถ้าออกเดินทางตอนนี้ พวกเราจะขึ้นรถไฟทัน",
-      "th2": null,
-      "th3": null,
+      "th2": "ถ้าออกเดินทางขณะนี้ พวกเราจะขึ้นรถไฟทัน",
+      "th3": "ถ้าออกเดินทางตอนนี้ พวกเราจะขึ้นรถไฟทันนะ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -58,8 +58,8 @@
       "category": "heldout_generalization_extended",
       "zh": "因为我忘了密码，所以无法登录。",
       "th1": "เพราะฉันลืมรหัสผ่าน จึงเข้าสู่ระบบไม่ได้",
-      "th2": null,
-      "th3": null,
+      "th2": "เพราะฉันลืมรหัสผ่าน จึงเข้าสู่ระบบไม่ได้นะ",
+      "th3": "เพราะฉันลืมรหัสผ่าน จึงเข้าสู่ระบบไม่ได้จริง ๆ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -68,8 +68,8 @@
       "category": "heldout_generalization_extended",
       "zh": "因为他没有时间，所以不能参加会议。",
       "th1": "เพราะเขาไม่มีเวลา จึงเข้าร่วมประชุมไม่ได้",
-      "th2": null,
-      "th3": null,
+      "th2": "เพราะเขาไม่มีเวลา จึงเข้าร่วมประชุมไม่ได้นะ",
+      "th3": "เพราะเขาไม่มีเวลา จึงเข้าร่วมประชุมไม่ได้จริง ๆ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -78,8 +78,8 @@
       "category": "heldout_generalization_extended",
       "zh": "因为天气不好，航班延误了。",
       "th1": "เพราะสภาพอากาศไม่ดี เที่ยวบินจึงล่าช้า",
-      "th2": null,
-      "th3": null,
+      "th2": "เพราะสภาพอากาศไม่ดี เที่ยวบินจึงล่าช้านะ",
+      "th3": "เพราะสภาพอากาศไม่ดี เที่ยวบินจึงล่าช้าจริง ๆ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -88,8 +88,8 @@
       "category": "heldout_generalization_extended",
       "zh": "虽然我很饿，但是还要等朋友。",
       "th1": "แม้ว่าฉันจะหิวมาก แต่ก็ยังต้องรอเพื่อน",
-      "th2": null,
-      "th3": null,
+      "th2": "แม้ฉันจะหิวมาก แต่ก็ยังต้องรอเพื่อน",
+      "th3": "แม้ว่าฉันจะหิวมาก แต่ก็ยังต้องรอเพื่อนนะ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -98,8 +98,8 @@
       "category": "heldout_generalization_extended",
       "zh": "虽然这个手机很贵，但是很好用。",
       "th1": "แม้โทรศัพท์เครื่องนี้จะแพงมาก แต่ก็ใช้งานดี",
-      "th2": null,
-      "th3": null,
+      "th2": "แม้โทรศัพท์เครื่องนี้จะแพงมาก แต่ก็ใช้งานดีนะ",
+      "th3": "แม้โทรศัพท์เครื่องนี้จะแพงมาก แต่ก็ใช้งานดีจริง ๆ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -108,8 +108,8 @@
       "category": "heldout_generalization_extended",
       "zh": "除了水果，我还买了面包。",
       "th1": "นอกจากผลไม้แล้ว ฉันยังซื้อขนมปังด้วย",
-      "th2": null,
-      "th3": null,
+      "th2": "นอกจากผลไม้แล้ว ฉันยังซื้อขนมปังด้วยนะ",
+      "th3": "นอกจากผลไม้แล้ว ฉันยังซื้อขนมปังด้วยจริง ๆ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -118,8 +118,8 @@
       "category": "heldout_generalization_extended",
       "zh": "除了星期六，他每天都上班。",
       "th1": "ยกเว้นวันเสาร์ เขาทำงานทุกวัน",
-      "th2": null,
-      "th3": null,
+      "th2": "ยกเว้นวันเสาร์ เขาทำงานทุกวันนะ",
+      "th3": "ยกเว้นวันเสาร์ เขาทำงานทุกวันจริง ๆ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -128,8 +128,8 @@
       "category": "heldout_generalization_extended",
       "zh": "看完电影以后，我们去吃饭。",
       "th1": "หลังดูหนังจบ พวกเราไปกินข้าว",
-      "th2": null,
-      "th3": null,
+      "th2": "หลังดูหนังจบ พวกเราไปรับประทานข้าว",
+      "th3": "หลังดูหนังจบ พวกเราไปกินข้าวนะ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -138,8 +138,8 @@
       "category": "heldout_generalization_extended",
       "zh": "到学校以前，我先去银行。",
       "th1": "ก่อนถึงโรงเรียน ฉันแวะไปธนาคารก่อน",
-      "th2": null,
-      "th3": null,
+      "th2": "ก่อนถึงโรงเรียน ฉันแวะไปธนาคารก่อนนะ",
+      "th3": "ก่อนถึงโรงเรียน ฉันแวะไปธนาคารก่อนจริง ๆ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -148,8 +148,8 @@
       "category": "heldout_generalization_extended",
       "zh": "我已经把门关好了。",
       "th1": "ฉันปิดประตูเรียบร้อยแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "ปิดประตูเรียบร้อยแล้ว",
+      "th3": "ฉันปิดประตูเรียบร้อยแล้วนะ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -158,8 +158,8 @@
       "category": "heldout_generalization_extended",
       "zh": "他一边做饭，一边听广播。",
       "th1": "เขาทำอาหารไปด้วย ฟังวิทยุไปด้วย",
-      "th2": null,
-      "th3": null,
+      "th2": "เขาทำอาหารไปด้วย ฟังวิทยุไปด้วยนะ",
+      "th3": "เขาทำอาหารไปด้วย ฟังวิทยุไปด้วยจริง ๆ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -168,8 +168,8 @@
       "category": "heldout_generalization_extended",
       "zh": "请把这些照片发给我。",
       "th1": "กรุณาส่งรูปถ่ายเหล่านี้ให้ฉัน",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดส่งรูปถ่ายเหล่านี้ให้ฉัน",
+      "th3": "กรุณาส่งรูปถ่ายเหล่านี้ให้ฉันนะ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -178,8 +178,8 @@
       "category": "heldout_generalization_extended",
       "zh": "这台电脑比我的手机贵。",
       "th1": "คอมพิวเตอร์เครื่องนี้แพงกว่าโทรศัพท์ของฉัน",
-      "th2": null,
-      "th3": null,
+      "th2": "เครื่องคอมพิวเตอร์เครื่องนี้แพงกว่าโทรศัพท์ของฉัน",
+      "th3": "คอมพิวเตอร์เครื่องนี้แพงกว่าโทรศัพท์ของฉันนะ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -188,8 +188,8 @@
       "category": "heldout_generalization_extended",
       "zh": "今天的天气没有昨天那么冷。",
       "th1": "วันนี้อากาศไม่หนาวเท่าเมื่อวาน",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้อากาศไม่หนาวเท่าเมื่อวาน",
+      "th3": "วันนี้อากาศไม่หนาวเท่าเมื่อวานนี้",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -198,8 +198,8 @@
       "category": "heldout_generalization_extended",
       "zh": "从机场到酒店要多久？",
       "th1": "จากสนามบินไปโรงแรมใช้เวลานานเท่าไหร่",
-      "th2": null,
-      "th3": null,
+      "th2": "จากสนามบินไปโรงแรมใช้เวลานานเท่าไหร่นะ",
+      "th3": "จากสนามบินไปโรงแรมใช้เวลานานเท่าไหร่จริง ๆ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -208,8 +208,8 @@
       "category": "heldout_generalization_extended",
       "zh": "我忘记带钱包了。",
       "th1": "ฉันลืมเอากระเป๋าสตางค์มาแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "ลืมเอากระเป๋าสตางค์มาแล้ว",
+      "th3": "ฉันลืมเอากระเป๋าสตางค์มาแล้วนะ",
       "frame": "heldout_generalization_extended"
     },
     {
@@ -218,8 +218,8 @@
       "category": "heldout_generalization_extended",
       "zh": "请帮我把这封邮件翻译一下。",
       "th1": "กรุณาช่วยแปลอีเมลฉบับนี้ให้ฉันหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดช่วยแปลอีเมลฉบับนี้ให้ฉันหน่อย",
+      "th3": "กรุณาช่วยแปลอีเมลฉบับนี้ให้ฉันหน่อยนะ",
       "frame": "heldout_generalization_extended"
     }
   ]

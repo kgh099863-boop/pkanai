@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "original_curated_pairs",
-    "review_status": "needs_human_review"
+    "generation_method": "original_curated_pairs_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "daily_life",
       "zh": "我迷路了",
       "th1": "ฉันหลงทาง",
-      "th2": null,
-      "th3": null,
+      "th2": "หลงทาง",
+      "th3": "ฉันหลงทางนะ",
       "frame": "daily_life"
     },
     {
@@ -28,8 +28,8 @@
       "category": "daily_life",
       "zh": "今天天气很好",
       "th1": "วันนี้อากาศดีมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้อากาศดีมาก",
+      "th3": "วันนี้อากาศดีมากนะ",
       "frame": "daily_life"
     },
     {
@@ -38,8 +38,8 @@
       "category": "daily_life",
       "zh": "我喜欢吃米饭",
       "th1": "ฉันชอบกินข้าว",
-      "th2": null,
-      "th3": null,
+      "th2": "ฉันชอบรับประทานข้าว",
+      "th3": "ชอบกินข้าว",
       "frame": "daily_life"
     },
     {
@@ -48,8 +48,8 @@
       "category": "daily_life",
       "zh": "我喜欢你",
       "th1": "ฉันชอบคุณ",
-      "th2": null,
-      "th3": null,
+      "th2": "ชอบคุณ",
+      "th3": "ฉันชอบคุณนะ",
       "frame": "daily_life"
     },
     {
@@ -58,8 +58,8 @@
       "category": "daily_life",
       "zh": "我爱你",
       "th1": "ฉันรักคุณ",
-      "th2": null,
-      "th3": null,
+      "th2": "รักคุณ",
+      "th3": "ฉันรักคุณนะ",
       "frame": "daily_life"
     },
     {
@@ -68,8 +68,8 @@
       "category": "daily_life",
       "zh": "我饿了",
       "th1": "ฉันหิวแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "หิวแล้ว",
+      "th3": "ฉันหิวแล้วนะ",
       "frame": "daily_life"
     },
     {
@@ -78,8 +78,8 @@
       "category": "daily_life",
       "zh": "我累了",
       "th1": "ฉันเหนื่อยแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "เหนื่อยแล้ว",
+      "th3": "ฉันเหนื่อยแล้วนะ",
       "frame": "daily_life"
     },
     {
@@ -88,8 +88,8 @@
       "category": "daily_life",
       "zh": "我想睡觉",
       "th1": "ฉันอยากนอน",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากนอน",
+      "th3": "ฉันอยากนอนนะ",
       "frame": "daily_life"
     },
     {
@@ -98,8 +98,8 @@
       "category": "daily_life",
       "zh": "这里很漂亮",
       "th1": "ที่นี่สวยมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่งดงามมาก",
+      "th3": "ที่นี่สวยมากนะ",
       "frame": "daily_life"
     }
   ]

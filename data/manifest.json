@@ -30,6 +30,7 @@
     "daily_conversation_and_device.json",
     "daily_life.json",
     "descriptions.json",
+    "expanded_vocabulary.json",
     "feelings.json",
     "food.json",
     "greetings.json",
@@ -45,31 +46,32 @@
     "things_and_needs.json",
     "time_and_schedule.json"
   ],
-  "total_examples": 6534,
+  "total_examples": 14634,
   "topics": {
-    "actions": 90,
-    "balanced_generalization": 132,
-    "commands": 9,
-    "compositional_augmentation": 4674,
-    "controlled_lexical_expansion": 152,
-    "conversation": 18,
-    "daily_conversation_and_device": 150,
-    "daily_life": 9,
-    "descriptions": 60,
-    "feelings": 30,
-    "food": 120,
-    "greetings": 9,
-    "learning": 3,
-    "length_frequency": 231,
-    "lexical_coverage": 55,
+    "actions": 270,
+    "balanced_generalization": 396,
+    "commands": 27,
+    "compositional_augmentation": 7260,
+    "controlled_lexical_expansion": 456,
+    "conversation": 54,
+    "daily_conversation_and_device": 450,
+    "daily_life": 27,
+    "descriptions": 180,
+    "expanded_vocabulary": 2109,
+    "feelings": 90,
+    "food": 360,
+    "greetings": 72,
+    "learning": 9,
+    "length_frequency": 693,
+    "lexical_coverage": 165,
     "multi_reference": 180,
-    "natural_patterns": 50,
-    "other": 1,
-    "places_and_directions": 175,
-    "politeness": 7,
-    "shopping": 4,
-    "things_and_needs": 327,
-    "time_and_schedule": 48
+    "natural_patterns": 150,
+    "other": 3,
+    "places_and_directions": 525,
+    "politeness": 21,
+    "shopping": 12,
+    "things_and_needs": 981,
+    "time_and_schedule": 144
   },
   "evaluation_files": [
     "compositional.json",
@@ -84,14 +86,16 @@
     "tokenizer": "shared_bpe_250_with_character_fallback"
   },
   "multi_reference_sources": [
-    "multi_reference/zh_th_multi_reference_v1.json"
+    "train/multi_reference.json",
+    "train/expanded_vocabulary.json"
   ],
   "translation_fields": [
     "th1",
     "th2",
     "th3"
   ],
-  "total_source_groups": 6414,
+  "total_source_groups": 4878,
   "evaluation_groups": 61,
-  "evaluation_examples": 61
+  "evaluation_examples": 183,
+  "review_policy": "Generated alternate references require Thai native-speaker review before production training."
 }

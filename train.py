@@ -44,14 +44,13 @@ class TranslationData(Dataset):
                 refs=[]
                 for key in translation_fields:
                     value=item[key]
-                    if value is None:
-                        continue
                     if not isinstance(value,str) or not value.strip():
-                        raise ValueError(f"{filename}:{line}: {key} must be null or non-empty text")
-                    if value.strip() not in refs:
-                        refs.append(value.strip())
-                if not refs:
-                    raise ValueError(f"{filename}:{line}: at least th1 must contain a translation")
+                        raise ValueError(f"{filename}:{line}: {key} must be a non-empty Thai reference")
+                    if value.strip() in refs:
+                        raise ValueError(f"{filename}:{line}: {key} duplicates another Thai reference")
+                    refs.append(value.strip())
+                if len(refs)!=3:
+                    raise ValueError(f"{filename}:{line}: exactly three distinct Thai references are required")
                 for translation in refs:
                     self.rows.append((item["zh"].strip(),translation,item["frame"]))
         signature=hashlib.sha256(json.dumps(self.rows,ensure_ascii=False).encode("utf-8")).hexdigest()
@@ -181,6 +180,37 @@ def split_by_frame(data,validation_fraction=0.20):
     rng.shuffle(train_ids);rng.shuffle(val_ids)
     return train_ids,val_ids,sorted(by_frame)
 
+
+def warm_start_from_checkpoint(model, saved_checkpoint, new_vocab):
+    """Reuse matching token rows and all shape-compatible weights after BPE changes."""
+    old_vocab=saved_checkpoint.get("vocab",{})
+    old_state=saved_checkpoint.get("model",{})
+    new_state=model.state_dict()
+    token_layers={"embedding.weight","output.weight","output.bias"}
+    shared_rows=0
+    copied_layers=[]
+    with torch.no_grad():
+        for name,target in new_state.items():
+            source=old_state.get(name)
+            if source is None:
+                continue
+            if name in token_layers and old_vocab:
+                if source.ndim!=target.ndim or source.shape[1:]!=target.shape[1:]:
+                    continue
+                rows=0
+                for token,new_index in new_vocab.items():
+                    old_index=old_vocab.get(token)
+                    if isinstance(old_index,int) and 0<=old_index<source.shape[0] and 0<=new_index<target.shape[0]:
+                        target[new_index].copy_(source[old_index].to(dtype=target.dtype))
+                        rows+=1
+                shared_rows=max(shared_rows,rows)
+                copied_layers.append(f"{name}:{rows}")
+            elif source.shape==target.shape:
+                target.copy_(source.to(dtype=target.dtype))
+                copied_layers.append(name)
+    model.load_state_dict(new_state)
+    return shared_rows,copied_layers
+
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--epochs",type=int,default=100)
@@ -216,10 +246,12 @@ def main():
         resume_path=latest_ckpt if latest_ckpt.exists() else ckpt
         if resume_path.exists():
             saved=torch.load(resume_path,map_location="cpu",weights_only=False)
-            if saved.get("vocab")!=data.vocab or saved.get("merges")!=data.merges:
-                raise SystemExit("Tokenizer mismatch; train from scratch")
-            model.load_state_dict(saved["model"]);resumed_checkpoint=saved
-            print(f"Resumed BPE checkpoint: {resume_path.name}",flush=True)
+            if saved.get("vocab")==data.vocab and saved.get("merges")==data.merges:
+                model.load_state_dict(saved["model"]);resumed_checkpoint=saved
+                print(f"Resumed BPE checkpoint: {resume_path.name}",flush=True)
+            else:
+                shared_rows,copied_layers=warm_start_from_checkpoint(model,saved,data.vocab)
+                print(f"Tokenizer changed: warm-started {shared_rows} shared token rows; reused {len(copied_layers)} compatible parameter layers. Optimizer, scheduler and epoch counters reset.",flush=True)
     print(f"Examples: {len(data)} | Unique Chinese sources: {len(set(data.sources))} | BPE vocab: {len(data.vocab)} | Merges: {len(data.merges)} | Parameters: {parameter_count(model)} | Device: {device} | AMP: {use_amp} | CPU threads: {args.threads}",flush=True)
     if args.count_params:return
     train_ids,val_ids,val_frames=split_by_frame(data,args.validation_fraction)

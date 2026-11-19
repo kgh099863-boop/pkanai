@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "original_curated_pairs",
-    "review_status": "needs_human_review"
+    "generation_method": "original_curated_pairs_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "shopping",
       "zh": "这个多少钱？",
       "th1": "อันนี้ราคาเท่าไหร่",
-      "th2": null,
-      "th3": null,
+      "th2": "อันนี้ราคาเท่าไร",
+      "th3": "อันนี้ราคาเท่าไหร่นะ",
       "frame": "shopping"
     },
     {
@@ -28,8 +28,8 @@
       "category": "shopping",
       "zh": "太贵了",
       "th1": "แพงเกินไป",
-      "th2": null,
-      "th3": null,
+      "th2": "แพงเรับประทานไป",
+      "th3": "แพงเกินไปนะ",
       "frame": "shopping"
     },
     {
@@ -38,8 +38,8 @@
       "category": "shopping",
       "zh": "便宜一点可以吗？",
       "th1": "ลดราคาอีกหน่อยได้ไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "ลดราคาอีกหน่อยได้หรือเปล่า",
+      "th3": "ลดราคาอีกหน่อยได้ไหมจริง ๆ",
       "frame": "shopping"
     },
     {
@@ -48,8 +48,8 @@
       "category": "shopping",
       "zh": "我想买这个",
       "th1": "ฉันอยากซื้ออันนี้",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากซื้ออันนี้",
+      "th3": "ฉันอยากซื้ออันนี้นะ",
       "frame": "shopping"
     }
   ]

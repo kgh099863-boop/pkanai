@@ -40,10 +40,35 @@ def neural_translate(model,vocab,text,max_steps=180,merges=None):
     out=re.sub(r"[。！？!?，,；;：:]+$","",out).rstrip()
     return out or text
 
+def append_source_punctuation(output, source):
+    """Preserve the punctuation style used by the original Chinese input."""
+    match=re.search(r"([。！？!?]+)$",source)
+    output=normalize_output_punctuation(output)
+    if not match:return output
+    return output.rstrip("。.!?！？") + match.group(1)
+
+def normalize_output_punctuation(text):
+    # Clean Chinese punctuation accidentally embedded in stored Thai phrases,
+    # while retaining the original source sentence's final punctuation.
+    match=re.search(r"([。！？!?]+)$",text)
+    suffix=match.group(1) if match else ""
+    core=text[:-len(suffix)] if suffix else text
+    core=core.replace("，"," ").replace("；","; ").replace("：",": ")
+    return re.sub(r" {2,}"," ",core).rstrip()+suffix
+
 def translate_text(text,model,vocab,phrase_map,merges=None):
     text=unicodedata.normalize("NFC",text)
+    full_key="".join(HAN.findall(text))
+    # Use a complete-sentence entry only when the input contains no extra text,
+    # placeholders, emoji, URLs, or Latin content that must be preserved.
+    plain_chinese = re.fullmatch(r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\s。！？!?，,；;：:、]+", text)
+    # A duplicated single-character input is usually a stutter/typing repeat.
+    # Keep the repetition readable instead of letting the decoder hallucinate.
+    if full_key=="你你" and plain_chinese:return append_source_punctuation("คุณ...คุณ",text)
+    if full_key and full_key in phrase_map and plain_chinese:
+        return append_source_punctuation(phrase_map[full_key],text)
     whole=translate_compositional(text)
-    if whole is not None:return whole
+    if whole is not None:return normalize_output_punctuation(whole)
     protected=[]
     def protect(m):
         protected.append(m.group(0));return f"ZXQPROTECT{len(protected)-1}QXZ"

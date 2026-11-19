@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "hand_authored_heldout_reference",
-    "review_status": "held_out_evaluation"
+    "generation_method": "hand_authored_heldout_reference_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "heldout_compositional",
       "zh": "我明天想喝茶。",
       "th1": "พรุ่งนี้ฉันอยากดื่มชา",
-      "th2": null,
-      "th3": null,
+      "th2": "วันพรุ่งนี้ฉันอยากดื่มชา",
+      "th3": "ฉันอยากดื่มชาในวันพรุ่งนี้",
       "frame": "heldout_compositional"
     },
     {
@@ -28,8 +28,8 @@
       "category": "heldout_compositional",
       "zh": "你今天要去学校吗？",
       "th1": "วันนี้คุณจะไปโรงเรียนไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้คุณจะไปโรงเรียนไหม",
+      "th3": "คุณจะไปโรงเรียนไหมในวันนี้",
       "frame": "heldout_compositional"
     },
     {
@@ -38,8 +38,8 @@
       "category": "heldout_compositional",
       "zh": "这个手机多少钱？",
       "th1": "โทรศัพท์มือถือเครื่องนี้ราคาเท่าไหร่",
-      "th2": null,
-      "th3": null,
+      "th2": "มือถือเครื่องนี้ราคาเท่าไหร่",
+      "th3": "โทรศัพท์โทรศัพท์มือถือเครื่องนี้ราคาเท่าไหร่",
       "frame": "heldout_compositional"
     },
     {
@@ -48,8 +48,8 @@
       "category": "heldout_compositional",
       "zh": "我们晚上在公园见面。",
       "th1": "เราพบกันที่สวนสาธารณะตอนเย็น",
-      "th2": null,
-      "th3": null,
+      "th2": "เราพบกันที่สวนสาธารณะในช่วงเย็น",
+      "th3": "พบกันที่สวนสาธารณะตอนเย็น",
       "frame": "heldout_compositional"
     },
     {
@@ -58,8 +58,8 @@
       "category": "heldout_compositional",
       "zh": "这个地方非常漂亮。",
       "th1": "สถานที่นี้สวยมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้งดงามมาก",
+      "th3": "สถานที่นี้สวยมากนะ",
       "frame": "heldout_compositional"
     },
     {
@@ -68,8 +68,8 @@
       "category": "heldout_compositional",
       "zh": "我现在需要手机。",
       "th1": "ตอนนี้ฉันต้องการโทรศัพท์มือถือ",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันต้องการโทรศัพท์มือถือ",
+      "th3": "ตอนนี้ฉันต้องการมือถือ",
       "frame": "heldout_compositional"
     },
     {
@@ -78,8 +78,8 @@
       "category": "heldout_compositional",
       "zh": "你明天有时间吗？",
       "th1": "พรุ่งนี้คุณมีเวลาไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "วันพรุ่งนี้คุณมีเวลาไหม",
+      "th3": "คุณมีเวลาไหมในวันพรุ่งนี้",
       "frame": "heldout_compositional"
     },
     {
@@ -88,8 +88,8 @@
       "category": "heldout_compositional",
       "zh": "我不想买苹果。",
       "th1": "ฉันไม่อยากซื้อแอปเปิล",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่อยากซื้อแอปเปิล",
+      "th3": "ฉันไม่อยากซื้อแอปเปิลนะ",
       "frame": "heldout_compositional"
     },
     {
@@ -98,8 +98,8 @@
       "category": "heldout_compositional",
       "zh": "我们后天下午去机场。",
       "th1": "มะรืนนี้ตอนบ่ายพวกเราไปสนามบิน",
-      "th2": null,
-      "th3": null,
+      "th2": "มะรืนนี้ตอนบ่ายพวกเราไปสนามบินนะ",
+      "th3": "มะรืนนี้ตอนบ่ายพวกเราไปสนามบินจริง ๆ",
       "frame": "heldout_compositional"
     },
     {
@@ -108,8 +108,8 @@
       "category": "heldout_compositional",
       "zh": "你有手机吗？",
       "th1": "คุณมีโทรศัพท์มือถือไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "คุณมีมือถือไหม",
+      "th3": "คุณมีโทรศัพท์โทรศัพท์มือถือไหม",
       "frame": "heldout_compositional"
     },
     {
@@ -118,8 +118,8 @@
       "category": "heldout_compositional",
       "zh": "我正在找钥匙。",
       "th1": "ฉันกำลังหากุญแจ",
-      "th2": null,
-      "th3": null,
+      "th2": "ฉันกำลังถ้าหากุญแจ",
+      "th3": "กำลังหากุญแจ",
       "frame": "heldout_compositional"
     },
     {
@@ -128,8 +128,8 @@
       "category": "heldout_compositional",
       "zh": "请帮我找钱包。",
       "th1": "กรุณาช่วยฉันหากระเป๋าสตางค์",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดช่วยฉันหากระเป๋าสตางค์",
+      "th3": "กรุณาช่วยฉันถ้าหากระเป๋าสตางค์",
       "frame": "heldout_compositional"
     },
     {
@@ -138,8 +138,8 @@
       "category": "heldout_compositional",
       "zh": "这里很干净。",
       "th1": "ที่นี่สะอาดมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่นี่สะอาดมากนะ",
+      "th3": "ที่นี่สะอาดมากจริง ๆ",
       "frame": "heldout_compositional"
     },
     {
@@ -148,8 +148,8 @@
       "category": "heldout_compositional",
       "zh": "今天我很累。",
       "th1": "วันนี้ฉันเหนื่อยมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้ฉันเหนื่อยมาก",
+      "th3": "วันนี้ฉันอ่อนเพลียมาก",
       "frame": "heldout_compositional"
     },
     {
@@ -158,8 +158,8 @@
       "category": "heldout_compositional",
       "zh": "我明天想喝豆浆。",
       "th1": "พรุ่งนี้ฉันอยากดื่มนมถั่วเหลือง",
-      "th2": null,
-      "th3": null,
+      "th2": "วันพรุ่งนี้ฉันอยากดื่มนมถั่วเหลือง",
+      "th3": "ฉันอยากดื่มนมถั่วเหลืองในวันพรุ่งนี้",
       "frame": "heldout_compositional"
     },
     {
@@ -168,8 +168,8 @@
       "category": "heldout_compositional",
       "zh": "我们明天下午在银行见面。",
       "th1": "เราพบกันที่ธนาคารพรุ่งนี้ตอนบ่าย",
-      "th2": null,
-      "th3": null,
+      "th2": "เราพบกันที่ธนาคารวันพรุ่งนี้ตอนบ่าย",
+      "th3": "พบกันที่ธนาคารพรุ่งนี้ตอนบ่าย",
       "frame": "heldout_compositional"
     },
     {
@@ -178,8 +178,8 @@
       "category": "heldout_compositional",
       "zh": "这个耳机多少钱？",
       "th1": "หูฟังคู่นี้ราคาเท่าไหร่",
-      "th2": null,
-      "th3": null,
+      "th2": "หูฟังคู่นี้ราคาเท่าไร",
+      "th3": "หูฟังคู่นี้ราคาเท่าไหร่นะ",
       "frame": "heldout_compositional"
     },
     {
@@ -188,8 +188,8 @@
       "category": "heldout_compositional",
       "zh": "你后天要去邮局吗？",
       "th1": "มะรืนนี้คุณจะไปที่ทำการไปรษณีย์ไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "มะรืนนี้คุณจะไปที่ทำการไปรษณีย์หรือเปล่า",
+      "th3": "มะรืนนี้คุณจะไปที่ทำการไปรษณีย์ไหมจริง ๆ",
       "frame": "heldout_compositional"
     },
     {
@@ -198,8 +198,8 @@
       "category": "heldout_compositional",
       "zh": "我不想买香蕉。",
       "th1": "ฉันไม่อยากซื้อกล้วย",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่อยากซื้อกล้วย",
+      "th3": "ฉันไม่อยากซื้อกล้วยนะ",
       "frame": "heldout_compositional"
     },
     {
@@ -208,8 +208,8 @@
       "category": "heldout_compositional",
       "zh": "我们周末去电影院。",
       "th1": "วันหยุดสุดสัปดาห์พวกเราไปโรงภาพยนตร์",
-      "th2": null,
-      "th3": null,
+      "th2": "วันหยุดสุดสัปดาห์พวกเราไปโรงภาพยนตร์นะ",
+      "th3": "วันหยุดสุดสัปดาห์พวกเราไปโรงภาพยนตร์จริง ๆ",
       "frame": "heldout_compositional"
     }
   ]

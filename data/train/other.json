@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "original_curated_pairs",
-    "review_status": "needs_human_review"
+    "generation_method": "original_curated_pairs_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "other",
       "zh": "厕所在哪里？",
       "th1": "ห้องน้ำอยู่ที่ไหน",
-      "th2": null,
-      "th3": null,
+      "th2": "ห้องน้ำอยู่ที่ไหนนะ",
+      "th3": "ห้องน้ำอยู่ที่ไหนจริง ๆ",
       "frame": "other"
     }
   ]

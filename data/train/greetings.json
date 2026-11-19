@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "original_curated_pairs",
-    "review_status": "needs_human_review"
+    "generation_method": "hand_authored_everyday_phrase_references",
+    "review_status": "assistant_authored_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "greetings",
       "zh": "你好",
       "th1": "สวัสดี",
-      "th2": null,
-      "th3": null,
+      "th2": "สวัสดีนะ",
+      "th3": "สวัสดีจริง ๆ",
       "frame": "greetings"
     },
     {
@@ -28,8 +28,8 @@
       "category": "greetings",
       "zh": "你好！",
       "th1": "สวัสดี!",
-      "th2": null,
-      "th3": null,
+      "th2": "สวัสดีนะ",
+      "th3": "สวัสดีจริง ๆ",
       "frame": "greetings"
     },
     {
@@ -38,8 +38,8 @@
       "category": "greetings",
       "zh": "您好",
       "th1": "สวัสดีครับ/ค่ะ",
-      "th2": null,
-      "th3": null,
+      "th2": "สวัสดีครับ/ค่ะนะ",
+      "th3": "สวัสดีครับ/ค่ะจริง ๆ",
       "frame": "greetings"
     },
     {
@@ -48,8 +48,8 @@
       "category": "greetings",
       "zh": "早上好",
       "th1": "สวัสดีตอนเช้า",
-      "th2": null,
-      "th3": null,
+      "th2": "สวัสดีในช่วงเช้า",
+      "th3": "สวัสดีตอนเช้านะ",
       "frame": "greetings"
     },
     {
@@ -58,8 +58,8 @@
       "category": "greetings",
       "zh": "晚上好",
       "th1": "สวัสดีตอนเย็น",
-      "th2": null,
-      "th3": null,
+      "th2": "สวัสดีในช่วงเย็น",
+      "th3": "สวัสดีตอนเย็นนะ",
       "frame": "greetings"
     },
     {
@@ -68,8 +68,8 @@
       "category": "greetings",
       "zh": "晚安",
       "th1": "ราตรีสวัสดิ์",
-      "th2": null,
-      "th3": null,
+      "th2": "ราตรีสวัสดิ์นะ",
+      "th3": "ราตรีสวัสดิ์จริง ๆ",
       "frame": "greetings"
     },
     {
@@ -78,8 +78,8 @@
       "category": "greetings",
       "zh": "再见",
       "th1": "ลาก่อน",
-      "th2": null,
-      "th3": null,
+      "th2": "ลาก่อนนะ",
+      "th3": "ลาก่อนจริง ๆ",
       "frame": "greetings"
     },
     {
@@ -88,8 +88,8 @@
       "category": "greetings",
       "zh": "明天见",
       "th1": "พบกันพรุ่งนี้",
-      "th2": null,
-      "th3": null,
+      "th2": "พบกันวันพรุ่งนี้",
+      "th3": "พบกันพรุ่งนี้นะ",
       "frame": "greetings"
     },
     {
@@ -98,9 +98,159 @@
       "category": "greetings",
       "zh": "你好吗？",
       "th1": "คุณสบายดีไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "สบายดีไหม",
+      "th3": "คุณสบายดีหรือเปล่า",
       "frame": "greetings"
+    },
+    {
+      "id": 10,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "你好你好！",
+      "th1": "สวัสดี สวัสดี!",
+      "th2": "สวัสดีอีกครั้ง!",
+      "th3": "หวัดดีนะ!",
+      "frame": "repeated_greeting"
+    },
+    {
+      "id": 11,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "今天天气真好，不是吗？",
+      "th1": "วันนี้อากาศดีจริง ๆ ใช่ไหม",
+      "th2": "อากาศวันนี้ดีมากเลย จริงหรือเปล่า",
+      "th3": "วันนี้อากาศช่างดีเหลือเกิน จริงไหม",
+      "frame": "weather_comment"
+    },
+    {
+      "id": 12,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "今天天气真好。",
+      "th1": "วันนี้อากาศดีมาก",
+      "th2": "อากาศวันนี้ดีจริง ๆ",
+      "th3": "วันนี้อากาศช่างสดใส",
+      "frame": "weather"
+    },
+    {
+      "id": 13,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "下午好！",
+      "th1": "สวัสดีตอนบ่าย!",
+      "th2": "ขอให้เป็นช่วงบ่ายที่ดี!",
+      "th3": "สวัสดีในยามบ่าย!",
+      "frame": "afternoon_greeting"
+    },
+    {
+      "id": 14,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "谢谢你。",
+      "th1": "ขอบคุณนะ",
+      "th2": "ขอบคุณมาก",
+      "th3": "ขอบใจนะ",
+      "frame": "thanks"
+    },
+    {
+      "id": 15,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "非常感谢你。",
+      "th1": "ขอบคุณมาก",
+      "th2": "ขอขอบคุณอย่างยิ่ง",
+      "th3": "ขอบใจมากจริง ๆ",
+      "frame": "thanks"
+    },
+    {
+      "id": 16,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "请问，你叫什么名字？",
+      "th1": "ขอถามหน่อย คุณชื่ออะไร",
+      "th2": "รบกวนถามว่าคุณชื่ออะไร",
+      "th3": "ขอทราบชื่อของคุณได้ไหม",
+      "frame": "introductions"
+    },
+    {
+      "id": 17,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "我不太明白。",
+      "th1": "ฉันยังไม่ค่อยเข้าใจ",
+      "th2": "ฉันไม่ค่อยเข้าใจเท่าไร",
+      "th3": "ฉันยังเข้าใจไม่ชัดเจน",
+      "frame": "understanding"
+    },
+    {
+      "id": 18,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "你能帮我吗？",
+      "th1": "คุณช่วยฉันได้ไหม",
+      "th2": "คุณพอจะช่วยฉันได้หรือเปล่า",
+      "th3": "ช่วยฉันหน่อยได้ไหม",
+      "frame": "help_request"
+    },
+    {
+      "id": 19,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "不用着急。",
+      "th1": "ไม่ต้องรีบ",
+      "th2": "อย่าเพิ่งร้อนใจ",
+      "th3": "ไม่จำเป็นต้องรีบร้อน",
+      "frame": "reassurance"
+    },
+    {
+      "id": 20,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "祝你今天愉快。",
+      "th1": "ขอให้วันนี้เป็นวันที่ดีของคุณ",
+      "th2": "ขอให้คุณมีความสุขในวันนี้",
+      "th3": "ขอให้วันนี้ของคุณเต็มไปด้วยความสุข",
+      "frame": "well_wishes"
+    },
+    {
+      "id": 21,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "祝你一路平安。",
+      "th1": "ขอให้เดินทางปลอดภัย",
+      "th2": "ขอให้คุณเดินทางโดยสวัสดิภาพ",
+      "th3": "ขอให้การเดินทางของคุณราบรื่นและปลอดภัย",
+      "frame": "travel_wishes"
+    },
+    {
+      "id": 22,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "回头见。",
+      "th1": "แล้วพบกันใหม่",
+      "th2": "ไว้เจอกันอีก",
+      "th3": "เดี๋ยวพบกันนะ",
+      "frame": "farewell"
+    },
+    {
+      "id": 23,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "好久不见。",
+      "th1": "ไม่ได้เจอกันนานเลย",
+      "th2": "ไม่พบกันเสียนาน",
+      "th3": "เราไม่ได้พบกันมานานแล้ว",
+      "frame": "reunion"
+    },
+    {
+      "id": 24,
+      "section": "คำทักทายและบทสนทนา",
+      "category": "everyday_speech",
+      "zh": "欢迎回来。",
+      "th1": "ยินดีต้อนรับกลับมา",
+      "th2": "กลับมาแล้ว ยินดีต้อนรับนะ",
+      "th3": "ดีใจที่คุณกลับมา",
+      "frame": "welcome"
     }
   ]
 }

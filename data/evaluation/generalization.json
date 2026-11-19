@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "hand_authored_heldout_reference",
-    "review_status": "held_out_evaluation"
+    "generation_method": "hand_authored_heldout_reference_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "heldout_generalization",
       "zh": "我今天想喝咖啡。",
       "th1": "วันนี้ฉันอยากดื่มกาแฟ",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้ฉันอยากดื่มกาแฟ",
+      "th3": "ฉันอยากดื่มกาแฟในวันนี้",
       "frame": "heldout_generalization"
     },
     {
@@ -28,8 +28,8 @@
       "category": "heldout_generalization",
       "zh": "你明天要去医院吗？",
       "th1": "พรุ่งนี้คุณจะไปโรงพยาบาลไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "วันพรุ่งนี้คุณจะไปโรงพยาบาลไหม",
+      "th3": "คุณจะไปโรงพยาบาลไหมในวันพรุ่งนี้",
       "frame": "heldout_generalization"
     },
     {
@@ -38,8 +38,8 @@
       "category": "heldout_generalization",
       "zh": "这个苹果多少钱？",
       "th1": "แอปเปิลลูกนี้ราคาเท่าไหร่",
-      "th2": null,
-      "th3": null,
+      "th2": "แอปเปิลลูกนี้ราคาเท่าไร",
+      "th3": "แอปเปิลลูกนี้ราคาเท่าไหร่นะ",
       "frame": "heldout_generalization"
     },
     {
@@ -48,8 +48,8 @@
       "category": "heldout_generalization",
       "zh": "我们下午在学校见面。",
       "th1": "เราพบกันที่โรงเรียนตอนบ่าย",
-      "th2": null,
-      "th3": null,
+      "th2": "พบกันที่โรงเรียนตอนบ่าย",
+      "th3": "เราพบกันที่โรงเรียนตอนบ่ายนะ",
       "frame": "heldout_generalization"
     },
     {
@@ -58,8 +58,8 @@
       "category": "heldout_generalization",
       "zh": "今天晚上我们一起吃饭。",
       "th1": "คืนนี้พวกเราไปกินข้าวด้วยกัน",
-      "th2": null,
-      "th3": null,
+      "th2": "คืนนี้พวกเราไปรับประทานข้าวด้วยกัน",
+      "th3": "คืนนี้ไปกินข้าวด้วยกัน",
       "frame": "heldout_generalization"
     },
     {
@@ -68,8 +68,8 @@
       "category": "heldout_generalization",
       "zh": "这个地方非常安静。",
       "th1": "สถานที่นี้เงียบสงบมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานที่นี้เงียบสงบมากนะ",
+      "th3": "สถานที่นี้เงียบสงบมากจริง ๆ",
       "frame": "heldout_generalization"
     },
     {
@@ -78,8 +78,8 @@
       "category": "heldout_generalization",
       "zh": "我现在需要帮助。",
       "th1": "ตอนนี้ฉันต้องการความช่วยเหลือ",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันต้องการความช่วยเหลือ",
+      "th3": "ฉันต้องการความช่วยเหลือในตอนนี้",
       "frame": "heldout_generalization"
     },
     {
@@ -88,8 +88,8 @@
       "category": "heldout_generalization",
       "zh": "请给我看这个文件。",
       "th1": "กรุณาให้ฉันดูไฟล์นี้",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดให้ฉันดูไฟล์นี้",
+      "th3": "กรุณาให้ฉันดูไฟล์นี้นะ",
       "frame": "heldout_generalization"
     },
     {
@@ -98,8 +98,8 @@
       "category": "heldout_generalization",
       "zh": "你今天有时间吗？",
       "th1": "วันนี้คุณมีเวลาไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้คุณมีเวลาไหม",
+      "th3": "คุณมีเวลาไหมในวันนี้",
       "frame": "heldout_generalization"
     },
     {
@@ -108,8 +108,8 @@
       "category": "heldout_generalization",
       "zh": "我不想买这个东西。",
       "th1": "ฉันไม่อยากซื้อสิ่งนี้",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่อยากซื้อสิ่งนี้",
+      "th3": "ฉันไม่อยากซื้อสิ่งนี้นะ",
       "frame": "heldout_generalization"
     },
     {
@@ -118,8 +118,8 @@
       "category": "heldout_generalization",
       "zh": "请慢一点说，我听不清楚。",
       "th1": "กรุณาพูดช้าลงหน่อย ฉันฟังไม่ชัด",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดพูดช้าลงหน่อย ฉันฟังไม่ชัด",
+      "th3": "กรุณากล่าวช้าลงหน่อย ฉันฟังไม่ชัด",
       "frame": "heldout_generalization"
     },
     {
@@ -128,8 +128,8 @@
       "category": "heldout_generalization",
       "zh": "我们明天早上去机场。",
       "th1": "พรุ่งนี้เช้าพวกเราไปสนามบิน",
-      "th2": null,
-      "th3": null,
+      "th2": "วันพรุ่งนี้เช้าพวกเราไปสนามบิน",
+      "th3": "พรุ่งนี้เช้าพวกเราไปสนามบินนะ",
       "frame": "heldout_generalization"
     },
     {
@@ -138,8 +138,8 @@
       "category": "heldout_generalization",
       "zh": "我已经收到你的消息了。",
       "th1": "ฉันได้รับข้อความของคุณแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "ได้รับข้อความของคุณแล้ว",
+      "th3": "ฉันได้รับข้อความของคุณแล้วนะ",
       "frame": "heldout_generalization"
     },
     {
@@ -148,8 +148,8 @@
       "category": "heldout_generalization",
       "zh": "请帮我检查一下手机。",
       "th1": "กรุณาช่วยตรวจสอบโทรศัพท์มือถือให้ฉันหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดช่วยตรวจสอบโทรศัพท์มือถือให้ฉันหน่อย",
+      "th3": "กรุณาช่วยตรวจสอบมือถือให้ฉันหน่อย",
       "frame": "heldout_generalization"
     },
     {
@@ -158,8 +158,8 @@
       "category": "heldout_generalization",
       "zh": "我想学习更多泰语。",
       "th1": "ฉันอยากเรียนภาษาไทยเพิ่มเติม",
-      "th2": null,
-      "th3": null,
+      "th2": "อยากเรียนภาษาไทยเพิ่มเติม",
+      "th3": "ฉันอยากเรียนภาษาไทยเพิ่มเติมนะ",
       "frame": "heldout_generalization"
     },
     {
@@ -168,8 +168,8 @@
       "category": "heldout_generalization",
       "zh": "现在外面正在下雨。",
       "th1": "ตอนนี้ข้างนอกกำลังฝนตก",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ข้างนอกกำลังฝนตก",
+      "th3": "ตอนนี้ข้างนอกกำลังฝนตกนะ",
       "frame": "heldout_generalization"
     },
     {
@@ -178,8 +178,8 @@
       "category": "heldout_generalization",
       "zh": "我们可以在这里休息一下。",
       "th1": "พวกเราพักที่นี่สักหน่อยได้",
-      "th2": null,
-      "th3": null,
+      "th2": "พักที่นี่สักหน่อยได้",
+      "th3": "พวกเราพักที่นี่สักหน่อยได้นะ",
       "frame": "heldout_generalization"
     },
     {
@@ -188,8 +188,8 @@
       "category": "heldout_generalization",
       "zh": "这个价格太贵了，可以便宜一点吗？",
       "th1": "ราคานี้แพงเกินไป ลดลงอีกหน่อยได้ไหม",
-      "th2": null,
-      "th3": null,
+      "th2": "ราคานี้แพงเกินไป ลดลงอีกหน่อยได้หรือเปล่า",
+      "th3": "ราคานี้แพงเรับประทานไป ลดลงอีกหน่อยได้ไหม",
       "frame": "heldout_generalization"
     },
     {
@@ -198,8 +198,8 @@
       "category": "heldout_generalization",
       "zh": "请不要忘记保存文件。",
       "th1": "กรุณาอย่าลืมบันทึกไฟล์",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดอย่าลืมบันทึกไฟล์",
+      "th3": "กรุณาอย่าลืมบันทึกไฟล์นะ",
       "frame": "heldout_generalization"
     },
     {
@@ -208,8 +208,8 @@
       "category": "heldout_generalization",
       "zh": "我今天很忙，明天再联系你。",
       "th1": "วันนี้ฉันยุ่งมาก พรุ่งนี้ค่อยติดต่อคุณ",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้ฉันยุ่งมาก พรุ่งนี้ค่อยติดต่อคุณ",
+      "th3": "วันนี้ฉันยุ่งมาก วันพรุ่งนี้ค่อยติดต่อคุณ",
       "frame": "heldout_generalization"
     }
   ]

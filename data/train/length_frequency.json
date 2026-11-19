@@ -8,8 +8,8 @@
     "task": "translation",
     "format": "json_multi_reference_object",
     "tokenizer": "shared_bpe_250_with_character_fallback",
-    "generation_method": "hand_curated_controlled_length_frequency_v1",
-    "review_status": "assistant_curated_requires_native_speaker_review"
+    "generation_method": "hand_curated_controlled_length_frequency_v1_three_reference_expansion",
+    "review_status": "auto_paraphrased_requires_native_speaker_review"
   },
   "examples": [
     {
@@ -18,8 +18,8 @@
       "category": "controlled_common_short",
       "zh": "常常",
       "th1": "บ่อย ๆ",
-      "th2": null,
-      "th3": null,
+      "th2": "บ่อย ๆนะ",
+      "th3": "บ่อย ๆจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -28,8 +28,8 @@
       "category": "controlled_common_short",
       "zh": "偶尔",
       "th1": "เป็นครั้งคราว",
-      "th2": null,
-      "th3": null,
+      "th2": "เป็นครั้งคราวนะ",
+      "th3": "เป็นครั้งคราวจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -38,8 +38,8 @@
       "category": "controlled_common_short",
       "zh": "通常",
       "th1": "โดยปกติ",
-      "th2": null,
-      "th3": null,
+      "th2": "โดยปกตินะ",
+      "th3": "โดยปกติจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -48,8 +48,8 @@
       "category": "controlled_common_short",
       "zh": "大致",
       "th1": "โดยคร่าว ๆ",
-      "th2": null,
-      "th3": null,
+      "th2": "โดยคร่าว ๆนะ",
+      "th3": "โดยคร่าว ๆจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -58,8 +58,8 @@
       "category": "controlled_common_short",
       "zh": "稍微",
       "th1": "เล็กน้อย",
-      "th2": null,
-      "th3": null,
+      "th2": "นิดหน่อย",
+      "th3": "เล็กน้อยนะ",
       "frame": "controlled_common_short"
     },
     {
@@ -68,8 +68,8 @@
       "category": "controlled_common_short",
       "zh": "至少",
       "th1": "อย่างน้อย",
-      "th2": null,
-      "th3": null,
+      "th2": "อย่างน้อยนะ",
+      "th3": "อย่างน้อยจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -78,8 +78,8 @@
       "category": "controlled_common_short",
       "zh": "尤其",
       "th1": "โดยเฉพาะ",
-      "th2": null,
-      "th3": null,
+      "th2": "โดยเฉพาะนะ",
+      "th3": "โดยเฉพาะจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -88,8 +88,8 @@
       "category": "controlled_common_short",
       "zh": "反而",
       "th1": "กลับกลายเป็นว่า",
-      "th2": null,
-      "th3": null,
+      "th2": "กลับกลายเป็นว่านะ",
+      "th3": "กลับกลายเป็นว่าจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -98,8 +98,8 @@
       "category": "controlled_common_short",
       "zh": "否则",
       "th1": "มิฉะนั้น",
-      "th2": null,
-      "th3": null,
+      "th2": "มิฉะนั้นนะ",
+      "th3": "มิฉะนั้นจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -108,8 +108,8 @@
       "category": "controlled_common_short",
       "zh": "因此",
       "th1": "ดังนั้น",
-      "th2": null,
-      "th3": null,
+      "th2": "ดังนั้นนะ",
+      "th3": "ดังนั้นจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -118,8 +118,8 @@
       "category": "controlled_common_short",
       "zh": "此外",
       "th1": "นอกจากนี้",
-      "th2": null,
-      "th3": null,
+      "th2": "นอกจากนี้นะ",
+      "th3": "นอกจากนี้จริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -128,8 +128,8 @@
       "category": "controlled_common_short",
       "zh": "毕竟",
       "th1": "อย่างไรก็ดี",
-      "th2": null,
-      "th3": null,
+      "th2": "อย่างไรก็ดีนะ",
+      "th3": "อย่างไรก็ดีจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -138,8 +138,8 @@
       "category": "controlled_common_short",
       "zh": "似乎",
       "th1": "ดูเหมือนว่า",
-      "th2": null,
-      "th3": null,
+      "th2": "ดูเหมือนว่านะ",
+      "th3": "ดูเหมือนว่าจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -148,8 +148,8 @@
       "category": "controlled_common_short",
       "zh": "仍然",
       "th1": "ยังคง",
-      "th2": null,
-      "th3": null,
+      "th2": "ยังคงนะ",
+      "th3": "ยังคงจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -158,8 +158,8 @@
       "category": "controlled_common_short",
       "zh": "立刻",
       "th1": "ทันที",
-      "th2": null,
-      "th3": null,
+      "th2": "ทันทีนะ",
+      "th3": "ทันทีจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -168,8 +168,8 @@
       "category": "controlled_common_short",
       "zh": "暂时",
       "th1": "ชั่วคราว",
-      "th2": null,
-      "th3": null,
+      "th2": "ชั่วคราวนะ",
+      "th3": "ชั่วคราวจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -178,8 +178,8 @@
       "category": "controlled_common_short",
       "zh": "顺便",
       "th1": "ถือโอกาสทำไปด้วย",
-      "th2": null,
-      "th3": null,
+      "th2": "ถือโอกาสทำไปด้วยนะ",
+      "th3": "ถือโอกาสทำไปด้วยจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -188,8 +188,8 @@
       "category": "controlled_common_short",
       "zh": "干脆",
       "th1": "เสียเลย / ตัดสินใจทำไปเลย",
-      "th2": null,
-      "th3": null,
+      "th2": "เสียเลย / ตัดสินใจทำไปเลยนะ",
+      "th3": "เสียเลย / ตัดสินใจทำไปเลยจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -198,8 +198,8 @@
       "category": "controlled_common_short",
       "zh": "恰好",
       "th1": "พอดี",
-      "th2": null,
-      "th3": null,
+      "th2": "พอดีนะ",
+      "th3": "พอดีจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -208,8 +208,8 @@
       "category": "controlled_common_short",
       "zh": "未必",
       "th1": "ไม่แน่เสมอไป",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่แน่เสมอไปนะ",
+      "th3": "ไม่แน่เสมอไปจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -218,8 +218,8 @@
       "category": "controlled_common_short",
       "zh": "难免",
       "th1": "หลีกเลี่ยงได้ยาก",
-      "th2": null,
-      "th3": null,
+      "th2": "หลีกเลี่ยงได้ยากนะ",
+      "th3": "หลีกเลี่ยงได้ยากจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -228,8 +228,8 @@
       "category": "controlled_common_short",
       "zh": "何况",
       "th1": "ยิ่งไปกว่านั้น",
-      "th2": null,
-      "th3": null,
+      "th2": "ยิ่งไปกว่านั้นนะ",
+      "th3": "ยิ่งไปกว่านั้นจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -238,8 +238,8 @@
       "category": "controlled_common_short",
       "zh": "索性",
       "th1": "ตัดสินใจทำเสียเลย",
-      "th2": null,
-      "th3": null,
+      "th2": "ตัดสินใจทำเสียเลยนะ",
+      "th3": "ตัดสินใจทำเสียเลยจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -248,8 +248,8 @@
       "category": "controlled_common_short",
       "zh": "偏偏",
       "th1": "ดัน...เสียได้",
-      "th2": null,
-      "th3": null,
+      "th2": "ดัน...เสียได้นะ",
+      "th3": "ดัน...เสียได้จริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -258,8 +258,8 @@
       "category": "controlled_common_short",
       "zh": "逐渐",
       "th1": "ค่อย ๆ",
-      "th2": null,
-      "th3": null,
+      "th2": "ค่อย ๆนะ",
+      "th3": "ค่อย ๆจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -268,8 +268,8 @@
       "category": "controlled_common_short",
       "zh": "频繁",
       "th1": "บ่อยครั้ง",
-      "th2": null,
-      "th3": null,
+      "th2": "บ่อยครั้งนะ",
+      "th3": "บ่อยครั้งจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -278,8 +278,8 @@
       "category": "controlled_common_short",
       "zh": "彻底",
       "th1": "อย่างสิ้นเชิง",
-      "th2": null,
-      "th3": null,
+      "th2": "อย่างสิ้นเชิงนะ",
+      "th3": "อย่างสิ้นเชิงจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -288,8 +288,8 @@
       "category": "controlled_common_short",
       "zh": "临时",
       "th1": "ชั่วคราว",
-      "th2": null,
-      "th3": null,
+      "th2": "ชั่วคราวนะ",
+      "th3": "ชั่วคราวจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -298,8 +298,8 @@
       "category": "controlled_common_short",
       "zh": "适宜",
       "th1": "เหมาะสม",
-      "th2": null,
-      "th3": null,
+      "th2": "เหมาะสมนะ",
+      "th3": "เหมาะสมจริง ๆ",
       "frame": "controlled_common_short"
     },
     {
@@ -308,8 +308,8 @@
       "category": "controlled_rare_short",
       "zh": "谨慎",
       "th1": "ระมัดระวัง",
-      "th2": null,
-      "th3": null,
+      "th2": "ระมัดระวังนะ",
+      "th3": "ระมัดระวังจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -318,8 +318,8 @@
       "category": "controlled_rare_short",
       "zh": "迟疑",
       "th1": "ลังเล",
-      "th2": null,
-      "th3": null,
+      "th2": "ลังเลนะ",
+      "th3": "ลังเลจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -328,8 +328,8 @@
       "category": "controlled_rare_short",
       "zh": "犹豫",
       "th1": "ลังเลใจ",
-      "th2": null,
-      "th3": null,
+      "th2": "ลังเลใจนะ",
+      "th3": "ลังเลใจจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -338,8 +338,8 @@
       "category": "controlled_rare_short",
       "zh": "笨拙",
       "th1": "เงอะงะ",
-      "th2": null,
-      "th3": null,
+      "th2": "เงอะงะนะ",
+      "th3": "เงอะงะจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -348,8 +348,8 @@
       "category": "controlled_rare_short",
       "zh": "细腻",
       "th1": "ละเอียดอ่อน",
-      "th2": null,
-      "th3": null,
+      "th2": "ละเอียดอ่อนนะ",
+      "th3": "ละเอียดอ่อนจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -358,8 +358,8 @@
       "category": "controlled_rare_short",
       "zh": "恰当",
       "th1": "เหมาะสมพอดี",
-      "th2": null,
-      "th3": null,
+      "th2": "เหมาะสมพอดีนะ",
+      "th3": "เหมาะสมพอดีจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -368,8 +368,8 @@
       "category": "controlled_rare_short",
       "zh": "朴素",
       "th1": "เรียบง่าย",
-      "th2": null,
-      "th3": null,
+      "th2": "เรียบง่ายนะ",
+      "th3": "เรียบง่ายจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -378,8 +378,8 @@
       "category": "controlled_rare_short",
       "zh": "充裕",
       "th1": "มีอยู่อย่างเพียงพอ",
-      "th2": null,
-      "th3": null,
+      "th2": "มีอยู่อย่างแค่พอ",
+      "th3": "มีอยู่อย่างเพียงพอนะ",
       "frame": "controlled_rare_short"
     },
     {
@@ -388,8 +388,8 @@
       "category": "controlled_rare_short",
       "zh": "欠缺",
       "th1": "ขาดแคลน / ยังขาด",
-      "th2": null,
-      "th3": null,
+      "th2": "ขาดแคลน / ยังขาดนะ",
+      "th3": "ขาดแคลน / ยังขาดจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -398,8 +398,8 @@
       "category": "controlled_rare_short",
       "zh": "罕见",
       "th1": "พบได้ยาก",
-      "th2": null,
-      "th3": null,
+      "th2": "พบได้ยากนะ",
+      "th3": "พบได้ยากจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -408,8 +408,8 @@
       "category": "controlled_rare_short",
       "zh": "稀少",
       "th1": "มีจำนวนน้อย",
-      "th2": null,
-      "th3": null,
+      "th2": "มีจำนวนน้อยนะ",
+      "th3": "มีจำนวนน้อยจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -418,8 +418,8 @@
       "category": "controlled_rare_short",
       "zh": "狭窄",
       "th1": "แคบ",
-      "th2": null,
-      "th3": null,
+      "th2": "แคบนะ",
+      "th3": "แคบจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -428,8 +428,8 @@
       "category": "controlled_rare_short",
       "zh": "宽敞",
       "th1": "กว้างขวาง",
-      "th2": null,
-      "th3": null,
+      "th2": "กว้างขวางนะ",
+      "th3": "กว้างขวางจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -438,8 +438,8 @@
       "category": "controlled_rare_short",
       "zh": "潮湿",
       "th1": "ชื้น",
-      "th2": null,
-      "th3": null,
+      "th2": "ชื้นนะ",
+      "th3": "ชื้นจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -448,8 +448,8 @@
       "category": "controlled_rare_short",
       "zh": "粗糙",
       "th1": "หยาบ",
-      "th2": null,
-      "th3": null,
+      "th2": "หยาบนะ",
+      "th3": "หยาบจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -458,8 +458,8 @@
       "category": "controlled_rare_short",
       "zh": "模糊",
       "th1": "ไม่ชัดเจน",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่ชัดเจนนะ",
+      "th3": "ไม่ชัดเจนจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -468,8 +468,8 @@
       "category": "controlled_rare_short",
       "zh": "清晰",
       "th1": "ชัดเจน",
-      "th2": null,
-      "th3": null,
+      "th2": "ชัดเจนนะ",
+      "th3": "ชัดเจนจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -478,8 +478,8 @@
       "category": "controlled_rare_short",
       "zh": "灵活",
       "th1": "ยืดหยุ่น",
-      "th2": null,
-      "th3": null,
+      "th2": "ยืดหยุ่นนะ",
+      "th3": "ยืดหยุ่นจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -488,8 +488,8 @@
       "category": "controlled_rare_short",
       "zh": "可靠",
       "th1": "เชื่อถือได้",
-      "th2": null,
-      "th3": null,
+      "th2": "เชื่อถือได้นะ",
+      "th3": "เชื่อถือได้จริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -498,8 +498,8 @@
       "category": "controlled_rare_short",
       "zh": "耐用",
       "th1": "ทนทาน",
-      "th2": null,
-      "th3": null,
+      "th2": "ทนทานนะ",
+      "th3": "ทนทานจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -508,8 +508,8 @@
       "category": "controlled_rare_short",
       "zh": "易碎",
       "th1": "แตกหักง่าย",
-      "th2": null,
-      "th3": null,
+      "th2": "แตกหักง่ายนะ",
+      "th3": "แตกหักง่ายจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -518,8 +518,8 @@
       "category": "controlled_rare_short",
       "zh": "偏远",
       "th1": "ห่างไกล",
-      "th2": null,
-      "th3": null,
+      "th2": "ห่างไกลนะ",
+      "th3": "ห่างไกลจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -528,8 +528,8 @@
       "category": "controlled_rare_short",
       "zh": "荒凉",
       "th1": "รกร้าง",
-      "th2": null,
-      "th3": null,
+      "th2": "รกร้างนะ",
+      "th3": "รกร้างจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -538,8 +538,8 @@
       "category": "controlled_rare_short",
       "zh": "繁华",
       "th1": "เจริญรุ่งเรือง / คึกคัก",
-      "th2": null,
-      "th3": null,
+      "th2": "เจริญรุ่งเรือง / คึกคักนะ",
+      "th3": "เจริญรุ่งเรือง / คึกคักจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -548,8 +548,8 @@
       "category": "controlled_rare_short",
       "zh": "颠簸",
       "th1": "ขรุขระ / สั่นสะเทือน",
-      "th2": null,
-      "th3": null,
+      "th2": "ขรุขระ / สั่นสะเทือนนะ",
+      "th3": "ขรุขระ / สั่นสะเทือนจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -558,8 +558,8 @@
       "category": "controlled_rare_short",
       "zh": "眩晕",
       "th1": "เวียนศีรษะ",
-      "th2": null,
-      "th3": null,
+      "th2": "เวียนศีรษะนะ",
+      "th3": "เวียนศีรษะจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -568,8 +568,8 @@
       "category": "controlled_rare_short",
       "zh": "疲劳",
       "th1": "อ่อนเพลีย",
-      "th2": null,
-      "th3": null,
+      "th2": "อ่อนเพลียนะ",
+      "th3": "อ่อนเพลียจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -578,8 +578,8 @@
       "category": "controlled_rare_short",
       "zh": "过敏",
       "th1": "แพ้",
-      "th2": null,
-      "th3": null,
+      "th2": "แพ้นะ",
+      "th3": "แพ้จริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -588,8 +588,8 @@
       "category": "controlled_rare_short",
       "zh": "缓解",
       "th1": "บรรเทา",
-      "th2": null,
-      "th3": null,
+      "th2": "บรรเทานะ",
+      "th3": "บรรเทาจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -598,8 +598,8 @@
       "category": "controlled_rare_short",
       "zh": "康复",
       "th1": "ฟื้นตัว",
-      "th2": null,
-      "th3": null,
+      "th2": "ฟื้นตัวนะ",
+      "th3": "ฟื้นตัวจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -608,8 +608,8 @@
       "category": "controlled_rare_short",
       "zh": "隐私",
       "th1": "ความเป็นส่วนตัว",
-      "th2": null,
-      "th3": null,
+      "th2": "ความเป็นส่วนตัวนะ",
+      "th3": "ความเป็นส่วนตัวจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -618,8 +618,8 @@
       "category": "controlled_rare_short",
       "zh": "权限",
       "th1": "สิทธิ์การเข้าถึง",
-      "th2": null,
-      "th3": null,
+      "th2": "สิทธิ์การเข้าถึงนะ",
+      "th3": "สิทธิ์การเข้าถึงจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -628,8 +628,8 @@
       "category": "controlled_rare_short",
       "zh": "凭证",
       "th1": "หลักฐาน / เอกสารยืนยัน",
-      "th2": null,
-      "th3": null,
+      "th2": "หลักฐาน / เอกสารยืนยันนะ",
+      "th3": "หลักฐาน / เอกสารยืนยันจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -638,8 +638,8 @@
       "category": "controlled_rare_short",
       "zh": "余额",
       "th1": "ยอดคงเหลือ",
-      "th2": null,
-      "th3": null,
+      "th2": "ยอดคงเหลือนะ",
+      "th3": "ยอดคงเหลือจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -648,8 +648,8 @@
       "category": "controlled_rare_short",
       "zh": "差额",
       "th1": "ส่วนต่าง",
-      "th2": null,
-      "th3": null,
+      "th2": "ส่วนต่างนะ",
+      "th3": "ส่วนต่างจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -658,8 +658,8 @@
       "category": "controlled_rare_short",
       "zh": "折扣",
       "th1": "ส่วนลด",
-      "th2": null,
-      "th3": null,
+      "th2": "ส่วนลดนะ",
+      "th3": "ส่วนลดจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -668,8 +668,8 @@
       "category": "controlled_rare_short",
       "zh": "期限",
       "th1": "ระยะเวลาที่กำหนด",
-      "th2": null,
-      "th3": null,
+      "th2": "ระยะเวลาที่กำหนดนะ",
+      "th3": "ระยะเวลาที่กำหนดจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -678,8 +678,8 @@
       "category": "controlled_rare_short",
       "zh": "备用",
       "th1": "สำรองไว้",
-      "th2": null,
-      "th3": null,
+      "th2": "สำรองไว้นะ",
+      "th3": "สำรองไว้จริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -688,8 +688,8 @@
       "category": "controlled_rare_short",
       "zh": "故障",
       "th1": "ความขัดข้อง",
-      "th2": null,
-      "th3": null,
+      "th2": "ความขัดข้องนะ",
+      "th3": "ความขัดข้องจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -698,8 +698,8 @@
       "category": "controlled_rare_short",
       "zh": "耗电",
       "th1": "ใช้พลังงานไฟฟ้า",
-      "th2": null,
-      "th3": null,
+      "th2": "ใช้พลังงานไฟฟ้านะ",
+      "th3": "ใช้พลังงานไฟฟ้าจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -708,8 +708,8 @@
       "category": "controlled_rare_short",
       "zh": "散热",
       "th1": "ระบายความร้อน",
-      "th2": null,
-      "th3": null,
+      "th2": "ระบายความร้อนนะ",
+      "th3": "ระบายความร้อนจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -718,8 +718,8 @@
       "category": "controlled_rare_short",
       "zh": "续航",
       "th1": "ระยะเวลาการใช้งานแบตเตอรี่",
-      "th2": null,
-      "th3": null,
+      "th2": "ระยะเวลาการใช้งานแบตเตอรี่นะ",
+      "th3": "ระยะเวลาการใช้งานแบตเตอรี่จริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -728,8 +728,8 @@
       "category": "controlled_rare_short",
       "zh": "传输",
       "th1": "ส่งผ่านข้อมูล",
-      "th2": null,
-      "th3": null,
+      "th2": "ส่งผ่านข้อมูลนะ",
+      "th3": "ส่งผ่านข้อมูลจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -738,8 +738,8 @@
       "category": "controlled_rare_short",
       "zh": "加密",
       "th1": "เข้ารหัส",
-      "th2": null,
-      "th3": null,
+      "th2": "เข้ารหัสนะ",
+      "th3": "เข้ารหัสจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -748,8 +748,8 @@
       "category": "controlled_rare_short",
       "zh": "解压",
       "th1": "คลายการบีบอัดไฟล์",
-      "th2": null,
-      "th3": null,
+      "th2": "คลายการบีบอัดไฟล์นะ",
+      "th3": "คลายการบีบอัดไฟล์จริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -758,8 +758,8 @@
       "category": "controlled_rare_short",
       "zh": "备份",
       "th1": "สำรองข้อมูล",
-      "th2": null,
-      "th3": null,
+      "th2": "สำรองข้อมูลนะ",
+      "th3": "สำรองข้อมูลจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -768,8 +768,8 @@
       "category": "controlled_rare_short",
       "zh": "迁移",
       "th1": "ย้ายระบบ / ย้ายข้อมูล",
-      "th2": null,
-      "th3": null,
+      "th2": "ย้ายระบบ / ย้ายข้อมูลนะ",
+      "th3": "ย้ายระบบ / ย้ายข้อมูลจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -778,8 +778,8 @@
       "category": "controlled_rare_short",
       "zh": "恢复",
       "th1": "กู้คืน",
-      "th2": null,
-      "th3": null,
+      "th2": "กู้คืนนะ",
+      "th3": "กู้คืนจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -788,8 +788,8 @@
       "category": "controlled_rare_short",
       "zh": "检索",
       "th1": "ค้นคืนข้อมูล",
-      "th2": null,
-      "th3": null,
+      "th2": "ค้นคืนข้อมูลนะ",
+      "th3": "ค้นคืนข้อมูลจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -798,8 +798,8 @@
       "category": "controlled_rare_short",
       "zh": "筛选",
       "th1": "คัดกรอง",
-      "th2": null,
-      "th3": null,
+      "th2": "คัดกรองนะ",
+      "th3": "คัดกรองจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -808,8 +808,8 @@
       "category": "controlled_rare_short",
       "zh": "归档",
       "th1": "จัดเก็บเข้าแฟ้ม",
-      "th2": null,
-      "th3": null,
+      "th2": "จัดเก็บเข้าแฟ้มนะ",
+      "th3": "จัดเก็บเข้าแฟ้มจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -818,8 +818,8 @@
       "category": "controlled_rare_short",
       "zh": "预约",
       "th1": "จองล่วงหน้า",
-      "th2": null,
-      "th3": null,
+      "th2": "จองล่วงหน้านะ",
+      "th3": "จองล่วงหน้าจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -828,8 +828,8 @@
       "category": "controlled_rare_short",
       "zh": "抵达",
       "th1": "เดินทางมาถึง",
-      "th2": null,
-      "th3": null,
+      "th2": "เดินทางมาถึงนะ",
+      "th3": "เดินทางมาถึงจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -838,8 +838,8 @@
       "category": "controlled_rare_short",
       "zh": "转乘",
       "th1": "เปลี่ยนสาย / ต่อรถ",
-      "th2": null,
-      "th3": null,
+      "th2": "เปลี่ยนสาย / ต่อรถนะ",
+      "th3": "เปลี่ยนสาย / ต่อรถจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -848,8 +848,8 @@
       "category": "controlled_rare_short",
       "zh": "绕行",
       "th1": "ใช้เส้นทางอ้อม",
-      "th2": null,
-      "th3": null,
+      "th2": "ใช้เส้นทางอ้อมนะ",
+      "th3": "ใช้เส้นทางอ้อมจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -858,8 +858,8 @@
       "category": "controlled_rare_short",
       "zh": "隐患",
       "th1": "ความเสี่ยงแฝง",
-      "th2": null,
-      "th3": null,
+      "th2": "ความเสี่ยงแฝงนะ",
+      "th3": "ความเสี่ยงแฝงจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -868,8 +868,8 @@
       "category": "controlled_rare_short",
       "zh": "误差",
       "th1": "ค่าความคลาดเคลื่อน",
-      "th2": null,
-      "th3": null,
+      "th2": "ค่าความคลาดเคลื่อนนะ",
+      "th3": "ค่าความคลาดเคลื่อนจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -878,8 +878,8 @@
       "category": "controlled_rare_short",
       "zh": "争议",
       "th1": "ข้อโต้แย้ง",
-      "th2": null,
-      "th3": null,
+      "th2": "ข้อโต้แย้งนะ",
+      "th3": "ข้อโต้แย้งจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -888,8 +888,8 @@
       "category": "controlled_rare_short",
       "zh": "依据",
       "th1": "หลักเกณฑ์ / พื้นฐานอ้างอิง",
-      "th2": null,
-      "th3": null,
+      "th2": "หลักเกณฑ์ / พื้นฐานอ้างอิงนะ",
+      "th3": "หลักเกณฑ์ / พื้นฐานอ้างอิงจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -898,8 +898,8 @@
       "category": "controlled_rare_short",
       "zh": "匿名",
       "th1": "ไม่เปิดเผยชื่อ",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่เปิดเผยชื่อนะ",
+      "th3": "ไม่เปิดเผยชื่อจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -908,8 +908,8 @@
       "category": "controlled_rare_short",
       "zh": "例外",
       "th1": "ข้อยกเว้น",
-      "th2": null,
-      "th3": null,
+      "th2": "ข้อยกเว้นนะ",
+      "th3": "ข้อยกเว้นจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -918,8 +918,8 @@
       "category": "controlled_rare_short",
       "zh": "炎症",
       "th1": "การอักเสบ",
-      "th2": null,
-      "th3": null,
+      "th2": "การอักเสบนะ",
+      "th3": "การอักเสบจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -928,8 +928,8 @@
       "category": "controlled_rare_short",
       "zh": "细菌",
       "th1": "แบคทีเรีย",
-      "th2": null,
-      "th3": null,
+      "th2": "แบคทีเรียนะ",
+      "th3": "แบคทีเรียจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -938,8 +938,8 @@
       "category": "controlled_rare_short",
       "zh": "复查",
       "th1": "ตรวจซ้ำ",
-      "th2": null,
-      "th3": null,
+      "th2": "ตรวจซ้ำนะ",
+      "th3": "ตรวจซ้ำจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -948,8 +948,8 @@
       "category": "controlled_rare_short",
       "zh": "轮廓",
       "th1": "เค้าโครง",
-      "th2": null,
-      "th3": null,
+      "th2": "เค้าโครงนะ",
+      "th3": "เค้าโครงจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -958,8 +958,8 @@
       "category": "controlled_rare_short",
       "zh": "纹理",
       "th1": "พื้นผิว / ลวดลายเนื้อวัสดุ",
-      "th2": null,
-      "th3": null,
+      "th2": "พื้นผิว / ลวดลายเนื้อวัสดุนะ",
+      "th3": "พื้นผิว / ลวดลายเนื้อวัสดุจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -968,8 +968,8 @@
       "category": "controlled_rare_short",
       "zh": "湿度",
       "th1": "ความชื้น",
-      "th2": null,
-      "th3": null,
+      "th2": "ความชื้นนะ",
+      "th3": "ความชื้นจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -978,8 +978,8 @@
       "category": "controlled_rare_short",
       "zh": "温差",
       "th1": "ความแตกต่างของอุณหภูมิ",
-      "th2": null,
-      "th3": null,
+      "th2": "ความแตกต่างของอุณหภูมินะ",
+      "th3": "ความแตกต่างของอุณหภูมิจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -988,8 +988,8 @@
       "category": "controlled_rare_short",
       "zh": "余量",
       "th1": "ปริมาณที่เหลือสำรอง",
-      "th2": null,
-      "th3": null,
+      "th2": "ปริมาณที่เหลือสำรองนะ",
+      "th3": "ปริมาณที่เหลือสำรองจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -998,8 +998,8 @@
       "category": "controlled_rare_short",
       "zh": "缺口",
       "th1": "ช่องว่าง / ส่วนที่ขาด",
-      "th2": null,
-      "th3": null,
+      "th2": "ช่องว่าง / ส่วนที่ขาดนะ",
+      "th3": "ช่องว่าง / ส่วนที่ขาดจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -1008,8 +1008,8 @@
       "category": "controlled_rare_short",
       "zh": "盼望",
       "th1": "เฝ้ารอด้วยความหวัง",
-      "th2": null,
-      "th3": null,
+      "th2": "เฝ้ารอด้วยความหวังนะ",
+      "th3": "เฝ้ารอด้วยความหวังจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -1018,8 +1018,8 @@
       "category": "controlled_rare_short",
       "zh": "若干",
       "th1": "หลาย / จำนวนหนึ่ง",
-      "th2": null,
-      "th3": null,
+      "th2": "หลาย / จำนวนหนึ่งนะ",
+      "th3": "หลาย / จำนวนหนึ่งจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -1028,8 +1028,8 @@
       "category": "controlled_rare_short",
       "zh": "仍旧",
       "th1": "ยังคงเหมือนเดิม",
-      "th2": null,
-      "th3": null,
+      "th2": "ยังคงเหมือนเดิมนะ",
+      "th3": "ยังคงเหมือนเดิมจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -1038,8 +1038,8 @@
       "category": "controlled_rare_short",
       "zh": "反倒",
       "th1": "กลับกลายเป็นว่า",
-      "th2": null,
-      "th3": null,
+      "th2": "กลับกลายเป็นว่านะ",
+      "th3": "กลับกลายเป็นว่าจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -1048,8 +1048,8 @@
       "category": "controlled_rare_short",
       "zh": "逐步",
       "th1": "ทีละขั้น",
-      "th2": null,
-      "th3": null,
+      "th2": "ทีละขั้นนะ",
+      "th3": "ทีละขั้นจริง ๆ",
       "frame": "controlled_rare_short"
     },
     {
@@ -1058,8 +1058,8 @@
       "category": "controlled_long_word",
       "zh": "可靠性",
       "th1": "ความน่าเชื่อถือ",
-      "th2": null,
-      "th3": null,
+      "th2": "ความน่าเชื่อถือนะ",
+      "th3": "ความน่าเชื่อถือจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1068,8 +1068,8 @@
       "category": "controlled_long_word",
       "zh": "兼容性",
       "th1": "ความเข้ากันได้",
-      "th2": null,
-      "th3": null,
+      "th2": "ความเข้ากันได้นะ",
+      "th3": "ความเข้ากันได้จริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1078,8 +1078,8 @@
       "category": "controlled_long_word",
       "zh": "可持续性",
       "th1": "ความยั่งยืน",
-      "th2": null,
-      "th3": null,
+      "th2": "ความยั่งยืนนะ",
+      "th3": "ความยั่งยืนจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1088,8 +1088,8 @@
       "category": "controlled_long_word",
       "zh": "操作系统",
       "th1": "ระบบปฏิบัติการ",
-      "th2": null,
-      "th3": null,
+      "th2": "ระบบปฏิบัติการนะ",
+      "th3": "ระบบปฏิบัติการจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1098,8 +1098,8 @@
       "category": "controlled_long_word",
       "zh": "用户界面",
       "th1": "ส่วนติดต่อผู้ใช้",
-      "th2": null,
-      "th3": null,
+      "th2": "ส่วนติดต่อผู้ใช้งาน",
+      "th3": "ส่วนติดต่อผู้ใช้นะ",
       "frame": "controlled_long_word"
     },
     {
@@ -1108,8 +1108,8 @@
       "category": "controlled_long_word",
       "zh": "数据结构",
       "th1": "โครงสร้างข้อมูล",
-      "th2": null,
-      "th3": null,
+      "th2": "โครงสร้างข้อมูลนะ",
+      "th3": "โครงสร้างข้อมูลจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1118,8 +1118,8 @@
       "category": "controlled_long_word",
       "zh": "语音识别",
       "th1": "การรู้จำเสียงพูด",
-      "th2": null,
-      "th3": null,
+      "th2": "การรู้จำเสียงกล่าว",
+      "th3": "การรู้จำเสียงพูดนะ",
       "frame": "controlled_long_word"
     },
     {
@@ -1128,8 +1128,8 @@
       "category": "controlled_long_word",
       "zh": "机器翻译",
       "th1": "การแปลภาษาด้วยเครื่อง",
-      "th2": null,
-      "th3": null,
+      "th2": "การแปลภาษาด้วยเครื่องนะ",
+      "th3": "การแปลภาษาด้วยเครื่องจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1138,8 +1138,8 @@
       "category": "controlled_long_word",
       "zh": "自然语言",
       "th1": "ภาษาธรรมชาติ",
-      "th2": null,
-      "th3": null,
+      "th2": "ภาษาธรรมชาตินะ",
+      "th3": "ภาษาธรรมชาติจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1148,8 +1148,8 @@
       "category": "controlled_long_word",
       "zh": "语言模型",
       "th1": "โมเดลภาษา",
-      "th2": null,
-      "th3": null,
+      "th2": "โมเดลภาษานะ",
+      "th3": "โมเดลภาษาจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1158,8 +1158,8 @@
       "category": "controlled_long_word",
       "zh": "字符编码",
       "th1": "การเข้ารหัสตัวอักษร",
-      "th2": null,
-      "th3": null,
+      "th2": "การเข้ารหัสตัวอักษรนะ",
+      "th3": "การเข้ารหัสตัวอักษรจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1168,8 +1168,8 @@
       "category": "controlled_long_word",
       "zh": "Unicode字符",
       "th1": "อักขระ Unicode",
-      "th2": null,
-      "th3": null,
+      "th2": "อักขระ Unicodeนะ",
+      "th3": "อักขระ Unicodeจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1178,8 +1178,8 @@
       "category": "controlled_long_word",
       "zh": "电池容量",
       "th1": "ความจุแบตเตอรี่",
-      "th2": null,
-      "th3": null,
+      "th2": "ความจุแบตเตอรี่นะ",
+      "th3": "ความจุแบตเตอรี่จริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1188,8 +1188,8 @@
       "category": "controlled_long_word",
       "zh": "无线连接",
       "th1": "การเชื่อมต่อไร้สาย",
-      "th2": null,
-      "th3": null,
+      "th2": "การเชื่อมต่อไร้สายนะ",
+      "th3": "การเชื่อมต่อไร้สายจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1198,8 +1198,8 @@
       "category": "controlled_long_word",
       "zh": "网络延迟",
       "th1": "ความหน่วงของเครือข่าย",
-      "th2": null,
-      "th3": null,
+      "th2": "ความหน่วงของเครือข่ายนะ",
+      "th3": "ความหน่วงของเครือข่ายจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1208,8 +1208,8 @@
       "category": "controlled_long_word",
       "zh": "隐私政策",
       "th1": "นโยบายความเป็นส่วนตัว",
-      "th2": null,
-      "th3": null,
+      "th2": "นโยบายความเป็นส่วนตัวนะ",
+      "th3": "นโยบายความเป็นส่วนตัวจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1218,8 +1218,8 @@
       "category": "controlled_long_word",
       "zh": "使用条款",
       "th1": "ข้อกำหนดการใช้งาน",
-      "th2": null,
-      "th3": null,
+      "th2": "ข้อกำหนดการใช้งานนะ",
+      "th3": "ข้อกำหนดการใช้งานจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1228,8 +1228,8 @@
       "category": "controlled_long_word",
       "zh": "售后服务",
       "th1": "บริการหลังการขาย",
-      "th2": null,
-      "th3": null,
+      "th2": "บริการหลังการขายนะ",
+      "th3": "บริการหลังการขายจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1238,8 +1238,8 @@
       "category": "controlled_long_word",
       "zh": "质量保证",
       "th1": "การรับประกันคุณภาพ",
-      "th2": null,
-      "th3": null,
+      "th2": "การรับประกันคุณภาพนะ",
+      "th3": "การรับประกันคุณภาพจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1248,8 +1248,8 @@
       "category": "controlled_long_word",
       "zh": "维修费用",
       "th1": "ค่าใช้จ่ายในการซ่อม",
-      "th2": null,
-      "th3": null,
+      "th2": "ค่าใช้จ่ายในการซ่อมนะ",
+      "th3": "ค่าใช้จ่ายในการซ่อมจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1258,8 +1258,8 @@
       "category": "controlled_long_word",
       "zh": "交通拥堵",
       "th1": "การจราจรติดขัด",
-      "th2": null,
-      "th3": null,
+      "th2": "การจราจรติดขัดนะ",
+      "th3": "การจราจรติดขัดจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1268,8 +1268,8 @@
       "category": "controlled_long_word",
       "zh": "公共交通",
       "th1": "ระบบขนส่งสาธารณะ",
-      "th2": null,
-      "th3": null,
+      "th2": "ระบบขนส่งสาธารณะนะ",
+      "th3": "ระบบขนส่งสาธารณะจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1278,8 +1278,8 @@
       "category": "controlled_long_word",
       "zh": "紧急出口",
       "th1": "ทางออกฉุกเฉิน",
-      "th2": null,
-      "th3": null,
+      "th2": "ทางออกฉุกเฉินนะ",
+      "th3": "ทางออกฉุกเฉินจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1288,8 +1288,8 @@
       "category": "controlled_long_word",
       "zh": "身份证明",
       "th1": "เอกสารยืนยันตัวตน",
-      "th2": null,
-      "th3": null,
+      "th2": "เอกสารยืนยันตัวตนนะ",
+      "th3": "เอกสารยืนยันตัวตนจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1298,8 +1298,8 @@
       "category": "controlled_long_word",
       "zh": "环境保护",
       "th1": "การอนุรักษ์สิ่งแวดล้อม",
-      "th2": null,
-      "th3": null,
+      "th2": "การอนุรักษ์สิ่งแวดล้อมนะ",
+      "th3": "การอนุรักษ์สิ่งแวดล้อมจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1308,8 +1308,8 @@
       "category": "controlled_long_word",
       "zh": "资源分配",
       "th1": "การจัดสรรทรัพยากร",
-      "th2": null,
-      "th3": null,
+      "th2": "การจัดสรรทรัพยากรนะ",
+      "th3": "การจัดสรรทรัพยากรจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1318,8 +1318,8 @@
       "category": "controlled_long_word",
       "zh": "风险评估",
       "th1": "การประเมินความเสี่ยง",
-      "th2": null,
-      "th3": null,
+      "th2": "การประเมินความเสี่ยงนะ",
+      "th3": "การประเมินความเสี่ยงจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1328,8 +1328,8 @@
       "category": "controlled_long_word",
       "zh": "时间安排",
       "th1": "การจัดตารางเวลา",
-      "th2": null,
-      "th3": null,
+      "th2": "การจัดตารางเวลานะ",
+      "th3": "การจัดตารางเวลาจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1338,8 +1338,8 @@
       "category": "controlled_long_word",
       "zh": "长期合同",
       "th1": "สัญญาระยะยาว",
-      "th2": null,
-      "th3": null,
+      "th2": "สัญญาระยะยาวนะ",
+      "th3": "สัญญาระยะยาวจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1348,8 +1348,8 @@
       "category": "controlled_long_word",
       "zh": "临时住所",
       "th1": "ที่พักชั่วคราว",
-      "th2": null,
-      "th3": null,
+      "th2": "ที่พักชั่วคราวนะ",
+      "th3": "ที่พักชั่วคราวจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1358,8 +1358,8 @@
       "category": "controlled_long_word",
       "zh": "心理压力",
       "th1": "ความกดดันทางจิตใจ",
-      "th2": null,
-      "th3": null,
+      "th2": "ความกดดันทางจิตใจนะ",
+      "th3": "ความกดดันทางจิตใจจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1368,8 +1368,8 @@
       "category": "controlled_long_word",
       "zh": "身体状况",
       "th1": "สภาพร่างกาย",
-      "th2": null,
-      "th3": null,
+      "th2": "สภาพร่างกายนะ",
+      "th3": "สภาพร่างกายจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1378,8 +1378,8 @@
       "category": "controlled_long_word",
       "zh": "营养均衡",
       "th1": "โภชนาการที่สมดุล",
-      "th2": null,
-      "th3": null,
+      "th2": "โภชนาการที่สมดุลนะ",
+      "th3": "โภชนาการที่สมดุลจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1388,8 +1388,8 @@
       "category": "controlled_long_word",
       "zh": "沟通方式",
       "th1": "วิธีการสื่อสาร",
-      "th2": null,
-      "th3": null,
+      "th2": "วิธีการสื่อสารนะ",
+      "th3": "วิธีการสื่อสารจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1398,8 +1398,8 @@
       "category": "controlled_long_word",
       "zh": "解决方案",
       "th1": "แนวทางแก้ไขปัญหา",
-      "th2": null,
-      "th3": null,
+      "th2": "แนวทางแก้ไขปัญหานะ",
+      "th3": "แนวทางแก้ไขปัญหาจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1408,8 +1408,8 @@
       "category": "controlled_long_word",
       "zh": "详细说明",
       "th1": "คำอธิบายโดยละเอียด",
-      "th2": null,
-      "th3": null,
+      "th2": "คำชี้แจงโดยละเอียด",
+      "th3": "คำอธิบายโดยละเอียดนะ",
       "frame": "controlled_long_word"
     },
     {
@@ -1418,8 +1418,8 @@
       "category": "controlled_long_word",
       "zh": "实际情况",
       "th1": "สถานการณ์ที่เกิดขึ้นจริง",
-      "th2": null,
-      "th3": null,
+      "th2": "สถานการณ์ที่เกิดขึ้นจริงนะ",
+      "th3": "สถานการณ์ที่เกิดขึ้นจริงจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1428,8 +1428,8 @@
       "category": "controlled_long_word",
       "zh": "必要条件",
       "th1": "เงื่อนไขที่จำเป็น",
-      "th2": null,
-      "th3": null,
+      "th2": "เงื่อนไขที่จำเป็นนะ",
+      "th3": "เงื่อนไขที่จำเป็นจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1438,8 +1438,8 @@
       "category": "controlled_long_word",
       "zh": "优先顺序",
       "th1": "ลำดับความสำคัญ",
-      "th2": null,
-      "th3": null,
+      "th2": "ลำดับความสำคัญนะ",
+      "th3": "ลำดับความสำคัญจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1448,8 +1448,8 @@
       "category": "controlled_long_word",
       "zh": "参考资料",
       "th1": "เอกสารอ้างอิง",
-      "th2": null,
-      "th3": null,
+      "th2": "เอกสารอ้างอิงนะ",
+      "th3": "เอกสารอ้างอิงจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1458,8 +1458,8 @@
       "category": "controlled_long_word",
       "zh": "使用频率",
       "th1": "ความถี่ในการใช้งาน",
-      "th2": null,
-      "th3": null,
+      "th2": "ความถี่ในการใช้งานนะ",
+      "th3": "ความถี่ในการใช้งานจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1468,8 +1468,8 @@
       "category": "controlled_long_word",
       "zh": "快速充电",
       "th1": "การชาร์จอย่างรวดเร็ว",
-      "th2": null,
-      "th3": null,
+      "th2": "การชาร์จอย่างรวดเร็วนะ",
+      "th3": "การชาร์จอย่างรวดเร็วจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1478,8 +1478,8 @@
       "category": "controlled_long_word",
       "zh": "文件格式",
       "th1": "รูปแบบไฟล์",
-      "th2": null,
-      "th3": null,
+      "th2": "รูปแบบไฟล์นะ",
+      "th3": "รูปแบบไฟล์จริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1488,8 +1488,8 @@
       "category": "controlled_long_word",
       "zh": "自动更新",
       "th1": "การอัปเดตอัตโนมัติ",
-      "th2": null,
-      "th3": null,
+      "th2": "การอัปเดตอัตโนมัตินะ",
+      "th3": "การอัปเดตอัตโนมัติจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1498,8 +1498,8 @@
       "category": "controlled_long_word",
       "zh": "远程控制",
       "th1": "การควบคุมระยะไกล",
-      "th2": null,
-      "th3": null,
+      "th2": "การควบคุมระยะไกลนะ",
+      "th3": "การควบคุมระยะไกลจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1508,8 +1508,8 @@
       "category": "controlled_long_word",
       "zh": "多语言支持",
       "th1": "การรองรับหลายภาษา",
-      "th2": null,
-      "th3": null,
+      "th2": "การรองรับหลายภาษานะ",
+      "th3": "การรองรับหลายภาษาจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1518,8 +1518,8 @@
       "category": "controlled_long_word",
       "zh": "举足轻重",
       "th1": "มีความสำคัญอย่างยิ่ง",
-      "th2": null,
-      "th3": null,
+      "th2": "มีความสำคัญอย่างยิ่งนะ",
+      "th3": "มีความสำคัญอย่างยิ่งจริง ๆ",
       "frame": "controlled_long_word"
     },
     {
@@ -1528,8 +1528,8 @@
       "category": "controlled_short_sentence",
       "zh": "请稍等一会儿。",
       "th1": "กรุณารอสักครู่",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดรอสักครู่",
+      "th3": "กรุณารอสักครู่นะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1538,8 +1538,8 @@
       "category": "controlled_short_sentence",
       "zh": "这件事不太简单。",
       "th1": "เรื่องนี้ไม่ค่อยง่ายนัก",
-      "th2": null,
-      "th3": null,
+      "th2": "เรื่องนี้ไม่ค่อยง่ายนักนะ",
+      "th3": "เรื่องนี้ไม่ค่อยง่ายนักจริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1548,8 +1548,8 @@
       "category": "controlled_short_sentence",
       "zh": "我暂时没有答案。",
       "th1": "ตอนนี้ฉันยังไม่มีคำตอบ",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ฉันยังไม่มีคำตอบ",
+      "th3": "ฉันยังไม่มีคำตอบในตอนนี้",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1558,8 +1558,8 @@
       "category": "controlled_short_sentence",
       "zh": "这个办法很可靠。",
       "th1": "วิธีนี้เชื่อถือได้มาก",
-      "th2": null,
-      "th3": null,
+      "th2": "วิธีนี้เชื่อถือได้มากนะ",
+      "th3": "วิธีนี้เชื่อถือได้มากจริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1568,8 +1568,8 @@
       "category": "controlled_short_sentence",
       "zh": "请把声音调小。",
       "th1": "กรุณาลดเสียงลงหน่อย",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดลดเสียงลงหน่อย",
+      "th3": "กรุณาลดเสียงลงหน่อยนะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1578,8 +1578,8 @@
       "category": "controlled_short_sentence",
       "zh": "门口有点拥挤。",
       "th1": "บริเวณหน้าประตูค่อนข้างแออัด",
-      "th2": null,
-      "th3": null,
+      "th2": "บริเวณหน้าประตูค่อนข้างแออัดนะ",
+      "th3": "บริเวณหน้าประตูค่อนข้างแออัดจริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1588,8 +1588,8 @@
       "category": "controlled_short_sentence",
       "zh": "今天的空气很潮湿。",
       "th1": "วันนี้อากาศชื้นมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ในวันนี้อากาศชื้นมาก",
+      "th3": "วันนี้อากาศชื้นมากนะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1598,8 +1598,8 @@
       "category": "controlled_short_sentence",
       "zh": "这条路比较狭窄。",
       "th1": "ถนนเส้นนี้ค่อนข้างแคบ",
-      "th2": null,
-      "th3": null,
+      "th2": "ถนนเส้นนี้ค่อนข้างแคบนะ",
+      "th3": "ถนนเส้นนี้ค่อนข้างแคบจริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1608,8 +1608,8 @@
       "category": "controlled_short_sentence",
       "zh": "结果与预期不同。",
       "th1": "ผลลัพธ์แตกต่างจากที่คาดไว้",
-      "th2": null,
-      "th3": null,
+      "th2": "ผลลัพธ์แตกต่างจากที่คาดไว้นะ",
+      "th3": "ผลลัพธ์แตกต่างจากที่คาดไว้จริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1618,8 +1618,8 @@
       "category": "controlled_short_sentence",
       "zh": "我需要一份凭证。",
       "th1": "ฉันต้องการเอกสารยืนยันหนึ่งฉบับ",
-      "th2": null,
-      "th3": null,
+      "th2": "ต้องการเอกสารยืนยันหนึ่งฉบับ",
+      "th3": "ฉันต้องการเอกสารยืนยันหนึ่งฉบับนะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1628,8 +1628,8 @@
       "category": "controlled_short_sentence",
       "zh": "请保留原始文件。",
       "th1": "กรุณาเก็บไฟล์ต้นฉบับไว้",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดเก็บไฟล์ต้นฉบับไว้",
+      "th3": "กรุณาเก็บไฟล์ต้นฉบับไว้นะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1638,8 +1638,8 @@
       "category": "controlled_short_sentence",
       "zh": "这个功能尚未启用。",
       "th1": "ฟังก์ชันนี้ยังไม่ได้เปิดใช้งาน",
-      "th2": null,
-      "th3": null,
+      "th2": "ฟังก์ชันนี้ยังไม่ได้เปิดใช้งานนะ",
+      "th3": "ฟังก์ชันนี้ยังไม่ได้เปิดใช้งานจริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1648,8 +1648,8 @@
       "category": "controlled_short_sentence",
       "zh": "附近没有停车位。",
       "th1": "บริเวณใกล้เคียงไม่มีที่จอดรถ",
-      "th2": null,
-      "th3": null,
+      "th2": "บริเวณใกล้เคียงไม่มีที่จอดรถนะ",
+      "th3": "บริเวณใกล้เคียงไม่มีที่จอดรถจริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1658,8 +1658,8 @@
       "category": "controlled_short_sentence",
       "zh": "电池已经完全充满。",
       "th1": "แบตเตอรี่ชาร์จเต็มแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "แบตเตอรี่ชาร์จเต็มแล้วนะ",
+      "th3": "แบตเตอรี่ชาร์จเต็มแล้วจริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1668,8 +1668,8 @@
       "category": "controlled_short_sentence",
       "zh": "系统正在自动更新。",
       "th1": "ระบบกำลังอัปเดตโดยอัตโนมัติ",
-      "th2": null,
-      "th3": null,
+      "th2": "ระบบกำลังอัปเดตโดยอัตโนมัตินะ",
+      "th3": "ระบบกำลังอัปเดตโดยอัตโนมัติจริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1678,8 +1678,8 @@
       "category": "controlled_short_sentence",
       "zh": "请勿泄露个人信息。",
       "th1": "กรุณาอย่าเปิดเผยข้อมูลส่วนบุคคล",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดอย่าเปิดเผยข้อมูลส่วนบุคคล",
+      "th3": "กรุณาอย่าเปิดเผยข้อมูลส่วนบุคคลนะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1688,8 +1688,8 @@
       "category": "controlled_short_sentence",
       "zh": "他的解释很有条理。",
       "th1": "คำอธิบายของเขามีลำดับเป็นอย่างดี",
-      "th2": null,
-      "th3": null,
+      "th2": "คำชี้แจงของเขามีลำดับเป็นอย่างดี",
+      "th3": "คำอธิบายของเขามีลำดับเป็นอย่างดีนะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1698,8 +1698,8 @@
       "category": "controlled_short_sentence",
       "zh": "这份报告缺少细节。",
       "th1": "รายงานฉบับนี้ขาดรายละเอียด",
-      "th2": null,
-      "th3": null,
+      "th2": "รายงานฉบับนี้ขาดรายละเอียดนะ",
+      "th3": "รายงานฉบับนี้ขาดรายละเอียดจริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1708,8 +1708,8 @@
       "category": "controlled_short_sentence",
       "zh": "我们必须谨慎处理。",
       "th1": "เราต้องจัดการอย่างระมัดระวัง",
-      "th2": null,
-      "th3": null,
+      "th2": "ต้องจัดการอย่างระมัดระวัง",
+      "th3": "เราต้องจัดการอย่างระมัดระวังนะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1718,8 +1718,8 @@
       "category": "controlled_short_sentence",
       "zh": "这种材料容易破裂。",
       "th1": "วัสดุชนิดนี้แตกหักง่าย",
-      "th2": null,
-      "th3": null,
+      "th2": "วัสดุชนิดนี้แตกหักง่ายนะ",
+      "th3": "วัสดุชนิดนี้แตกหักง่ายจริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1728,8 +1728,8 @@
       "category": "controlled_short_sentence",
       "zh": "现在还不能下结论。",
       "th1": "ตอนนี้ยังไม่สามารถสรุปได้",
-      "th2": null,
-      "th3": null,
+      "th2": "ขณะนี้ยังไม่สามารถสรุปได้",
+      "th3": "ตอนนี้ยังไม่อาจสรุปได้",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1738,8 +1738,8 @@
       "category": "controlled_short_sentence",
       "zh": "请按照顺序排列。",
       "th1": "กรุณาจัดเรียงตามลำดับ",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดจัดเรียงตามลำดับ",
+      "th3": "กรุณาจัดเรียงตามลำดับนะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1748,8 +1748,8 @@
       "category": "controlled_short_sentence",
       "zh": "这项服务需要预约。",
       "th1": "บริการนี้จำเป็นต้องจองล่วงหน้า",
-      "th2": null,
-      "th3": null,
+      "th2": "บริการนี้จำเป็นต้องจองล่วงหน้านะ",
+      "th3": "บริการนี้จำเป็นต้องจองล่วงหน้าจริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1758,8 +1758,8 @@
       "category": "controlled_short_sentence",
       "zh": "他的态度出乎意料。",
       "th1": "ท่าทีของเขาเกินความคาดหมาย",
-      "th2": null,
-      "th3": null,
+      "th2": "ท่าทีของเขาเรับประทานความคาดหมาย",
+      "th3": "ท่าทีของเขาเกินความคาดหมายนะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1768,8 +1768,8 @@
       "category": "controlled_short_sentence",
       "zh": "附近有一家修理店。",
       "th1": "มีร้านซ่อมอยู่ใกล้ ๆ",
-      "th2": null,
-      "th3": null,
+      "th2": "มีร้านซ่อมอยู่ใกล้ ๆนะ",
+      "th3": "มีร้านซ่อมอยู่ใกล้ ๆจริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1778,8 +1778,8 @@
       "category": "controlled_short_sentence",
       "zh": "我不想浪费时间。",
       "th1": "ฉันไม่อยากเสียเวลา",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่อยากเสียเวลา",
+      "th3": "ฉันไม่อยากเสียเวลานะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1788,8 +1788,8 @@
       "category": "controlled_short_sentence",
       "zh": "请确认收件人的姓名。",
       "th1": "กรุณายืนยันชื่อผู้รับ",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดยืนยันชื่อผู้รับ",
+      "th3": "กรุณายืนยันชื่อผู้รับนะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1798,8 +1798,8 @@
       "category": "controlled_short_sentence",
       "zh": "这个箱子太沉了。",
       "th1": "กล่องใบนี้หนักเกินไป",
-      "th2": null,
-      "th3": null,
+      "th2": "กล่องใบนี้หนักเรับประทานไป",
+      "th3": "กล่องใบนี้หนักเกินไปนะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1808,8 +1808,8 @@
       "category": "controlled_short_sentence",
       "zh": "她说话非常直接。",
       "th1": "เธอพูดตรงไปตรงมามาก",
-      "th2": null,
-      "th3": null,
+      "th2": "เธอกล่าวตรงไปตรงมามาก",
+      "th3": "เธอพูดตรงไปตรงมามากนะ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1818,8 +1818,8 @@
       "category": "controlled_short_sentence",
       "zh": "这种做法并不恰当。",
       "th1": "วิธีการเช่นนี้ไม่เหมาะสมนัก",
-      "th2": null,
-      "th3": null,
+      "th2": "วิธีการเช่นนี้ไม่เหมาะสมนักนะ",
+      "th3": "วิธีการเช่นนี้ไม่เหมาะสมนักจริง ๆ",
       "frame": "controlled_short_sentence"
     },
     {
@@ -1828,8 +1828,8 @@
       "category": "controlled_medium_sentence",
       "zh": "如果网络不稳定，请先保存文件，再重新连接。",
       "th1": "หากเครือข่ายไม่เสถียร กรุณาบันทึกไฟล์ก่อนแล้วค่อยเชื่อมต่อใหม่",
-      "th2": null,
-      "th3": null,
+      "th2": "หากเครือข่ายไม่เสถียร โปรดบันทึกไฟล์ก่อนแล้วค่อยเชื่อมต่อใหม่",
+      "th3": "หากเครือข่ายไม่เสถียร กรุณาบันทึกไฟล์ก่อนจากนั้นค่อยเชื่อมต่อใหม่",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1838,8 +1838,8 @@
       "category": "controlled_medium_sentence",
       "zh": "虽然路程比较远，但是沿途的风景非常值得欣赏。",
       "th1": "แม้เส้นทางจะค่อนข้างไกล แต่ทิวทัศน์ระหว่างทางก็คุ้มค่าแก่การชมมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "แม้เส้นทางจะค่อนข้างไกล แต่ทิวทัศน์ระหว่างทางก็คุ้มค่าแก่การชมมากนะ",
+      "th3": "แม้เส้นทางจะค่อนข้างไกล แต่ทิวทัศน์ระหว่างทางก็คุ้มค่าแก่การชมมากจริง ๆ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1848,8 +1848,8 @@
       "category": "controlled_medium_sentence",
       "zh": "我原本打算今天完成工作，没想到电脑突然出现了故障。",
       "th1": "เดิมทีฉันวางแผนจะทำงานให้เสร็จวันนี้ แต่ไม่คิดว่าคอมพิวเตอร์จะขัดข้องกะทันหัน",
-      "th2": null,
-      "th3": null,
+      "th2": "เดิมทีฉันวางแผนจะทำงานให้เสร็จในวันนี้ แต่ไม่คิดว่าคอมพิวเตอร์จะขัดข้องกะทันหัน",
+      "th3": "เดิมทีฉันวางแผนจะทำงานให้เสร็จวันนี้ แต่ไม่คิดว่าเครื่องคอมพิวเตอร์จะขัดข้องกะทันหัน",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1858,8 +1858,8 @@
       "category": "controlled_medium_sentence",
       "zh": "请先检查电源和网络设置，不要急着删除任何文件。",
       "th1": "กรุณาตรวจสอบแหล่งจ่ายไฟและการตั้งค่าเครือข่ายก่อน อย่าเพิ่งรีบลบไฟล์ใด ๆ",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดตรวจสอบแหล่งจ่ายไฟและการตั้งค่าเครือข่ายก่อน อย่าเพิ่งรีบลบไฟล์ใด ๆ",
+      "th3": "กรุณาเช็กแหล่งจ่ายไฟและการตั้งค่าเครือข่ายก่อน อย่าเพิ่งรีบลบไฟล์ใด ๆ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1868,8 +1868,8 @@
       "category": "controlled_medium_sentence",
       "zh": "如果你不确定这个词的意思，可以查看例句和上下文。",
       "th1": "หากคุณไม่แน่ใจว่าคำนี้หมายถึงอะไร สามารถดูประโยคตัวอย่างและบริบทประกอบได้",
-      "th2": null,
-      "th3": null,
+      "th2": "ถ้าหากคุณไม่แน่ใจว่าคำนี้หมายถึงอะไร สามารถดูประโยคตัวอย่างและบริบทประกอบได้",
+      "th3": "หากคุณไม่แน่ใจว่าคำนี้หมายถึงอะไร สามารถดูประโยคตัวอย่างและบริบทประกอบได้นะ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1878,8 +1878,8 @@
       "category": "controlled_medium_sentence",
       "zh": "这家店虽然面积不大，但商品种类齐全，价格也很合理。",
       "th1": "แม้ร้านนี้จะมีพื้นที่ไม่มาก แต่สินค้าก็มีครบหลายประเภทและราคาสมเหตุสมผล",
-      "th2": null,
-      "th3": null,
+      "th2": "แม้ร้านนี้จะมีพื้นที่ไม่มาก แต่สินค้าก็มีครบหลายประเภทและราคาสมเหตุสมผลนะ",
+      "th3": "แม้ร้านนี้จะมีพื้นที่ไม่มาก แต่สินค้าก็มีครบหลายประเภทและราคาสมเหตุสมผลจริง ๆ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1888,8 +1888,8 @@
       "category": "controlled_medium_sentence",
       "zh": "由于道路正在维修，原来的公交线路暂时改道了。",
       "th1": "เนื่องจากถนนกำลังซ่อมแซม เส้นทางรถโดยสารเดิมจึงเปลี่ยนเส้นทางชั่วคราว",
-      "th2": null,
-      "th3": null,
+      "th2": "เพราะว่าถนนกำลังซ่อมแซม เส้นทางรถโดยสารเดิมจึงเปลี่ยนเส้นทางชั่วคราว",
+      "th3": "เนื่องจากถนนกำลังซ่อมแซม เส้นทางรถโดยสารเดิมจึงเปลี่ยนเส้นทางชั่วคราวนะ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1898,8 +1898,8 @@
       "category": "controlled_medium_sentence",
       "zh": "他没有立即回答，而是仔细考虑了所有可能的后果。",
       "th1": "เขาไม่ได้ตอบทันที แต่พิจารณาผลลัพธ์ที่อาจเกิดขึ้นทั้งหมดอย่างรอบคอบ",
-      "th2": null,
-      "th3": null,
+      "th2": "เขาไม่ได้ตอบทันที แต่พิจารณาผลลัพธ์ที่อาจเกิดขึ้นทั้งหมดอย่างรอบคอบนะ",
+      "th3": "เขาไม่ได้ตอบทันที แต่พิจารณาผลลัพธ์ที่อาจเกิดขึ้นทั้งหมดอย่างรอบคอบจริง ๆ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1908,8 +1908,8 @@
       "category": "controlled_medium_sentence",
       "zh": "为了避免资料丢失，请定期备份重要文件和照片。",
       "th1": "เพื่อป้องกันข้อมูลสูญหาย กรุณาสำรองไฟล์และรูปภาพสำคัญเป็นประจำ",
-      "th2": null,
-      "th3": null,
+      "th2": "เพื่อป้องกันข้อมูลสูญหาย โปรดสำรองไฟล์และรูปภาพสำคัญเป็นประจำ",
+      "th3": "เพื่อป้องกันข้อมูลสูญหาย กรุณาสำรองไฟล์และรูปภาพสำคัญเป็นประจำนะ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1918,8 +1918,8 @@
       "category": "controlled_medium_sentence",
       "zh": "这台设备支持多种语言，但部分旧型号无法使用这个功能。",
       "th1": "อุปกรณ์นี้รองรับหลายภาษา แต่รุ่นเก่าบางรุ่นไม่สามารถใช้ฟังก์ชันนี้ได้",
-      "th2": null,
-      "th3": null,
+      "th2": "อุปกรณ์นี้รองรับหลายภาษา แต่รุ่นเก่าบางรุ่นไม่อาจใช้ฟังก์ชันนี้ได้",
+      "th3": "อุปกรณ์นี้รองรับหลายภาษา แต่รุ่นเก่าบางรุ่นไม่สามารถใช้ฟังก์ชันนี้ได้นะ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1928,8 +1928,8 @@
       "category": "controlled_medium_sentence",
       "zh": "即使遇到暂时的困难，也不要轻易放弃长期计划。",
       "th1": "แม้จะพบอุปสรรคชั่วคราว ก็อย่าเพิ่งยอมแพ้ต่อแผนระยะยาวง่าย ๆ",
-      "th2": null,
-      "th3": null,
+      "th2": "แม้จะพบอุปสรรคชั่วคราว ก็อย่าเพิ่งยอมแพ้ต่อแผนระยะยาวง่าย ๆนะ",
+      "th3": "แม้จะพบอุปสรรคชั่วคราว ก็อย่าเพิ่งยอมแพ้ต่อแผนระยะยาวง่าย ๆจริง ๆ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1938,8 +1938,8 @@
       "category": "controlled_medium_sentence",
       "zh": "我们需要比较不同方案的成本、风险以及后续维护费用。",
       "th1": "เราจำเป็นต้องเปรียบเทียบต้นทุน ความเสี่ยง และค่าบำรุงรักษาในภายหลังของแต่ละแนวทาง",
-      "th2": null,
-      "th3": null,
+      "th2": "จำเป็นต้องเปรียบเทียบต้นทุน ความเสี่ยง และค่าบำรุงรักษาในภายหลังของแต่ละแนวทาง",
+      "th3": "เราจำเป็นต้องเปรียบเทียบต้นทุน ความเสี่ยง และค่าบำรุงรักษาในภายหลังของแต่ละแนวทางนะ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1948,8 +1948,8 @@
       "category": "controlled_medium_sentence",
       "zh": "如果包裹超过预计日期仍未送达，请联系负责的配送人员。",
       "th1": "หากพัสดุยังมาไม่ถึงแม้เลยวันที่คาดว่าจะได้รับแล้ว กรุณาติดต่อเจ้าหน้าที่จัดส่งที่รับผิดชอบ",
-      "th2": null,
-      "th3": null,
+      "th2": "หากพัสดุยังมาไม่ถึงแม้เลยวันที่คาดว่าจะได้รับแล้ว โปรดติดต่อเจ้าหน้าที่จัดส่งที่รับผิดชอบ",
+      "th3": "ถ้าหากพัสดุยังมาไม่ถึงแม้เลยวันที่คาดว่าจะได้รับแล้ว กรุณาติดต่อเจ้าหน้าที่จัดส่งที่รับผิดชอบ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1958,8 +1958,8 @@
       "category": "controlled_medium_sentence",
       "zh": "请不要只根据标题判断文章内容，最好先阅读完整段落。",
       "th1": "กรุณาอย่าตัดสินเนื้อหาของบทความจากหัวข้อเพียงอย่างเดียว ควรอ่านย่อหน้าทั้งหมดก่อน",
-      "th2": null,
-      "th3": null,
+      "th2": "โปรดอย่าตัดสินเนื้อหาของบทความจากหัวข้อเพียงอย่างเดียว ควรอ่านย่อหน้าทั้งหมดก่อน",
+      "th3": "กรุณาอย่าตัดสินเนื้อหาของบทความจากหัวข้อเพียงอย่างเดียว ควรจะอ่านย่อหน้าทั้งหมดก่อน",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1968,8 +1968,8 @@
       "category": "controlled_medium_sentence",
       "zh": "他把复杂的问题分成几个小部分，然后逐一寻找解决方法。",
       "th1": "เขาแบ่งปัญหาที่ซับซ้อนออกเป็นส่วนย่อยหลายส่วน แล้วค่อย ๆ หาวิธีแก้ทีละส่วน",
-      "th2": null,
-      "th3": null,
+      "th2": "เขาแบ่งปัญหาที่ซับซ้อนออกเป็นส่วนย่อยหลายส่วน จากนั้นค่อย ๆ หาวิธีแก้ทีละส่วน",
+      "th3": "เขาแบ่งปัญหาที่ซับซ้อนออกเป็นส่วนย่อยหลายส่วน แล้วค่อย ๆ หาวิธีแก้ทีละส่วนนะ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1978,8 +1978,8 @@
       "category": "controlled_medium_sentence",
       "zh": "由于缺少必要的证明材料，申请暂时无法进入下一阶段。",
       "th1": "เนื่องจากขาดเอกสารหลักฐานที่จำเป็น คำขอจึงยังไม่สามารถเข้าสู่ขั้นตอนถัดไปได้",
-      "th2": null,
-      "th3": null,
+      "th2": "เนื่องจากขาดเอกสารหลักฐานที่จำเป็น คำขอจึงยังไม่อาจเข้าสู่ขั้นตอนถัดไปได้",
+      "th3": "เพราะว่าขาดเอกสารหลักฐานที่จำเป็น คำขอจึงยังไม่สามารถเข้าสู่ขั้นตอนถัดไปได้",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1988,8 +1988,8 @@
       "category": "controlled_medium_sentence",
       "zh": "我喜欢这间房子的采光，不过储物空间比想象中小一些。",
       "th1": "ฉันชอบแสงธรรมชาติในห้องนี้ แต่พื้นที่เก็บของเล็กกว่าที่คิดไว้เล็กน้อย",
-      "th2": null,
-      "th3": null,
+      "th2": "ฉันชอบแสงธรรมชาติในห้องนี้ แต่พื้นที่เก็บของเล็กกว่าที่คิดไว้นิดหน่อย",
+      "th3": "ชอบแสงธรรมชาติในห้องนี้ แต่พื้นที่เก็บของเล็กกว่าที่คิดไว้เล็กน้อย",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -1998,8 +1998,8 @@
       "category": "controlled_medium_sentence",
       "zh": "如果发现翻译不自然，请标记具体位置并提供更合适的表达。",
       "th1": "หากพบว่าคำแปลไม่เป็นธรรมชาติ กรุณาทำเครื่องหมายตำแหน่งที่ชัดเจนและเสนอถ้อยคำที่เหมาะสมกว่า",
-      "th2": null,
-      "th3": null,
+      "th2": "หากพบว่าคำแปลไม่เป็นธรรมชาติ โปรดทำเครื่องหมายตำแหน่งที่ชัดเจนและเสนอถ้อยคำที่เหมาะสมกว่า",
+      "th3": "ถ้าหากพบว่าคำแปลไม่เป็นธรรมชาติ กรุณาทำเครื่องหมายตำแหน่งที่ชัดเจนและเสนอถ้อยคำที่เหมาะสมกว่า",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -2008,8 +2008,8 @@
       "category": "controlled_medium_sentence",
       "zh": "会议结束以后，我们还需要整理记录并发送给所有参与者。",
       "th1": "หลังการประชุมจบลง เรายังต้องจัดระเบียบบันทึกและส่งให้ผู้เข้าร่วมทุกคน",
-      "th2": null,
-      "th3": null,
+      "th2": "หลังการประชุมจบลง เรายังต้องจัดระเบียบบันทึกและส่งให้ผู้เข้าร่วมทุก ๆ คน",
+      "th3": "หลังการประชุมจบลง เรายังต้องจัดระเบียบบันทึกและส่งให้ผู้เข้าร่วมทุกคนนะ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -2018,8 +2018,8 @@
       "category": "controlled_medium_sentence",
       "zh": "这条通知只适用于新版本，旧版本用户不需要进行相同操作。",
       "th1": "ประกาศนี้ใช้เฉพาะกับเวอร์ชันใหม่ ผู้ใช้เวอร์ชันเก่าไม่จำเป็นต้องทำตามขั้นตอนเดียวกัน",
-      "th2": null,
-      "th3": null,
+      "th2": "ประกาศนี้ใช้เฉพาะกับเวอร์ชันใหม่ ผู้ใช้งานเวอร์ชันเก่าไม่จำเป็นต้องทำตามขั้นตอนเดียวกัน",
+      "th3": "ประกาศนี้ใช้เฉพาะกับเวอร์ชันใหม่ ผู้ใช้เวอร์ชันเก่าไม่จำเป็นต้องทำตามขั้นตอนเดียวกันนะ",
       "frame": "controlled_medium_sentence"
     },
     {
@@ -2028,8 +2028,8 @@
       "category": "controlled_long_sentence",
       "zh": "如果你发现设备温度持续升高，请先停止高负载任务，让机器冷却一段时间，再检查散热系统是否正常。",
       "th1": "หากคุณพบว่าอุณหภูมิของอุปกรณ์สูงขึ้นอย่างต่อเนื่อง ให้หยุดงานที่ใช้ทรัพยากรหนักก่อน ปล่อยให้เครื่องเย็นลงสักระยะ แล้วตรวจสอบระบบระบายความร้อนว่าทำงานปกติหรือไม่",
-      "th2": null,
-      "th3": null,
+      "th2": "หากคุณพบว่าอุณหภูมิของอุปกรณ์สูงขึ้นอย่างต่อเนื่อง ให้หยุดงานที่ใช้ทรัพยากรหนักก่อน ปล่อยให้เครื่องเย็นลงสักระยะ แล้วเช็กระบบระบายความร้อนว่าทำงานปกติหรือไม่",
+      "th3": "หากคุณพบว่าอุณหภูมิของอุปกรณ์สูงขึ้นอย่างต่อเนื่อง ให้หยุดงานที่ใช้ทรัพยากรหนักก่อน ปล่อยให้เครื่องเย็นลงสักระยะ แล้วตรวจสอบระบบระบายความร้อนว่าทำงานปกติไหม",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2038,8 +2038,8 @@
       "category": "controlled_long_sentence",
       "zh": "虽然这份说明书包含很多专业术语，但只要按照章节顺序阅读，并结合实际操作练习，就能够逐步理解主要内容。",
       "th1": "แม้ว่าคู่มือฉบับนี้จะมีศัพท์เฉพาะทางจำนวนมาก แต่หากอ่านตามลำดับบทและฝึกปฏิบัติควบคู่กัน ก็จะค่อย ๆ เข้าใจเนื้อหาหลักได้",
-      "th2": null,
-      "th3": null,
+      "th2": "แม้ว่าคู่มือฉบับนี้จะมีศัพท์เฉพาะทางจำนวนมาก แต่ถ้าหากอ่านตามลำดับบทและฝึกปฏิบัติควบคู่กัน ก็จะค่อย ๆ เข้าใจเนื้อหาหลักได้",
+      "th3": "แม้คู่มือฉบับนี้จะมีศัพท์เฉพาะทางจำนวนมาก แต่หากอ่านตามลำดับบทและฝึกปฏิบัติควบคู่กัน ก็จะค่อย ๆ เข้าใจเนื้อหาหลักได้",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2048,8 +2048,8 @@
       "category": "controlled_long_sentence",
       "zh": "我原来以为只需要更换一根数据线，后来检查才发现接口已经损坏，因此必须先维修设备才能继续使用。",
       "th1": "ตอนแรกฉันคิดว่าแค่เปลี่ยนสายข้อมูลเส้นหนึ่งก็พอ แต่เมื่อตรวจสอบแล้วจึงพบว่าพอร์ตเสียหาย ดังนั้นจึงต้องซ่อมอุปกรณ์ก่อนจึงจะใช้งานต่อได้",
-      "th2": null,
-      "th3": null,
+      "th2": "ตอนแรกฉันคิดว่าแค่เปลี่ยนสายข้อมูลเส้นหนึ่งก็พอ แต่เมื่อเช็กแล้วจึงพบว่าพอร์ตเสียหาย ดังนั้นจึงต้องซ่อมอุปกรณ์ก่อนจึงจะใช้งานต่อได้",
+      "th3": "ตอนแรกฉันคิดว่าแค่เปลี่ยนสายข้อมูลเส้นหนึ่งก็พอ แต่เมื่อตรวจสอบแล้วจึงพบว่าพอร์ตเสียหาย ดังนั้นจึงต้องซ่อมอุปกรณ์ก่อนจึงจะใช้งานต่อได้นะ",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2058,8 +2058,8 @@
       "category": "controlled_long_sentence",
       "zh": "如果一个词在日常对话中很常见，就应该学习它在不同语气、不同场景和不同句型中的实际用法，而不只是记住一个固定译文。",
       "th1": "หากคำคำหนึ่งพบได้บ่อยในการสนทนาประจำวัน ก็ควรเรียนรู้วิธีใช้จริงในน้ำเสียง สถานการณ์ และรูปประโยคที่หลากหลาย ไม่ใช่เพียงจำคำแปลแบบตายตัวไว้เท่านั้น",
-      "th2": null,
-      "th3": null,
+      "th2": "หากคำคำหนึ่งพบได้บ่อยในการสนทนาประจำวัน ก็ควรจะเรียนรู้วิธีใช้จริงในน้ำเสียง สถานการณ์ และรูปประโยคที่หลากหลาย ไม่ใช่เพียงจำคำแปลแบบตายตัวไว้เท่านั้น",
+      "th3": "ถ้าหากคำคำหนึ่งพบได้บ่อยในการสนทนาประจำวัน ก็ควรเรียนรู้วิธีใช้จริงในน้ำเสียง สถานการณ์ และรูปประโยคที่หลากหลาย ไม่ใช่เพียงจำคำแปลแบบตายตัวไว้เท่านั้น",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2068,8 +2068,8 @@
       "category": "controlled_long_sentence",
       "zh": "即使两个中文词语的意思十分接近，它们也可能因为语气、搭配习惯或使用场景不同，而不能在所有句子里互相替换。",
       "th1": "แม้คำภาษาจีนสองคำจะมีความหมายใกล้เคียงกันมาก แต่ก็อาจใช้แทนกันไม่ได้ในทุกประโยค เพราะน้ำเสียง รูปแบบคำที่มักใช้ร่วมกัน หรือสถานการณ์ที่ใช้แตกต่างกัน",
-      "th2": null,
-      "th3": null,
+      "th2": "แม้คำภาษาจีนสองคำจะมีความหมายใกล้เคียงกันมาก แต่ก็อาจใช้แทนกันไม่ได้ในทุกประโยค เพราะน้ำเสียง รูปแบบคำที่มักใช้ร่วมกัน หรือสถานการณ์ที่ใช้แตกต่างกันนะ",
+      "th3": "แม้คำภาษาจีนสองคำจะมีความหมายใกล้เคียงกันมาก แต่ก็อาจใช้แทนกันไม่ได้ในทุกประโยค เพราะน้ำเสียง รูปแบบคำที่มักใช้ร่วมกัน หรือสถานการณ์ที่ใช้แตกต่างกันจริง ๆ",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2078,8 +2078,8 @@
       "category": "controlled_long_sentence",
       "zh": "为了让新系统能够稳定运行，开发人员不仅要测试主要功能，还要检查异常输入、网络中断、数据恢复以及长期运行时的资源消耗。",
       "th1": "เพื่อให้ระบบใหม่ทำงานได้อย่างเสถียร นักพัฒนาไม่เพียงต้องทดสอบฟังก์ชันหลักเท่านั้น แต่ยังต้องตรวจสอบข้อมูลป้อนเข้าที่ผิดปกติ การขาดการเชื่อมต่อเครือข่าย การกู้คืนข้อมูล และการใช้ทรัพยากรเมื่อทำงานเป็นเวลานานด้วย",
-      "th2": null,
-      "th3": null,
+      "th2": "เพื่อให้ระบบใหม่ทำงานได้อย่างเสถียร นักพัฒนาไม่เพียงต้องทดสอบฟังก์ชันหลักเท่านั้น แต่ยังต้องเช็กข้อมูลป้อนเข้าที่ผิดปกติ การขาดการเชื่อมต่อเครือข่าย การกู้คืนข้อมูล และการใช้ทรัพยากรเมื่อทำงานเป็นเวลานานด้วย",
+      "th3": "เพื่อให้ระบบใหม่ทำงานได้อย่างเสถียร นักพัฒนาไม่แค่ต้องทดสอบฟังก์ชันหลักเท่านั้น แต่ยังต้องตรวจสอบข้อมูลป้อนเข้าที่ผิดปกติ การขาดการเชื่อมต่อเครือข่าย การกู้คืนข้อมูล และการใช้ทรัพยากรเมื่อทำงานเป็นเวลานานด้วย",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2088,8 +2088,8 @@
       "category": "controlled_long_sentence",
       "zh": "当你比较两份翻译时，不要只看句子长度是否相同，还应该确认人物关系、时间先后、否定范围和语气是否都被准确表达。",
       "th1": "เมื่อคุณเปรียบเทียบคำแปลสองฉบับ อย่าดูเพียงว่าความยาวของประโยคเท่ากันหรือไม่ แต่ควรตรวจสอบด้วยว่าความสัมพันธ์ของบุคคล ลำดับเวลา ขอบเขตของคำปฏิเสธ และน้ำเสียงได้รับการถ่ายทอดอย่างถูกต้องหรือไม่",
-      "th2": null,
-      "th3": null,
+      "th2": "เมื่อคุณเปรียบเทียบคำแปลสองฉบับ อย่าดูเพียงว่าความยาวของประโยคเท่ากันหรือไม่ แต่ควรเช็กด้วยว่าความสัมพันธ์ของบุคคล ลำดับเวลา ขอบเขตของคำปฏิเสธ และน้ำเสียงได้รับการถ่ายทอดอย่างถูกต้องหรือไม่",
+      "th3": "เมื่อคุณเปรียบเทียบคำแปลสองฉบับ อย่าดูเพียงว่าความยาวของประโยคเท่ากันไหม แต่ควรตรวจสอบด้วยว่าความสัมพันธ์ของบุคคล ลำดับเวลา ขอบเขตของคำปฏิเสธ และน้ำเสียงได้รับการถ่ายทอดอย่างถูกต้องหรือไม่",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2098,8 +2098,8 @@
       "category": "controlled_long_sentence",
       "zh": "这家医院要求患者提前登记个人资料，如果需要更改预约时间，最好至少提前一天通知工作人员。",
       "th1": "โรงพยาบาลแห่งนี้กำหนดให้ผู้ป่วยลงทะเบียนข้อมูลส่วนบุคคลล่วงหน้า หากจำเป็นต้องเปลี่ยนเวลานัด ควรแจ้งเจ้าหน้าที่ล่วงหน้าอย่างน้อยหนึ่งวัน",
-      "th2": null,
-      "th3": null,
+      "th2": "โรงพยาบาลแห่งนี้กำหนดให้คนไข้ลงทะเบียนข้อมูลส่วนบุคคลล่วงหน้า หากจำเป็นต้องเปลี่ยนเวลานัด ควรแจ้งเจ้าหน้าที่ล่วงหน้าอย่างน้อยหนึ่งวัน",
+      "th3": "โรงพยาบาลแห่งนี้กำหนดให้ผู้ป่วยลงทะเบียนข้อมูลส่วนบุคคลล่วงหน้า หากจำเป็นต้องเปลี่ยนเวลานัด ควรจะแจ้งเจ้าหน้าที่ล่วงหน้าอย่างน้อยหนึ่งวัน",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2108,8 +2108,8 @@
       "category": "controlled_long_sentence",
       "zh": "尽管项目已经完成了大部分工作，团队仍然需要验证结果是否符合要求，并确认所有重要文件都已经安全归档。",
       "th1": "แม้โครงการจะดำเนินงานเสร็จไปเกือบทั้งหมดแล้ว แต่ทีมก็ยังต้องตรวจสอบว่าผลลัพธ์ตรงตามข้อกำหนดหรือไม่ และยืนยันว่าเอกสารสำคัญทั้งหมดได้รับการจัดเก็บอย่างปลอดภัยแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "แม้โครงการจะดำเนินงานเสร็จไปเกือบทั้งหมดแล้ว แต่ทีมก็ยังต้องเช็กว่าผลลัพธ์ตรงตามข้อกำหนดหรือไม่ และยืนยันว่าเอกสารสำคัญทั้งหมดได้รับการจัดเก็บอย่างปลอดภัยแล้ว",
+      "th3": "แม้โครงการจะดำเนินงานเสร็จไปเกือบทั้งหมดแล้ว แต่ทีมก็ยังต้องตรวจสอบว่าผลลัพธ์ตรงตามข้อกำหนดไหม และยืนยันว่าเอกสารสำคัญทั้งหมดได้รับการจัดเก็บอย่างปลอดภัยแล้ว",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2118,8 +2118,8 @@
       "category": "controlled_long_sentence",
       "zh": "如果你希望别人准确理解自己的想法，最好使用清楚而具体的语言，并在必要时通过例子解释容易产生歧义的部分。",
       "th1": "หากคุณต้องการให้ผู้อื่นเข้าใจความคิดของคุณอย่างถูกต้อง ควรใช้ภาษาที่ชัดเจนและเจาะจง และอธิบายส่วนที่อาจทำให้เกิดความกำกวมด้วยตัวอย่างเมื่อจำเป็น",
-      "th2": null,
-      "th3": null,
+      "th2": "หากคุณต้องการให้ผู้อื่นเข้าใจความคิดของคุณอย่างถูกต้อง ควรใช้ภาษาที่ชัดเจนและเจาะจง และชี้แจงส่วนที่อาจทำให้เกิดความกำกวมด้วยตัวอย่างเมื่อจำเป็น",
+      "th3": "หากคุณต้องการให้ผู้อื่นเข้าใจความคิดของคุณอย่างถูกต้อง ควรใช้ภาษาที่ชัดเจนและเจาะจง และอธิบายส่วนที่อาจส่งผลให้เกิดความกำกวมด้วยตัวอย่างเมื่อจำเป็น",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2128,8 +2128,8 @@
       "category": "controlled_long_sentence",
       "zh": "有些罕见词语虽然不常出现在日常聊天中，却可能频繁出现在新闻、合同、技术文件或学术文章里，因此也值得单独整理和学习。",
       "th1": "คำบางคำแม้ไม่ค่อยปรากฏในการสนทนาทั่วไป แต่กลับอาจพบได้บ่อยในข่าว สัญญา เอกสารทางเทคนิค หรือบทความวิชาการ จึงควรแยกมารวบรวมและเรียนรู้ด้วย",
-      "th2": null,
-      "th3": null,
+      "th2": "คำบางคำแม้ไม่ค่อยปรากฏในการสนทนาทั่วไป แต่กลับอาจพบได้บ่อยในข่าว สัญญา เอกสารทางเทคนิค หรือบทความวิชาการ จึงควรจะแยกมารวบรวมและเรียนรู้ด้วย",
+      "th3": "คำบางคำแม้ไม่ค่อยปรากฏในการสนทนาทั่วไป แต่กลับอาจพบได้บ่อยในข่าว สัญญา เอกสารทางเทคนิค หรือบทความวิชาการ จึงควรแยกมารวบรวมและเรียนรู้ด้วยนะ",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2138,8 +2138,8 @@
       "category": "controlled_long_sentence",
       "zh": "在网络连接不稳定的环境中，程序应当能够暂存尚未发送的数据，并在连接恢复之后继续传输，而不是直接丢弃用户已经输入的内容。",
       "th1": "ในสภาพแวดล้อมที่การเชื่อมต่อเครือข่ายไม่เสถียร โปรแกรมควรสามารถพักเก็บข้อมูลที่ยังส่งไม่สำเร็จไว้ชั่วคราว และส่งต่อเมื่อการเชื่อมต่อกลับมา แทนที่จะทิ้งข้อความที่ผู้ใช้ป้อนไว้แล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "ในสภาพแวดล้อมที่การเชื่อมต่อเครือข่ายไม่เสถียร โปรแกรมควรสามารถพักเก็บข้อมูลที่ยังส่งไม่สำเร็จไว้ชั่วคราว และส่งต่อเมื่อการเชื่อมต่อกลับมา แทนที่จะทิ้งข้อความที่ผู้ใช้งานป้อนไว้แล้ว",
+      "th3": "ในสภาพแวดล้อมที่การเชื่อมต่อเครือข่ายไม่เสถียร ซอฟต์แวร์ควรสามารถพักเก็บข้อมูลที่ยังส่งไม่สำเร็จไว้ชั่วคราว และส่งต่อเมื่อการเชื่อมต่อกลับมา แทนที่จะทิ้งข้อความที่ผู้ใช้ป้อนไว้แล้ว",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2148,8 +2148,8 @@
       "category": "controlled_long_sentence",
       "zh": "如果商品存在质量问题，消费者可以根据购买凭证和售后服务条款申请维修、更换或退款，但具体处理方式仍要看实际情况。",
       "th1": "หากสินค้ามีปัญหาด้านคุณภาพ ผู้บริโภคสามารถยื่นขอซ่อม เปลี่ยนสินค้า หรือคืนเงินตามหลักฐานการซื้อและเงื่อนไขบริการหลังการขายได้ แต่วิธีดำเนินการที่แน่นอนยังขึ้นอยู่กับสถานการณ์จริง",
-      "th2": null,
-      "th3": null,
+      "th2": "ถ้าหากสินค้ามีปัญหาด้านคุณภาพ ผู้บริโภคสามารถยื่นขอซ่อม เปลี่ยนสินค้า หรือคืนเงินตามหลักฐานการซื้อและเงื่อนไขบริการหลังการขายได้ แต่วิธีดำเนินการที่แน่นอนยังขึ้นอยู่กับสถานการณ์จริง",
+      "th3": "หากสินค้ามีปัญหาด้านคุณภาพ ผู้บริโภคสามารถยื่นขอซ่อม เปลี่ยนสินค้า หรือคืนเงินตามหลักฐานการซื้อและเงื่อนไขบริการหลังการขายได้ แต่วิธีดำเนินการที่แน่นอนยังขึ้นอยู่กับสถานการณ์จริงนะ",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2158,8 +2158,8 @@
       "category": "controlled_long_sentence",
       "zh": "他并不是不愿意帮助大家，只是目前手头的工作太多，必须先完成已经承诺的任务，之后才能安排新的事情。",
       "th1": "ไม่ใช่ว่าเขาไม่เต็มใจช่วยทุกคน เพียงแต่ตอนนี้เขามีงานอยู่มากเกินไป จึงต้องทำงานที่รับปากไว้แล้วให้เสร็จก่อน จากนั้นจึงจะจัดสรรเวลาให้เรื่องใหม่ได้",
-      "th2": null,
-      "th3": null,
+      "th2": "ไม่ใช่ว่าเขาไม่เต็มใจช่วยทุกคน เพียงแต่ขณะนี้เขามีงานอยู่มากเกินไป จึงต้องทำงานที่รับปากไว้แล้วให้เสร็จก่อน จากนั้นจึงจะจัดสรรเวลาให้เรื่องใหม่ได้",
+      "th3": "ไม่ใช่ว่าเขาไม่เต็มใจช่วยทุกคน เพียงแต่ตอนนี้เขามีงานอยู่มากเกินไป จึงต้องทำงานที่รับปากไว้แล้วให้เสร็จก่อน ต่อจากนั้นจึงจะจัดสรรเวลาให้เรื่องใหม่ได้",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2168,8 +2168,8 @@
       "category": "controlled_long_sentence",
       "zh": "为了避免错误地理解这段话，我们应该先找出句子的核心动词，再分析修饰成分之间的关系，最后结合上下文确定最自然的泰语表达。",
       "th1": "เพื่อหลีกเลี่ยงการเข้าใจข้อความนี้ผิด เราควรหาคำกริยาหลักของประโยคก่อน จากนั้นวิเคราะห์ความสัมพันธ์ระหว่างส่วนขยายต่าง ๆ แล้วจึงพิจารณาบริบทเพื่อเลือกถ้อยคำภาษาไทยที่เป็นธรรมชาติที่สุด",
-      "th2": null,
-      "th3": null,
+      "th2": "เพื่อหลีกเลี่ยงการเข้าใจข้อความนี้ผิด เราควรหาคำกริยาหลักของประโยคก่อน ต่อจากนั้นวิเคราะห์ความสัมพันธ์ระหว่างส่วนขยายต่าง ๆ แล้วจึงพิจารณาบริบทเพื่อเลือกถ้อยคำภาษาไทยที่เป็นธรรมชาติที่สุด",
+      "th3": "เพื่อหลีกเลี่ยงการเข้าใจข้อความนี้ผิด เราควรจะหาคำกริยาหลักของประโยคก่อน จากนั้นวิเคราะห์ความสัมพันธ์ระหว่างส่วนขยายต่าง ๆ แล้วจึงพิจารณาบริบทเพื่อเลือกถ้อยคำภาษาไทยที่เป็นธรรมชาติที่สุด",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2178,8 +2178,8 @@
       "category": "controlled_long_sentence",
       "zh": "即使手机显示电量还有百分之二十，如果电池已经老化，设备也可能突然关机，所以重要工作最好提前保存。",
       "th1": "แม้โทรศัพท์จะแสดงว่าแบตเตอรี่เหลือร้อยละยี่สิบ แต่หากแบตเตอรี่เสื่อมสภาพ อุปกรณ์ก็อาจปิดเครื่องกะทันหันได้ ดังนั้นงานสำคัญจึงควรบันทึกไว้ล่วงหน้า",
-      "th2": null,
-      "th3": null,
+      "th2": "แม้โทรศัพท์จะแสดงว่าแบตเตอรี่เหลือร้อยละยี่สิบ แต่หากแบตเตอรี่เสื่อมสภาพ อุปกรณ์ก็อาจปิดเครื่องกะทันหันได้ ดังนั้นงานสำคัญจึงควรจะบันทึกไว้ล่วงหน้า",
+      "th3": "แม้โทรศัพท์จะแสดงว่าแบตเตอรี่เหลือร้อยละยี่สิบ แต่ถ้าหากแบตเตอรี่เสื่อมสภาพ อุปกรณ์ก็อาจปิดเครื่องกะทันหันได้ ดังนั้นงานสำคัญจึงควรบันทึกไว้ล่วงหน้า",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2188,8 +2188,8 @@
       "category": "controlled_long_sentence",
       "zh": "在正式签署合同以前，双方应当仔细阅读付款期限、违约责任、保密义务以及终止协议的具体条件。",
       "th1": "ก่อนลงนามในสัญญาอย่างเป็นทางการ ทั้งสองฝ่ายควรอ่านกำหนดเวลาชำระเงิน ความรับผิดกรณีผิดสัญญา หน้าที่รักษาความลับ และเงื่อนไขเฉพาะในการยุติข้อตกลงอย่างละเอียด",
-      "th2": null,
-      "th3": null,
+      "th2": "ก่อนลงนามในสัญญาอย่างเป็นทางการ ทั้งสองฝ่ายควรอ่านกำหนดเวลาชำระเงิน ความรับผิดกรณีผิดสัญญา หน้าที่รักษาความลับ และเงื่อนไขเฉพาะในการยุติข้อตกลงโดยละเอียด",
+      "th3": "ก่อนลงนามในสัญญาอย่างเป็นทางการ ทั้งสองฝ่ายควรจะอ่านกำหนดเวลาชำระเงิน ความรับผิดกรณีผิดสัญญา หน้าที่รักษาความลับ และเงื่อนไขเฉพาะในการยุติข้อตกลงอย่างละเอียด",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2198,8 +2198,8 @@
       "category": "controlled_long_sentence",
       "zh": "有时候最直接的解决办法并不是最合适的办法，我们还需要考虑成本、安全性、可维护性以及对其他人的影响。",
       "th1": "บางครั้งวิธีแก้ปัญหาที่ตรงที่สุดก็ไม่ใช่วิธีที่เหมาะสมที่สุด เรายังต้องพิจารณาต้นทุน ความปลอดภัย ความสะดวกในการบำรุงรักษา และผลกระทบต่อผู้อื่นด้วย",
-      "th2": null,
-      "th3": null,
+      "th2": "บางครั้งวิธีแก้ปัญหาที่ตรงที่สุดก็ไม่ใช่วิธีที่เหมาะสมที่สุด เรายังต้องพิจารณาต้นทุน ความมั่นคงปลอดภัย ความสะดวกในการบำรุงรักษา และผลกระทบต่อผู้อื่นด้วย",
+      "th3": "บางครั้งวิธีแก้ปัญหาที่ตรงที่สุดก็ไม่ใช่วิธีที่เหมาะสมที่สุด เรายังต้องพิจารณาต้นทุน ความปลอดภัย ความสะดวกในการบำรุงรักษา และผลกระทบต่อผู้อื่นด้วยนะ",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2208,8 +2208,8 @@
       "category": "controlled_long_sentence",
       "zh": "如果某个功能在旧设备上运行缓慢，就应该先测量处理器、内存和存储空间的使用情况，再决定是否需要调整程序结构。",
       "th1": "หากฟังก์ชันใดทำงานช้าบนอุปกรณ์รุ่นเก่า ควรวัดการใช้หน่วยประมวลผล หน่วยความจำ และพื้นที่จัดเก็บก่อน แล้วจึงตัดสินใจว่าจำเป็นต้องปรับโครงสร้างโปรแกรมหรือไม่",
-      "th2": null,
-      "th3": null,
+      "th2": "หากฟังก์ชันใดทำงานช้าบนอุปกรณ์รุ่นเก่า ควรวัดการใช้หน่วยประมวลผล หน่วยความจำ และพื้นที่จัดเก็บก่อน แล้วจึงตัดสินใจว่าจำเป็นต้องปรับโครงสร้างโปรแกรมไหม",
+      "th3": "หากฟังก์ชันใดทำงานช้าบนอุปกรณ์รุ่นเก่า ควรวัดการใช้หน่วยประมวลผล หน่วยความจำ และพื้นที่จัดเก็บก่อน แล้วจึงตัดสินใจว่าจำเป็นต้องปรับโครงสร้างซอฟต์แวร์หรือไม่",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2218,8 +2218,8 @@
       "category": "controlled_long_sentence",
       "zh": "我希望这次旅行不只是赶着参观景点，也能留出时间了解当地人的生活方式、饮食习惯和一些不太为游客熟悉的地方。",
       "th1": "ฉันหวังว่าการเดินทางครั้งนี้จะไม่ใช่แค่การรีบไปเที่ยวตามสถานที่ต่าง ๆ แต่ยังมีเวลาเรียนรู้วิถีชีวิต อาหารการกินของคนท้องถิ่น และสถานที่บางแห่งที่นักท่องเที่ยวไม่ค่อยรู้จักด้วย",
-      "th2": null,
-      "th3": null,
+      "th2": "ฉันหวังว่าการเดินทางครั้งนี้จะไม่ใช่แค่การรีบไปเที่ยวตามสถานที่ต่าง ๆ แต่ยังมีเวลาเรียนรู้วิถีชีวิต อาหารการรับประทานของคนท้องถิ่น และสถานที่บางแห่งที่นักท่องเที่ยวไม่ค่อยรู้จักด้วย",
+      "th3": "หวังว่าการเดินทางครั้งนี้จะไม่ใช่แค่การรีบไปเที่ยวตามสถานที่ต่าง ๆ แต่ยังมีเวลาเรียนรู้วิถีชีวิต อาหารการกินของคนท้องถิ่น และสถานที่บางแห่งที่นักท่องเที่ยวไม่ค่อยรู้จักด้วย",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2228,8 +2228,8 @@
       "category": "controlled_long_sentence",
       "zh": "如果一段文字同时包含网址、电子邮件、数字和中文句子，翻译程序应该只处理需要翻译的部分，并完整保留其他内容的原始格式。",
       "th1": "หากข้อความหนึ่งมีทั้งเว็บไซต์ อีเมล ตัวเลข และประโยคภาษาจีน โปรแกรมแปลควรจัดการเฉพาะส่วนที่ต้องแปล และรักษารูปแบบเดิมของเนื้อหาส่วนอื่นไว้อย่างครบถ้วน",
-      "th2": null,
-      "th3": null,
+      "th2": "หากข้อความหนึ่งมีทั้งเว็บไซต์ อีเมล ตัวเลข และประโยคภาษาจีน ซอฟต์แวร์แปลควรจัดการเฉพาะส่วนที่ต้องแปล และรักษารูปแบบเดิมของเนื้อหาส่วนอื่นไว้อย่างครบถ้วน",
+      "th3": "หากข้อความหนึ่งมีทั้งเว็บไซต์ อีเมล ตัวเลข และประโยคภาษาจีน โปรแกรมแปลควรจะจัดการเฉพาะส่วนที่ต้องแปล และรักษารูปแบบเดิมของเนื้อหาส่วนอื่นไว้อย่างครบถ้วน",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2238,8 +2238,8 @@
       "category": "controlled_long_sentence",
       "zh": "虽然这次测试的准确率有所提高，但如果模型只记住训练数据中的固定句型，就还不能说明它已经学会在陌生场景中灵活翻译。",
       "th1": "แม้ความแม่นยำในการทดสอบครั้งนี้จะเพิ่มขึ้น แต่หากโมเดลเพียงจดจำรูปประโยคตายตัวในข้อมูลฝึก ก็ยังไม่อาจสรุปได้ว่าโมเดลเรียนรู้การแปลอย่างยืดหยุ่นในสถานการณ์ที่ไม่เคยพบแล้ว",
-      "th2": null,
-      "th3": null,
+      "th2": "แม้ความแม่นยำในการทดสอบครั้งนี้จะเพิ่มขึ้น แต่หากโมเดลเพียงจดจำรูปประโยคตายตัวในข้อมูลฝึก ก็ยังไม่สามารถสรุปได้ว่าโมเดลเรียนรู้การแปลอย่างยืดหยุ่นในสถานการณ์ที่ไม่เคยพบแล้ว",
+      "th3": "แม้ความแม่นยำในการทดสอบครั้งนี้จะเพิ่มขึ้น แต่ถ้าหากโมเดลเพียงจดจำรูปประโยคตายตัวในข้อมูลฝึก ก็ยังไม่อาจสรุปได้ว่าโมเดลเรียนรู้การแปลอย่างยืดหยุ่นในสถานการณ์ที่ไม่เคยพบแล้ว",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2248,8 +2248,8 @@
       "category": "controlled_long_sentence",
       "zh": "在安排工作顺序时，我们应该优先处理影响范围较大、风险较高或有明确截止日期的事项，而不是只挑选最容易完成的任务。",
       "th1": "ในการจัดลำดับงาน เราควรให้ความสำคัญกับเรื่องที่มีผลกระทบเป็นวงกว้าง มีความเสี่ยงสูง หรือมีกำหนดส่งชัดเจนก่อน แทนที่จะเลือกทำเฉพาะงานที่เสร็จง่ายที่สุด",
-      "th2": null,
-      "th3": null,
+      "th2": "ในการจัดลำดับงาน เราควรจะให้ความสำคัญกับเรื่องที่มีผลกระทบเป็นวงกว้าง มีความเสี่ยงสูง หรือมีกำหนดส่งชัดเจนก่อน แทนที่จะเลือกทำเฉพาะงานที่เสร็จง่ายที่สุด",
+      "th3": "ในการจัดลำดับงาน เราควรให้ความสำคัญกับเรื่องที่มีผลกระทบเป็นวงกว้าง มีความเสี่ยงสูง หรือมีกำหนดส่งชัดเจนก่อน แทนที่จะเลือกทำเฉพาะงานที่เสร็จง่ายที่สุดนะ",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2258,8 +2258,8 @@
       "category": "controlled_long_sentence",
       "zh": "如果药品的包装、颜色或说明与平时不同，不要仅凭外观判断是否可以继续使用，应当先向专业人员确认。",
       "th1": "หากบรรจุภัณฑ์ สี หรือคำแนะนำของยาต่างจากปกติ อย่าตัดสินว่ายังใช้ต่อได้หรือไม่จากรูปลักษณ์เพียงอย่างเดียว ควรสอบถามผู้เชี่ยวชาญให้แน่ใจก่อน",
-      "th2": null,
-      "th3": null,
+      "th2": "หากบรรจุภัณฑ์ สี หรือคำแนะนำของยาต่างจากปกติ อย่าตัดสินว่ายังใช้ต่อได้ไหมจากรูปลักษณ์เพียงอย่างเดียว ควรสอบถามผู้เชี่ยวชาญให้แน่ใจก่อน",
+      "th3": "หากบรรจุภัณฑ์ สี หรือคำแนะนำของยาต่างจากปกติ อย่าตัดสินว่ายังใช้ต่อได้หรือไม่จากรูปลักษณ์เพียงอย่างเดียว ควรจะสอบถามผู้เชี่ยวชาญให้แน่ใจก่อน",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2268,8 +2268,8 @@
       "category": "controlled_long_sentence",
       "zh": "为了让不同地区的用户都能顺利阅读，软件需要正确处理字体、字符编码、标点符号以及从右到左和从左到右的文字方向。",
       "th1": "เพื่อให้ผู้ใช้จากภูมิภาคต่าง ๆ อ่านได้อย่างราบรื่น ซอฟต์แวร์จำเป็นต้องจัดการแบบอักษร การเข้ารหัสตัวอักษร เครื่องหมายวรรคตอน และทิศทางข้อความทั้งจากขวาไปซ้ายและจากซ้ายไปขวาได้อย่างถูกต้อง",
-      "th2": null,
-      "th3": null,
+      "th2": "เพื่อให้ผู้ใช้งานจากภูมิภาคต่าง ๆ อ่านได้อย่างราบรื่น ซอฟต์แวร์จำเป็นต้องจัดการแบบอักษร การเข้ารหัสตัวอักษร เครื่องหมายวรรคตอน และทิศทางข้อความทั้งจากขวาไปซ้ายและจากซ้ายไปขวาได้อย่างถูกต้อง",
+      "th3": "เพื่อให้ผู้ใช้จากภูมิภาคต่าง ๆ อ่านได้อย่างราบรื่น โปรแกรมจำเป็นต้องจัดการแบบอักษร การเข้ารหัสตัวอักษร เครื่องหมายวรรคตอน และทิศทางข้อความทั้งจากขวาไปซ้ายและจากซ้ายไปขวาได้อย่างถูกต้อง",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2278,8 +2278,8 @@
       "category": "controlled_long_sentence",
       "zh": "如果发现某些生词在语料中只出现一次，就可以优先为它们补充不同词性、常见搭配和真实语境，而不必继续增加大量相似的简单句。",
       "th1": "หากพบว่าคำศัพท์ใหม่บางคำปรากฏในคลังข้อมูลเพียงครั้งเดียว ก็สามารถให้ความสำคัญกับการเพิ่มตัวอย่างที่มีชนิดคำ รูปแบบคำที่ใช้ร่วมกัน และบริบทจริงที่แตกต่างกัน แทนการเพิ่มประโยคง่าย ๆ ที่คล้ายกันจำนวนมาก",
-      "th2": null,
-      "th3": null,
+      "th2": "ถ้าหากพบว่าคำศัพท์ใหม่บางคำปรากฏในคลังข้อมูลเพียงครั้งเดียว ก็สามารถให้ความสำคัญกับการเพิ่มตัวอย่างที่มีชนิดคำ รูปแบบคำที่ใช้ร่วมกัน และบริบทจริงที่แตกต่างกัน แทนการเพิ่มประโยคง่าย ๆ ที่คล้ายกันจำนวนมาก",
+      "th3": "หากพบว่าคำศัพท์ใหม่บางคำปรากฏในคลังข้อมูลแค่ครั้งเดียว ก็สามารถให้ความสำคัญกับการเพิ่มตัวอย่างที่มีชนิดคำ รูปแบบคำที่ใช้ร่วมกัน และบริบทจริงที่แตกต่างกัน แทนการเพิ่มประโยคง่าย ๆ ที่คล้ายกันจำนวนมาก",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2288,8 +2288,8 @@
       "category": "controlled_long_sentence",
       "zh": "对于不熟悉的专业术语，翻译时应先确认它所属的领域，再根据上下文选择合适的译法，避免把同一个词机械地翻译成同一种泰语。",
       "th1": "สำหรับศัพท์เฉพาะที่ไม่คุ้นเคย ขณะแปลควรตรวจสอบก่อนว่าเป็นคำในสาขาใด แล้วเลือกคำแปลที่เหมาะสมตามบริบท เพื่อหลีกเลี่ยงการแปลคำเดียวกันเป็นภาษาไทยคำเดิมแบบตายตัวทุกครั้ง",
-      "th2": null,
-      "th3": null,
+      "th2": "สำหรับศัพท์เฉพาะที่ไม่คุ้นเคย ขณะแปลควรเช็กก่อนว่าเป็นคำในสาขาใด แล้วเลือกคำแปลที่เหมาะสมตามบริบท เพื่อหลีกเลี่ยงการแปลคำเดียวกันเป็นภาษาไทยคำเดิมแบบตายตัวทุกครั้ง",
+      "th3": "สำหรับศัพท์เฉพาะที่ไม่คุ้นเคย ขณะแปลควรจะตรวจสอบก่อนว่าเป็นคำในสาขาใด แล้วเลือกคำแปลที่เหมาะสมตามบริบท เพื่อหลีกเลี่ยงการแปลคำเดียวกันเป็นภาษาไทยคำเดิมแบบตายตัวทุกครั้ง",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2298,8 +2298,8 @@
       "category": "controlled_long_sentence",
       "zh": "即使一个句子很长，只要能够识别主语、谓语、宾语以及各个从句之间的关系，就可以先分段理解，再重新组织成自然流畅的泰语。",
       "th1": "แม้ประโยคหนึ่งจะยาวมาก แต่หากสามารถระบุประธาน ภาคแสดง กรรม และความสัมพันธ์ระหว่างอนุประโยคต่าง ๆ ได้ ก็สามารถแบ่งทำความเข้าใจเป็นส่วน ๆ ก่อน แล้วเรียบเรียงใหม่เป็นภาษาไทยที่เป็นธรรมชาติและลื่นไหล",
-      "th2": null,
-      "th3": null,
+      "th2": "แม้ประโยคหนึ่งจะยาวมาก แต่ถ้าหากสามารถระบุประธาน ภาคแสดง กรรม และความสัมพันธ์ระหว่างอนุประโยคต่าง ๆ ได้ ก็สามารถแบ่งทำความเข้าใจเป็นส่วน ๆ ก่อน แล้วเรียบเรียงใหม่เป็นภาษาไทยที่เป็นธรรมชาติและลื่นไหล",
+      "th3": "แม้ประโยคหนึ่งจะยาวมาก แต่หากสามารถระบุประธาน ภาคแสดง กรรม และความสัมพันธ์ระหว่างอนุประโยคต่าง ๆ ได้ ก็สามารถแบ่งทำความเข้าใจเป็นส่วน ๆ ก่อน แล้วเรียบเรียงใหม่เป็นภาษาไทยที่เป็นธรรมชาติและลื่นไหลนะ",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2308,8 +2308,8 @@
       "category": "controlled_long_sentence",
       "zh": "如果系统检测到同一段文字中混合了中文、泰语、英语和特殊符号，就不应该把所有字符都当成中文交给翻译模型处理。",
       "th1": "หากระบบตรวจพบว่าข้อความเดียวกันมีภาษาจีน ภาษาไทย ภาษาอังกฤษ และสัญลักษณ์พิเศษปะปนกัน ก็ไม่ควรส่งอักขระทั้งหมดให้โมเดลแปลโดยถือว่าเป็นภาษาจีนทั้งหมด",
-      "th2": null,
-      "th3": null,
+      "th2": "หากระบบตรวจพบว่าข้อความเดียวกันมีภาษาจีน ภาษาไทย ภาษาอังกฤษ และสัญลักษณ์พิเศษปะปนกัน ก็ไม่ควรจะส่งอักขระทั้งหมดให้โมเดลแปลโดยถือว่าเป็นภาษาจีนทั้งหมด",
+      "th3": "ถ้าหากระบบตรวจพบว่าข้อความเดียวกันมีภาษาจีน ภาษาไทย ภาษาอังกฤษ และสัญลักษณ์พิเศษปะปนกัน ก็ไม่ควรส่งอักขระทั้งหมดให้โมเดลแปลโดยถือว่าเป็นภาษาจีนทั้งหมด",
       "frame": "controlled_long_sentence"
     },
     {
@@ -2318,8 +2318,8 @@
       "category": "controlled_long_sentence",
       "zh": "在资源有限的手机上运行大型模型时，除了关注推理速度，还要观察峰值内存、持续温度、耗电量以及长时间运行后的稳定性。",
       "th1": "เมื่อรันโมเดลขนาดใหญ่บนโทรศัพท์ที่มีทรัพยากรจำกัด นอกจากความเร็วในการอนุมานแล้ว ยังต้องสังเกตหน่วยความจำสูงสุด อุณหภูมิขณะทำงาน การใช้พลังงาน และความเสถียรหลังทำงานเป็นเวลานานด้วย",
-      "th2": null,
-      "th3": null,
+      "th2": "เมื่อรันโมเดลขนาดใหญ่บนโทรศัพท์ที่มีทรัพยากรจำกัด นอกจากความเร็วในการอนุมานแล้ว ยังต้องสังเกตหน่วยความจำสูงสุด อุณหภูมิขณะทำงาน การใช้พลังงาน และความเสถียรหลังทำงานเป็นเวลานานด้วยนะ",
+      "th3": "เมื่อรันโมเดลขนาดใหญ่บนโทรศัพท์ที่มีทรัพยากรจำกัด นอกจากความเร็วในการอนุมานแล้ว ยังต้องสังเกตหน่วยความจำสูงสุด อุณหภูมิขณะทำงาน การใช้พลังงาน และความเสถียรหลังทำงานเป็นเวลานานด้วยจริง ๆ",
       "frame": "controlled_long_sentence"
     }
   ]

@@ -1,0 +1,97 @@
+{
+  "format": "pkanai-grouped-multi-reference",
+  "schema_version": 1,
+  "record_schema": [
+    "id",
+    "section",
+    "category",
+    "zh",
+    "th1",
+    "th2",
+    "th3",
+    "frame"
+  ],
+  "metadata_schema": [
+    "source_language",
+    "target_language",
+    "task",
+    "format",
+    "tokenizer",
+    "generation_method",
+    "review_status"
+  ],
+  "training_files": [
+    "actions.json",
+    "balanced_generalization.json",
+    "commands.json",
+    "compositional_augmentation.json",
+    "controlled_lexical_expansion.json",
+    "conversation.json",
+    "daily_conversation_and_device.json",
+    "daily_life.json",
+    "descriptions.json",
+    "feelings.json",
+    "food.json",
+    "greetings.json",
+    "learning.json",
+    "length_frequency.json",
+    "lexical_coverage.json",
+    "multi_reference.json",
+    "natural_patterns.json",
+    "other.json",
+    "places_and_directions.json",
+    "politeness.json",
+    "shopping.json",
+    "things_and_needs.json",
+    "time_and_schedule.json"
+  ],
+  "total_examples": 6534,
+  "topics": {
+    "actions": 90,
+    "balanced_generalization": 132,
+    "commands": 9,
+    "compositional_augmentation": 4674,
+    "controlled_lexical_expansion": 152,
+    "conversation": 18,
+    "daily_conversation_and_device": 150,
+    "daily_life": 9,
+    "descriptions": 60,
+    "feelings": 30,
+    "food": 120,
+    "greetings": 9,
+    "learning": 3,
+    "length_frequency": 231,
+    "lexical_coverage": 55,
+    "multi_reference": 180,
+    "natural_patterns": 50,
+    "other": 1,
+    "places_and_directions": 175,
+    "politeness": 7,
+    "shopping": 4,
+    "things_and_needs": 327,
+    "time_and_schedule": 48
+  },
+  "evaluation_files": [
+    "compositional.json",
+    "generalization.json",
+    "generalization_extended.json"
+  ],
+  "metadata_values": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback"
+  },
+  "multi_reference_sources": [
+    "multi_reference/zh_th_multi_reference_v1.json"
+  ],
+  "translation_fields": [
+    "th1",
+    "th2",
+    "th3"
+  ],
+  "total_source_groups": 6414,
+  "evaluation_groups": 61,
+  "evaluation_examples": 61
+}

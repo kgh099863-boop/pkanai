@@ -1,0 +1,16 @@
+{
+  "file": "balanced_generalization.json",
+  "new_examples": 132,
+  "duplicates_skipped": 0,
+  "new_by_frame": {
+    "balanced_daily": 30,
+    "balanced_question": 25,
+    "balanced_grammar": 30,
+    "balanced_technology": 27,
+    "balanced_long": 20
+  },
+  "total_training_examples": 6354,
+  "training_shards": 22,
+  "duplicate_training_sources": 0,
+  "review_status": "assistant_curated_requires_native_speaker_review"
+}

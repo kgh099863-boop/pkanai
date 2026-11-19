@@ -1,0 +1,1216 @@
+{
+  "schema_version": 1,
+  "topic": "food",
+  "description": "ข้อมูลสังเคราะห์จากรูปแบบประโยคและคำศัพท์จีน-ไทยที่กำหนดเอง ตรวจโครงสร้างและตัดประโยคจีนซ้ำแล้ว",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "template_augmented_from_handwritten_lexicon",
+    "review_status": "needs_human_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "包子很好吃。",
+      "th1": "ซาลาเปาอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 2,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃鸡蛋。",
+      "th1": "ฉันอยากกินไข่",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 3,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃蛋糕。",
+      "th1": "ฉันอยากกินเค้ก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 4,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃蛋糕吗？",
+      "th1": "คุณอยากกินเค้กไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 5,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不喝水。",
+      "th1": "ฉันไม่ดื่มน้ำ",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 6,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不喝汽水。",
+      "th1": "ฉันไม่ดื่มน้ำอัดลม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 7,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃包子吗？",
+      "th1": "คุณอยากกินซาลาเปาไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 8,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃猪肉。",
+      "th1": "ฉันอยากกินเนื้อหมู",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 9,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃沙拉。",
+      "th1": "ฉันอยากกินสลัด",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 10,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "沙拉很好吃。",
+      "th1": "สลัดอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 11,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "冰淇淋很好吃。",
+      "th1": "ไอศกรีมอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 12,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃苹果吗？",
+      "th1": "คุณอยากกินแอปเปิลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 13,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想喝热水。",
+      "th1": "ฉันอยากดื่มน้ำร้อน",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 14,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃汤吗？",
+      "th1": "คุณอยากกินซุปไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 15,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃冰淇淋。",
+      "th1": "ฉันไม่อยากกินไอศกรีม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 16,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想喝牛奶吗？",
+      "th1": "คุณอยากดื่มนมไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 17,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "果汁很好喝。",
+      "th1": "น้ำผลไม้รสชาติดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 18,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不喝果汁。",
+      "th1": "ฉันไม่ดื่มน้ำผลไม้",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 19,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃面包。",
+      "th1": "ฉันไม่อยากกินขนมปัง",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 20,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想喝果汁。",
+      "th1": "ฉันอยากดื่มน้ำผลไม้",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 21,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不喝热水。",
+      "th1": "ฉันไม่ดื่มน้ำร้อน",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 22,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "汤很好吃。",
+      "th1": "ซุปอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 23,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃香蕉。",
+      "th1": "ฉันอยากกินกล้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 24,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃猪肉。",
+      "th1": "ฉันไม่อยากกินเนื้อหมู",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 25,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃米饭。",
+      "th1": "ฉันอยากกินข้าว",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 26,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃沙拉。",
+      "th1": "ฉันไม่อยากกินสลัด",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 27,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃饺子。",
+      "th1": "ฉันไม่อยากกินเกี๊ยว",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 28,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃包子。",
+      "th1": "ฉันไม่อยากกินซาลาเปา",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 29,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃鱼。",
+      "th1": "ฉันอยากกินปลา",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 30,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃包子。",
+      "th1": "ฉันอยากกินซาลาเปา",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 31,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃香蕉吗？",
+      "th1": "คุณอยากกินกล้วยไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 32,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃米饭吗？",
+      "th1": "คุณอยากกินข้าวไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 33,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "茶很好喝。",
+      "th1": "ชารสชาติดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 34,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想喝热水吗？",
+      "th1": "คุณอยากดื่มน้ำร้อนไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 35,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不喝柠檬茶。",
+      "th1": "ฉันไม่ดื่มชามะนาว",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 36,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃鸡肉。",
+      "th1": "ฉันไม่อยากกินเนื้อไก่",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 37,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃水果。",
+      "th1": "ฉันไม่อยากกินผลไม้",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 38,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃牛肉。",
+      "th1": "ฉันอยากกินเนื้อวัว",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 39,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃蔬菜。",
+      "th1": "ฉันอยากกินผัก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 40,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃蔬菜吗？",
+      "th1": "คุณอยากกินผักไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 41,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃水果。",
+      "th1": "ฉันอยากกินผลไม้",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 42,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想喝柠檬茶。",
+      "th1": "ฉันอยากดื่มชามะนาว",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 43,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃饺子吗？",
+      "th1": "คุณอยากกินเกี๊ยวไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 44,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "鸡蛋很好吃。",
+      "th1": "ไข่อร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 45,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "饺子很好吃。",
+      "th1": "เกี๊ยวอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 46,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想喝汽水吗？",
+      "th1": "คุณอยากดื่มน้ำอัดลมไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 47,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃冰淇淋。",
+      "th1": "ฉันอยากกินไอศกรีม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 48,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃鱼吗？",
+      "th1": "คุณอยากกินปลาไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 49,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "咖啡很好喝。",
+      "th1": "กาแฟรสชาติดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 50,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃香蕉。",
+      "th1": "ฉันไม่อยากกินกล้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 51,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃炒饭。",
+      "th1": "ฉันไม่อยากกินข้าวผัด",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 52,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "鱼很好吃。",
+      "th1": "ปลาอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 53,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "米饭很好吃。",
+      "th1": "ข้าวอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 54,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "蔬菜很好吃。",
+      "th1": "ผักอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 55,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃蔬菜。",
+      "th1": "ฉันไม่อยากกินผัก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 56,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "香蕉很好吃。",
+      "th1": "กล้วยอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 57,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃苹果。",
+      "th1": "ฉันไม่อยากกินแอปเปิล",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 58,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃面条吗？",
+      "th1": "คุณอยากกินบะหมี่ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 59,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃鸡肉吗？",
+      "th1": "คุณอยากกินเนื้อไก่ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 60,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想喝咖啡吗？",
+      "th1": "คุณอยากดื่มกาแฟไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 61,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃汤。",
+      "th1": "ฉันอยากกินซุป",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 62,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "牛肉很好吃。",
+      "th1": "เนื้อวัวอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 63,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "猪肉很好吃。",
+      "th1": "เนื้อหมูอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 64,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "苹果很好吃。",
+      "th1": "แอปเปิลอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 65,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "面条很好吃。",
+      "th1": "บะหมี่อร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 66,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "鸡肉很好吃。",
+      "th1": "เนื้อไก่อร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 67,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "豆浆很好喝。",
+      "th1": "นมถั่วเหลืองรสชาติดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 68,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "水果很好吃。",
+      "th1": "ผลไม้อร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 69,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不喝豆浆。",
+      "th1": "ฉันไม่ดื่มนมถั่วเหลือง",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 70,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃鱼。",
+      "th1": "ฉันไม่อยากกินปลา",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 71,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃面包。",
+      "th1": "ฉันอยากกินขนมปัง",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 72,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃面包吗？",
+      "th1": "คุณอยากกินขนมปังไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 73,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃牛肉吗？",
+      "th1": "คุณอยากกินเนื้อวัวไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 74,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃炒饭。",
+      "th1": "ฉันอยากกินข้าวผัด",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 75,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想喝茶。",
+      "th1": "ฉันอยากดื่มชา",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 76,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃汤。",
+      "th1": "ฉันไม่อยากกินซุป",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 77,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "冰水很好喝。",
+      "th1": "น้ำเย็นรสชาติดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 78,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想喝汽水。",
+      "th1": "ฉันอยากดื่มน้ำอัดลม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 79,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃蛋糕。",
+      "th1": "ฉันไม่อยากกินเค้ก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 80,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想喝咖啡。",
+      "th1": "ฉันอยากดื่มกาแฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 81,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想喝水吗？",
+      "th1": "คุณอยากดื่มน้ำไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 82,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想喝牛奶。",
+      "th1": "ฉันอยากดื่มนม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 83,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃饺子。",
+      "th1": "ฉันอยากกินเกี๊ยว",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 84,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "蛋糕很好吃。",
+      "th1": "เค้กอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 85,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃鸡蛋吗？",
+      "th1": "คุณอยากกินไข่ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 86,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃面条。",
+      "th1": "ฉันไม่อยากกินบะหมี่",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 87,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "面包很好吃。",
+      "th1": "ขนมปังอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 88,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "汽水很好喝。",
+      "th1": "น้ำอัดลมรสชาติดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 89,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃沙拉吗？",
+      "th1": "คุณอยากกินสลัดไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 90,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "柠檬茶很好喝。",
+      "th1": "ชามะนาวรสชาติดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 91,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想喝豆浆。",
+      "th1": "ฉันอยากดื่มนมถั่วเหลือง",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 92,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想喝果汁吗？",
+      "th1": "คุณอยากดื่มน้ำผลไม้ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 93,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想喝冰水吗？",
+      "th1": "คุณอยากดื่มน้ำเย็นไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 94,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不喝冰水。",
+      "th1": "ฉันไม่ดื่มน้ำเย็น",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 95,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃炒面。",
+      "th1": "ฉันอยากกินผัดหมี่",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 96,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃炒面。",
+      "th1": "ฉันไม่อยากกินผัดหมี่",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 97,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "水很好喝。",
+      "th1": "น้ำรสชาติดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 98,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃炒面吗？",
+      "th1": "คุณอยากกินผัดหมี่ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 99,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃鸡蛋。",
+      "th1": "ฉันไม่อยากกินไข่",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 100,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃炒饭吗？",
+      "th1": "คุณอยากกินข้าวผัดไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 101,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想喝柠檬茶吗？",
+      "th1": "คุณอยากดื่มชามะนาวไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 102,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃苹果。",
+      "th1": "ฉันอยากกินแอปเปิล",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 103,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不喝咖啡。",
+      "th1": "ฉันไม่ดื่มกาแฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 104,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃水果吗？",
+      "th1": "คุณอยากกินผลไม้ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 105,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃鸡肉。",
+      "th1": "ฉันอยากกินเนื้อไก่",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 106,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃冰淇淋吗？",
+      "th1": "คุณอยากกินไอศกรีมไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 107,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃牛肉。",
+      "th1": "ฉันไม่อยากกินเนื้อวัว",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 108,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想喝豆浆吗？",
+      "th1": "คุณอยากดื่มนมถั่วเหลืองไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 109,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想喝水。",
+      "th1": "ฉันอยากดื่มน้ำ",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 110,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想吃面条。",
+      "th1": "ฉันอยากกินบะหมี่",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 111,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我想喝冰水。",
+      "th1": "ฉันอยากดื่มน้ำเย็น",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 112,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "牛奶很好喝。",
+      "th1": "นมรสชาติดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 113,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "炒饭很好吃。",
+      "th1": "ข้าวผัดอร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 114,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想喝茶吗？",
+      "th1": "คุณอยากดื่มชาไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 115,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不喝茶。",
+      "th1": "ฉันไม่ดื่มชา",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 116,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不喝牛奶。",
+      "th1": "ฉันไม่ดื่มนม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 117,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "热水很好喝。",
+      "th1": "น้ำร้อนรสชาติดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 118,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "我不想吃米饭。",
+      "th1": "ฉันไม่อยากกินข้าว",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 119,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "炒面很好吃。",
+      "th1": "ผัดหมี่อร่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    },
+    {
+      "id": 120,
+      "section": "อาหารและเครื่องดื่ม",
+      "category": "food",
+      "zh": "你想吃猪肉吗？",
+      "th1": "คุณอยากกินเนื้อหมูไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "food"
+    }
+  ]
+}

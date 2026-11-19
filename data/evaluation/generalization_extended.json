@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "topic": "generalization_extended",
+  "description": "held-out recombination test for newly added natural sentence frames",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "hand_authored_heldout_reference",
+    "review_status": "held_out_evaluation"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "如果你明天有空，我们一起去医院。",
+      "th1": "ถ้าพรุ่งนี้คุณว่าง พวกเราไปโรงพยาบาลด้วยกัน",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 2,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "如果手机坏了，请告诉我。",
+      "th1": "ถ้าโทรศัพท์เสีย กรุณาบอกฉัน",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 3,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "如果你不舒服，应该休息。",
+      "th1": "ถ้าคุณไม่สบาย คุณควรพักผ่อน",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 4,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "如果现在出发，我们可以赶上火车。",
+      "th1": "ถ้าออกเดินทางตอนนี้ พวกเราจะขึ้นรถไฟทัน",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 5,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "因为我忘了密码，所以无法登录。",
+      "th1": "เพราะฉันลืมรหัสผ่าน จึงเข้าสู่ระบบไม่ได้",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 6,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "因为他没有时间，所以不能参加会议。",
+      "th1": "เพราะเขาไม่มีเวลา จึงเข้าร่วมประชุมไม่ได้",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 7,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "因为天气不好，航班延误了。",
+      "th1": "เพราะสภาพอากาศไม่ดี เที่ยวบินจึงล่าช้า",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 8,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "虽然我很饿，但是还要等朋友。",
+      "th1": "แม้ว่าฉันจะหิวมาก แต่ก็ยังต้องรอเพื่อน",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 9,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "虽然这个手机很贵，但是很好用。",
+      "th1": "แม้โทรศัพท์เครื่องนี้จะแพงมาก แต่ก็ใช้งานดี",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 10,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "除了水果，我还买了面包。",
+      "th1": "นอกจากผลไม้แล้ว ฉันยังซื้อขนมปังด้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 11,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "除了星期六，他每天都上班。",
+      "th1": "ยกเว้นวันเสาร์ เขาทำงานทุกวัน",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 12,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "看完电影以后，我们去吃饭。",
+      "th1": "หลังดูหนังจบ พวกเราไปกินข้าว",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 13,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "到学校以前，我先去银行。",
+      "th1": "ก่อนถึงโรงเรียน ฉันแวะไปธนาคารก่อน",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 14,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "我已经把门关好了。",
+      "th1": "ฉันปิดประตูเรียบร้อยแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 15,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "他一边做饭，一边听广播。",
+      "th1": "เขาทำอาหารไปด้วย ฟังวิทยุไปด้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 16,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "请把这些照片发给我。",
+      "th1": "กรุณาส่งรูปถ่ายเหล่านี้ให้ฉัน",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 17,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "这台电脑比我的手机贵。",
+      "th1": "คอมพิวเตอร์เครื่องนี้แพงกว่าโทรศัพท์ของฉัน",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 18,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "今天的天气没有昨天那么冷。",
+      "th1": "วันนี้อากาศไม่หนาวเท่าเมื่อวาน",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 19,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "从机场到酒店要多久？",
+      "th1": "จากสนามบินไปโรงแรมใช้เวลานานเท่าไหร่",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 20,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "我忘记带钱包了。",
+      "th1": "ฉันลืมเอากระเป๋าสตางค์มาแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    },
+    {
+      "id": 21,
+      "section": "การประเมินการใช้งานทั่วไปเพิ่มเติม",
+      "category": "heldout_generalization_extended",
+      "zh": "请帮我把这封邮件翻译一下。",
+      "th1": "กรุณาช่วยแปลอีเมลฉบับนี้ให้ฉันหน่อย",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization_extended"
+    }
+  ]
+}

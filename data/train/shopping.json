@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "topic": "shopping",
+  "description": "การซื้อขายและราคา",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "original_curated_pairs",
+    "review_status": "needs_human_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "การซื้อของ",
+      "category": "shopping",
+      "zh": "这个多少钱？",
+      "th1": "อันนี้ราคาเท่าไหร่",
+      "th2": null,
+      "th3": null,
+      "frame": "shopping"
+    },
+    {
+      "id": 2,
+      "section": "การซื้อของ",
+      "category": "shopping",
+      "zh": "太贵了",
+      "th1": "แพงเกินไป",
+      "th2": null,
+      "th3": null,
+      "frame": "shopping"
+    },
+    {
+      "id": 3,
+      "section": "การซื้อของ",
+      "category": "shopping",
+      "zh": "便宜一点可以吗？",
+      "th1": "ลดราคาอีกหน่อยได้ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "shopping"
+    },
+    {
+      "id": 4,
+      "section": "การซื้อของ",
+      "category": "shopping",
+      "zh": "我想买这个",
+      "th1": "ฉันอยากซื้ออันนี้",
+      "th2": null,
+      "th3": null,
+      "frame": "shopping"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "topic": "generalization",
+  "description": "held-out compositional generalization test",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "hand_authored_heldout_reference",
+    "review_status": "held_out_evaluation"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "我今天想喝咖啡。",
+      "th1": "วันนี้ฉันอยากดื่มกาแฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 2,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "你明天要去医院吗？",
+      "th1": "พรุ่งนี้คุณจะไปโรงพยาบาลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 3,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "这个苹果多少钱？",
+      "th1": "แอปเปิลลูกนี้ราคาเท่าไหร่",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 4,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "我们下午在学校见面。",
+      "th1": "เราพบกันที่โรงเรียนตอนบ่าย",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 5,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "今天晚上我们一起吃饭。",
+      "th1": "คืนนี้พวกเราไปกินข้าวด้วยกัน",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 6,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "这个地方非常安静。",
+      "th1": "สถานที่นี้เงียบสงบมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 7,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "我现在需要帮助。",
+      "th1": "ตอนนี้ฉันต้องการความช่วยเหลือ",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 8,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "请给我看这个文件。",
+      "th1": "กรุณาให้ฉันดูไฟล์นี้",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 9,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "你今天有时间吗？",
+      "th1": "วันนี้คุณมีเวลาไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 10,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "我不想买这个东西。",
+      "th1": "ฉันไม่อยากซื้อสิ่งนี้",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 11,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "请慢一点说，我听不清楚。",
+      "th1": "กรุณาพูดช้าลงหน่อย ฉันฟังไม่ชัด",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 12,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "我们明天早上去机场。",
+      "th1": "พรุ่งนี้เช้าพวกเราไปสนามบิน",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 13,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "我已经收到你的消息了。",
+      "th1": "ฉันได้รับข้อความของคุณแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 14,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "请帮我检查一下手机。",
+      "th1": "กรุณาช่วยตรวจสอบโทรศัพท์มือถือให้ฉันหน่อย",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 15,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "我想学习更多泰语。",
+      "th1": "ฉันอยากเรียนภาษาไทยเพิ่มเติม",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 16,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "现在外面正在下雨。",
+      "th1": "ตอนนี้ข้างนอกกำลังฝนตก",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 17,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "我们可以在这里休息一下。",
+      "th1": "พวกเราพักที่นี่สักหน่อยได้",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 18,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "这个价格太贵了，可以便宜一点吗？",
+      "th1": "ราคานี้แพงเกินไป ลดลงอีกหน่อยได้ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 19,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "请不要忘记保存文件。",
+      "th1": "กรุณาอย่าลืมบันทึกไฟล์",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    },
+    {
+      "id": 20,
+      "section": "การประเมินการใช้งานทั่วไป",
+      "category": "heldout_generalization",
+      "zh": "我今天很忙，明天再联系你。",
+      "th1": "วันนี้ฉันยุ่งมาก พรุ่งนี้ค่อยติดต่อคุณ",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_generalization"
+    }
+  ]
+}

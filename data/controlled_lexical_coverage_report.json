@@ -1,0 +1,815 @@
+{
+  "report_version": 1,
+  "new_shard": "controlled_lexical_expansion.json",
+  "added_examples": 152,
+  "previous_training_examples": 5839,
+  "new_training_examples": 5991,
+  "previous_training_shards": 19,
+  "new_training_shards": 20,
+  "duplicate_or_invalid_rows_removed": [
+    [
+      "duplicate",
+      "他发烧了，今天不能去上班。"
+    ]
+  ],
+  "unique_new_chinese_sources": 152,
+  "new_unique_han_characters": 203,
+  "previous_unique_han_characters": 548,
+  "new_unique_han_characters_total": 751,
+  "previous_characters_with_frequency_le_3": 189,
+  "rare_characters_reinforced": 132,
+  "rare_character_frequency_changes": [
+    {
+      "char": "两",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "于",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "五",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "些",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "使",
+      "before": 1,
+      "added": 3,
+      "after": 4
+    },
+    {
+      "char": "共",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "划",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "刚",
+      "before": 1,
+      "added": 4,
+      "after": 5
+    },
+    {
+      "char": "别",
+      "before": 1,
+      "added": 3,
+      "after": 4
+    },
+    {
+      "char": "十",
+      "before": 1,
+      "added": 6,
+      "after": 7
+    },
+    {
+      "char": "友",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "受",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "址",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "复",
+      "before": 1,
+      "added": 5,
+      "after": 6
+    },
+    {
+      "char": "定",
+      "before": 1,
+      "added": 4,
+      "after": 5
+    },
+    {
+      "char": "客",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "容",
+      "before": 1,
+      "added": 4,
+      "after": 5
+    },
+    {
+      "char": "屏",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "己",
+      "before": 1,
+      "added": 4,
+      "after": 5
+    },
+    {
+      "char": "幕",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "序",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "录",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "感",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "懂",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "按",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "据",
+      "before": 1,
+      "added": 3,
+      "after": 4
+    },
+    {
+      "char": "提",
+      "before": 1,
+      "added": 4,
+      "after": 5
+    },
+    {
+      "char": "敏",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "救",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "易",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "最",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "朋",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "李",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "束",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "椒",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "清",
+      "before": 1,
+      "added": 4,
+      "after": 5
+    },
+    {
+      "char": "理",
+      "before": 1,
+      "added": 4,
+      "after": 5
+    },
+    {
+      "char": "由",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "病",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "登",
+      "before": 1,
+      "added": 3,
+      "after": 4
+    },
+    {
+      "char": "离",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "租",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "程",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "穿",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "签",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "结",
+      "before": 1,
+      "added": 3,
+      "after": 4
+    },
+    {
+      "char": "花",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "装",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "计",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "让",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "词",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "败",
+      "before": 1,
+      "added": 3,
+      "after": 4
+    },
+    {
+      "char": "账",
+      "before": 1,
+      "added": 2,
+      "after": 3
+    },
+    {
+      "char": "辆",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "近",
+      "before": 1,
+      "added": 4,
+      "after": 5
+    },
+    {
+      "char": "连",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "通",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "量",
+      "before": 1,
+      "added": 4,
+      "after": 5
+    },
+    {
+      "char": "锁",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "错",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "闻",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "飞",
+      "before": 1,
+      "added": 1,
+      "after": 2
+    },
+    {
+      "char": "业",
+      "before": 2,
+      "added": 2,
+      "after": 4
+    },
+    {
+      "char": "东",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "久",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "也",
+      "before": 2,
+      "added": 4,
+      "after": 6
+    },
+    {
+      "char": "事",
+      "before": 2,
+      "added": 2,
+      "after": 4
+    },
+    {
+      "char": "决",
+      "before": 2,
+      "added": 5,
+      "after": 7
+    },
+    {
+      "char": "分",
+      "before": 2,
+      "added": 3,
+      "after": 5
+    },
+    {
+      "char": "卡",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "取",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "只",
+      "before": 2,
+      "added": 3,
+      "after": 5
+    },
+    {
+      "char": "号",
+      "before": 2,
+      "added": 4,
+      "after": 6
+    },
+    {
+      "char": "名",
+      "before": 2,
+      "added": 2,
+      "after": 4
+    },
+    {
+      "char": "启",
+      "before": 2,
+      "added": 2,
+      "after": 4
+    },
+    {
+      "char": "吸",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "声",
+      "before": 2,
+      "added": 3,
+      "after": 5
+    },
+    {
+      "char": "她",
+      "before": 2,
+      "added": 5,
+      "after": 7
+    },
+    {
+      "char": "对",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "少",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "延",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "急",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "接",
+      "before": 2,
+      "added": 2,
+      "after": 4
+    },
+    {
+      "char": "操",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "本",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "样",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "次",
+      "before": 2,
+      "added": 2,
+      "after": 4
+    },
+    {
+      "char": "着",
+      "before": 2,
+      "added": 4,
+      "after": 6
+    },
+    {
+      "char": "确",
+      "before": 2,
+      "added": 3,
+      "after": 5
+    },
+    {
+      "char": "络",
+      "before": 2,
+      "added": 4,
+      "after": 6
+    },
+    {
+      "char": "网",
+      "before": 2,
+      "added": 4,
+      "after": 6
+    },
+    {
+      "char": "自",
+      "before": 2,
+      "added": 6,
+      "after": 8
+    },
+    {
+      "char": "认",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "讨",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "议",
+      "before": 2,
+      "added": 5,
+      "after": 7
+    },
+    {
+      "char": "论",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "设",
+      "before": 2,
+      "added": 4,
+      "after": 6
+    },
+    {
+      "char": "试",
+      "before": 2,
+      "added": 3,
+      "after": 5
+    },
+    {
+      "char": "调",
+      "before": 2,
+      "added": 4,
+      "after": 6
+    },
+    {
+      "char": "赛",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "辣",
+      "before": 2,
+      "added": 2,
+      "after": 4
+    },
+    {
+      "char": "运",
+      "before": 2,
+      "added": 2,
+      "after": 4
+    },
+    {
+      "char": "迟",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "都",
+      "before": 2,
+      "added": 2,
+      "after": 4
+    },
+    {
+      "char": "钟",
+      "before": 2,
+      "added": 1,
+      "after": 3
+    },
+    {
+      "char": "预",
+      "before": 2,
+      "added": 2,
+      "after": 4
+    },
+    {
+      "char": "买",
+      "before": 3,
+      "added": 1,
+      "after": 4
+    },
+    {
+      "char": "人",
+      "before": 3,
+      "added": 5,
+      "after": 8
+    },
+    {
+      "char": "住",
+      "before": 3,
+      "added": 1,
+      "after": 4
+    },
+    {
+      "char": "准",
+      "before": 3,
+      "added": 1,
+      "after": 4
+    },
+    {
+      "char": "删",
+      "before": 3,
+      "added": 2,
+      "after": 5
+    },
+    {
+      "char": "前",
+      "before": 3,
+      "added": 6,
+      "after": 9
+    },
+    {
+      "char": "动",
+      "before": 3,
+      "added": 4,
+      "after": 7
+    },
+    {
+      "char": "同",
+      "before": 3,
+      "added": 3,
+      "after": 6
+    },
+    {
+      "char": "坏",
+      "before": 3,
+      "added": 1,
+      "after": 4
+    },
+    {
+      "char": "坐",
+      "before": 3,
+      "added": 3,
+      "after": 6
+    },
+    {
+      "char": "外",
+      "before": 3,
+      "added": 5,
+      "after": 8
+    },
+    {
+      "char": "害",
+      "before": 3,
+      "added": 1,
+      "after": 4
+    },
+    {
+      "char": "怕",
+      "before": 3,
+      "added": 2,
+      "after": 5
+    },
+    {
+      "char": "思",
+      "before": 3,
+      "added": 1,
+      "after": 4
+    },
+    {
+      "char": "惊",
+      "before": 3,
+      "added": 1,
+      "after": 4
+    },
+    {
+      "char": "慢",
+      "before": 3,
+      "added": 2,
+      "after": 5
+    },
+    {
+      "char": "无",
+      "before": 3,
+      "added": 4,
+      "after": 7
+    },
+    {
+      "char": "日",
+      "before": 3,
+      "added": 1,
+      "after": 4
+    },
+    {
+      "char": "每",
+      "before": 3,
+      "added": 3,
+      "after": 6
+    },
+    {
+      "char": "紧",
+      "before": 3,
+      "added": 1,
+      "after": 4
+    },
+    {
+      "char": "考",
+      "before": 3,
+      "added": 1,
+      "after": 4
+    },
+    {
+      "char": "聊",
+      "before": 3,
+      "added": 2,
+      "after": 5
+    },
+    {
+      "char": "讶",
+      "before": 3,
+      "added": 1,
+      "after": 4
+    },
+    {
+      "char": "误",
+      "before": 3,
+      "added": 2,
+      "after": 5
+    },
+    {
+      "char": "送",
+      "before": 3,
+      "added": 1,
+      "after": 4
+    },
+    {
+      "char": "闭",
+      "before": 3,
+      "added": 2,
+      "after": 5
+    }
+  ]
+}

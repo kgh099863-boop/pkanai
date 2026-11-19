@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "topic": "politeness",
+  "description": "คำสุภาพ การขอบคุณ และขอโทษ",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "original_curated_pairs",
+    "review_status": "needs_human_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "คำพูดสุภาพ",
+      "category": "politeness",
+      "zh": "谢谢",
+      "th1": "ขอบคุณ",
+      "th2": null,
+      "th3": null,
+      "frame": "politeness"
+    },
+    {
+      "id": 2,
+      "section": "คำพูดสุภาพ",
+      "category": "politeness",
+      "zh": "非常感谢",
+      "th1": "ขอบคุณมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "politeness"
+    },
+    {
+      "id": 3,
+      "section": "คำพูดสุภาพ",
+      "category": "politeness",
+      "zh": "不客气",
+      "th1": "ไม่เป็นไร",
+      "th2": null,
+      "th3": null,
+      "frame": "politeness"
+    },
+    {
+      "id": 4,
+      "section": "คำพูดสุภาพ",
+      "category": "politeness",
+      "zh": "对不起",
+      "th1": "ขอโทษ",
+      "th2": null,
+      "th3": null,
+      "frame": "politeness"
+    },
+    {
+      "id": 5,
+      "section": "คำพูดสุภาพ",
+      "category": "politeness",
+      "zh": "没关系",
+      "th1": "ไม่เป็นไร",
+      "th2": null,
+      "th3": null,
+      "frame": "politeness"
+    },
+    {
+      "id": 6,
+      "section": "คำพูดสุภาพ",
+      "category": "politeness",
+      "zh": "请问",
+      "th1": "ขอถามหน่อย",
+      "th2": null,
+      "th3": null,
+      "frame": "politeness"
+    },
+    {
+      "id": 7,
+      "section": "คำพูดสุภาพ",
+      "category": "politeness",
+      "zh": "请稍等",
+      "th1": "กรุณารอสักครู่",
+      "th2": null,
+      "th3": null,
+      "frame": "politeness"
+    }
+  ]
+}

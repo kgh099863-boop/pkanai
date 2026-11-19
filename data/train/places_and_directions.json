@@ -1,0 +1,1766 @@
+{
+  "schema_version": 1,
+  "topic": "places_and_directions",
+  "description": "ข้อมูลสังเคราะห์จากรูปแบบประโยคและคำศัพท์จีน-ไทยที่กำหนดเอง ตรวจโครงสร้างและตัดประโยคจีนซ้ำแล้ว",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "template_augmented_from_handwritten_lexicon",
+    "review_status": "needs_human_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去大学。",
+      "th1": "ฉันอยากไปมหาวิทยาลัย",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 2,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在邮局。",
+      "th1": "ตอนนี้ฉันอยู่ที่ที่ทำการไปรษณีย์",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 3,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去家怎么走？",
+      "th1": "ไปบ้านอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 4,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在房间。",
+      "th1": "ตอนนี้ฉันอยู่ที่ห้อง",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 5,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去旅游景点。",
+      "th1": "ฉันอยากไปสถานที่ท่องเที่ยว",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 6,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在学校。",
+      "th1": "ตอนนี้ฉันอยู่ที่โรงเรียน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 7,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，商店在哪里？",
+      "th1": "ขอถามหน่อย ร้านค้าอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 8,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去出口怎么走？",
+      "th1": "ไปทางออกอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 9,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到停车场远吗？",
+      "th1": "จากที่นี่ไปที่จอดรถไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 10,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，那里在哪里？",
+      "th1": "ขอถามหน่อย ที่นั่นอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 11,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，市中心在哪里？",
+      "th1": "ขอถามหน่อย ใจกลางเมืองอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 12,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在入口。",
+      "th1": "ตอนนี้ฉันอยู่ที่ทางเข้า",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 13,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去那里。",
+      "th1": "ฉันอยากไปที่นั่น",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 14,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去家。",
+      "th1": "ฉันอยากไปบ้าน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 15,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去出口。",
+      "th1": "ฉันอยากไปทางออก",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 16,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，海边在哪里？",
+      "th1": "ขอถามหน่อย ชายทะเลอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 17,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在厕所。",
+      "th1": "ตอนนี้ฉันอยู่ที่ห้องน้ำ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 18,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去机场。",
+      "th1": "ฉันอยากไปสนามบิน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 19,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去银行。",
+      "th1": "ฉันอยากไปธนาคาร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 20,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去学校怎么走？",
+      "th1": "ไปโรงเรียนอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 21,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去公园怎么走？",
+      "th1": "ไปสวนสาธารณะอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 22,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去学校。",
+      "th1": "ฉันอยากไปโรงเรียน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 23,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去寺庙。",
+      "th1": "ฉันอยากไปวัด",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 24,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，机场在哪里？",
+      "th1": "ขอถามหน่อย สนามบินอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 25,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在地铁站。",
+      "th1": "ตอนนี้ฉันอยู่ที่สถานีรถไฟใต้ดิน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 26,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去邮局。",
+      "th1": "ฉันอยากไปที่ทำการไปรษณีย์",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 27,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去市场怎么走？",
+      "th1": "ไปตลาดอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 28,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在车站。",
+      "th1": "ตอนนี้ฉันอยู่ที่สถานี",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 29,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到厕所远吗？",
+      "th1": "จากที่นี่ไปห้องน้ำไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 30,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到药店远吗？",
+      "th1": "จากที่นี่ไปร้านขายยาไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 31,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在咖啡馆。",
+      "th1": "ตอนนี้ฉันอยู่ที่ร้านกาแฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 32,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在电影院。",
+      "th1": "ตอนนี้ฉันอยู่ที่โรงภาพยนตร์",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 33,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在洗手间。",
+      "th1": "ตอนนี้ฉันอยู่ที่ห้องน้ำ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 34,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到医院远吗？",
+      "th1": "จากที่นี่ไปโรงพยาบาลไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 35,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，药店在哪里？",
+      "th1": "ขอถามหน่อย ร้านขายยาอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 36,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，银行在哪里？",
+      "th1": "ขอถามหน่อย ธนาคารอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 37,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，这里在哪里？",
+      "th1": "ขอถามหน่อย ที่นี่อยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 38,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到公园远吗？",
+      "th1": "จากที่นี่ไปสวนสาธารณะไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 39,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到出口远吗？",
+      "th1": "จากที่นี่ไปทางออกไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 40,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，寺庙在哪里？",
+      "th1": "ขอถามหน่อย วัดอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 41,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在酒店。",
+      "th1": "ตอนนี้ฉันอยู่ที่โรงแรม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 42,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到警察局远吗？",
+      "th1": "จากที่นี่ไปสถานีตำรวจไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 43,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在火车站。",
+      "th1": "ตอนนี้ฉันอยู่ที่สถานีรถไฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 44,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到咖啡馆远吗？",
+      "th1": "จากที่นี่ไปร้านกาแฟไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 45,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去咖啡馆怎么走？",
+      "th1": "ไปร้านกาแฟอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 46,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去寺庙怎么走？",
+      "th1": "ไปวัดอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 47,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去市中心怎么走？",
+      "th1": "ไปใจกลางเมืองอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 48,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去银行怎么走？",
+      "th1": "ไปธนาคารอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 49,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在市场。",
+      "th1": "ตอนนี้ฉันอยู่ที่ตลาด",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 50,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到海边远吗？",
+      "th1": "จากที่นี่ไปชายทะเลไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 51,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去这里怎么走？",
+      "th1": "ไปที่นี่อย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 52,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去公园。",
+      "th1": "ฉันอยากไปสวนสาธารณะ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 53,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去厕所怎么走？",
+      "th1": "ไปห้องน้ำอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 54,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在海边。",
+      "th1": "ตอนนี้ฉันอยู่ที่ชายทะเล",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 55,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到汽车站远吗？",
+      "th1": "จากที่นี่ไปสถานีรถโดยสารไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 56,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到市场远吗？",
+      "th1": "จากที่นี่ไปตลาดไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 57,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去地铁站怎么走？",
+      "th1": "ไปสถานีรถไฟใต้ดินอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 58,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，车站在哪里？",
+      "th1": "ขอถามหน่อย สถานีอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 59,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去那里怎么走？",
+      "th1": "ไปที่นั่นอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 60,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去海边。",
+      "th1": "ฉันอยากไปชายทะเล",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 61,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在警察局。",
+      "th1": "ตอนนี้ฉันอยู่ที่สถานีตำรวจ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 62,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在旅游景点。",
+      "th1": "ตอนนี้ฉันอยู่ที่สถานที่ท่องเที่ยว",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 63,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，厕所在哪里？",
+      "th1": "ขอถามหน่อย ห้องน้ำอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 64,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去市场。",
+      "th1": "ฉันอยากไปตลาด",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 65,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，图书馆在哪里？",
+      "th1": "ขอถามหน่อย ห้องสมุดอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 66,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去大学怎么走？",
+      "th1": "ไปมหาวิทยาลัยอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 67,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，洗手间在哪里？",
+      "th1": "ขอถามหน่อย ห้องน้ำอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 68,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去入口怎么走？",
+      "th1": "ไปทางเข้าอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 69,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，公园在哪里？",
+      "th1": "ขอถามหน่อย สวนสาธารณะอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 70,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去停车场怎么走？",
+      "th1": "ไปที่จอดรถอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 71,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去图书馆。",
+      "th1": "ฉันอยากไปห้องสมุด",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 72,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在图书馆。",
+      "th1": "ตอนนี้ฉันอยู่ที่ห้องสมุด",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 73,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去机场怎么走？",
+      "th1": "ไปสนามบินอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 74,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在这里。",
+      "th1": "ตอนนี้ฉันอยู่ที่ที่นี่",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 75,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去停车场。",
+      "th1": "ฉันอยากไปที่จอดรถ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 76,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去电影院怎么走？",
+      "th1": "ไปโรงภาพยนตร์อย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 77,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在医院。",
+      "th1": "ตอนนี้ฉันอยู่ที่โรงพยาบาล",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 78,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，房间在哪里？",
+      "th1": "ขอถามหน่อย ห้องอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 79,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去咖啡馆。",
+      "th1": "ฉันอยากไปร้านกาแฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 80,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去车站怎么走？",
+      "th1": "ไปสถานีอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 81,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去药店。",
+      "th1": "ฉันอยากไปร้านขายยา",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 82,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去汽车站怎么走？",
+      "th1": "ไปสถานีรถโดยสารอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 83,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到那里远吗？",
+      "th1": "จากที่นี่ไปที่นั่นไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 84,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去房间怎么走？",
+      "th1": "ไปห้องอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 85,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到寺庙远吗？",
+      "th1": "จากที่นี่ไปวัดไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 86,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去厕所。",
+      "th1": "ฉันอยากไปห้องน้ำ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 87,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去医院怎么走？",
+      "th1": "ไปโรงพยาบาลอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 88,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去市中心。",
+      "th1": "ฉันอยากไปใจกลางเมือง",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 89,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到学校远吗？",
+      "th1": "จากที่นี่ไปโรงเรียนไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 90,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去医院。",
+      "th1": "ฉันอยากไปโรงพยาบาล",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 91,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到入口远吗？",
+      "th1": "จากที่นี่ไปทางเข้าไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 92,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去商店怎么走？",
+      "th1": "ไปร้านค้าอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 93,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去入口。",
+      "th1": "ฉันอยากไปทางเข้า",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 94,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到图书馆远吗？",
+      "th1": "จากที่นี่ไปห้องสมุดไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 95,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，大学在哪里？",
+      "th1": "ขอถามหน่อย มหาวิทยาลัยอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 96,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在公园。",
+      "th1": "ตอนนี้ฉันอยู่ที่สวนสาธารณะ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 97,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在家。",
+      "th1": "ตอนนี้ฉันอยู่ที่บ้าน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 98,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到酒店远吗？",
+      "th1": "จากที่นี่ไปโรงแรมไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 99,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去办公室怎么走？",
+      "th1": "ไปสำนักงานอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 100,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到家远吗？",
+      "th1": "จากที่นี่ไปบ้านไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 101,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，地铁站在哪里？",
+      "th1": "ขอถามหน่อย สถานีรถไฟใต้ดินอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 102,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去警察局怎么走？",
+      "th1": "ไปสถานีตำรวจอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 103,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去商店。",
+      "th1": "ฉันอยากไปร้านค้า",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 104,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，旅游景点在哪里？",
+      "th1": "ขอถามหน่อย สถานที่ท่องเที่ยวอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 105,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，酒店在哪里？",
+      "th1": "ขอถามหน่อย โรงแรมอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 106,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到大学远吗？",
+      "th1": "จากที่นี่ไปมหาวิทยาลัยไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 107,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在机场。",
+      "th1": "ตอนนี้ฉันอยู่ที่สนามบิน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 108,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到机场远吗？",
+      "th1": "จากที่นี่ไปสนามบินไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 109,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在那里。",
+      "th1": "ตอนนี้ฉันอยู่ที่ที่นั่น",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 110,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去邮局怎么走？",
+      "th1": "ไปที่ทำการไปรษณีย์อย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 111,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去海边怎么走？",
+      "th1": "ไปชายทะเลอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 112,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在超市。",
+      "th1": "ตอนนี้ฉันอยู่ที่ซูเปอร์มาร์เก็ต",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 113,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到车站远吗？",
+      "th1": "จากที่นี่ไปสถานีไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 114,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，汽车站在哪里？",
+      "th1": "ขอถามหน่อย สถานีรถโดยสารอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 115,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到电影院远吗？",
+      "th1": "จากที่นี่ไปโรงภาพยนตร์ไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 116,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到餐厅远吗？",
+      "th1": "จากที่นี่ไปร้านอาหารไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 117,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在大学。",
+      "th1": "ตอนนี้ฉันอยู่ที่มหาวิทยาลัย",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 118,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在药店。",
+      "th1": "ตอนนี้ฉันอยู่ที่ร้านขายยา",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 119,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到邮局远吗？",
+      "th1": "จากที่นี่ไปที่ทำการไปรษณีย์ไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 120,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到超市远吗？",
+      "th1": "จากที่นี่ไปซูเปอร์มาร์เก็ตไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 121,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，市场在哪里？",
+      "th1": "ขอถามหน่อย ตลาดอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 122,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去警察局。",
+      "th1": "ฉันอยากไปสถานีตำรวจ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 123,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，入口在哪里？",
+      "th1": "ขอถามหน่อย ทางเข้าอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 124,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，学校在哪里？",
+      "th1": "ขอถามหน่อย โรงเรียนอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 125,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去酒店。",
+      "th1": "ฉันอยากไปโรงแรม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 126,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，餐厅在哪里？",
+      "th1": "ขอถามหน่อย ร้านอาหารอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 127,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在出口。",
+      "th1": "ตอนนี้ฉันอยู่ที่ทางออก",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 128,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去药店怎么走？",
+      "th1": "ไปร้านขายยาอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 129,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在停车场。",
+      "th1": "ตอนนี้ฉันอยู่ที่ที่จอดรถ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 130,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去旅游景点怎么走？",
+      "th1": "ไปสถานที่ท่องเที่ยวอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 131,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，电影院在哪里？",
+      "th1": "ขอถามหน่อย โรงภาพยนตร์อยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 132,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去车站。",
+      "th1": "ฉันอยากไปสถานี",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 133,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在商店。",
+      "th1": "ตอนนี้ฉันอยู่ที่ร้านค้า",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 134,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，邮局在哪里？",
+      "th1": "ขอถามหน่อย ที่ทำการไปรษณีย์อยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 135,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去餐厅怎么走？",
+      "th1": "ไปร้านอาหารอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 136,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在汽车站。",
+      "th1": "ตอนนี้ฉันอยู่ที่สถานีรถโดยสาร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 137,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在寺庙。",
+      "th1": "ตอนนี้ฉันอยู่ที่วัด",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 138,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到洗手间远吗？",
+      "th1": "จากที่นี่ไปห้องน้ำไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 139,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，出口在哪里？",
+      "th1": "ขอถามหน่อย ทางออกอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 140,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，医院在哪里？",
+      "th1": "ขอถามหน่อย โรงพยาบาลอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 141,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到地铁站远吗？",
+      "th1": "จากที่นี่ไปสถานีรถไฟใต้ดินไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 142,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，家在哪里？",
+      "th1": "ขอถามหน่อย บ้านอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 143,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到商店远吗？",
+      "th1": "จากที่นี่ไปร้านค้าไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 144,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到办公室远吗？",
+      "th1": "จากที่นี่ไปสำนักงานไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 145,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到市中心远吗？",
+      "th1": "จากที่นี่ไปใจกลางเมืองไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 146,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去酒店怎么走？",
+      "th1": "ไปโรงแรมอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 147,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去房间。",
+      "th1": "ฉันอยากไปห้อง",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 148,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到房间远吗？",
+      "th1": "จากที่นี่ไปห้องไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 149,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去办公室。",
+      "th1": "ฉันอยากไปสำนักงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 150,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，停车场在哪里？",
+      "th1": "ขอถามหน่อย ที่จอดรถอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 151,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去超市怎么走？",
+      "th1": "ไปซูเปอร์มาร์เก็ตอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 152,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，咖啡馆在哪里？",
+      "th1": "ขอถามหน่อย ร้านกาแฟอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 153,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到旅游景点远吗？",
+      "th1": "จากที่นี่ไปสถานที่ท่องเที่ยวไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 154,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，超市在哪里？",
+      "th1": "ขอถามหน่อย ซูเปอร์มาร์เก็ตอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 155,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在办公室。",
+      "th1": "ตอนนี้ฉันอยู่ที่สำนักงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 156,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到银行远吗？",
+      "th1": "จากที่นี่ไปธนาคารไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 157,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在市中心。",
+      "th1": "ตอนนี้ฉันอยู่ที่ใจกลางเมือง",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 158,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，火车站在哪里？",
+      "th1": "ขอถามหน่อย สถานีรถไฟอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 159,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去这里。",
+      "th1": "ฉันอยากไปที่นี่",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 160,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去图书馆怎么走？",
+      "th1": "ไปห้องสมุดอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 161,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去洗手间怎么走？",
+      "th1": "ไปห้องน้ำอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 162,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "去火车站怎么走？",
+      "th1": "ไปสถานีรถไฟอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 163,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去超市。",
+      "th1": "ฉันอยากไปซูเปอร์มาร์เก็ต",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 164,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去汽车站。",
+      "th1": "ฉันอยากไปสถานีรถโดยสาร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 165,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，警察局在哪里？",
+      "th1": "ขอถามหน่อย สถานีตำรวจอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 166,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去火车站。",
+      "th1": "ฉันอยากไปสถานีรถไฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 167,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去电影院。",
+      "th1": "ฉันอยากไปโรงภาพยนตร์",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 168,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去地铁站。",
+      "th1": "ฉันอยากไปสถานีรถไฟใต้ดิน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 169,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去餐厅。",
+      "th1": "ฉันอยากไปร้านอาหาร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 170,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到火车站远吗？",
+      "th1": "จากที่นี่ไปสถานีรถไฟไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 171,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "从这里到这里远吗？",
+      "th1": "จากที่นี่ไปที่นี่ไกลไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 172,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在餐厅。",
+      "th1": "ตอนนี้ฉันอยู่ที่ร้านอาหาร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 173,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我现在在银行。",
+      "th1": "ตอนนี้ฉันอยู่ที่ธนาคาร",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 174,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "请问，办公室在哪里？",
+      "th1": "ขอถามหน่อย สำนักงานอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    },
+    {
+      "id": 175,
+      "section": "สถานที่และทิศทาง",
+      "category": "places_and_directions",
+      "zh": "我想去洗手间。",
+      "th1": "ฉันอยากไปห้องน้ำ",
+      "th2": null,
+      "th3": null,
+      "frame": "places_and_directions"
+    }
+  ]
+}

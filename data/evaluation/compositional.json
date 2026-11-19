@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "topic": "compositional",
+  "description": "unseen lexical-slot and pattern recombination evaluation",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "hand_authored_heldout_reference",
+    "review_status": "held_out_evaluation"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "我明天想喝茶。",
+      "th1": "พรุ่งนี้ฉันอยากดื่มชา",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 2,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "你今天要去学校吗？",
+      "th1": "วันนี้คุณจะไปโรงเรียนไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 3,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "这个手机多少钱？",
+      "th1": "โทรศัพท์มือถือเครื่องนี้ราคาเท่าไหร่",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 4,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "我们晚上在公园见面。",
+      "th1": "เราพบกันที่สวนสาธารณะตอนเย็น",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 5,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "这个地方非常漂亮。",
+      "th1": "สถานที่นี้สวยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 6,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "我现在需要手机。",
+      "th1": "ตอนนี้ฉันต้องการโทรศัพท์มือถือ",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 7,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "你明天有时间吗？",
+      "th1": "พรุ่งนี้คุณมีเวลาไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 8,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "我不想买苹果。",
+      "th1": "ฉันไม่อยากซื้อแอปเปิล",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 9,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "我们后天下午去机场。",
+      "th1": "มะรืนนี้ตอนบ่ายพวกเราไปสนามบิน",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 10,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "你有手机吗？",
+      "th1": "คุณมีโทรศัพท์มือถือไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 11,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "我正在找钥匙。",
+      "th1": "ฉันกำลังหากุญแจ",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 12,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "请帮我找钱包。",
+      "th1": "กรุณาช่วยฉันหากระเป๋าสตางค์",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 13,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "这里很干净。",
+      "th1": "ที่นี่สะอาดมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 14,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "今天我很累。",
+      "th1": "วันนี้ฉันเหนื่อยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 15,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "我明天想喝豆浆。",
+      "th1": "พรุ่งนี้ฉันอยากดื่มนมถั่วเหลือง",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 16,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "我们明天下午在银行见面。",
+      "th1": "เราพบกันที่ธนาคารพรุ่งนี้ตอนบ่าย",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 17,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "这个耳机多少钱？",
+      "th1": "หูฟังคู่นี้ราคาเท่าไหร่",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 18,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "你后天要去邮局吗？",
+      "th1": "มะรืนนี้คุณจะไปที่ทำการไปรษณีย์ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 19,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "我不想买香蕉。",
+      "th1": "ฉันไม่อยากซื้อกล้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    },
+    {
+      "id": 20,
+      "section": "การประเมินประโยคผสม",
+      "category": "heldout_compositional",
+      "zh": "我们周末去电影院。",
+      "th1": "วันหยุดสุดสัปดาห์พวกเราไปโรงภาพยนตร์",
+      "th2": null,
+      "th3": null,
+      "frame": "heldout_compositional"
+    }
+  ]
+}

@@ -1,0 +1,3286 @@
+{
+  "schema_version": 1,
+  "topic": "things_and_needs",
+  "description": "ข้อมูลสังเคราะห์จากรูปแบบประโยคและคำศัพท์จีน-ไทยที่กำหนดเอง ตรวจโครงสร้างและตัดประโยคจีนซ้ำแล้ว",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "template_augmented_from_handwritten_lexicon",
+    "review_status": "needs_human_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有鸡肉吗？",
+      "th1": "คุณมีเนื้อไก่ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 2,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找帽子。",
+      "th1": "กรุณาช่วยฉันหาหมวก",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 3,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有眼药水。",
+      "th1": "ฉันไม่มียาหยอดตา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 4,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢手表。",
+      "th1": "ฉันไม่ชอบนาฬิกาข้อมือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 5,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有汤吗？",
+      "th1": "คุณมีซุปไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 6,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢耳机。",
+      "th1": "ฉันไม่ชอบหูฟัง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 7,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要椅子。",
+      "th1": "ฉันต้องการเก้าอี้",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 8,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要护照。",
+      "th1": "ฉันต้องการหนังสือเดินทาง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 9,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢密码。",
+      "th1": "ฉันชอบรหัสผ่าน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 10,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找电池。",
+      "th1": "ฉันกำลังหาแบตเตอรี่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 11,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有苹果。",
+      "th1": "ฉันไม่มีแอปเปิล",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 12,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有米饭。",
+      "th1": "ฉันไม่มีข้าว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 13,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有鱼吗？",
+      "th1": "คุณมีปลาไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 14,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要衣服。",
+      "th1": "ฉันต้องการเสื้อผ้า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 15,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢饺子。",
+      "th1": "ฉันไม่ชอบเกี๊ยว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 16,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢照片。",
+      "th1": "ฉันไม่ชอบรูปถ่าย",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 17,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢香蕉。",
+      "th1": "ฉันชอบกล้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 18,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要键盘。",
+      "th1": "ฉันต้องการแป้นพิมพ์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 19,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有帽子吗？",
+      "th1": "คุณมีหมวกไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 20,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找电脑。",
+      "th1": "กรุณาช่วยฉันหาคอมพิวเตอร์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 21,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要肥皂。",
+      "th1": "ฉันต้องการสบู่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 22,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有电视吗？",
+      "th1": "คุณมีโทรทัศน์ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 23,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢雨伞。",
+      "th1": "ฉันไม่ชอบร่ม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 24,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找地图。",
+      "th1": "ฉันกำลังหาแผนที่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 25,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有口罩吗？",
+      "th1": "คุณมีหน้ากากอนามัยไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 26,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要面包。",
+      "th1": "ฉันต้องการขนมปัง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 27,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢眼镜。",
+      "th1": "ฉันไม่ชอบแว่นตา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 28,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢面条。",
+      "th1": "ฉันชอบบะหมี่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 29,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢衬衫。",
+      "th1": "ฉันชอบเสื้อเชิ้ต",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 30,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有电脑鼠标。",
+      "th1": "ฉันไม่มีเมาส์คอมพิวเตอร์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 31,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢文件。",
+      "th1": "ฉันไม่ชอบเอกสาร",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 32,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要蔬菜。",
+      "th1": "ฉันต้องการผัก",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 33,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢鞋子。",
+      "th1": "ฉันไม่ชอบรองเท้า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 34,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢香蕉。",
+      "th1": "ฉันไม่ชอบกล้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 35,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有床。",
+      "th1": "ฉันไม่มีเตียง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 36,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢地图。",
+      "th1": "ฉันชอบแผนที่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 37,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢水。",
+      "th1": "ฉันไม่ชอบน้ำ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 38,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有水。",
+      "th1": "ฉันไม่มีน้ำ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 39,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢充电器。",
+      "th1": "ฉันไม่ชอบที่ชาร์จ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 40,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要平板电脑。",
+      "th1": "ฉันต้องการแท็บเล็ต",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 41,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要芒果。",
+      "th1": "ฉันต้องการมะม่วง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 42,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢手机。",
+      "th1": "ฉันไม่ชอบโทรศัพท์มือถือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 43,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要照片。",
+      "th1": "ฉันต้องการรูปถ่าย",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 44,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢眼药水。",
+      "th1": "ฉันชอบยาหยอดตา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 45,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢纸。",
+      "th1": "ฉันชอบกระดาษ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 46,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找相机。",
+      "th1": "กรุณาช่วยฉันหากล้องถ่ายรูป",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 47,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢灯。",
+      "th1": "ฉันไม่ชอบโคมไฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 48,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢草莓。",
+      "th1": "ฉันชอบสตรอว์เบอร์รี",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 49,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有平板电脑吗？",
+      "th1": "คุณมีแท็บเล็ตไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 50,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢电视。",
+      "th1": "ฉันชอบโทรทัศน์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 51,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有牙刷。",
+      "th1": "ฉันไม่มีแปรงสีฟัน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 52,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要口罩。",
+      "th1": "ฉันต้องการหน้ากากอนามัย",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 53,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢灯。",
+      "th1": "ฉันชอบโคมไฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 54,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢裤子。",
+      "th1": "ฉันชอบกางเกง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 55,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要密码。",
+      "th1": "ฉันต้องการรหัสผ่าน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 56,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢相机。",
+      "th1": "ฉันชอบกล้องถ่ายรูป",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 57,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢手机。",
+      "th1": "ฉันชอบโทรศัพท์มือถือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 58,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找文件。",
+      "th1": "ฉันกำลังหาเอกสาร",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 59,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢书。",
+      "th1": "ฉันไม่ชอบหนังสือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 60,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢猪肉。",
+      "th1": "ฉันไม่ชอบเนื้อหมู",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 61,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要床。",
+      "th1": "ฉันต้องการเตียง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 62,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢键盘。",
+      "th1": "ฉันไม่ชอบแป้นพิมพ์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 63,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要衣服。",
+      "th1": "ฉันต้องการเสื้อผ้า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 64,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有消息。",
+      "th1": "ฉันไม่มีข้อความ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 65,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要电脑鼠标。",
+      "th1": "ฉันต้องการเมาส์คอมพิวเตอร์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 66,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要电视。",
+      "th1": "ฉันต้องการโทรทัศน์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 67,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有书吗？",
+      "th1": "คุณมีหนังสือไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 68,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢牙刷。",
+      "th1": "ฉันไม่ชอบแปรงสีฟัน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 69,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要钱包。",
+      "th1": "ฉันต้องการกระเป๋าสตางค์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 70,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找键盘。",
+      "th1": "ฉันกำลังหาแป้นพิมพ์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 71,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有鱼。",
+      "th1": "ฉันไม่มีปลา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 72,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要毛巾。",
+      "th1": "ฉันต้องการผ้าขนหนู",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 73,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有鸡蛋。",
+      "th1": "ฉันไม่มีไข่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 74,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有桌子。",
+      "th1": "ฉันไม่มีโต๊ะ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 75,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有葡萄吗？",
+      "th1": "คุณมีองุ่นไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 76,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要地图。",
+      "th1": "ฉันต้องการแผนที่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 77,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢书。",
+      "th1": "ฉันชอบหนังสือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 78,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要密码。",
+      "th1": "ฉันต้องการรหัสผ่าน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 79,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找钥匙。",
+      "th1": "กรุณาช่วยฉันหากุญแจ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 80,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢菠萝。",
+      "th1": "ฉันไม่ชอบสับปะรด",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 81,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找地图。",
+      "th1": "กรุณาช่วยฉันหาแผนที่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 82,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要鞋子。",
+      "th1": "ฉันต้องการรองเท้า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 83,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢平板电脑。",
+      "th1": "ฉันชอบแท็บเล็ต",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 84,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要电池。",
+      "th1": "ฉันต้องการแบตเตอรี่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 85,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要面包。",
+      "th1": "ฉันต้องการขนมปัง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 86,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要电池。",
+      "th1": "ฉันต้องการแบตเตอรี่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 87,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢密码。",
+      "th1": "ฉันไม่ชอบรหัสผ่าน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 88,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找鱼。",
+      "th1": "ฉันกำลังหาปลา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 89,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢床。",
+      "th1": "ฉันชอบเตียง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 90,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找密码。",
+      "th1": "ฉันกำลังหารหัสผ่าน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 91,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要草莓。",
+      "th1": "ฉันต้องการสตรอว์เบอร์รี",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 92,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要帽子。",
+      "th1": "ฉันต้องการหมวก",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 93,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要雨伞。",
+      "th1": "ฉันต้องการร่ม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 94,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有充电器吗？",
+      "th1": "คุณมีที่ชาร์จไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 95,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有眼镜吗？",
+      "th1": "คุณมีแว่นตาไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 96,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要电脑鼠标。",
+      "th1": "ฉันต้องการเมาส์คอมพิวเตอร์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 97,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要手表。",
+      "th1": "ฉันต้องการนาฬิกาข้อมือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 98,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找笔。",
+      "th1": "กรุณาช่วยฉันหาปากกา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 99,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要猪肉。",
+      "th1": "ฉันต้องการเนื้อหมู",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 100,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要纸。",
+      "th1": "ฉันต้องการกระดาษ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 101,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找手机。",
+      "th1": "ฉันกำลังหาโทรศัพท์มือถือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 102,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要钥匙。",
+      "th1": "ฉันต้องการกุญแจ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 103,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找水果。",
+      "th1": "ฉันกำลังหาผลไม้",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 104,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要纸。",
+      "th1": "ฉันต้องการกระดาษ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 105,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有牙刷吗？",
+      "th1": "คุณมีแปรงสีฟันไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 106,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢包。",
+      "th1": "ฉันชอบกระเป๋า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 107,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要电视。",
+      "th1": "ฉันต้องการโทรทัศน์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 108,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找雨伞。",
+      "th1": "ฉันกำลังหาร่ม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 109,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找消息。",
+      "th1": "กรุณาช่วยฉันหาข้อความ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 110,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢消息。",
+      "th1": "ฉันไม่ชอบข้อความ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 111,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢礼物。",
+      "th1": "ฉันชอบของขวัญ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 112,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找平板电脑。",
+      "th1": "ฉันกำลังหาแท็บเล็ต",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 113,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找饺子。",
+      "th1": "กรุณาช่วยฉันหาเกี๊ยว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 114,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要蔬菜。",
+      "th1": "ฉันต้องการผัก",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 115,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有椅子吗？",
+      "th1": "คุณมีเก้าอี้ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 116,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有牛肉吗？",
+      "th1": "คุณมีเนื้อวัวไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 117,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢苹果。",
+      "th1": "ฉันไม่ชอบแอปเปิล",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 118,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要橙子。",
+      "th1": "ฉันต้องการส้ม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 119,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢面包。",
+      "th1": "ฉันไม่ชอบขนมปัง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 120,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找包。",
+      "th1": "กรุณาช่วยฉันหากระเป๋า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 121,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有裤子吗？",
+      "th1": "คุณมีกางเกงไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 122,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有充电器。",
+      "th1": "ฉันไม่มีที่ชาร์จ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 123,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢牙刷。",
+      "th1": "ฉันชอบแปรงสีฟัน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 124,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢文件。",
+      "th1": "ฉันชอบเอกสาร",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 125,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有相机。",
+      "th1": "ฉันไม่มีกล้องถ่ายรูป",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 126,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要水。",
+      "th1": "ฉันต้องการน้ำ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 127,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要饺子。",
+      "th1": "ฉันต้องการเกี๊ยว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 128,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找猪肉。",
+      "th1": "ฉันกำลังหาเนื้อหมู",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 129,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有雨伞。",
+      "th1": "ฉันไม่มีร่ม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 130,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要相机。",
+      "th1": "ฉันต้องการกล้องถ่ายรูป",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 131,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要充电器。",
+      "th1": "ฉันต้องการที่ชาร์จ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 132,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找电视。",
+      "th1": "ฉันกำลังหาโทรทัศน์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 133,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要消息。",
+      "th1": "ฉันต้องการข้อความ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 134,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要相机。",
+      "th1": "ฉันต้องการกล้องถ่ายรูป",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 135,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要平板电脑。",
+      "th1": "ฉันต้องการแท็บเล็ต",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 136,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找纸。",
+      "th1": "ฉันกำลังหากระดาษ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 137,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢钥匙。",
+      "th1": "ฉันชอบกุญแจ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 138,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有橙子吗？",
+      "th1": "คุณมีส้มไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 139,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢蔬菜。",
+      "th1": "ฉันไม่ชอบผัก",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 140,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有牛奶。",
+      "th1": "ฉันไม่มีนม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 141,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要桌子。",
+      "th1": "ฉันต้องการโต๊ะ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 142,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有菠萝。",
+      "th1": "ฉันไม่มีสับปะรด",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 143,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要耳机。",
+      "th1": "ฉันต้องการหูฟัง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 144,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要雨伞。",
+      "th1": "ฉันต้องการร่ม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 145,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要地图。",
+      "th1": "ฉันต้องการแผนที่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 146,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找电视。",
+      "th1": "กรุณาช่วยฉันหาโทรทัศน์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 147,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢钱。",
+      "th1": "ฉันไม่ชอบเงิน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 148,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找耳机。",
+      "th1": "กรุณาช่วยฉันหาหูฟัง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 149,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找面条。",
+      "th1": "ฉันกำลังหาบะหมี่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 150,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找礼物。",
+      "th1": "กรุณาช่วยฉันหาของขวัญ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 151,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢门票。",
+      "th1": "ฉันไม่ชอบตั๋ว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 152,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找密码。",
+      "th1": "กรุณาช่วยฉันหารหัสผ่าน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 153,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要西瓜。",
+      "th1": "ฉันต้องการแตงโม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 154,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢包。",
+      "th1": "ฉันไม่ชอบกระเป๋า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 155,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要牛肉。",
+      "th1": "ฉันต้องการเนื้อวัว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 156,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有护照。",
+      "th1": "ฉันไม่มีหนังสือเดินทาง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 157,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找水。",
+      "th1": "ฉันกำลังหาน้ำ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 158,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有菠萝吗？",
+      "th1": "คุณมีสับปะรดไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 159,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢饺子。",
+      "th1": "ฉันชอบเกี๊ยว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 160,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要药。",
+      "th1": "ฉันต้องการยา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 161,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有电脑。",
+      "th1": "ฉันไม่มีคอมพิวเตอร์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 162,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有面包。",
+      "th1": "ฉันไม่มีขนมปัง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 163,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要耳机。",
+      "th1": "ฉันต้องการหูฟัง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 164,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找苹果。",
+      "th1": "กรุณาช่วยฉันหาแอปเปิล",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 165,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找芒果。",
+      "th1": "กรุณาช่วยฉันหามะม่วง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 166,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要苹果。",
+      "th1": "ฉันต้องการแอปเปิล",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 167,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢毛巾。",
+      "th1": "ฉันไม่ชอบผ้าขนหนู",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 168,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有衬衫吗？",
+      "th1": "คุณมีเสื้อเชิ้ตไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 169,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要灯。",
+      "th1": "ฉันต้องการโคมไฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 170,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有芒果。",
+      "th1": "ฉันไม่มีมะม่วง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 171,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要鞋子。",
+      "th1": "ฉันต้องการรองเท้า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 172,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找饺子。",
+      "th1": "ฉันกำลังหาเกี๊ยว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 173,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要鸡肉。",
+      "th1": "ฉันต้องการเนื้อไก่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 174,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找草莓。",
+      "th1": "ฉันกำลังหาสตรอว์เบอร์รี",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 175,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找鞋子。",
+      "th1": "ฉันกำลังหารองเท้า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 176,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要橙子。",
+      "th1": "ฉันต้องการส้ม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 177,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找门票。",
+      "th1": "กรุณาช่วยฉันหาตั๋ว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 178,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢椅子。",
+      "th1": "ฉันไม่ชอบเก้าอี้",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 179,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有灯。",
+      "th1": "ฉันไม่มีโคมไฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 180,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找帽子。",
+      "th1": "ฉันกำลังหาหมวก",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 181,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要茶。",
+      "th1": "ฉันต้องการชา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 182,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找面包。",
+      "th1": "กรุณาช่วยฉันหาขนมปัง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 183,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找电脑鼠标。",
+      "th1": "ฉันกำลังหาเมาส์คอมพิวเตอร์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 184,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要牛奶。",
+      "th1": "ฉันต้องการนม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 185,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢钥匙。",
+      "th1": "ฉันไม่ชอบกุญแจ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 186,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有衬衫。",
+      "th1": "ฉันไม่มีเสื้อเชิ้ต",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 187,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要钱。",
+      "th1": "ฉันต้องการเงิน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 188,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要礼物。",
+      "th1": "ฉันต้องการของขวัญ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 189,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有雨伞吗？",
+      "th1": "คุณมีร่มไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 190,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找鸡蛋。",
+      "th1": "ฉันกำลังหาไข่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 191,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找照片。",
+      "th1": "กรุณาช่วยฉันหารูปถ่าย",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 192,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有消息吗？",
+      "th1": "คุณมีข้อความไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 193,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有电池。",
+      "th1": "ฉันไม่มีแบตเตอรี่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 194,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找衬衫。",
+      "th1": "ฉันกำลังหาเสื้อเชิ้ต",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 195,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢鸡蛋。",
+      "th1": "ฉันชอบไข่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 196,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有裤子。",
+      "th1": "ฉันไม่มีกางเกง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 197,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有电视。",
+      "th1": "ฉันไม่มีโทรทัศน์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 198,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找肥皂。",
+      "th1": "ฉันกำลังหาสบู่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 199,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢芒果。",
+      "th1": "ฉันชอบมะม่วง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 200,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找电脑。",
+      "th1": "ฉันกำลังหาคอมพิวเตอร์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 201,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找灯。",
+      "th1": "กรุณาช่วยฉันหาโคมไฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 202,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有米饭吗？",
+      "th1": "คุณมีข้าวไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 203,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找牙刷。",
+      "th1": "กรุณาช่วยฉันหาแปรงสีฟัน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 204,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢衬衫。",
+      "th1": "ฉันไม่ชอบเสื้อเชิ้ต",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 205,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢水果。",
+      "th1": "ฉันไม่ชอบผลไม้",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 206,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要礼物。",
+      "th1": "ฉันต้องการของขวัญ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 207,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找药。",
+      "th1": "กรุณาช่วยฉันหายา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 208,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找果汁。",
+      "th1": "กรุณาช่วยฉันหาน้ำผลไม้",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 209,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找椅子。",
+      "th1": "ฉันกำลังหาเก้าอี้",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 210,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有书。",
+      "th1": "ฉันไม่มีหนังสือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 211,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有电脑鼠标吗？",
+      "th1": "คุณมีเมาส์คอมพิวเตอร์ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 212,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要果汁。",
+      "th1": "ฉันต้องการน้ำผลไม้",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 213,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢药。",
+      "th1": "ฉันไม่ชอบยา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 214,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要菠萝。",
+      "th1": "ฉันต้องการสับปะรด",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 215,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要钥匙。",
+      "th1": "ฉันต้องการกุญแจ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 216,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找西瓜。",
+      "th1": "ฉันกำลังหาแตงโม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 217,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有葡萄。",
+      "th1": "ฉันไม่มีองุ่น",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 218,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有茶吗？",
+      "th1": "คุณมีชาไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 219,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢茶。",
+      "th1": "ฉันไม่ชอบชา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 220,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找香蕉。",
+      "th1": "ฉันกำลังหากล้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 221,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢帽子。",
+      "th1": "ฉันไม่ชอบหมวก",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 222,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找钱包。",
+      "th1": "ฉันกำลังหากระเป๋าสตางค์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 223,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢电池。",
+      "th1": "ฉันชอบแบตเตอรี่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 224,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找牛奶。",
+      "th1": "กรุณาช่วยฉันหานม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 225,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢水果。",
+      "th1": "ฉันชอบผลไม้",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 226,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找药。",
+      "th1": "ฉันกำลังหายา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 227,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要牛奶。",
+      "th1": "ฉันต้องการนม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 228,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有文件。",
+      "th1": "ฉันไม่มีเอกสาร",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 229,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找礼物。",
+      "th1": "ฉันกำลังหาของขวัญ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 230,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找牙刷。",
+      "th1": "ฉันกำลังหาแปรงสีฟัน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 231,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢衣服。",
+      "th1": "ฉันไม่ชอบเสื้อผ้า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 232,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找米饭。",
+      "th1": "กรุณาช่วยฉันหาข้าว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 233,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要眼药水。",
+      "th1": "ฉันต้องการยาหยอดตา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 234,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要衬衫。",
+      "th1": "ฉันต้องการเสื้อเชิ้ต",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 235,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要包。",
+      "th1": "ฉันต้องการกระเป๋า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 236,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢键盘。",
+      "th1": "ฉันชอบแป้นพิมพ์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 237,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找床。",
+      "th1": "กรุณาช่วยฉันหาเตียง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 238,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢咖啡。",
+      "th1": "ฉันไม่ชอบกาแฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 239,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢肥皂。",
+      "th1": "ฉันชอบสบู่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 240,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找鱼。",
+      "th1": "กรุณาช่วยฉันหาปลา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 241,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢西瓜。",
+      "th1": "ฉันชอบแตงโม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 242,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要灯。",
+      "th1": "ฉันต้องการโคมไฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 243,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要手表。",
+      "th1": "ฉันต้องการนาฬิกาข้อมือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 244,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢手表。",
+      "th1": "ฉันชอบนาฬิกาข้อมือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 245,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找包。",
+      "th1": "ฉันกำลังหากระเป๋า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 246,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要面条。",
+      "th1": "ฉันต้องการบะหมี่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 247,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找橙子。",
+      "th1": "กรุณาช่วยฉันหาส้ม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 248,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要笔。",
+      "th1": "ฉันต้องการปากกา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 249,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要葡萄。",
+      "th1": "ฉันต้องการองุ่น",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 250,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有药吗？",
+      "th1": "คุณมียาไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 251,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要饺子。",
+      "th1": "ฉันต้องการเกี๊ยว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 252,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找电池。",
+      "th1": "กรุณาช่วยฉันหาแบตเตอรี่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 253,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有香蕉。",
+      "th1": "ฉันไม่มีกล้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 254,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找文件。",
+      "th1": "กรุณาช่วยฉันหาเอกสาร",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 255,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找书。",
+      "th1": "กรุณาช่วยฉันหาหนังสือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 256,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找汤。",
+      "th1": "กรุณาช่วยฉันหาซุป",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 257,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要书。",
+      "th1": "ฉันต้องการหนังสือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 258,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要鸡蛋。",
+      "th1": "ฉันต้องการไข่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 259,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢电脑鼠标。",
+      "th1": "ฉันไม่ชอบเมาส์คอมพิวเตอร์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 260,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找面条。",
+      "th1": "กรุณาช่วยฉันหาบะหมี่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 261,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有包吗？",
+      "th1": "คุณมีกระเป๋าไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 262,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢牛肉。",
+      "th1": "ฉันชอบเนื้อวัว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 263,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有毛巾。",
+      "th1": "ฉันไม่มีผ้าขนหนู",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 264,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要笔。",
+      "th1": "ฉันต้องการปากกา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 265,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢电脑。",
+      "th1": "ฉันไม่ชอบคอมพิวเตอร์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 266,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要芒果。",
+      "th1": "ฉันต้องการมะม่วง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 267,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢果汁。",
+      "th1": "ฉันไม่ชอบน้ำผลไม้",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 268,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找肥皂。",
+      "th1": "กรุณาช่วยฉันหาสบู่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 269,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢纸。",
+      "th1": "ฉันไม่ชอบกระดาษ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 270,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要茶。",
+      "th1": "ฉันต้องการชา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 271,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有面条吗？",
+      "th1": "คุณมีบะหมี่ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 272,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要猪肉。",
+      "th1": "ฉันต้องการเนื้อหมู",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 273,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找充电器。",
+      "th1": "ฉันกำลังหาที่ชาร์จ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 274,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢鞋子。",
+      "th1": "ฉันชอบรองเท้า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 275,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢雨伞。",
+      "th1": "ฉันชอบร่ม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 276,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢蔬菜。",
+      "th1": "ฉันชอบผัก",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 277,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找充电器。",
+      "th1": "กรุณาช่วยฉันหาที่ชาร์จ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 278,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有面条。",
+      "th1": "ฉันไม่มีบะหมี่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 279,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有门票吗？",
+      "th1": "คุณมีตั๋วไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 280,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有照片。",
+      "th1": "ฉันไม่มีรูปถ่าย",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 281,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢耳机。",
+      "th1": "ฉันชอบหูฟัง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 282,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有门票。",
+      "th1": "ฉันไม่มีตั๋ว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 283,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢牛肉。",
+      "th1": "ฉันไม่ชอบเนื้อวัว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 284,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要菠萝。",
+      "th1": "ฉันต้องการสับปะรด",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 285,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找汤。",
+      "th1": "ฉันกำลังหาซุป",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 286,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要鱼。",
+      "th1": "ฉันต้องการปลา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 287,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有地图吗？",
+      "th1": "คุณมีแผนที่ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 288,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢药。",
+      "th1": "ฉันชอบยา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 289,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要充电器。",
+      "th1": "ฉันต้องการที่ชาร์จ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 290,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找牛奶。",
+      "th1": "ฉันกำลังหานม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 291,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢米饭。",
+      "th1": "ฉันไม่ชอบข้าว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 292,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要汤。",
+      "th1": "ฉันต้องการซุป",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 293,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有纸。",
+      "th1": "ฉันไม่มีกระดาษ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 294,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要手机。",
+      "th1": "ฉันต้องการโทรศัพท์มือถือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 295,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要眼镜。",
+      "th1": "ฉันต้องการแว่นตา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 296,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有纸吗？",
+      "th1": "คุณมีกระดาษไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 297,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要钱包。",
+      "th1": "ฉันต้องการกระเป๋าสตางค์",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 298,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢咖啡。",
+      "th1": "ฉันชอบกาแฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 299,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找护照。",
+      "th1": "กรุณาช่วยฉันหาหนังสือเดินทาง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 300,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要苹果。",
+      "th1": "ฉันต้องการแอปเปิล",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 301,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找裤子。",
+      "th1": "ฉันกำลังหากางเกง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 302,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有鞋子吗？",
+      "th1": "คุณมีรองเท้าไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 303,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要衬衫。",
+      "th1": "ฉันต้องการเสื้อเชิ้ต",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 304,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找手表。",
+      "th1": "ฉันกำลังหานาฬิกาข้อมือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 305,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找牛肉。",
+      "th1": "กรุณาช่วยฉันหาเนื้อวัว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 306,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找咖啡。",
+      "th1": "กรุณาช่วยฉันหากาแฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 307,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有蔬菜。",
+      "th1": "ฉันไม่มีผัก",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 308,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有手机。",
+      "th1": "ฉันไม่มีโทรศัพท์มือถือ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 309,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找毛巾。",
+      "th1": "กรุณาช่วยฉันหาผ้าขนหนู",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 310,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找菠萝。",
+      "th1": "กรุณาช่วยฉันหาสับปะรด",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 311,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢葡萄。",
+      "th1": "ฉันไม่ชอบองุ่น",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 312,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要水果。",
+      "th1": "ฉันต้องการผลไม้",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 313,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找茶。",
+      "th1": "กรุณาช่วยฉันหาชา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 314,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找鸡蛋。",
+      "th1": "กรุณาช่วยฉันหาไข่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 315,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要牛肉。",
+      "th1": "ฉันต้องการเนื้อวัว",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 316,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要口罩。",
+      "th1": "ฉันต้องการหน้ากากอนามัย",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 317,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有蔬菜吗？",
+      "th1": "คุณมีผักไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 318,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢水。",
+      "th1": "ฉันชอบน้ำ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 319,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我没有包。",
+      "th1": "ฉันไม่มีกระเป๋า",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 320,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要毛巾。",
+      "th1": "ฉันต้องการผ้าขนหนู",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 321,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我喜欢面包。",
+      "th1": "ฉันชอบขนมปัง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 322,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我需要眼药水。",
+      "th1": "ฉันต้องการยาหยอดตา",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 323,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我不喜欢鸡蛋。",
+      "th1": "ฉันไม่ชอบไข่",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 324,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "请帮我找纸。",
+      "th1": "กรุณาช่วยฉันหากระดาษ",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 325,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我正在找耳机。",
+      "th1": "ฉันกำลังหาหูฟัง",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 326,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "你有西瓜吗？",
+      "th1": "คุณมีแตงโมไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    },
+    {
+      "id": 327,
+      "section": "สิ่งของและความต้องการ",
+      "category": "things_and_needs",
+      "zh": "我想要钱。",
+      "th1": "ฉันต้องการเงิน",
+      "th2": null,
+      "th3": null,
+      "frame": "things_and_needs"
+    }
+  ]
+}

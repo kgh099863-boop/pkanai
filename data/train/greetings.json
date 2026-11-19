@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "topic": "greetings",
+  "description": "คำทักทายและการกล่าวลา",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "original_curated_pairs",
+    "review_status": "needs_human_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "คำทักทาย",
+      "category": "greetings",
+      "zh": "你好",
+      "th1": "สวัสดี",
+      "th2": null,
+      "th3": null,
+      "frame": "greetings"
+    },
+    {
+      "id": 2,
+      "section": "คำทักทาย",
+      "category": "greetings",
+      "zh": "你好！",
+      "th1": "สวัสดี!",
+      "th2": null,
+      "th3": null,
+      "frame": "greetings"
+    },
+    {
+      "id": 3,
+      "section": "คำทักทาย",
+      "category": "greetings",
+      "zh": "您好",
+      "th1": "สวัสดีครับ/ค่ะ",
+      "th2": null,
+      "th3": null,
+      "frame": "greetings"
+    },
+    {
+      "id": 4,
+      "section": "คำทักทาย",
+      "category": "greetings",
+      "zh": "早上好",
+      "th1": "สวัสดีตอนเช้า",
+      "th2": null,
+      "th3": null,
+      "frame": "greetings"
+    },
+    {
+      "id": 5,
+      "section": "คำทักทาย",
+      "category": "greetings",
+      "zh": "晚上好",
+      "th1": "สวัสดีตอนเย็น",
+      "th2": null,
+      "th3": null,
+      "frame": "greetings"
+    },
+    {
+      "id": 6,
+      "section": "คำทักทาย",
+      "category": "greetings",
+      "zh": "晚安",
+      "th1": "ราตรีสวัสดิ์",
+      "th2": null,
+      "th3": null,
+      "frame": "greetings"
+    },
+    {
+      "id": 7,
+      "section": "คำทักทาย",
+      "category": "greetings",
+      "zh": "再见",
+      "th1": "ลาก่อน",
+      "th2": null,
+      "th3": null,
+      "frame": "greetings"
+    },
+    {
+      "id": 8,
+      "section": "คำทักทาย",
+      "category": "greetings",
+      "zh": "明天见",
+      "th1": "พบกันพรุ่งนี้",
+      "th2": null,
+      "th3": null,
+      "frame": "greetings"
+    },
+    {
+      "id": 9,
+      "section": "คำทักทาย",
+      "category": "greetings",
+      "zh": "你好吗？",
+      "th1": "คุณสบายดีไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "greetings"
+    }
+  ]
+}

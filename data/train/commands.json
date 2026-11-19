@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "topic": "commands",
+  "description": "คำสั่งและคำเตือน",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "original_curated_pairs",
+    "review_status": "needs_human_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "คำสั่ง",
+      "category": "commands",
+      "zh": "不要这样做",
+      "th1": "อย่าทำแบบนี้",
+      "th2": null,
+      "th3": null,
+      "frame": "commands"
+    },
+    {
+      "id": 2,
+      "section": "คำสั่ง",
+      "category": "commands",
+      "zh": "快一点",
+      "th1": "เร็วหน่อย",
+      "th2": null,
+      "th3": null,
+      "frame": "commands"
+    },
+    {
+      "id": 3,
+      "section": "คำสั่ง",
+      "category": "commands",
+      "zh": "慢一点",
+      "th1": "ช้าหน่อย",
+      "th2": null,
+      "th3": null,
+      "frame": "commands"
+    },
+    {
+      "id": 4,
+      "section": "คำสั่ง",
+      "category": "commands",
+      "zh": "小心",
+      "th1": "ระวัง",
+      "th2": null,
+      "th3": null,
+      "frame": "commands"
+    },
+    {
+      "id": 5,
+      "section": "คำสั่ง",
+      "category": "commands",
+      "zh": "开始吧",
+      "th1": "เริ่มกันเลย",
+      "th2": null,
+      "th3": null,
+      "frame": "commands"
+    },
+    {
+      "id": 6,
+      "section": "คำสั่ง",
+      "category": "commands",
+      "zh": "停止",
+      "th1": "หยุด",
+      "th2": null,
+      "th3": null,
+      "frame": "commands"
+    },
+    {
+      "id": 7,
+      "section": "คำสั่ง",
+      "category": "commands",
+      "zh": "继续",
+      "th1": "ทำต่อ",
+      "th2": null,
+      "th3": null,
+      "frame": "commands"
+    },
+    {
+      "id": 8,
+      "section": "คำสั่ง",
+      "category": "commands",
+      "zh": "完成了",
+      "th1": "เสร็จแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "commands"
+    },
+    {
+      "id": 9,
+      "section": "คำสั่ง",
+      "category": "commands",
+      "zh": "等一下",
+      "th1": "รอสักครู่",
+      "th2": null,
+      "th3": null,
+      "frame": "commands"
+    }
+  ]
+}

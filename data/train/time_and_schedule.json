@@ -1,0 +1,496 @@
+{
+  "schema_version": 1,
+  "topic": "time_and_schedule",
+  "description": "ข้อมูลสังเคราะห์จากรูปแบบประโยคและคำศัพท์จีน-ไทยที่กำหนดเอง ตรวจโครงสร้างและตัดประโยคจีนซ้ำแล้ว",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "template_augmented_from_handwritten_lexicon",
+    "review_status": "needs_human_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我后天要工作。",
+      "th1": "มะรืนนี้ฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 2,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们中午见面吧。",
+      "th1": "เราพบกันตอนเที่ยงเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 3,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们明天早上见面吧。",
+      "th1": "เราพบกันพรุ่งนี้เช้าเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 4,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我这个星期有空。",
+      "th1": "สัปดาห์นี้ฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 5,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们下周见面吧。",
+      "th1": "เราพบกันสัปดาห์หน้าเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 6,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我后天有空。",
+      "th1": "มะรืนนี้ฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 7,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们现在见面吧。",
+      "th1": "เราพบกันตอนนี้เถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 8,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们周末见面吧。",
+      "th1": "เราพบกันวันหยุดสุดสัปดาห์เถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 9,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我下周有空。",
+      "th1": "สัปดาห์หน้าฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 10,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们明天下午见面吧。",
+      "th1": "เราพบกันพรุ่งนี้ตอนบ่ายเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 11,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们晚上见面吧。",
+      "th1": "เราพบกันตอนเย็นเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 12,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我周末有空。",
+      "th1": "วันหยุดสุดสัปดาห์ฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 13,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我下周要工作。",
+      "th1": "สัปดาห์หน้าฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 14,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我明天早上要工作。",
+      "th1": "พรุ่งนี้เช้าฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 15,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我今晚要工作。",
+      "th1": "คืนนี้ฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 16,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我早上有空。",
+      "th1": "ตอนเช้าฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 17,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我今天有空。",
+      "th1": "วันนี้ฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 18,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我中午要工作。",
+      "th1": "ตอนเที่ยงฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 19,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们今天见面吧。",
+      "th1": "เราพบกันวันนี้เถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 20,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我明天有空。",
+      "th1": "พรุ่งนี้ฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 21,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我昨天有空。",
+      "th1": "เมื่อวานฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 22,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我周末要工作。",
+      "th1": "วันหยุดสุดสัปดาห์ฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 23,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我明天下午有空。",
+      "th1": "พรุ่งนี้ตอนบ่ายฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 24,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我下个月要工作。",
+      "th1": "เดือนหน้าฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 25,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我明天下午要工作。",
+      "th1": "พรุ่งนี้ตอนบ่ายฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 26,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我下午有空。",
+      "th1": "ตอนบ่ายฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 27,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们下个月见面吧。",
+      "th1": "เราพบกันเดือนหน้าเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 28,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我昨天要工作。",
+      "th1": "เมื่อวานฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 29,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我下个月有空。",
+      "th1": "เดือนหน้าฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 30,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我现在有空。",
+      "th1": "ตอนนี้ฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 31,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们后天见面吧。",
+      "th1": "เราพบกันมะรืนนี้เถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 32,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们昨天见面吧。",
+      "th1": "เราพบกันเมื่อวานเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 33,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我早上要工作。",
+      "th1": "ตอนเช้าฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 34,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我中午有空。",
+      "th1": "ตอนเที่ยงฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 35,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我明天早上有空。",
+      "th1": "พรุ่งนี้เช้าฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 36,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我下午要工作。",
+      "th1": "ตอนบ่ายฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 37,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们早上见面吧。",
+      "th1": "เราพบกันตอนเช้าเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 38,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我这个星期要工作。",
+      "th1": "สัปดาห์นี้ฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 39,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我今天要工作。",
+      "th1": "วันนี้ฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 40,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们明天见面吧。",
+      "th1": "เราพบกันพรุ่งนี้เถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 41,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我今晚有空。",
+      "th1": "คืนนี้ฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 42,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我明天要工作。",
+      "th1": "พรุ่งนี้ฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 43,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我现在要工作。",
+      "th1": "ตอนนี้ฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 44,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们今晚见面吧。",
+      "th1": "เราพบกันคืนนี้เถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 45,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我晚上有空。",
+      "th1": "ตอนเย็นฉันว่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 46,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们这个星期见面吧。",
+      "th1": "เราพบกันสัปดาห์นี้เถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 47,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我们下午见面吧。",
+      "th1": "เราพบกันตอนบ่ายเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    },
+    {
+      "id": 48,
+      "section": "เวลาและกำหนดการ",
+      "category": "time_and_schedule",
+      "zh": "我晚上要工作。",
+      "th1": "ตอนเย็นฉันต้องทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "time_and_schedule"
+    }
+  ]
+}

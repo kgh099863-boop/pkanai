@@ -1,0 +1,566 @@
+{
+  "schema_version": 1,
+  "topic": "lexical_coverage",
+  "description": "Additional natural Chinese-Thai pairs covering vocabulary that was out-of-vocabulary in the held-out Generalization v3 set, with new sentence contexts.",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "hand_authored_parallel_examples",
+    "review_status": "needs_human_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "device_state",
+      "zh": "手机坏了。",
+      "th1": "โทรศัพท์เสียแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "device_state"
+    },
+    {
+      "id": 2,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "device_state",
+      "zh": "我的手机坏了。",
+      "th1": "โทรศัพท์ของฉันเสียแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "device_state"
+    },
+    {
+      "id": 3,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "device_state",
+      "zh": "电脑坏了。",
+      "th1": "คอมพิวเตอร์เสียแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "device_state"
+    },
+    {
+      "id": 4,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "device_state",
+      "zh": "这个手机很好用。",
+      "th1": "โทรศัพท์เครื่องนี้ใช้งานดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "device_state"
+    },
+    {
+      "id": 5,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "modal",
+      "zh": "我应该休息一下。",
+      "th1": "ฉันควรพักผ่อนสักหน่อย",
+      "th2": null,
+      "th3": null,
+      "frame": "modal"
+    },
+    {
+      "id": 6,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "modal",
+      "zh": "你应该早点睡觉。",
+      "th1": "คุณควรนอนเร็วหน่อย",
+      "th2": null,
+      "th3": null,
+      "frame": "modal"
+    },
+    {
+      "id": 7,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "modal",
+      "zh": "我们应该现在出发。",
+      "th1": "พวกเราควรออกเดินทางตอนนี้",
+      "th2": null,
+      "th3": null,
+      "frame": "modal"
+    },
+    {
+      "id": 8,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "urgency",
+      "zh": "请赶快过来。",
+      "th1": "กรุณารีบมาที่นี่",
+      "th2": null,
+      "th3": null,
+      "frame": "urgency"
+    },
+    {
+      "id": 9,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "urgency",
+      "zh": "我们赶不上火车了。",
+      "th1": "พวกเราขึ้นรถไฟไม่ทันแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "urgency"
+    },
+    {
+      "id": 10,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "urgency",
+      "zh": "赶快准备好。",
+      "th1": "รีบเตรียมตัวให้พร้อม",
+      "th2": null,
+      "th3": null,
+      "frame": "urgency"
+    },
+    {
+      "id": 11,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "participation",
+      "zh": "他参加了会议。",
+      "th1": "เขาเข้าร่วมการประชุมแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "participation"
+    },
+    {
+      "id": 12,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "participation",
+      "zh": "我明天参加会议。",
+      "th1": "พรุ่งนี้ฉันเข้าร่วมการประชุม",
+      "th2": null,
+      "th3": null,
+      "frame": "participation"
+    },
+    {
+      "id": 13,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "participation",
+      "zh": "他不能参加比赛。",
+      "th1": "เขาไม่สามารถเข้าร่วมการแข่งขันได้",
+      "th2": null,
+      "th3": null,
+      "frame": "participation"
+    },
+    {
+      "id": 14,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "participation",
+      "zh": "很多人参加这个活动。",
+      "th1": "มีคนจำนวนมากเข้าร่วมกิจกรรมนี้",
+      "th2": null,
+      "th3": null,
+      "frame": "participation"
+    },
+    {
+      "id": 15,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "travel",
+      "zh": "航班今天延误了。",
+      "th1": "เที่ยวบินล่าช้าวันนี้",
+      "th2": null,
+      "th3": null,
+      "frame": "travel"
+    },
+    {
+      "id": 16,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "travel",
+      "zh": "我的航班取消了。",
+      "th1": "เที่ยวบินของฉันถูกยกเลิกแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "travel"
+    },
+    {
+      "id": 17,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "travel",
+      "zh": "航班几点起飞？",
+      "th1": "เที่ยวบินออกเดินทางกี่โมง",
+      "th2": null,
+      "th3": null,
+      "frame": "travel"
+    },
+    {
+      "id": 18,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "travel",
+      "zh": "由于天气不好，航班延误了。",
+      "th1": "เนื่องจากสภาพอากาศไม่ดี เที่ยวบินจึงล่าช้า",
+      "th2": null,
+      "th3": null,
+      "frame": "travel"
+    },
+    {
+      "id": 19,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "schedule",
+      "zh": "星期六我不上班。",
+      "th1": "วันเสาร์ฉันไม่ทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "schedule"
+    },
+    {
+      "id": 20,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "schedule",
+      "zh": "星期六你有时间吗？",
+      "th1": "วันเสาร์คุณมีเวลาไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "schedule"
+    },
+    {
+      "id": 21,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "schedule",
+      "zh": "我们星期六去旅行。",
+      "th1": "วันเสาร์พวกเราไปเที่ยว",
+      "th2": null,
+      "th3": null,
+      "frame": "schedule"
+    },
+    {
+      "id": 22,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "schedule",
+      "zh": "星期六商店几点开门？",
+      "th1": "วันเสาร์ร้านเปิดกี่โมง",
+      "th2": null,
+      "th3": null,
+      "frame": "schedule"
+    },
+    {
+      "id": 23,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "media",
+      "zh": "他喜欢听广播。",
+      "th1": "เขาชอบฟังวิทยุ",
+      "th2": null,
+      "th3": null,
+      "frame": "media"
+    },
+    {
+      "id": 24,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "media",
+      "zh": "我每天早上听广播。",
+      "th1": "ฉันฟังวิทยุทุกเช้า",
+      "th2": null,
+      "th3": null,
+      "frame": "media"
+    },
+    {
+      "id": 25,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "media",
+      "zh": "请打开收音机。",
+      "th1": "กรุณาเปิดวิทยุ",
+      "th2": null,
+      "th3": null,
+      "frame": "media"
+    },
+    {
+      "id": 26,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "media",
+      "zh": "广播里正在播放新闻。",
+      "th1": "ในวิทยุกำลังออกอากาศข่าว",
+      "th2": null,
+      "th3": null,
+      "frame": "media"
+    },
+    {
+      "id": 27,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "device_state",
+      "zh": "这台电脑很贵。",
+      "th1": "คอมพิวเตอร์เครื่องนี้แพงมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "device_state"
+    },
+    {
+      "id": 28,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "device_state",
+      "zh": "那台电脑是新的。",
+      "th1": "คอมพิวเตอร์เครื่องนั้นเป็นเครื่องใหม่",
+      "th2": null,
+      "th3": null,
+      "frame": "device_state"
+    },
+    {
+      "id": 29,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "shopping",
+      "zh": "这台手机多少钱？",
+      "th1": "โทรศัพท์เครื่องนี้ราคาเท่าไหร่",
+      "th2": null,
+      "th3": null,
+      "frame": "shopping"
+    },
+    {
+      "id": 30,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "disposal",
+      "zh": "请把这台电脑关掉。",
+      "th1": "กรุณาปิดคอมพิวเตอร์เครื่องนี้",
+      "th2": null,
+      "th3": null,
+      "frame": "disposal"
+    },
+    {
+      "id": 31,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "ability",
+      "zh": "我们可以一起去吗？",
+      "th1": "พวกเราไปด้วยกันได้ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "ability"
+    },
+    {
+      "id": 32,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "ability",
+      "zh": "我不知道怎么回答。",
+      "th1": "ฉันไม่รู้ว่าจะตอบอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "ability"
+    },
+    {
+      "id": 33,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "request",
+      "zh": "你可以再说一遍吗？",
+      "th1": "คุณพูดอีกครั้งได้ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "request"
+    },
+    {
+      "id": 34,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "daily_action",
+      "zh": "我正在等公共汽车。",
+      "th1": "ฉันกำลังรอรถโดยสาร",
+      "th2": null,
+      "th3": null,
+      "frame": "daily_action"
+    },
+    {
+      "id": 35,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "request",
+      "zh": "请告诉我正确的地址。",
+      "th1": "กรุณาบอกที่อยู่ที่ถูกต้องให้ฉัน",
+      "th2": null,
+      "th3": null,
+      "frame": "request"
+    },
+    {
+      "id": 36,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "negation",
+      "zh": "他今天没有来上班。",
+      "th1": "วันนี้เขาไม่ได้มาทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "negation"
+    },
+    {
+      "id": 37,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "daily_action",
+      "zh": "我忘记带雨伞了。",
+      "th1": "ฉันลืมเอาร่มมา",
+      "th2": null,
+      "th3": null,
+      "frame": "daily_action"
+    },
+    {
+      "id": 38,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "description",
+      "zh": "这个问题很难回答。",
+      "th1": "คำถามนี้ตอบยากมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "description"
+    },
+    {
+      "id": 39,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "need",
+      "zh": "我们需要更多的时间。",
+      "th1": "พวกเราต้องการเวลามากขึ้น",
+      "th2": null,
+      "th3": null,
+      "frame": "need"
+    },
+    {
+      "id": 40,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "prohibition",
+      "zh": "请不要着急。",
+      "th1": "กรุณาอย่ารีบร้อน",
+      "th2": null,
+      "th3": null,
+      "frame": "prohibition"
+    },
+    {
+      "id": 41,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "ability",
+      "zh": "我现在不能决定。",
+      "th1": "ตอนนี้ฉันตัดสินใจไม่ได้",
+      "th2": null,
+      "th3": null,
+      "frame": "ability"
+    },
+    {
+      "id": 42,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "sequence",
+      "zh": "你先休息，我来做饭。",
+      "th1": "คุณพักก่อน ฉันจะทำอาหารเอง",
+      "th2": null,
+      "th3": null,
+      "frame": "sequence"
+    },
+    {
+      "id": 43,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "request",
+      "zh": "我想换一张新卡。",
+      "th1": "ฉันอยากเปลี่ยนบัตรใบใหม่",
+      "th2": null,
+      "th3": null,
+      "frame": "request"
+    },
+    {
+      "id": 44,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "aspect",
+      "zh": "他正在准备考试。",
+      "th1": "เขากำลังเตรียมตัวสอบ",
+      "th2": null,
+      "th3": null,
+      "frame": "aspect"
+    },
+    {
+      "id": 45,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "aspect",
+      "zh": "我已经完成作业了。",
+      "th1": "ฉันทำการบ้านเสร็จแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "aspect"
+    },
+    {
+      "id": 46,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "ability",
+      "zh": "这个房间可以住两个人。",
+      "th1": "ห้องนี้พักได้สองคน",
+      "th2": null,
+      "th3": null,
+      "frame": "ability"
+    },
+    {
+      "id": 47,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "request",
+      "zh": "请在这里签名。",
+      "th1": "กรุณาเซ็นชื่อที่นี่",
+      "th2": null,
+      "th3": null,
+      "frame": "request"
+    },
+    {
+      "id": 48,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "need",
+      "zh": "我们需要检查一下设备。",
+      "th1": "พวกเราต้องตรวจสอบอุปกรณ์สักหน่อย",
+      "th2": null,
+      "th3": null,
+      "frame": "need"
+    },
+    {
+      "id": 49,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "question",
+      "zh": "你为什么这么着急？",
+      "th1": "ทำไมคุณถึงรีบร้อนขนาดนี้",
+      "th2": null,
+      "th3": null,
+      "frame": "question"
+    },
+    {
+      "id": 50,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "modal",
+      "zh": "我们应该早点出门。",
+      "th1": "พวกเราควรออกจากบ้านแต่เช้า",
+      "th2": null,
+      "th3": null,
+      "frame": "modal"
+    },
+    {
+      "id": 51,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "question",
+      "zh": "你要等多久？",
+      "th1": "คุณต้องรอนานเท่าไหร่",
+      "th2": null,
+      "th3": null,
+      "frame": "question"
+    },
+    {
+      "id": 52,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "time",
+      "zh": "我不知道要花多久。",
+      "th1": "ฉันไม่รู้ว่าจะใช้เวลานานเท่าไหร่",
+      "th2": null,
+      "th3": null,
+      "frame": "time"
+    },
+    {
+      "id": 53,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "email",
+      "zh": "这封邮件是昨天发来的。",
+      "th1": "อีเมลฉบับนี้ส่งมาตั้งแต่เมื่อวาน",
+      "th2": null,
+      "th3": null,
+      "frame": "email"
+    },
+    {
+      "id": 54,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "email",
+      "zh": "我收到了一封新邮件。",
+      "th1": "ฉันได้รับอีเมลใหม่หนึ่งฉบับ",
+      "th2": null,
+      "th3": null,
+      "frame": "email"
+    },
+    {
+      "id": 55,
+      "section": "คำศัพท์และความครอบคลุม",
+      "category": "letter",
+      "zh": "请把这封信交给他。",
+      "th1": "กรุณาส่งจดหมายฉบับนี้ให้เขา",
+      "th2": null,
+      "th3": null,
+      "frame": "letter"
+    }
+  ]
+}

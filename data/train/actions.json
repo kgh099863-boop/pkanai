@@ -1,0 +1,916 @@
+{
+  "schema_version": 1,
+  "topic": "actions",
+  "description": "ข้อมูลสังเคราะห์จากรูปแบบประโยคและคำศัพท์จีน-ไทยที่กำหนดเอง ตรวจโครงสร้างและตัดประโยคจีนซ้ำแล้ว",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "template_augmented_from_handwritten_lexicon",
+    "review_status": "needs_human_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请进来。",
+      "th1": "กรุณาเข้ามา",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 2,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要学习。",
+      "th1": "กรุณาอย่าเรียน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 3,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要解释。",
+      "th1": "กรุณาอย่าอธิบาย",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 4,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起解释吧。",
+      "th1": "เรามาอธิบายด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 5,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要回答。",
+      "th1": "กรุณาอย่าตอบ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 6,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要继续。",
+      "th1": "กรุณาอย่าทำต่อ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 7,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要打开。",
+      "th1": "กรุณาอย่าเปิด",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 8,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要删除。",
+      "th1": "กรุณาอย่าลบ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 9,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要等待。",
+      "th1": "กรุณาอย่ารอ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 10,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起发送吧。",
+      "th1": "เรามาส่งด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 11,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起听吧。",
+      "th1": "เรามาฟังด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 12,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要保存。",
+      "th1": "กรุณาอย่าบันทึก",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 13,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要发送。",
+      "th1": "กรุณาอย่าส่ง",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 14,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起联系我吧。",
+      "th1": "เรามาติดต่อฉันด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 15,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请删除。",
+      "th1": "กรุณาลบ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 16,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起看吧。",
+      "th1": "เรามาดูด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 17,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请关闭。",
+      "th1": "กรุณาปิด",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 18,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请等。",
+      "th1": "กรุณารอ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 19,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要停止。",
+      "th1": "กรุณาอย่าหยุด",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 20,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起继续吧。",
+      "th1": "เรามาทำต่อด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 21,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请写字。",
+      "th1": "กรุณาเขียน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 22,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请继续。",
+      "th1": "กรุณาทำต่อ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 23,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请帮忙。",
+      "th1": "กรุณาช่วย",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 24,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要等。",
+      "th1": "กรุณาอย่ารอ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 25,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要练习。",
+      "th1": "กรุณาอย่าฝึกฝน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 26,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要回家。",
+      "th1": "กรุณาอย่ากลับบ้าน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 27,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起站起来吧。",
+      "th1": "เรามายืนขึ้นด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 28,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要站起来。",
+      "th1": "กรุณาอย่ายืนขึ้น",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 29,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要进来。",
+      "th1": "กรุณาอย่าเข้ามา",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 30,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要坐下。",
+      "th1": "กรุณาอย่านั่งลง",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 31,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起帮忙吧。",
+      "th1": "เรามาช่วยด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 32,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请联系我。",
+      "th1": "กรุณาติดต่อฉัน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 33,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请听。",
+      "th1": "กรุณาฟัง",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 34,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请站起来。",
+      "th1": "กรุณายืนขึ้น",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 35,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起吃饭吧。",
+      "th1": "เรามากินข้าวด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 36,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起关闭吧。",
+      "th1": "เรามาปิดด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 37,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请回家。",
+      "th1": "กรุณากลับบ้าน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 38,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要休息。",
+      "th1": "กรุณาอย่าพักผ่อน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 39,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要吃饭。",
+      "th1": "กรุณาอย่ากินข้าว",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 40,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请坐下。",
+      "th1": "กรุณานั่งลง",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 41,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起休息吧。",
+      "th1": "เรามาพักผ่อนด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 42,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起阅读吧。",
+      "th1": "เรามาอ่านด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 43,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要阅读。",
+      "th1": "กรุณาอย่าอ่าน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 44,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请出去。",
+      "th1": "กรุณาออกไป",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 45,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要检查。",
+      "th1": "กรุณาอย่าตรวจสอบ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 46,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起打开吧。",
+      "th1": "เรามาเปิดด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 47,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请停止。",
+      "th1": "กรุณาหยุด",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 48,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起学习吧。",
+      "th1": "เรามาเรียนด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 49,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请发送。",
+      "th1": "กรุณาส่ง",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 50,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要出去。",
+      "th1": "กรุณาอย่าออกไป",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 51,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请检查。",
+      "th1": "กรุณาตรวจสอบ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 52,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起坐下吧。",
+      "th1": "เรามานั่งลงด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 53,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起写字吧。",
+      "th1": "เรามาเขียนด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 54,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起工作吧。",
+      "th1": "เรามาทำงานด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 55,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请打开。",
+      "th1": "กรุณาเปิด",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 56,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要说话。",
+      "th1": "กรุณาอย่าพูด",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 57,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起练习吧。",
+      "th1": "เรามาฝึกฝนด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 58,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要关闭。",
+      "th1": "กรุณาอย่าปิด",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 59,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要开始。",
+      "th1": "กรุณาอย่าเริ่ม",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 60,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请练习。",
+      "th1": "กรุณาฝึกฝน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 61,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要联系我。",
+      "th1": "กรุณาอย่าติดต่อฉัน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 62,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请阅读。",
+      "th1": "กรุณาอ่าน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 63,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起保存吧。",
+      "th1": "เรามาบันทึกด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 64,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请回答。",
+      "th1": "กรุณาตอบ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 65,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起回家吧。",
+      "th1": "เรามากลับบ้านด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 66,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起检查吧。",
+      "th1": "เรามาตรวจสอบด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 67,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请工作。",
+      "th1": "กรุณาทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 68,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起开始吧。",
+      "th1": "เรามาเริ่มด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 69,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请等待。",
+      "th1": "กรุณารอ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 70,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请吃饭。",
+      "th1": "กรุณากินข้าว",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 71,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起回答吧。",
+      "th1": "เรามาตอบด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 72,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要写字。",
+      "th1": "กรุณาอย่าเขียน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 73,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起出去吧。",
+      "th1": "เรามาออกไปด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 74,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请保存。",
+      "th1": "กรุณาบันทึก",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 75,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请看。",
+      "th1": "กรุณาดู",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 76,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请说话。",
+      "th1": "กรุณาพูด",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 77,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起等吧。",
+      "th1": "เรามารอด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 78,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起进来吧。",
+      "th1": "เรามาเข้ามาด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 79,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起停止吧。",
+      "th1": "เรามาหยุดด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 80,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要帮忙。",
+      "th1": "กรุณาอย่าช่วย",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 81,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请学习。",
+      "th1": "กรุณาเรียน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 82,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请开始。",
+      "th1": "กรุณาเริ่ม",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 83,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请解释。",
+      "th1": "กรุณาอธิบาย",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 84,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要工作。",
+      "th1": "กรุณาอย่าทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 85,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请休息。",
+      "th1": "กรุณาพักผ่อน",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 86,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起等待吧。",
+      "th1": "เรามารอด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 87,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起删除吧。",
+      "th1": "เรามาลบด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 88,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "我们一起说话吧。",
+      "th1": "เรามาพูดด้วยกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 89,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要听。",
+      "th1": "กรุณาอย่าฟัง",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    },
+    {
+      "id": 90,
+      "section": "การกระทำ",
+      "category": "actions",
+      "zh": "请不要看。",
+      "th1": "กรุณาอย่าดู",
+      "th2": null,
+      "th3": null,
+      "frame": "actions"
+    }
+  ]
+}

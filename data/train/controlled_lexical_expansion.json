@@ -1,0 +1,1536 @@
+{
+  "schema_version": 1,
+  "topic": "controlled_lexical_expansion",
+  "description": "Hand-curated Chinese-to-Thai lexical expansion emphasizing low-frequency and newly introduced vocabulary, varied sentence structures, and low source-sentence duplication. Human/native-speaker review is still recommended.",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "hand_curated_controlled_lexical_and_syntax_v1",
+    "review_status": "assistant_curated_requires_native_speaker_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这个房间很安静，适合看书。",
+      "th1": "ห้องนี้เงียบมาก เหมาะกับการอ่านหนังสือ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 2,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请把电视声音调小一点，我想安静地休息。",
+      "th1": "กรุณาเบาเสียงโทรทัศน์ลงหน่อย ฉันอยากพักผ่อนอย่างเงียบ ๆ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 3,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "听到这个消息，他感到很失望。",
+      "th1": "เมื่อได้ยินข่าวนี้ เขารู้สึกผิดหวังมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 4,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "一次失败并不代表永远失败。",
+      "th1": "ความล้มเหลวเพียงครั้งเดียวไม่ได้หมายความว่าจะล้มเหลวตลอดไป",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 5,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "她第一次坐飞机，心里有点害怕。",
+      "th1": "เธอขึ้นเครื่องบินครั้งแรก จึงรู้สึกกลัวเล็กน้อย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 6,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "别怕，我会陪你一起去。",
+      "th1": "ไม่ต้องกลัวนะ ฉันจะไปเป็นเพื่อนคุณ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 7,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "看到老朋友突然出现，我很惊讶。",
+      "th1": "ฉันประหลาดใจมากที่เห็นเพื่อนเก่าปรากฏตัวขึ้นอย่างกะทันหัน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 8,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这个结果一点也不令人意外。",
+      "th1": "ผลลัพธ์นี้ไม่น่าแปลกใจเลยแม้แต่น้อย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 9,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "事情已经安排好了，请你放心。",
+      "th1": "จัดการเรื่องต่าง ๆ เรียบร้อยแล้ว คุณวางใจได้",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 10,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "如果你不舒服，就告诉我，不要忍着。",
+      "th1": "ถ้าคุณรู้สึกไม่สบายก็บอกฉัน อย่าฝืนทน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 11,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "今天没有什么安排，我觉得有点无聊。",
+      "th1": "วันนี้ไม่มีแผนอะไรเลย ฉันรู้สึกเบื่อเล็กน้อย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 12,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我们聊一些有趣的话题吧。",
+      "th1": "เรามาคุยเรื่องที่น่าสนใจกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 13,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "长时间站着工作会让人疲倦。",
+      "th1": "การยืนทำงานเป็นเวลานานทำให้คนเราเหนื่อยล้า",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 14,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "考试开始以前，她显得十分紧张。",
+      "th1": "ก่อนเริ่มสอบ เธอดูประหม่าอย่างมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 15,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "遇到困难时，请先冷静下来。",
+      "th1": "เมื่อพบกับความยากลำบาก กรุณาตั้งสติให้สงบก่อน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 16,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这间教室很宽敞，可以容纳五十名学生。",
+      "th1": "ห้องเรียนนี้กว้างขวาง สามารถรองรับนักเรียนได้ห้าสิบคน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 17,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这条小巷太狭窄，汽车开不进去。",
+      "th1": "ตรอกนี้แคบเกินไป รถยนต์ขับเข้าไปไม่ได้",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 18,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这家旅馆很安静，晚上也不吵。",
+      "th1": "โรงแรมแห่งนี้เงียบมาก ตอนกลางคืนก็ไม่เสียงดัง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 19,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "地板刚拖过，走起来很滑。",
+      "th1": "พื้นเพิ่งถูเสร็จ เดินแล้วลื่นมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 20,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "雨后的空气很清新。",
+      "th1": "อากาศหลังฝนตกสดชื่นมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 21,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这件外套很厚，适合冬天穿。",
+      "th1": "เสื้อคลุมตัวนี้หนามาก เหมาะสำหรับใส่ในฤดูหนาว",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 22,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这件衬衫的布料很薄，夏天穿很舒服。",
+      "th1": "เนื้อผ้าของเสื้อเชิ้ตตัวนี้บางมาก ใส่หน้าร้อนแล้วสบาย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 23,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这杯咖啡有点苦，可以加牛奶吗？",
+      "th1": "กาแฟแก้วนี้ขมเล็กน้อย เติมนมได้ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 24,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "柠檬的味道很酸。",
+      "th1": "รสชาติของมะนาวเปรี้ยวมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 25,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这道汤太咸了，请加一点水。",
+      "th1": "ซุปถ้วยนี้เค็มเกินไป กรุณาเติมน้ำอีกหน่อย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 26,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请少放辣椒，我不太能吃辣。",
+      "th1": "กรุณาใส่พริกให้น้อยหน่อย ฉันกินเผ็ดไม่ค่อยได้",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 27,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这家餐厅的食材每天都很新鲜。",
+      "th1": "วัตถุดิบของร้านอาหารแห่งนี้สดใหม่ทุกวัน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 28,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "外面太吵了，我听不清你的声音。",
+      "th1": "ข้างนอกเสียงดังเกินไป ฉันได้ยินเสียงคุณไม่ชัด",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 29,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这个软件的操作方法很简单。",
+      "th1": "วิธีใช้งานซอฟต์แวร์นี้ง่ายมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 30,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "说明书写得太复杂了，我看不明白。",
+      "th1": "คู่มือเขียนซับซ้อนเกินไป ฉันอ่านแล้วไม่เข้าใจ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 31,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这条河的水很浅，不能开船。",
+      "th1": "น้ำในแม่น้ำสายนี้ตื้นมาก ไม่สามารถขับเรือได้",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 32,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "山路很陡，开车时要特别小心。",
+      "th1": "ถนนบนภูเขาสูงชันมาก เวลาขับรถต้องระมัดระวังเป็นพิเศษ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 33,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我还没有决定周末去哪里。",
+      "th1": "ฉันยังไม่ได้ตัดสินใจว่าจะไปที่ไหนในวันหยุดสุดสัปดาห์",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 34,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我们应该先比较这两个方案。",
+      "th1": "เราควรเปรียบเทียบแผนสองแผนนี้ก่อน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 35,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "你能解释一下这个词的意思吗？",
+      "th1": "คุณช่วยอธิบายความหมายของคำนี้ได้ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 36,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我听懂了你的解释。",
+      "th1": "ฉันเข้าใจคำอธิบายของคุณแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 37,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请记住会议在上午九点开始。",
+      "th1": "กรุณาจำไว้ว่าการประชุมเริ่มตอนเก้าโมงเช้า",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 38,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我忘记把文件带来了。",
+      "th1": "ฉันลืมนำเอกสารมาด้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 39,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请提醒我明天给医生打电话。",
+      "th1": "กรุณาเตือนฉันให้โทรหาหมอพรุ่งนี้ด้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 40,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我同意先检查设备，再开始工作。",
+      "th1": "ฉันเห็นด้วยที่จะตรวจสอบอุปกรณ์ก่อน แล้วค่อยเริ่มทำงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 41,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "他不同意这个决定，想提出另一个建议。",
+      "th1": "เขาไม่เห็นด้วยกับการตัดสินใจนี้ และต้องการเสนอข้อแนะนำอีกอย่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 42,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "她礼貌地拒绝了邀请。",
+      "th1": "เธอปฏิเสธคำเชิญอย่างสุภาพ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 43,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我接受了公司的工作邀请。",
+      "th1": "ฉันตอบรับคำเชิญเข้าทำงานจากบริษัทแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 44,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请把旧电池更换成新的。",
+      "th1": "กรุณาเปลี่ยนแบตเตอรี่เก่าเป็นก้อนใหม่",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 45,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这台机器需要专业人员修理。",
+      "th1": "เครื่องจักรนี้ต้องให้ช่างผู้เชี่ยวชาญซ่อม",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 46,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "安装软件以前，请先阅读使用说明。",
+      "th1": "ก่อนติดตั้งซอฟต์แวร์ กรุณาอ่านคำแนะนำการใช้งานก่อน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 47,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "系统更新完成后，请重新启动手机。",
+      "th1": "หลังจากอัปเดตระบบเสร็จแล้ว กรุณารีสตาร์ตโทรศัพท์",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 48,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "下载文件时，请不要关闭网络。",
+      "th1": "ขณะดาวน์โหลดไฟล์ กรุณาอย่าปิดเครือข่าย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 49,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "上传照片以前，请检查文件大小。",
+      "th1": "ก่อนอัปโหลดรูปภาพ กรุณาตรวจสอบขนาดไฟล์",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 50,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请保存刚才修改的内容。",
+      "th1": "กรุณาบันทึกเนื้อหาที่เพิ่งแก้ไขเมื่อครู่",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 51,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我把文件复制到另一个文件夹里了。",
+      "th1": "ฉันคัดลอกไฟล์ไปไว้ในโฟลเดอร์อื่นแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 52,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请把这段文字粘贴在下面。",
+      "th1": "กรุณาวางข้อความส่วนนี้ไว้ด้านล่าง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 53,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这个应用无法连接到服务器。",
+      "th1": "แอปพลิเคชันนี้ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ได้",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 54,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我正在搜索附近的诊所。",
+      "th1": "ฉันกำลังค้นหาคลินิกที่อยู่ใกล้ ๆ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 55,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请确认你的电子邮件地址是否正确。",
+      "th1": "กรุณายืนยันว่าที่อยู่อีเมลของคุณถูกต้องหรือไม่",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 56,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我想申请一张新的银行卡。",
+      "th1": "ฉันต้องการสมัครบัตรธนาคารใบใหม่",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 57,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "由于天气不好，我们取消了预约。",
+      "th1": "เนื่องจากสภาพอากาศไม่ดี เราจึงยกเลิกการนัดหมาย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 58,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "会议推迟到下午三点举行。",
+      "th1": "การประชุมเลื่อนไปจัดตอนบ่ายสามโมง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 59,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请把包裹寄到这个地址。",
+      "th1": "กรุณาส่งพัสดุไปยังที่อยู่นี้",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 60,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我可以借用你的充电器吗？",
+      "th1": "ฉันขอยืมที่ชาร์จของคุณได้ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 61,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "用完以后，请记得归还。",
+      "th1": "หลังจากใช้เสร็จแล้ว กรุณาอย่าลืมนำมาคืน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 62,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "她正在整理电脑里的文件。",
+      "th1": "เธอกำลังจัดระเบียบไฟล์ในคอมพิวเตอร์",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 63,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "他每天记录自己的学习进度。",
+      "th1": "เขาบันทึกความคืบหน้าในการเรียนของตัวเองทุกวัน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 64,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我想提高自己的听力和口语能力。",
+      "th1": "ฉันอยากพัฒนาความสามารถด้านการฟังและการพูดของตัวเอง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 65,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请不要打断别人说话。",
+      "th1": "กรุณาอย่าขัดจังหวะเวลาคนอื่นกำลังพูด",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 66,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这个问题还没有得到解决。",
+      "th1": "ปัญหานี้ยังไม่ได้รับการแก้ไข",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 67,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我们讨论完重点以后再作决定。",
+      "th1": "หลังจากหารือประเด็นสำคัญเสร็จแล้ว เราค่อยตัดสินใจ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 68,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请检查门锁是否正常。",
+      "th1": "กรุณาตรวจสอบว่ากลอนประตูทำงานปกติหรือไม่",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 69,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "你的行李箱有多重？",
+      "th1": "กระเป๋าเดินทางของคุณหนักเท่าไร",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 70,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请把行李放在传送带上。",
+      "th1": "กรุณาวางสัมภาระไว้บนสายพานลำเลียง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 71,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我们要去二号柜台办理登机手续。",
+      "th1": "เราต้องไปที่เคาน์เตอร์หมายเลขสองเพื่อเช็กอินขึ้นเครื่อง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 72,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "航班因为大雾而延误了。",
+      "th1": "เที่ยวบินล่าช้าเนื่องจากมีหมอกหนา",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 73,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "司机已经在酒店门口等你了。",
+      "th1": "คนขับรถรอคุณอยู่หน้าโรงแรมแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 74,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "乘客上车以后请系好安全带。",
+      "th1": "หลังจากผู้โดยสารขึ้นรถแล้ว กรุณาคาดเข็มขัดนิรภัย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 75,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "前面有一个十字路口，请减速。",
+      "th1": "ข้างหน้ามีทางแยกสี่แยก กรุณาลดความเร็ว",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 76,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "等红绿灯变绿以后再过马路。",
+      "th1": "รอจนสัญญาณไฟจราจรเปลี่ยนเป็นสีเขียวแล้วค่อยข้ามถนน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 77,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这附近有加油站吗？",
+      "th1": "แถวนี้มีปั๊มน้ำมันไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 78,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这条街禁止停车。",
+      "th1": "ถนนสายนี้ห้ามจอดรถ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 79,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请出示身份证和登机牌。",
+      "th1": "กรุณาแสดงบัตรประจำตัวประชาชนและบัตรผ่านขึ้นเครื่อง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 80,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我需要填写一张申请表。",
+      "th1": "ฉันต้องกรอกแบบฟอร์มใบสมัครหนึ่งฉบับ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 81,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请在收据上签名。",
+      "th1": "กรุณาลงลายมือชื่อบนใบเสร็จ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 82,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我们在机场的出口见面吧。",
+      "th1": "เราไปพบกันที่ทางออกของสนามบินเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 83,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "火车站附近有公共停车场。",
+      "th1": "ใกล้สถานีรถไฟมีที่จอดรถสาธารณะ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 84,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "从这里到码头要走多久？",
+      "th1": "จากที่นี่ไปท่าเรือต้องเดินนานเท่าไร",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 85,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我把地图放在背包的侧袋里。",
+      "th1": "ฉันเก็บแผนที่ไว้ในกระเป๋าด้านข้างของเป้",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 86,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请告诉我最近的十字路口在哪里。",
+      "th1": "กรุณาบอกฉันหน่อยว่าสี่แยกที่ใกล้ที่สุดอยู่ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 87,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这辆公共汽车每隔二十分钟来一班。",
+      "th1": "รถโดยสารคันนี้มาทุก ๆ ยี่สิบนาที",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 88,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "如果错过这班车，我们就得等下一班。",
+      "th1": "ถ้าพลาดรถเที่ยวนี้ เราก็ต้องรอเที่ยวถัดไป",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 89,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这家诊所星期日不营业。",
+      "th1": "คลินิกแห่งนี้ไม่เปิดทำการในวันอาทิตย์",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 90,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "护士正在测量病人的体温。",
+      "th1": "พยาบาลกำลังวัดอุณหภูมิร่างกายของผู้ป่วย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 91,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "他发烧了，今天不能去上班。",
+      "th1": "เขามีไข้ วันนี้จึงไปทำงานไม่ได้",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 92,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "他咳嗽了好几天，应该去看医生。",
+      "th1": "เขาไอมาหลายวันแล้ว ควรไปพบแพทย์",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 93,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我对花粉过敏，春天容易打喷嚏。",
+      "th1": "ฉันแพ้เกสรดอกไม้ พอถึงฤดูใบไม้ผลิจึงจามง่าย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 94,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "医生给我开了三天的药。",
+      "th1": "หมอสั่งยาให้ฉันเป็นเวลาสามวัน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 95,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这种药片应该在饭后服用。",
+      "th1": "ยาเม็ดชนิดนี้ควรรับประทานหลังอาหาร",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 96,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请先用清水清洗伤口。",
+      "th1": "กรุณาล้างบาดแผลด้วยน้ำสะอาดก่อน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 97,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我需要预约牙医检查牙齿。",
+      "th1": "ฉันต้องนัดทันตแพทย์เพื่อตรวจฟัน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 98,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "他的肩膀受伤了，暂时不能搬东西。",
+      "th1": "ไหล่ของเขาบาดเจ็บ จึงยังยกของไม่ได้ชั่วคราว",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 99,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "长时间坐着会让腰部不舒服。",
+      "th1": "การนั่งเป็นเวลานานทำให้บริเวณเอวไม่สบาย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 100,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请深呼吸，慢慢放松身体。",
+      "th1": "กรุณาหายใจเข้าลึก ๆ แล้วค่อย ๆ ผ่อนคลายร่างกาย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 101,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "如果伤口流血，请立即告诉护士。",
+      "th1": "หากบาดแผลมีเลือดไหล กรุณาแจ้งพยาบาลทันที",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 102,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "急救箱放在办公室门后。",
+      "th1": "กล่องปฐมพยาบาลวางอยู่หลังประตูสำนักงาน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 103,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我需要一张医疗证明。",
+      "th1": "ฉันต้องการใบรับรองแพทย์หนึ่งฉบับ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 104,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "医生建议我多喝水并保证睡眠。",
+      "th1": "แพทย์แนะนำให้ฉันดื่มน้ำมาก ๆ และนอนหลับให้เพียงพอ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 105,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请不要自行增加药物剂量。",
+      "th1": "กรุณาอย่าปรับเพิ่มปริมาณยาเอง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 106,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "他正在康复，暂时还不能运动。",
+      "th1": "เขากำลังพักฟื้นอยู่ จึงยังออกกำลังกายไม่ได้ในตอนนี้",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 107,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "哪里可以买到体温计？",
+      "th1": "สามารถซื้อปรอทวัดไข้ได้ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 108,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "冰箱里还有一些蔬菜。",
+      "th1": "ในตู้เย็นยังมีผักเหลืออยู่บ้าง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 109,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "洗衣机正在运行，请不要打开门。",
+      "th1": "เครื่องซักผ้ากำลังทำงานอยู่ กรุณาอย่าเปิดฝา",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 110,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "空调坏了，房间变得很闷热。",
+      "th1": "เครื่องปรับอากาศเสีย ห้องจึงอบอ้าวขึ้น",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 111,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "电梯暂时不能使用，请走楼梯。",
+      "th1": "ลิฟต์ยังใช้งานไม่ได้ชั่วคราว กรุณาใช้บันได",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 112,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这个插座有点松，请不要碰。",
+      "th1": "เต้ารับไฟฟ้านี้หลวมเล็กน้อย กรุณาอย่าแตะต้อง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 113,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "离开房间以前，请关闭电源。",
+      "th1": "ก่อนออกจากห้อง กรุณาปิดแหล่งจ่ายไฟ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 114,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我的充电线放在哪里了？",
+      "th1": "สายชาร์จของฉันวางไว้ที่ไหน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 115,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "手机屏幕上出现了一条通知。",
+      "th1": "มีการแจ้งเตือนปรากฏขึ้นบนหน้าจอโทรศัพท์",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 116,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我的账号无法登录。",
+      "th1": "บัญชีของฉันไม่สามารถเข้าสู่ระบบได้",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 117,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请设置一个不容易被猜到的密码。",
+      "th1": "กรุณาตั้งรหัสผ่านที่เดาได้ยาก",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 118,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这里的无线网络信号很弱。",
+      "th1": "สัญญาณเครือข่ายไร้สายที่นี่อ่อนมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 119,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "手机电量只剩百分之十。",
+      "th1": "แบตเตอรี่โทรศัพท์เหลือเพียงสิบเปอร์เซ็นต์",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 120,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我把照片备份到云端了。",
+      "th1": "ฉันสำรองรูปภาพไว้บนคลาวด์แล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 121,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "打印机没有纸了，需要更换纸张。",
+      "th1": "เครื่องพิมพ์กระดาษหมดแล้ว ต้องเปลี่ยนกระดาษ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 122,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请把这份合同打印两份。",
+      "th1": "กรุณาพิมพ์สัญญาฉบับนี้ออกมาสองชุด",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 123,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "公司需要一份详细的报告。",
+      "th1": "บริษัทต้องการรายงานฉบับละเอียดหนึ่งฉบับ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 124,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "培训结束以后，我们要填写反馈表。",
+      "th1": "หลังจากการอบรมเสร็จ เราต้องกรอกแบบประเมินผล",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 125,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请把文件放进正确的文件夹。",
+      "th1": "กรุณานำไฟล์ใส่ไว้ในโฟลเดอร์ที่ถูกต้อง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 126,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "程序启动失败，请检查设置。",
+      "th1": "โปรแกรมเริ่มทำงานไม่สำเร็จ กรุณาตรวจสอบการตั้งค่า",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 127,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这个版本修复了几个重要问题。",
+      "th1": "เวอร์ชันนี้แก้ไขปัญหาสำคัญไปหลายข้อ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 128,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请先备份数据，再删除旧文件。",
+      "th1": "กรุณาสำรองข้อมูลก่อน แล้วค่อยลบไฟล์เก่า",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 129,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我忘了退出自己的账号。",
+      "th1": "ฉันลืมออกจากระบบบัญชีของตัวเอง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 130,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "请把音量调低一点。",
+      "th1": "กรุณาลดระดับเสียงลงหน่อย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 131,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "耳机的左边没有声音。",
+      "th1": "หูฟังข้างซ้ายไม่มีเสียง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 132,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这盏灯的亮度可以调节。",
+      "th1": "สามารถปรับความสว่างของโคมไฟดวงนี้ได้",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 133,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "虽然外面下着雨，我们还是按时出发了。",
+      "th1": "แม้ว่าข้างนอกฝนกำลังตก แต่พวกเราก็ออกเดินทางตรงเวลา",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 134,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "如果你提前告诉我，我就能做好准备。",
+      "th1": "ถ้าคุณบอกฉันล่วงหน้า ฉันก็จะเตรียมตัวได้",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 135,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "因为网络中断，视频会议暂停了。",
+      "th1": "เนื่องจากเครือข่ายขาดการเชื่อมต่อ การประชุมผ่านวิดีโอจึงหยุดชั่วคราว",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 136,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "他一边做饭，一边听新闻。",
+      "th1": "เขาทำอาหารไปพร้อมกับฟังข่าวไปด้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 137,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我刚刚收到你的消息。",
+      "th1": "ฉันเพิ่งได้รับข้อความของคุณเมื่อครู่นี้",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 138,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这件事已经处理完毕了。",
+      "th1": "เรื่องนี้จัดการเสร็จเรียบร้อยแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 139,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "文件被误删了，需要重新恢复。",
+      "th1": "ไฟล์ถูกลบโดยผิดพลาด จำเป็นต้องกู้คืนใหม่",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 140,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "与其坐出租车，不如乘地铁。",
+      "th1": "แทนที่จะนั่งแท็กซี่ นั่งรถไฟใต้ดินดีกว่า",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 141,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "除了中文以外，她还会说英语和泰语。",
+      "th1": "นอกจากภาษาจีนแล้ว เธอยังพูดภาษาอังกฤษและภาษาไทยได้ด้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 142,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "不管结果怎么样，我们都会继续努力。",
+      "th1": "ไม่ว่าผลลัพธ์จะเป็นอย่างไร พวกเราก็จะพยายามต่อไป",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 143,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "只要有时间，我就会练习中文。",
+      "th1": "ขอเพียงมีเวลา ฉันก็จะฝึกภาษาจีน",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 144,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "除非下雨，否则比赛照常举行。",
+      "th1": "เว้นแต่ฝนจะตก มิฉะนั้นการแข่งขันจะจัดขึ้นตามปกติ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 145,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "这道题虽然很难，但是我想自己试试。",
+      "th1": "แม้โจทย์ข้อนี้จะยาก แต่ฉันก็อยากลองทำด้วยตัวเอง",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 146,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我不是不想帮你，只是现在没有时间。",
+      "th1": "ไม่ใช่ว่าฉันไม่อยากช่วยคุณ เพียงแต่ตอนนี้ไม่มีเวลา",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 147,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "他不仅会修电脑，还会安装网络设备。",
+      "th1": "เขาไม่เพียงซ่อมคอมพิวเตอร์ได้ แต่ยังติดตั้งอุปกรณ์เครือข่ายได้ด้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 148,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "我宁愿在家休息，也不想去购物中心。",
+      "th1": "ฉันยอมพักผ่อนอยู่บ้านมากกว่า ไม่อยากไปศูนย์การค้า",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 149,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "最好先备份数据，再更新系统。",
+      "th1": "ทางที่ดีที่สุดคือสำรองข้อมูลก่อน แล้วค่อยอัปเดตระบบ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 150,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "你练习得越多，发音就会越自然。",
+      "th1": "ยิ่งคุณฝึกมากเท่าไร การออกเสียงก็จะยิ่งเป็นธรรมชาติมากขึ้นเท่านั้น",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 151,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "即使遇到问题，也不要马上放弃。",
+      "th1": "แม้จะพบปัญหา ก็อย่าเพิ่งยอมแพ้ทันที",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    },
+    {
+      "id": 152,
+      "section": "คำศัพท์เพิ่มเติม",
+      "category": "lexical_coverage",
+      "zh": "既然已经决定了，就按照计划行动吧。",
+      "th1": "ในเมื่อตัดสินใจไปแล้ว ก็ลงมือทำตามแผนกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "lexical_coverage"
+    }
+  ]
+}

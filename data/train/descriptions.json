@@ -1,0 +1,616 @@
+{
+  "schema_version": 1,
+  "topic": "descriptions",
+  "description": "ข้อมูลสังเคราะห์จากรูปแบบประโยคและคำศัพท์จีน-ไทยที่กำหนดเอง ตรวจโครงสร้างและตัดประโยคจีนซ้ำแล้ว",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "template_augmented_from_handwritten_lexicon",
+    "review_status": "needs_human_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常安静。",
+      "th1": "ที่นี่เงียบสงบมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 2,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很有趣。",
+      "th1": "ฉันคิดว่าที่นี่น่าสนใจมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 3,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很贵。",
+      "th1": "ฉันคิดว่าที่นี่แพงมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 4,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很远。",
+      "th1": "สถานที่นี้ไกลมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 5,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很好。",
+      "th1": "ฉันคิดว่าที่นี่ดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 6,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很安静。",
+      "th1": "สถานที่นี้เงียบสงบมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 7,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很方便。",
+      "th1": "ฉันคิดว่าที่นี่สะดวกมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 8,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很旧。",
+      "th1": "ฉันคิดว่าที่นี่เก่ามาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 9,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很好。",
+      "th1": "สถานที่นี้ดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 10,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很新。",
+      "th1": "ฉันคิดว่าที่นี่ใหม่มาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 11,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很困难。",
+      "th1": "ฉันคิดว่าที่นี่ยากมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 12,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很旧。",
+      "th1": "สถานที่นี้เก่ามาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 13,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很凉快。",
+      "th1": "ฉันคิดว่าที่นี่เย็นสบายมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 14,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常热。",
+      "th1": "ที่นี่ร้อนมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 15,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常贵。",
+      "th1": "ที่นี่แพงมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 16,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常旧。",
+      "th1": "ที่นี่เก่ามาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 17,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常便宜。",
+      "th1": "ที่นี่ราคาถูกมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 18,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很安全。",
+      "th1": "สถานที่นี้ปลอดภัยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 19,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很漂亮。",
+      "th1": "สถานที่นี้สวยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 20,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很舒服。",
+      "th1": "สถานที่นี้สบายมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 21,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很干净。",
+      "th1": "ฉันคิดว่าที่นี่สะอาดมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 22,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很远。",
+      "th1": "ฉันคิดว่าที่นี่ไกลมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 23,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很有趣。",
+      "th1": "สถานที่นี้น่าสนใจมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 24,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很拥挤。",
+      "th1": "สถานที่นี้แออัดมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 25,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常冷。",
+      "th1": "ที่นี่หนาวมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 26,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常拥挤。",
+      "th1": "ที่นี่แออัดมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 27,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很热。",
+      "th1": "สถานที่นี้ร้อนมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 28,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常远。",
+      "th1": "ที่นี่ไกลมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 29,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常方便。",
+      "th1": "ที่นี่สะดวกมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 30,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很方便。",
+      "th1": "สถานที่นี้สะดวกมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 31,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很安静。",
+      "th1": "ฉันคิดว่าที่นี่เงียบสงบมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 32,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很热闹。",
+      "th1": "ฉันคิดว่าที่นี่คึกคักมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 33,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很热。",
+      "th1": "ฉันคิดว่าที่นี่ร้อนมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 34,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常困难。",
+      "th1": "ที่นี่ยากมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 35,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很贵。",
+      "th1": "สถานที่นี้แพงมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 36,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很简单。",
+      "th1": "ฉันคิดว่าที่นี่ง่ายมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 37,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常安全。",
+      "th1": "ที่นี่ปลอดภัยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 38,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很拥挤。",
+      "th1": "ฉันคิดว่าที่นี่แออัดมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 39,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很漂亮。",
+      "th1": "ฉันคิดว่าที่นี่สวยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 40,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常热闹。",
+      "th1": "ที่นี่คึกคักมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 41,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很简单。",
+      "th1": "สถานที่นี้ง่ายมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 42,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很安全。",
+      "th1": "ฉันคิดว่าที่นี่ปลอดภัยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 43,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很冷。",
+      "th1": "ฉันคิดว่าที่นี่หนาวมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 44,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很热闹。",
+      "th1": "สถานที่นี้คึกคักมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 45,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很困难。",
+      "th1": "สถานที่นี้ยากมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 46,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常舒服。",
+      "th1": "ที่นี่สบายมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 47,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常有趣。",
+      "th1": "ที่นี่น่าสนใจมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 48,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常简单。",
+      "th1": "ที่นี่ง่ายมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 49,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很便宜。",
+      "th1": "สถานที่นี้ราคาถูกมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 50,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很冷。",
+      "th1": "สถานที่นี้หนาวมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 51,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常干净。",
+      "th1": "ที่นี่สะอาดมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 52,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常新。",
+      "th1": "ที่นี่ใหม่มาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 53,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常好。",
+      "th1": "ที่นี่ดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 54,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很新。",
+      "th1": "สถานที่นี้ใหม่มาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 55,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很干净。",
+      "th1": "สถานที่นี้สะอาดมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 56,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很舒服。",
+      "th1": "ฉันคิดว่าที่นี่สบายมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 57,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "我觉得这里很便宜。",
+      "th1": "ฉันคิดว่าที่นี่ราคาถูกมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 58,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常漂亮。",
+      "th1": "ที่นี่สวยมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 59,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这个地方很凉快。",
+      "th1": "สถานที่นี้เย็นสบายมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    },
+    {
+      "id": 60,
+      "section": "คำบรรยาย",
+      "category": "descriptions",
+      "zh": "这里非常凉快。",
+      "th1": "ที่นี่เย็นสบายมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "descriptions"
+    }
+  ]
+}

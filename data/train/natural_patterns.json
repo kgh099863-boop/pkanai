@@ -1,0 +1,516 @@
+{
+  "schema_version": 1,
+  "topic": "natural_patterns",
+  "description": "Hand-authored Chinese-Thai examples covering conditional, causal, concessive, temporal, aspect, disposal, comparison, and navigation patterns.",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "hand_authored_parallel_examples",
+    "review_status": "needs_human_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "conditional",
+      "zh": "如果你有时间，请给我打电话。",
+      "th1": "ถ้าคุณมีเวลา กรุณาโทรหาฉัน",
+      "th2": null,
+      "th3": null,
+      "frame": "conditional"
+    },
+    {
+      "id": 2,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "conditional",
+      "zh": "如果明天下雨，我们就在家休息。",
+      "th1": "ถ้าพรุ่งนี้ฝนตก พวกเราจะพักอยู่ที่บ้าน",
+      "th2": null,
+      "th3": null,
+      "frame": "conditional"
+    },
+    {
+      "id": 3,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "conditional",
+      "zh": "如果你不明白，可以再问我。",
+      "th1": "ถ้าคุณไม่เข้าใจ สามารถถามฉันอีกครั้งได้",
+      "th2": null,
+      "th3": null,
+      "frame": "conditional"
+    },
+    {
+      "id": 4,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "conditional",
+      "zh": "如果价格太贵，我就不买。",
+      "th1": "ถ้าราคาแพงเกินไป ฉันก็จะไม่ซื้อ",
+      "th2": null,
+      "th3": null,
+      "frame": "conditional"
+    },
+    {
+      "id": 5,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "conditional",
+      "zh": "如果你需要帮助，请告诉我。",
+      "th1": "ถ้าคุณต้องการความช่วยเหลือ กรุณาบอกฉัน",
+      "th2": null,
+      "th3": null,
+      "frame": "conditional"
+    },
+    {
+      "id": 6,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "conditional",
+      "zh": "如果我们早点出发，就不会迟到。",
+      "th1": "ถ้าพวกเราออกเดินทางเร็วหน่อย ก็จะไม่สาย",
+      "th2": null,
+      "th3": null,
+      "frame": "conditional"
+    },
+    {
+      "id": 7,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "conditional",
+      "zh": "如果有问题，请联系我。",
+      "th1": "ถ้ามีปัญหา กรุณาติดต่อฉัน",
+      "th2": null,
+      "th3": null,
+      "frame": "conditional"
+    },
+    {
+      "id": 8,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "conditional",
+      "zh": "如果你喜欢，可以带回家。",
+      "th1": "ถ้าคุณชอบ สามารถนำกลับบ้านได้",
+      "th2": null,
+      "th3": null,
+      "frame": "conditional"
+    },
+    {
+      "id": 9,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "causal",
+      "zh": "因为我很累，所以想早点睡。",
+      "th1": "เพราะฉันเหนื่อยมาก จึงอยากนอนเร็ว",
+      "th2": null,
+      "th3": null,
+      "frame": "causal"
+    },
+    {
+      "id": 10,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "causal",
+      "zh": "因为手机没电了，我不能打电话。",
+      "th1": "เพราะโทรศัพท์แบตหมด ฉันจึงโทรออกไม่ได้",
+      "th2": null,
+      "th3": null,
+      "frame": "causal"
+    },
+    {
+      "id": 11,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "causal",
+      "zh": "因为下雨，比赛取消了。",
+      "th1": "เพราะฝนตก การแข่งขันจึงถูกยกเลิก",
+      "th2": null,
+      "th3": null,
+      "frame": "causal"
+    },
+    {
+      "id": 12,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "causal",
+      "zh": "因为路上很堵，我们迟到了。",
+      "th1": "เพราะรถติดบนถนน พวกเราจึงมาสาย",
+      "th2": null,
+      "th3": null,
+      "frame": "causal"
+    },
+    {
+      "id": 13,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "causal",
+      "zh": "因为我忘了带钥匙，所以进不了门。",
+      "th1": "เพราะฉันลืมเอากุญแจมา จึงเข้าประตูไม่ได้",
+      "th2": null,
+      "th3": null,
+      "frame": "causal"
+    },
+    {
+      "id": 14,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "causal",
+      "zh": "因为他生病了，今天没有来。",
+      "th1": "เพราะเขาป่วย วันนี้จึงไม่ได้มา",
+      "th2": null,
+      "th3": null,
+      "frame": "causal"
+    },
+    {
+      "id": 15,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "causal",
+      "zh": "因为时间不够，我们先回家吧。",
+      "th1": "เพราะเวลาไม่พอ พวกเรากลับบ้านก่อนเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "causal"
+    },
+    {
+      "id": 16,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "causal",
+      "zh": "因为这个问题很重要，我们需要讨论。",
+      "th1": "เพราะปัญหานี้สำคัญมาก พวกเราจึงต้องหารือกัน",
+      "th2": null,
+      "th3": null,
+      "frame": "causal"
+    },
+    {
+      "id": 17,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "concessive",
+      "zh": "虽然今天很忙，但我会帮助你。",
+      "th1": "แม้ว่าวันนี้จะยุ่งมาก แต่ฉันจะช่วยคุณ",
+      "th2": null,
+      "th3": null,
+      "frame": "concessive"
+    },
+    {
+      "id": 18,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "concessive",
+      "zh": "虽然天气很冷，他还是出去了。",
+      "th1": "แม้อากาศจะหนาวมาก แต่เขาก็ยังออกไปข้างนอก",
+      "th2": null,
+      "th3": null,
+      "frame": "concessive"
+    },
+    {
+      "id": 19,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "concessive",
+      "zh": "虽然这家店很远，但是东西很好。",
+      "th1": "แม้ว่าร้านนี้จะอยู่ไกล แต่สินค้าดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "concessive"
+    },
+    {
+      "id": 20,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "concessive",
+      "zh": "虽然我不太会说中文，但我正在学习。",
+      "th1": "แม้ว่าฉันจะพูดภาษาจีนไม่ค่อยได้ แต่ฉันกำลังเรียนอยู่",
+      "th2": null,
+      "th3": null,
+      "frame": "concessive"
+    },
+    {
+      "id": 21,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "concessive",
+      "zh": "虽然价格有点高，但是质量很好。",
+      "th1": "แม้ว่าราคาจะค่อนข้างสูง แต่คุณภาพดีมาก",
+      "th2": null,
+      "th3": null,
+      "frame": "concessive"
+    },
+    {
+      "id": 22,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "concessive",
+      "zh": "虽然下雨了，我们还是继续走。",
+      "th1": "แม้ว่าฝนจะตกแล้ว พวกเราก็ยังเดินต่อ",
+      "th2": null,
+      "th3": null,
+      "frame": "concessive"
+    },
+    {
+      "id": 23,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "exception",
+      "zh": "除了咖啡以外，我也喜欢茶。",
+      "th1": "นอกจากกาแฟแล้ว ฉันยังชอบชาด้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "exception"
+    },
+    {
+      "id": 24,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "exception",
+      "zh": "除了你以外，没有人知道。",
+      "th1": "นอกจากคุณแล้ว ไม่มีใครรู้",
+      "th2": null,
+      "th3": null,
+      "frame": "exception"
+    },
+    {
+      "id": 25,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "exception",
+      "zh": "除了星期日，我每天都工作。",
+      "th1": "ฉันทำงานทุกวัน ยกเว้นวันอาทิตย์",
+      "th2": null,
+      "th3": null,
+      "frame": "exception"
+    },
+    {
+      "id": 26,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "exception",
+      "zh": "除了手机，我还需要一个充电器。",
+      "th1": "นอกจากโทรศัพท์แล้ว ฉันยังต้องการที่ชาร์จอีกอัน",
+      "th2": null,
+      "th3": null,
+      "frame": "exception"
+    },
+    {
+      "id": 27,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "exception",
+      "zh": "除了中文，他还会说泰语。",
+      "th1": "นอกจากภาษาจีนแล้ว เขายังพูดภาษาไทยได้",
+      "th2": null,
+      "th3": null,
+      "frame": "exception"
+    },
+    {
+      "id": 28,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "temporal",
+      "zh": "吃饭以后，我们去散步。",
+      "th1": "หลังจากกินข้าวแล้ว พวกเราไปเดินเล่น",
+      "th2": null,
+      "th3": null,
+      "frame": "temporal"
+    },
+    {
+      "id": 29,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "temporal",
+      "zh": "下课以后，我要去图书馆。",
+      "th1": "หลังเลิกเรียน ฉันจะไปห้องสมุด",
+      "th2": null,
+      "th3": null,
+      "frame": "temporal"
+    },
+    {
+      "id": 30,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "temporal",
+      "zh": "到家以后，请给我发消息。",
+      "th1": "หลังถึงบ้านแล้ว กรุณาส่งข้อความหาฉัน",
+      "th2": null,
+      "th3": null,
+      "frame": "temporal"
+    },
+    {
+      "id": 31,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "temporal",
+      "zh": "工作结束以后，他就回家了。",
+      "th1": "หลังเลิกงาน เขาก็กลับบ้าน",
+      "th2": null,
+      "th3": null,
+      "frame": "temporal"
+    },
+    {
+      "id": 32,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "temporal",
+      "zh": "睡觉以前，不要喝太多咖啡。",
+      "th1": "ก่อนนอน อย่าดื่มกาแฟมากเกินไป",
+      "th2": null,
+      "th3": null,
+      "frame": "temporal"
+    },
+    {
+      "id": 33,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "temporal",
+      "zh": "出门以前，请检查门有没有锁。",
+      "th1": "ก่อนออกจากบ้าน กรุณาตรวจดูว่าล็อกประตูหรือยัง",
+      "th2": null,
+      "th3": null,
+      "frame": "temporal"
+    },
+    {
+      "id": 34,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "aspect",
+      "zh": "我刚到家，还没有吃晚饭。",
+      "th1": "ฉันเพิ่งถึงบ้าน ยังไม่ได้กินอาหารเย็น",
+      "th2": null,
+      "th3": null,
+      "frame": "aspect"
+    },
+    {
+      "id": 35,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "aspect",
+      "zh": "我已经吃过早餐了。",
+      "th1": "ฉันกินอาหารเช้าแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "aspect"
+    },
+    {
+      "id": 36,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "aspect",
+      "zh": "他正在洗衣服。",
+      "th1": "เขากำลังซักเสื้อผ้า",
+      "th2": null,
+      "th3": null,
+      "frame": "aspect"
+    },
+    {
+      "id": 37,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "simultaneous",
+      "zh": "她一边听音乐，一边做作业。",
+      "th1": "เธอฟังเพลงไปด้วย ทำการบ้านไปด้วย",
+      "th2": null,
+      "th3": null,
+      "frame": "simultaneous"
+    },
+    {
+      "id": 38,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "disposal",
+      "zh": "请把这句话翻译成泰语。",
+      "th1": "กรุณาแปลประโยคนี้เป็นภาษาไทย",
+      "th2": null,
+      "th3": null,
+      "frame": "disposal"
+    },
+    {
+      "id": 39,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "disposal",
+      "zh": "请把文件放在桌子上。",
+      "th1": "กรุณาวางเอกสารไว้บนโต๊ะ",
+      "th2": null,
+      "th3": null,
+      "frame": "disposal"
+    },
+    {
+      "id": 40,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "disposal",
+      "zh": "请把手机交给我。",
+      "th1": "กรุณาส่งโทรศัพท์ให้ฉัน",
+      "th2": null,
+      "th3": null,
+      "frame": "disposal"
+    },
+    {
+      "id": 41,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "prohibition",
+      "zh": "请不要在这里吸烟。",
+      "th1": "กรุณาอย่าสูบบุหรี่ที่นี่",
+      "th2": null,
+      "th3": null,
+      "frame": "prohibition"
+    },
+    {
+      "id": 42,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "sequence",
+      "zh": "请先打开电脑，然后登录账号。",
+      "th1": "กรุณาเปิดคอมพิวเตอร์ก่อน จากนั้นเข้าสู่ระบบบัญชี",
+      "th2": null,
+      "th3": null,
+      "frame": "sequence"
+    },
+    {
+      "id": 43,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "comparison",
+      "zh": "这本书比那本书便宜。",
+      "th1": "หนังสือเล่มนี้ถูกกว่าเล่มนั้น",
+      "th2": null,
+      "th3": null,
+      "frame": "comparison"
+    },
+    {
+      "id": 44,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "comparison",
+      "zh": "今天比昨天热。",
+      "th1": "วันนี้ร้อนกว่าเมื่อวาน",
+      "th2": null,
+      "th3": null,
+      "frame": "comparison"
+    },
+    {
+      "id": 45,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "comparison",
+      "zh": "我的房间没有你的房间大。",
+      "th1": "ห้องของฉันไม่ใหญ่เท่าห้องของคุณ",
+      "th2": null,
+      "th3": null,
+      "frame": "comparison"
+    },
+    {
+      "id": 46,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "comparison",
+      "zh": "这个方法比以前简单。",
+      "th1": "วิธีนี้ง่ายกว่าเมื่อก่อน",
+      "th2": null,
+      "th3": null,
+      "frame": "comparison"
+    },
+    {
+      "id": 47,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "navigation",
+      "zh": "从这里到车站需要十分钟。",
+      "th1": "จากที่นี่ไปสถานีใช้เวลาสิบนาที",
+      "th2": null,
+      "th3": null,
+      "frame": "navigation"
+    },
+    {
+      "id": 48,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "navigation",
+      "zh": "你可以告诉我怎么去机场吗？",
+      "th1": "คุณบอกฉันได้ไหมว่าจะไปสนามบินอย่างไร",
+      "th2": null,
+      "th3": null,
+      "frame": "navigation"
+    },
+    {
+      "id": 49,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "ability",
+      "zh": "我怎么也找不到护照。",
+      "th1": "ฉันหาหนังสือเดินทางไม่เจอเลย",
+      "th2": null,
+      "th3": null,
+      "frame": "ability"
+    },
+    {
+      "id": 50,
+      "section": "รูปแบบภาษาธรรมชาติ",
+      "category": "request",
+      "zh": "请等我五分钟。",
+      "th1": "กรุณารอฉันห้านาที",
+      "th2": null,
+      "th3": null,
+      "frame": "request"
+    }
+  ]
+}

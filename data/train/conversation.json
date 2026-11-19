@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "topic": "conversation",
+  "description": "การสนทนาและคำถามทั่วไป",
+  "metadata": {
+    "source_language": "zh",
+    "target_language": "th",
+    "task": "translation",
+    "format": "json_multi_reference_object",
+    "tokenizer": "shared_bpe_250_with_character_fallback",
+    "generation_method": "original_curated_pairs",
+    "review_status": "needs_human_review"
+  },
+  "examples": [
+    {
+      "id": 1,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "我不知道",
+      "th1": "ฉันไม่รู้",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 2,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "我明白了",
+      "th1": "ฉันเข้าใจแล้ว",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 3,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "我不明白",
+      "th1": "ฉันไม่เข้าใจ",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 4,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "你叫什么名字？",
+      "th1": "คุณชื่ออะไร",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 5,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "我叫小明",
+      "th1": "ฉันชื่อเสี่ยวหมิง",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 6,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "我很好",
+      "th1": "ฉันสบายดี",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 7,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "你在做什么？",
+      "th1": "คุณกำลังทำอะไร",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 8,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "我在看电影",
+      "th1": "ฉันกำลังดูหนัง",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 9,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "请帮帮我",
+      "th1": "ช่วยฉันหน่อย",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 10,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "我需要帮助",
+      "th1": "ฉันต้องการความช่วยเหลือ",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 11,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "真的吗？",
+      "th1": "จริงเหรอ",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 12,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "当然",
+      "th1": "แน่นอน",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 13,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "可能吧",
+      "th1": "อาจจะ",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 14,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "没问题",
+      "th1": "ไม่มีปัญหา",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 15,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "我马上回来",
+      "th1": "ฉันจะกลับมาทันที",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 16,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "你可以帮我吗？",
+      "th1": "คุณช่วยฉันได้ไหม",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 17,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "这是什么意思？",
+      "th1": "นี่หมายความว่าอะไร",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    },
+    {
+      "id": 18,
+      "section": "บทสนทนา",
+      "category": "conversation",
+      "zh": "我们走吧",
+      "th1": "พวกเราไปกันเถอะ",
+      "th2": null,
+      "th3": null,
+      "frame": "conversation"
+    }
+  ]
+}

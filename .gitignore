@@ -1,0 +1,18 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Model weights and recovery snapshots
+checkpoints/*.pt
+backups/
+
+# Runtime logs and temporary files
+logs/
+*.tmp
+.env
+
+# Generated tokenizer cache (recreated from manifest corpus fingerprint)
+data/tokenizer_bpe.json
+.DS_Store
